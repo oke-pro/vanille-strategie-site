@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { founder, officialSources } from "@/data/site";
+import { founder } from "@/data/site";
 
 export const metadata: Metadata = {
   title:

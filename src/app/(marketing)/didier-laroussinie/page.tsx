@@ -3,19 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
-import { 
-  Award, 
-  Briefcase, 
-  Building2, 
-  Globe2, 
-  ShieldCheck, 
-  CheckCircle2, 
-  Calendar, 
-  Users, 
-  ArrowRight,
-  TrendingUp,
-  MapPin,
-  ChevronRight
+import {
+  Award,
+  Briefcase,
+  Building2,
+  Globe2,
+  ShieldCheck,
+  CheckCircle2,
+  Calendar,
+  Users,
+  TrendingUp
 } from "lucide-react";
 
 export const metadata: Metadata = {

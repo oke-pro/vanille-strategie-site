@@ -4,20 +4,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { serviceGroups, founder } from "@/data/site";
-import { 
-  Building2, 
-  ShieldCheck, 
-  Users, 
-  CheckCircle2, 
+import {
+  ShieldCheck,
+  CheckCircle2,
   ArrowRight,
   Zap,
   Medal,
   Heart,
   Globe,
-  ChevronRight,
-  Calculator,
-  Briefcase,
-  Activity
+  ChevronRight
 } from "lucide-react";
 
 export const metadata: Metadata = {

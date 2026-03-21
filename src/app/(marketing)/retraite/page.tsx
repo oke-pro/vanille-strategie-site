@@ -9,7 +9,6 @@ import {
   Heart,
   ShieldCheck,
   Clock,
-  Sun,
   Users,
   CheckCircle2,
   ArrowRight,
@@ -217,7 +216,7 @@ export default function RetraitePage() {
                   <h3 className="mt-4 text-lg font-bold text-slate-900 group-hover:text-amber-600 leading-tight">{article.title}</h3>
                   <p className="mt-3 text-sm text-slate-600 leading-relaxed">{article.desc}</p>
                   <div className="mt-4 flex items-center gap-1 text-xs font-bold text-amber-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                    Lire l'article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                    Lire l&apos;article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </Link>

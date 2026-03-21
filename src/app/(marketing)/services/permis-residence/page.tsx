@@ -4,20 +4,18 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { permits, founder } from "@/data/site";
-import { 
-  Briefcase, 
-  Laptop, 
-  UserCheck, 
-  Award, 
-  TreePalm, 
-  Plane, 
-  CheckCircle2, 
+import {
+  Briefcase,
+  Laptop,
+  UserCheck,
+  Award,
+  TreePalm,
+  Plane,
+  CheckCircle2,
   ArrowRight,
   ShieldCheck,
   Clock,
   Users,
-  Building2,
-  GraduationCap,
   Home,
   CreditCard
 } from "lucide-react";
@@ -27,7 +25,7 @@ export const metadata: Metadata = {
   description: "30-50 dossiers déposés par an. Conditions mises à jour post-réforme EDB août 2025. Délai moyen 3-4 semaines.",
 };
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   briefcase: Briefcase,
   laptop: Laptop,
   badge: UserCheck,

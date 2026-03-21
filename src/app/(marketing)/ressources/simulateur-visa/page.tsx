@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { submitSimulateurVisa } from "@/lib/api";
+import { trackEvent } from "@/components/analytics/google-analytics";
 
 type Result = { visa: string; desc: string; invest: string; duration: string; color: string } | null;
 
@@ -114,6 +115,7 @@ export default function SimulateurVisaPage() {
                     if (email && result) {
                       await submitSimulateurVisa({ email, answers, result_visa: result.visa, result_invest: result.invest, result_duration: result.duration });
                       setSuccess(true);
+                      trackEvent("form_submit", "simulateur_visa", result.visa);
                     }
                   }}>
                     <Input name="email" type="email" placeholder="votre@email.com" className="h-10" required />

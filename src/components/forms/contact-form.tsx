@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { submitContact } from "@/lib/api";
+import { trackEvent } from "@/components/analytics/google-analytics";
 import { ArrowRight, ShieldCheck, Clock, CheckCircle2, Loader2 } from "lucide-react";
 
 export function ContactForm() {
@@ -31,6 +32,7 @@ export function ContactForm() {
         message: (form.get("message") as string) || null,
       });
       setSuccess(true);
+      trackEvent("form_submit", "contact", profil);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Une erreur est survenue.");
     } finally {

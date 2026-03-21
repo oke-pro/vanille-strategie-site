@@ -3,6 +3,41 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
 import { notFound } from "next/navigation";
+import { ArrowRight } from "lucide-react";
+
+// Maillage interne : liens contextuels par catégorie d'article
+const relatedLinks: Record<string, { label: string; href: string }[]> = {
+  Fiscalité: [
+    { label: "Simulateur fiscal Maurice vs France", href: "/ressources/simulateur-fiscal" },
+    { label: "Comptabilité & Fiscalité — nos services", href: "/services/comptabilite-fiscalite" },
+    { label: "Création de société à Maurice", href: "/services/creation-societe" },
+  ],
+  Guide: [
+    { label: "Simulateur : quel visa pour moi ?", href: "/ressources/simulateur-visa" },
+    { label: "Permis de résidence — nos services", href: "/services/permis-residence" },
+    { label: "Création de société à Maurice", href: "/services/creation-societe" },
+  ],
+  Permis: [
+    { label: "Simulateur : quel visa pour moi ?", href: "/ressources/simulateur-visa" },
+    { label: "Permis de résidence — nos services", href: "/services/permis-residence" },
+    { label: "Découvrir l'Île Maurice", href: "/maurice" },
+  ],
+  Actualité: [
+    { label: "Simulateur fiscal Maurice vs France", href: "/ressources/simulateur-fiscal" },
+    { label: "Tous nos services", href: "/services/creation-societe" },
+    { label: "Pourquoi Maurice ?", href: "/maurice" },
+  ],
+  Digital: [
+    { label: "Profil Digital Nomad", href: "/digital-nomad" },
+    { label: "Simulateur : quel visa pour moi ?", href: "/ressources/simulateur-visa" },
+    { label: "E-commerce & Comptabilité", href: "/services/comptabilite-fiscalite" },
+  ],
+  Comparatif: [
+    { label: "Simulateur fiscal Maurice vs France", href: "/ressources/simulateur-fiscal" },
+    { label: "Pourquoi Maurice ?", href: "/maurice" },
+    { label: "Étude de faisabilité gratuite", href: "/contact" },
+  ],
+};
 
 const articles: Record<string, { title: string; category: string; date: string; content: string[] }> = {
   "structures-juridiques-maurice-2026": {
@@ -390,6 +425,27 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           ))}
         </div>
       </article>
+
+      {/* Maillage interne — liens connexes */}
+      {relatedLinks[article.category] && (
+        <section className="bg-white border-t border-slate-100 py-12">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6">Pour aller plus loin</h3>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {relatedLinks[article.category].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="group flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/50 p-4 text-sm font-semibold text-slate-700 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
+                >
+                  {link.label}
+                  <ArrowRight className="h-4 w-4 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="bg-slate-50 py-12">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

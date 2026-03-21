@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { submitSimulateurFiscal } from "@/lib/api";
+import { trackEvent } from "@/components/analytics/google-analytics";
 
 export default function SimulateurFiscalPage() {
   const [ca, setCa] = useState("");
@@ -127,6 +128,7 @@ export default function SimulateurFiscalPage() {
                     if (email) {
                       await submitSimulateurFiscal({ email, ca: parseFloat(ca), benefice: b, dividendes: d, economie_vs_france: economie });
                       setSuccess(true);
+                      trackEvent("form_submit", "simulateur_fiscal", undefined, economie);
                     }
                   }}>
                     <Input name="capture-email" type="email" placeholder="votre@email.com" className="h-10" required />

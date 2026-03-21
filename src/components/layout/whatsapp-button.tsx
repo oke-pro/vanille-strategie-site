@@ -1,6 +1,7 @@
 "use client";
 
 import { siteConfig } from "@/data/site";
+import { trackEvent } from "@/components/analytics/google-analytics";
 
 export function WhatsAppButton() {
   const message = encodeURIComponent(
@@ -12,6 +13,7 @@ export function WhatsAppButton() {
       href={`https://wa.me/${siteConfig.whatsapp}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent("click", "whatsapp", "floating_button")}
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-transform hover:scale-110 hover:bg-green-600"
       aria-label="Contacter via WhatsApp"
     >

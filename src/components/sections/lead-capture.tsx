@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { siteConfig } from "@/data/site";
 import { submitQuickLead } from "@/lib/api";
+import { trackEvent } from "@/components/analytics/google-analytics";
 import { CheckCircle2, ShieldCheck, Zap, ArrowRight, Loader2 } from "lucide-react";
 
 export function LeadCaptureSection() {
@@ -28,6 +29,7 @@ export function LeadCaptureSection() {
         profil,
       });
       setSuccess(true);
+      trackEvent("form_submit", "lead_capture", profil);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Une erreur est survenue.");
     } finally {

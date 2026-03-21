@@ -3,15 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { 
-  Users, 
-  Search, 
-  FileText, 
-  Globe, 
-  CheckCircle2, 
-  Briefcase, 
-  UserPlus, 
-  BarChart3, 
+import {
+  FileText,
+  Globe,
+  CheckCircle2,
+  UserPlus,
+  BarChart3,
   ShieldCheck,
   Building2,
   HeartHandshake

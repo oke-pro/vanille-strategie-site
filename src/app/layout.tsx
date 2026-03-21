@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { OrganizationJsonLd } from "@/components/seo/json-ld";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -84,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${cormorant.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        <GoogleAnalytics />
         <OrganizationJsonLd />
         {children}
       </body>

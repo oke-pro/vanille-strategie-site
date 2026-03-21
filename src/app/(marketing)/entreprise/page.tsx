@@ -3,19 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { founder, testimonials } from "@/data/site";
-import { 
-  Building2, 
-  Users, 
-  Globe2, 
-  FileText, 
-  Briefcase, 
-  CheckCircle2, 
+import { testimonials } from "@/data/site";
+import {
+  Building2,
+  Users,
+  Globe2,
+  FileText,
   ArrowRight,
-  TrendingUp,
-  MapPin,
-  ShieldCheck,
-  Zap,
   UserCheck,
   Calculator,
   Laptop

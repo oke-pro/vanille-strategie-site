@@ -2,16 +2,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { ContactForm } from "@/components/forms/contact-form";
 import { siteConfig, founder } from "@/data/site";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  MessageSquare, 
-  ShieldCheck, 
-  Clock, 
-  Globe,
-  CheckCircle2,
-  ArrowRight
+import {
+  Phone,
+  Mail,
+  MessageSquare,
+  Globe
 } from "lucide-react";
 
 export const metadata: Metadata = {

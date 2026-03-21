@@ -102,7 +102,7 @@ export function HeroSection() {
         {/* Ultra-Premium Trust Stats Bar */}
         <div className="mt-24 animate-[fadeSlideUp_1s_ease-out_0.6s_both] rounded-[2.5rem] border border-white/10 bg-slate-950/40 p-12 backdrop-blur-3xl shadow-2xl">
           <div className="grid grid-cols-2 gap-12 sm:grid-cols-4 lg:gap-20">
-            {trustStats.map((stat, idx) => (
+            {trustStats.map((stat) => (
               <div key={stat.label} className="group relative text-center sm:text-left">
                 <p className="text-4xl font-black text-white sm:text-5xl lg:text-6xl tracking-tight transition-transform group-hover:scale-105">
                   {stat.value}

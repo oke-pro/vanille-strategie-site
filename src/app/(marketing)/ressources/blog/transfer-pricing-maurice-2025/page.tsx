@@ -654,7 +654,7 @@ export default function TransferPricingPage() {
                 oecd.org
               </a>
             </li>
-            {officialSources.slice(0, 4).map((s, i) => (
+            {officialSources.slice(0, 4).map((s) => (
               <li key={s.url}>
                 {s.name} ({s.description}) —{" "}
                 <a

@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { founder } from "@/data/site";
 import {
-  Laptop,
   Globe,
   Wifi,
   Plane,
@@ -15,10 +13,7 @@ import {
   ShieldCheck,
   CheckCircle2,
   ArrowRight,
-  Database,
   Cpu,
-  ShoppingCart,
-  CreditCard,
   BarChart3,
   FileText
 } from "lucide-react";
@@ -236,7 +231,7 @@ export default function DigitalNomadPage() {
                   <h3 className="mt-4 text-lg font-bold text-slate-900 group-hover:text-teal-600 leading-tight">{article.title}</h3>
                   <p className="mt-3 text-sm text-slate-600 leading-relaxed">{article.desc}</p>
                   <div className="mt-4 flex items-center gap-1 text-xs font-bold text-teal-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                    Lire l'article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                    Lire l&apos;article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </Link>

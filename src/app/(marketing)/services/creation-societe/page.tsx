@@ -2,20 +2,18 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { companyTypes, founder } from "@/data/site";
-import { 
-  Building2, 
-  Globe2, 
-  ShieldCheck, 
-  CheckCircle2, 
-  FileText, 
-  CreditCard, 
-  MapPin, 
-  Scale, 
-  Users, 
+import {
+  Building2,
+  Globe2,
+  ShieldCheck,
+  CheckCircle2,
+  FileText,
+  CreditCard,
+  MapPin,
+  Scale,
+  Users,
   ArrowRight,
-  ChevronRight,
   Zap
 } from "lucide-react";
 

@@ -4,19 +4,14 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder } from "@/data/site";
-import { 
-  Calculator, 
-  PieChart, 
-  Activity, 
-  Lightbulb, 
-  ShieldCheck, 
-  UserCheck, 
-  CheckCircle2, 
+import {
+  Calculator,
+  PieChart,
+  Lightbulb,
+  ShieldCheck,
+  UserCheck,
+  CheckCircle2,
   ArrowRight,
-  TrendingUp,
-  FileSpreadsheet,
-  Globe,
-  Database,
   Cpu
 } from "lucide-react";
 

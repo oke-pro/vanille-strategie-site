@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { 
-  BarChart3, 
-  Wallet, 
-  ShoppingCart, 
-  Zap, 
-  ArrowRight, 
-  Globe, 
+import {
+  ShoppingCart,
+  Zap,
+  Globe,
   CreditCard,
   Layers,
   CheckCircle2
