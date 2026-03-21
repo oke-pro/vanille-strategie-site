@@ -38,7 +38,7 @@ export default function FaqPage() {
       <section className="group relative py-24 overflow-hidden flex items-center bg-slate-900">
         <div className="absolute inset-0 opacity-20 transition-transform duration-10000 group-hover:scale-110">
           <Image 
-            src="/images/nature-paradis.jpg" 
+            src="/images/flamboyant-plage.jpg" 
             alt="FAQ Maurice" 
             fill 
             priority 

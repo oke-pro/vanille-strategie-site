@@ -7,7 +7,7 @@ export function TestimonialsSection() {
     <section className="relative overflow-hidden py-20 sm:py-32">
       {/* Background sunset */}
       <Image
-        src="/images/sunset-tropical.jpg"
+        src="/images/sunset-ponton.jpg"
         alt="Coucher de soleil tropical"
         fill
         className="object-cover"

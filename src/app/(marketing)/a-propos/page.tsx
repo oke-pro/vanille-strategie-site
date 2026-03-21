@@ -40,7 +40,7 @@ export default function AProposPage() {
       <section className="group relative min-h-[60vh] overflow-hidden flex items-center">
         <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
           <Image 
-            src="/images/grand-baie.jpg" 
+            src="/images/caudan.jpg" 
             alt="Grand Baie Maurice" 
             fill 
             priority 

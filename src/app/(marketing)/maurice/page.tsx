@@ -59,7 +59,7 @@ export default function MauricePage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[50vh] overflow-hidden">
-        <Image src="/images/nature-paradis.jpg" alt="Nature luxuriante Maurice" fill priority className="object-cover" />
+        <Image src="/images/le-morne.jpg" alt="Nature luxuriante Maurice" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent" />
         <div className="relative mx-auto flex min-h-[50vh] max-w-7xl items-end px-4 pb-16 sm:px-6 lg:px-8">
           <div>

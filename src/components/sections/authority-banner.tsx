@@ -6,7 +6,7 @@ export function AuthorityBanner() {
     <section className="relative overflow-hidden py-20 sm:py-28">
       {/* Background nature Maurice */}
       <Image
-        src="/images/nature-paradis.jpg"
+        src="/images/panorama-maurice.jpg"
         alt="Nature luxuriante de Maurice"
         fill
         className="object-cover"

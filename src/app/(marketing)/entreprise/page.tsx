@@ -43,7 +43,7 @@ export default function EntreprisePage() {
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
         <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
           <Image 
-            src="/images/entreprise-filiale.jpg" 
+            src="/images/port-louis.jpg" 
             alt="Implantation entreprise Maurice" 
             fill 
             priority 

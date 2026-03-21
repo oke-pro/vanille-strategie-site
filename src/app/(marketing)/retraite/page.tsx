@@ -45,7 +45,7 @@ export default function RetraitePage() {
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
         <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
           <Image 
-            src="/images/retraite-maurice.jpg" 
+            src="/images/lifestyle-maurice.jpg" 
             alt="Retraite à Maurice" 
             fill 
             priority 

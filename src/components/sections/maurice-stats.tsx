@@ -6,7 +6,7 @@ export function MauriceStats() {
     <section className="relative overflow-hidden py-20 sm:py-32">
       {/* Background image de Maurice */}
       <Image
-        src="/images/ocean-turquoise.jpg"
+        src="/images/chamarel.jpg"
         alt="Lagon turquoise de Maurice"
         fill
         className="object-cover"
