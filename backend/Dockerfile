@@ -10,7 +10,9 @@ RUN pip install --no-cache-dir \
     pydantic-settings \
     httpx \
     python-multipart \
-    resend
+    resend \
+    "sqlalchemy[asyncio]" \
+    asyncpg
 
 COPY app/ ./app/
 

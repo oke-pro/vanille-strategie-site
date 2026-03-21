@@ -1,14 +1,25 @@
 import logging
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
+from app.database import init_db
 from app.routers import admin, health, leads
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await init_db()
+    logging.info("Database tables created")
+    yield
+
+
 app = FastAPI(
+    lifespan=lifespan,
     title="Vanille Stratégie API",
     description="API backend pour la capture de leads et notifications — vanillestrategie.fr",
     version="0.1.0",

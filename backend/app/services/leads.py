@@ -2,13 +2,15 @@ import logging
 from datetime import datetime, timezone
 from uuid import uuid4
 
+from sqlalchemy import select, func
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.database import async_session
+from app.models.db_models import LeadDB
 from app.models.leads import Lead
 from app.services.email import send_confirmation_email, send_lead_notification
 
 logger = logging.getLogger(__name__)
-
-# In-memory store pour MVP — remplacer par DB (PostgreSQL) en prod
-_leads: list[Lead] = []
 
 
 async def create_lead(
@@ -17,24 +19,48 @@ async def create_lead(
     source_page: str | None = None,
     ip: str | None = None,
 ) -> Lead:
-    """Crée un lead, notifie Didier, envoie un email de confirmation au prospect."""
+    """Crée un lead en base PostgreSQL, notifie Didier, confirme au prospect."""
+    lead_id = uuid4().hex[:12]
+    now = datetime.now(timezone.utc)
+
+    # Persist to PostgreSQL
+    async with async_session() as session:
+        db_lead = LeadDB(
+            id=lead_id,
+            type=lead_type,
+            data=data,
+            source_page=source_page,
+            ip=ip,
+            created_at=now,
+        )
+        session.add(db_lead)
+        await session.commit()
+
+    logger.info(f"Lead saved to DB: {lead_id} ({lead_type})")
+
+    # Build response model
     lead = Lead(
-        id=uuid4().hex[:12],
+        id=lead_id,
         type=lead_type,
         data=data,
-        created_at=datetime.now(timezone.utc),
+        created_at=now,
         source_page=source_page,
         ip=ip,
     )
-
-    _leads.append(lead)
-    logger.info(f"New lead created: {lead.id} ({lead_type})")
 
     # Notification email à Didier (async, non-bloquant)
     notified = await send_lead_notification(lead_type, data)
     lead.notified = notified
 
-    # Email de confirmation au prospect (si email présent)
+    # Update notified status in DB
+    if notified:
+        async with async_session() as session:
+            db_lead = await session.get(LeadDB, lead_id)
+            if db_lead:
+                db_lead.notified = True
+                await session.commit()
+
+    # Email de confirmation au prospect
     email = data.get("email")
     prenom = data.get("prenom", "")
     if email and prenom:
@@ -43,17 +69,32 @@ async def create_lead(
     return lead
 
 
-def get_all_leads() -> list[Lead]:
-    """Retourne tous les leads (pour le dashboard admin)."""
-    return sorted(_leads, key=lambda l: l.created_at, reverse=True)
+async def get_all_leads() -> list[dict]:
+    """Retourne tous les leads depuis PostgreSQL."""
+    async with async_session() as session:
+        result = await session.execute(
+            select(LeadDB).order_by(LeadDB.created_at.desc())
+        )
+        leads = result.scalars().all()
+        return [
+            {
+                "id": l.id,
+                "type": l.type,
+                "data": l.data,
+                "source_page": l.source_page,
+                "created_at": l.created_at.isoformat(),
+                "notified": l.notified,
+            }
+            for l in leads
+        ]
 
 
-def get_leads_count() -> dict:
-    """Stats leads."""
-    return {
-        "total": len(_leads),
-        "by_type": {
-            t: sum(1 for l in _leads if l.type == t)
-            for t in {l.type for l in _leads}
-        },
-    }
+async def get_leads_count() -> dict:
+    """Stats leads depuis PostgreSQL."""
+    async with async_session() as session:
+        total = await session.scalar(select(func.count(LeadDB.id)))
+        result = await session.execute(
+            select(LeadDB.type, func.count(LeadDB.id)).group_by(LeadDB.type)
+        )
+        by_type = {row[0]: row[1] for row in result.all()}
+        return {"total": total or 0, "by_type": by_type}
