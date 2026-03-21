@@ -129,6 +129,16 @@
   }
 }
 
+/* Premium heading font */
+.font-heading {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+/* Apply serif headings globally */
+h1, h2 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
 /* Custom animations for the sales funnel */
 @keyframes fadeSlideUp {
   from {

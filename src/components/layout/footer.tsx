@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-slate-900 bg-slate-950 text-slate-400">
       {/* Authority banner */}
       <div className="border-b border-white/5 bg-slate-900/50 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-4 px-4 py-6 text-[10px] font-black uppercase tracking-[0.2em] sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-4 px-4 py-6 text-xs font-bold uppercase tracking-[0.2em] sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-white">
             <CheckCircle2 className="h-4 w-4 text-blue-500" />
             <span>Fondé par {founder.name}</span>
@@ -28,9 +28,9 @@ export function Footer() {
           <div className="space-y-6">
             <Link href="/" className="group flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white transition-transform group-hover:scale-110">
-                <span className="text-sm font-black">V</span>
+                <span className="text-sm font-bold">V</span>
               </div>
-              <span className="text-base font-black tracking-tighter text-white uppercase">
+              <span className="text-base font-bold tracking-tighter text-white uppercase">
                 Vanille Stratégie
               </span>
             </Link>
@@ -52,7 +52,7 @@ export function Footer() {
 
           {/* Col 2 — Services */}
           <div>
-            <h3 className="mb-6 text-[10px] font-black uppercase tracking-[0.2em] text-white/50">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-white/50">
               Solutions Expertise
             </h3>
             <ul className="space-y-4">
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Col 3 — Ressources */}
           <div>
-            <h3 className="mb-6 text-[10px] font-black uppercase tracking-[0.2em] text-white/50">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-white/50">
               Centre de Ressources
             </h3>
             <ul className="space-y-4">
@@ -98,7 +98,7 @@ export function Footer() {
 
           {/* Col 4 — Contact */}
           <div>
-            <h3 className="mb-6 text-[10px] font-black uppercase tracking-[0.2em] text-white/50">
+            <h3 className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-white/50">
               Nos Bureaux
             </h3>
             <div className="space-y-6 text-sm">
@@ -111,7 +111,7 @@ export function Footer() {
                 <p className="font-light leading-relaxed">{siteConfig.addresses.ebene.line1}, {siteConfig.addresses.ebene.city}</p>
               </div>
               <div className="pt-4 space-y-2">
-                <a href={`tel:${siteConfig.phone}`} className="block text-lg font-black text-white hover:text-blue-500 transition-colors">{siteConfig.phone}</a>
+                <a href={`tel:${siteConfig.phone}`} className="block text-lg font-bold text-white hover:text-blue-500 transition-colors">{siteConfig.phone}</a>
                 <a href={`mailto:${siteConfig.email}`} className="block text-sm font-medium hover:text-blue-500 transition-colors">{siteConfig.email}</a>
               </div>
             </div>
@@ -120,10 +120,10 @@ export function Footer() {
 
         {/* Official sources */}
         <div className="mt-20 border-t border-white/5 pt-10">
-          <p className="mb-6 text-[10px] font-black uppercase tracking-[0.2em] text-white/30 text-center">
+          <p className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-white/30 text-center">
             Sources & Ressources Officielles
           </p>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] font-bold uppercase tracking-widest">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-xs font-bold uppercase tracking-widest">
             {officialSources.map((source) => (
               <a
                 key={source.url}
@@ -139,7 +139,7 @@ export function Footer() {
         </div>
 
         {/* Social + Legal */}
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-8 border-t border-white/5 pt-10 text-[10px] font-bold uppercase tracking-widest text-slate-600">
+        <div className="mt-12 flex flex-wrap items-center justify-between gap-8 border-t border-white/5 pt-10 text-xs font-bold uppercase tracking-widest text-slate-600">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name} — Excellence Mauricienne.</p>
           <div className="flex gap-8">
             <Link href="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</Link>

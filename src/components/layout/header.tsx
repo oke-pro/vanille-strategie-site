@@ -79,13 +79,13 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white transition-transform group-hover:scale-110 group-hover:rotate-3">
-            <span className="text-xl font-black">V</span>
+            <span className="text-xl font-bold">V</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-black leading-none tracking-tighter text-slate-950 uppercase">
+            <span className="text-lg font-bold leading-none tracking-tighter text-slate-950 uppercase">
               Vanille Stratégie
             </span>
-            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-600 uppercase mt-0.5">
+            <span className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase mt-0.5">
               Expertise Maurice
             </span>
           </div>
@@ -99,7 +99,7 @@ export function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "rounded-full px-4 py-2 text-xs font-black uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
+                    "rounded-full px-4 py-2 text-xs font-bold uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
                     "text-slate-600"
                   )}
                 >
@@ -108,7 +108,7 @@ export function Header() {
               ) : (
                 <>
                   <button className={cn(
-                    "flex items-center gap-1 rounded-full px-4 py-2 text-xs font-black uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
+                    "flex items-center gap-1 rounded-full px-4 py-2 text-xs font-bold uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
                     "text-slate-600 group-hover:text-slate-950 group-hover:bg-slate-50"
                   )}>
                     {item.label}
@@ -140,16 +140,16 @@ export function Header() {
           <div className="hidden flex-col items-end md:flex">
             <a
               href={`tel:${siteConfig.phone}`}
-              className="flex items-center gap-2 text-xs font-black text-slate-950 hover:text-blue-600 transition-colors"
+              className="flex items-center gap-2 text-xs font-bold text-slate-950 hover:text-blue-600 transition-colors"
             >
               <Phone className="h-3 w-3" />
               {siteConfig.phone}
             </a>
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Disponible 7j/7</span>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Disponible 7j/7</span>
           </div>
           
           <Link href="/contact" className="hidden sm:block">
-            <Button className="h-11 rounded-full bg-slate-950 px-6 text-xs font-black uppercase tracking-widest shadow-xl shadow-slate-200 transition-all hover:bg-slate-800 hover:shadow-slate-300 hover:-translate-y-0.5">
+            <Button className="h-11 rounded-full bg-slate-950 px-6 text-xs font-bold uppercase tracking-widest shadow-xl shadow-slate-200 transition-all hover:bg-slate-800 hover:shadow-slate-300 hover:-translate-y-0.5">
               Étude gratuite
             </Button>
           </Link>
@@ -168,14 +168,14 @@ export function Header() {
                     {"href" in item ? (
                       <Link
                         href={item.href}
-                        className="block px-4 py-3 text-xl font-black tracking-tighter text-slate-950"
+                        className="block px-4 py-3 text-xl font-bold tracking-tighter text-slate-950"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.label}
                       </Link>
                     ) : (
                       <>
-                        <p className="px-4 pt-6 pb-2 text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">
+                        <p className="px-4 pt-6 pb-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
                           {item.label}
                         </p>
                         <div className="grid gap-1">
@@ -196,7 +196,7 @@ export function Header() {
                 ))}
                 <div className="mt-8 px-4">
                   <Link href="/contact" onClick={() => setMobileOpen(false)}>
-                    <Button className="h-16 w-full rounded-2xl bg-slate-950 text-lg font-black tracking-tight shadow-2xl">
+                    <Button className="h-16 w-full rounded-2xl bg-slate-950 text-lg font-bold tracking-tight shadow-2xl">
                       Démarrer mon projet
                     </Button>
                   </Link>

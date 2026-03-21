@@ -49,7 +49,7 @@ export function OkeTeaser() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-blue-400">
               Innovation Fintech Maurice
             </div>
-            <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl lg:text-6xl leading-[1.1]">
+            <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl leading-[1.1]">
               Votre comptabilit&eacute; <br />
               <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">en temps r&eacute;el</span>
             </h2>
@@ -103,10 +103,10 @@ export function OkeTeaser() {
                 </div>
                 <div className="flex items-center gap-2 rounded-lg bg-slate-950 px-3 py-1.5 border border-white/5">
                   <Globe className="h-3 w-3 text-slate-500" />
-                  <span className="text-[10px] text-slate-400 font-medium">dashboard.oke.pro/maurice-ltd</span>
+                  <span className="text-xs text-slate-400 font-medium">dashboard.oke.pro/maurice-ltd</span>
                 </div>
                 <div className="h-8 w-8 rounded-full bg-blue-600/20 border border-blue-500/20 flex items-center justify-center">
-                  <div className="h-5 w-5 rounded-full bg-blue-500 flex items-center justify-center text-[10px] font-bold">DL</div>
+                  <div className="h-5 w-5 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold">DL</div>
                 </div>
               </div>
               
@@ -115,11 +115,11 @@ export function OkeTeaser() {
                 <div className="flex items-center justify-between mb-8">
                   <div>
                     <h4 className="text-xl font-bold">Vue d&apos;ensemble</h4>
-                    <p className="text-[10px] text-slate-500 mt-1 uppercase tracking-widest font-black">Mis à jour il y a 2 min</p>
+                    <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-black">Mis à jour il y a 2 min</p>
                   </div>
                   <div className="flex gap-2">
-                    <div className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-bold">Période: Mars 2024</div>
-                    <div className="px-3 py-1.5 rounded-lg bg-blue-600 text-[10px] font-bold">Export PDF</div>
+                    <div className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs font-bold">Période: Mars 2024</div>
+                    <div className="px-3 py-1.5 rounded-lg bg-blue-600 text-xs font-bold">Export PDF</div>
                   </div>
                 </div>
                 
@@ -130,10 +130,10 @@ export function OkeTeaser() {
                     { label: "TVA à payer", value: "€ 42,100", trend: "-2%" }
                   ].map((stat, i) => (
                     <div key={i} className="rounded-2xl bg-slate-950/50 border border-white/5 p-5 transition-transform hover:scale-105">
-                      <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">{stat.label}</p>
+                      <p className="text-xs text-slate-500 font-black uppercase tracking-widest">{stat.label}</p>
                       <div className="flex items-end justify-between mt-2">
                         <p className="text-xl font-black">{stat.value}</p>
-                        <p className={`text-[10px] font-black ${stat.trend.startsWith('+') ? 'text-emerald-400' : 'text-rose-400'}`}>
+                        <p className={`text-xs font-black ${stat.trend.startsWith('+') ? 'text-emerald-400' : 'text-rose-400'}`}>
                           {stat.trend}
                         </p>
                       </div>
@@ -151,7 +151,7 @@ export function OkeTeaser() {
                           style={{ height: `${h}%` }}
                         />
                         {/* Tooltip on hover */}
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-white text-slate-950 text-[10px] font-black px-2 py-1 rounded shadow-xl">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/bar:opacity-100 transition-opacity bg-white text-slate-950 text-xs font-black px-2 py-1 rounded shadow-xl">
                           {h}k
                         </div>
                       </div>
@@ -177,9 +177,9 @@ export function OkeTeaser() {
                         <div key={i} className="flex items-center justify-between border-b border-white/5 pb-2">
                           <div className="flex items-center gap-2">
                             <div className="h-6 w-6 rounded-full bg-white/5" />
-                            <p className="text-[10px] text-slate-300 font-medium">Shopify Order #129{i}</p>
+                            <p className="text-xs text-slate-300 font-medium">Shopify Order #129{i}</p>
                           </div>
-                          <p className="text-[10px] font-black text-emerald-400">+ €450.00</p>
+                          <p className="text-xs font-black text-emerald-400">+ €450.00</p>
                         </div>
                       ))}
                     </div>
@@ -192,7 +192,7 @@ export function OkeTeaser() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                        <p className="text-[10px] text-slate-300 font-medium">MCB Business Account</p>
+                        <p className="text-xs text-slate-300 font-medium">MCB Business Account</p>
                       </div>
                       <span className="text-[8px] bg-emerald-500/10 text-emerald-500 px-2 py-0.5 rounded-full font-black uppercase">En direct</span>
                     </div>

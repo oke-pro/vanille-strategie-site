@@ -59,7 +59,7 @@ export function LeadCaptureSection() {
   }
 
   return (
-    <section className="bg-slate-50 py-24 sm:py-32" id="contact-rapide">
+    <section className="bg-amber-50/20 py-24 sm:py-32" id="contact-rapide">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-[3rem] border border-white bg-white/70 p-8 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)] backdrop-blur-2xl sm:p-16">
           {/* Decorative Glow */}
@@ -69,7 +69,7 @@ export function LeadCaptureSection() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-blue-600">
               Étude de faisabilité gratuite
             </div>
-            <h2 className="text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl">
+            <h2 className="text-4xl font-bold tracking-tighter text-slate-950 sm:text-5xl">
               Prêt à franchir le pas ?
             </h2>
             <p className="mt-6 text-lg text-slate-600 font-light leading-relaxed">
@@ -79,7 +79,7 @@ export function LeadCaptureSection() {
 
           <form onSubmit={handleSubmit} className="relative z-10 mt-12 grid gap-6 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="prenom" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Prénom</Label>
+              <Label htmlFor="prenom" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Prénom</Label>
               <Input 
                 name="prenom" 
                 id="prenom" 
@@ -89,7 +89,7 @@ export function LeadCaptureSection() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Email professionnel</Label>
+              <Label htmlFor="email" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Email professionnel</Label>
               <Input 
                 name="email" 
                 id="email" 
@@ -100,7 +100,7 @@ export function LeadCaptureSection() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="telephone" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Téléphone / WhatsApp</Label>
+              <Label htmlFor="telephone" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Téléphone / WhatsApp</Label>
               <Input 
                 name="telephone" 
                 id="telephone" 
@@ -110,7 +110,7 @@ export function LeadCaptureSection() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="profil" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre Profil actuel</Label>
+              <Label htmlFor="profil" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Votre Profil actuel</Label>
               <select
                 name="profil"
                 value={profil}
@@ -145,15 +145,15 @@ export function LeadCaptureSection() {
           </form>
 
           <div className="relative z-10 mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 border-t border-slate-100 pt-8">
-            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400">
               <ShieldCheck className="h-4 w-4 text-emerald-500" />
               Données 100% sécurisées
             </div>
-            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+            <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400">
               <Zap className="h-4 w-4 text-yellow-500" />
               Réponse sous 24h
             </div>
-            <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+            <div className="text-xs font-black uppercase tracking-widest text-slate-400">
               Appel direct : <a href={`tel:${siteConfig.phone}`} className="text-blue-600 hover:underline">{siteConfig.phone}</a>
             </div>
           </div>

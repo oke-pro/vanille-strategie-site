@@ -19,10 +19,9 @@ export function HeroSection() {
         />
       </div>
       
-      {/* Premium Multi-layer Gradients */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/20" />
-      <div className="absolute inset-0 bg-blue-900/10 mix-blend-overlay" />
+      {/* Lighter gradients — let Maurice shine through */}
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
 
       <div className="relative mx-auto w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -36,7 +35,7 @@ export function HeroSection() {
             </div>
 
             {/* Massive Headline */}
-            <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tighter text-white sm:text-7xl lg:text-8xl">
+            <h1 className="text-5xl font-bold leading-[1.05] tracking-tighter text-white sm:text-7xl lg:text-8xl">
               L&apos;Île Maurice
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">

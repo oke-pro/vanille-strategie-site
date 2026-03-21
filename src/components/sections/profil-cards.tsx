@@ -22,7 +22,7 @@ export function ProfilCards() {
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-blue-600">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
             Votre Projet, Votre Parcours
           </div>
           <h2 className="animate-[fadeSlideUp_0.6s_ease-out] text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl lg:text-6xl">
@@ -74,7 +74,7 @@ export function ProfilCards() {
                 </div>
 
                 <div className="space-y-3">
-                  <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-400">
+                  <p className="text-xs font-bold uppercase tracking-[0.25em] text-blue-400">
                     {p.subtitle}
                   </p>
                   <h3 className="text-3xl font-bold tracking-tight">{p.title}</h3>
@@ -87,7 +87,7 @@ export function ProfilCards() {
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 border border-white/20 transition-all group-hover:bg-blue-600 group-hover:border-blue-400">
                     <ArrowUpRight className="h-4 w-4" />
                   </div>
-                  <span className="tracking-wide uppercase text-[10px] font-black">Explorer la solution</span>
+                  <span className="tracking-wide uppercase text-[10px] font-bold">Explorer la solution</span>
                 </div>
               </div>
             </Link>

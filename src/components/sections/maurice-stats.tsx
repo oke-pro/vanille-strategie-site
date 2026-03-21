@@ -12,7 +12,7 @@ export function MauriceStats() {
         className="object-cover"
         quality={80}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/85 via-blue-900/80 to-slate-900/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-teal-900/50 to-slate-900/70" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
