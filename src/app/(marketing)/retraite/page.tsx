@@ -43,7 +43,7 @@ export default function RetraitePage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image 
             src="/images/lifestyle-maurice.jpg" 
             alt="Retraite à Maurice" 
@@ -56,12 +56,12 @@ export default function RetraitePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
 
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-yellow-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-yellow-500/10 rounded-full blur-2xl delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="inline-block rounded-full border border-amber-400/30 bg-amber-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-amber-300 backdrop-blur-sm">
               Parcours Retraité — Vanille Stratégie
             </p>
@@ -97,7 +97,7 @@ export default function RetraitePage() {
             {benefits.map((b, idx) => (
               <Card 
                 key={b.title} 
-                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-colors">
@@ -115,7 +115,7 @@ export default function RetraitePage() {
       <section className="bg-slate-50 py-24 relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-[fadeSlideUp_0.8s_ease-out]">
+            <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-black uppercase tracking-widest mb-6 border border-amber-200">
                 <TrendingUp className="h-3 w-3" />
                 <span>Mis à jour — Finance Act 2025</span>
@@ -143,7 +143,7 @@ export default function RetraitePage() {
               </ul>
             </div>
             
-            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <Image src="/images/villa-luxe.jpg" alt="Villa Maurice" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl">
@@ -241,7 +241,7 @@ export default function RetraitePage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-amber-500/20 text-white border-none transition-all duration-300">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-amber-500/20 text-white border-none transition-all duration-300">
                 Planifier mon départ
               </Button>
             </Link>

@@ -43,11 +43,11 @@ export function FunnelTimeline() {
                 
                 <div className="relative z-10 flex h-full flex-col rounded-[2.5rem] border border-white bg-white/60 p-10 shadow-xl shadow-slate-200/50 backdrop-blur-2xl transition-all duration-500 hover:bg-white hover:shadow-2xl hover:-translate-y-2 group">
                   {/* Step Number Badge */}
-                  <div className="absolute -top-4 -left-4 flex h-10 w-10 items-center justify-center rounded-full bg-slate-950 text-xs font-black text-white shadow-lg transition-transform group-hover:scale-110">
+                  <div className="absolute -top-4 -left-4 flex h-10 w-10 items-center justify-center rounded-full bg-slate-950 text-xs font-black text-white shadow-lg">
                     0{s.step}
                   </div>
 
-                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-200 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-blue-300">
+                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-200 transition-all duration-500 group-hover:rotate-3 group-hover:shadow-blue-300">
                     <Icon className="h-8 w-8" />
                   </div>
 
@@ -66,7 +66,7 @@ export function FunnelTimeline() {
           })}
         </div>
 
-        <div className="mt-20 text-center animate-[fadeSlideUp_0.8s_ease-out_0.4s_both]">
+        <div className="mt-20 text-center">
           <Link href="/contact">
             <Button size="lg" className="h-16 px-10 rounded-full bg-slate-950 text-white text-lg font-bold shadow-2xl transition-all hover:bg-slate-900 hover:shadow-slate-300 hover:-translate-y-1 group">
               D&eacute;marrer mon projet

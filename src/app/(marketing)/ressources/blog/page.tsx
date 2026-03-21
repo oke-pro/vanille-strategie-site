@@ -156,7 +156,7 @@ const articles = [
   {
     slug: "reseaux-entrepreneurs-clubs-affaires-maurice",
     title: "Réseaux d'entrepreneurs et clubs d'affaires à Maurice",
-    excerpt: "MCCI, JCI, CCIFM, AmCham — construire son réseau professionnel sur l'île.",
+    excerpt: "MCCI, JCI, CJD Maurice, CCIFM, AmCham — construire son réseau professionnel sur l'île.",
     category: "Guide",
     date: "Mars 2026",
     readTime: "7 min",

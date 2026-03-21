@@ -45,7 +45,7 @@ export default function DigitalNomadPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image 
             src="/images/digital-nomad-maurice.jpg" 
             alt="Digital Nomad à Maurice" 
@@ -58,12 +58,12 @@ export default function DigitalNomadPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-teal-900 via-transparent to-transparent" />
 
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="inline-block rounded-full border border-teal-400/30 bg-teal-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-teal-300 backdrop-blur-sm">
               Parcours Digital Nomad — Vanille Stratégie
             </p>
@@ -106,7 +106,7 @@ export default function DigitalNomadPage() {
             {advantages.map((a, idx) => (
               <Card 
                 key={a.title} 
-                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-50 text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition-colors">
@@ -139,7 +139,7 @@ export default function DigitalNomadPage() {
             {steps.map((s, idx) => (
               <div 
                 key={s.step} 
-                className="group relative rounded-3xl border border-slate-200 bg-white/80 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group relative rounded-3xl border border-slate-200 bg-white/80 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="absolute top-4 right-4 text-4xl font-black text-slate-100 group-hover:text-teal-50 transition-colors">
@@ -162,7 +162,7 @@ export default function DigitalNomadPage() {
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-[fadeSlideUp_0.8s_ease-out]">
+            <div>
               <p className="text-sm font-black uppercase tracking-[0.2em] text-teal-400 mb-4">La Tech au service de la Compta</p>
               <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight">
                 Vos ventes e-commerce <br />
@@ -188,7 +188,7 @@ export default function DigitalNomadPage() {
               </div>
             </div>
 
-            <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                <Image 
                 src="/images/bureau-moderne.jpg" 
                 alt="Pilotage d'entreprise" 
@@ -257,7 +257,7 @@ export default function DigitalNomadPage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             <Link href="/contact">
-              <Button size="lg" className="bg-white hover:bg-teal-50 hover:scale-105 text-teal-900 px-12 h-16 text-lg font-bold shadow-2xl transition-all duration-300">
+              <Button size="lg" className="bg-white hover:bg-teal-50 text-teal-900 px-12 h-16 text-lg font-bold shadow-2xl transition-all duration-300">
                 Lancer mon étude gratuite
               </Button>
             </Link>

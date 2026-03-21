@@ -33,7 +33,7 @@ export default function AProposPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[60vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image 
             src="/images/caudan.jpg" 
             alt="Grand Baie Maurice" 
@@ -46,7 +46,7 @@ export default function AProposPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="inline-block rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-blue-300 backdrop-blur-sm">
               L&apos;histoire — Groupe Vanille Stratégie
             </p>
@@ -68,7 +68,7 @@ export default function AProposPage() {
             {serviceGroups.map((group, idx) => (
               <Card 
                 key={group.entity} 
-                className="group relative flex flex-col p-8 md:p-12 border-none bg-slate-50 transition-all duration-300 hover:bg-white hover:shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group relative flex flex-col p-8 md:p-12 border-none bg-slate-50 transition-all duration-300 hover:bg-white hover:shadow-2xl"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="mb-8">
@@ -100,8 +100,8 @@ export default function AProposPage() {
           </div>
 
           {/* OKE Teaser */}
-          <div className="mt-12 group relative rounded-[2rem] overflow-hidden bg-slate-900 p-8 md:p-16 text-white shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
-            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl transition-transform group-hover:scale-110" />
+          <div className="mt-12 group relative rounded-[2rem] overflow-hidden bg-slate-900 p-8 md:p-16 text-white shadow-2xl">
+            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
             
             <div className="relative flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
@@ -145,7 +145,7 @@ export default function AProposPage() {
             {values.map((v, idx) => (
               <Card 
                 key={v.title} 
-                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-slate-100 bg-white animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-slate-100 bg-white"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -163,7 +163,7 @@ export default function AProposPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-16">
-            <div className="relative w-64 h-64 shrink-0 animate-[fadeSlideUp_0.8s_ease-out]">
+            <div className="relative w-64 h-64 shrink-0">
               <div className="absolute inset-0 bg-blue-600 rounded-[3rem] rotate-6 opacity-10" />
               <div className="relative h-full w-full rounded-[3rem] overflow-hidden border-4 border-slate-50 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
                 <Image 
@@ -175,7 +175,7 @@ export default function AProposPage() {
               </div>
             </div>
             
-            <div className="animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest mb-4">
                 <Medal className="h-3 w-3" />
                 <span>Expert-Comptable DEC</span>

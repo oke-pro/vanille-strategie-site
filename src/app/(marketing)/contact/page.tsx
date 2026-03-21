@@ -32,7 +32,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-5">
             {/* Formulaire */}
-            <div className="lg:col-span-3 animate-[fadeSlideUp_0.8s_ease-out]">
+            <div className="lg:col-span-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-black uppercase tracking-widest mb-6 border border-blue-100">
                 <MessageSquare className="h-3 w-3" />
                 <span>Contact Direct</span>
@@ -49,11 +49,11 @@ export default function ContactPage() {
             </div>
 
             {/* Sidebar contact */}
-            <div className="lg:col-span-2 animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div className="lg:col-span-2">
               <div className="sticky top-24 space-y-6">
                 {/* Didier card */}
                 <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-xl shadow-slate-200/50 relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-12 -mt-12 transition-all group-hover:scale-110" />
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-12 -mt-12" />
                   
                   <div className="flex items-center gap-4 relative">
                     <div className="relative h-16 w-16 shrink-0 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-black text-xl shadow-lg">

@@ -36,7 +36,7 @@ export default function RoutesDubaiMauricePage() {
           </Link>
 
           <div className="mt-4 flex items-center gap-2">
-            <span className="animate-pulse rounded-full bg-red-600/30 px-3 py-0.5 text-xs font-bold uppercase tracking-wide text-red-300">
+            <span className="rounded-full bg-red-600/30 px-3 py-0.5 text-xs font-bold uppercase tracking-wide text-red-300">
               Urgent &mdash; Mars 2026
             </span>
             <span className="text-xs text-slate-400">&middot; 22 min</span>

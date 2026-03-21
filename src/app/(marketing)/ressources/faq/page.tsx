@@ -36,7 +36,7 @@ export default function FaqPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative py-24 overflow-hidden flex items-center bg-slate-900">
-        <div className="absolute inset-0 opacity-20 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0 opacity-20">
           <Image 
             src="/images/flamboyant-plage.jpg" 
             alt="FAQ Maurice" 
@@ -48,7 +48,7 @@ export default function FaqPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/90 to-slate-900" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-3xl mx-auto animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-black uppercase tracking-widest mb-6 border border-blue-500/20 backdrop-blur-sm">
               <HelpCircle className="h-3 w-3" />
               <span>Centre d&apos;Aide & Ressources</span>
@@ -74,7 +74,7 @@ export default function FaqPage() {
               <AccordionItem 
                 key={idx} 
                 value={`item-${idx}`} 
-                className="group rounded-2xl border border-slate-100 bg-white shadow-sm px-6 py-2 transition-all hover:shadow-md hover:border-blue-100 data-[state=open]:border-blue-200 data-[state=open]:shadow-lg animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group rounded-2xl border border-slate-100 bg-white shadow-sm px-6 py-2 transition-all hover:shadow-md hover:border-blue-100 data-[state=open]:border-blue-200 data-[state=open]:shadow-lg"
                 style={{ animationDelay: `${idx * 0.05}s` }}
               >
                 <AccordionTrigger className="text-left text-lg font-bold text-slate-900 hover:no-underline py-4 group-data-[state=open]:text-blue-600 transition-colors">
@@ -116,7 +116,7 @@ export default function FaqPage() {
               { title: "Réseau Local", desc: "Partenaires directs avec l'EDB, la MRA et le CBRD.", icon: Globe },
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm group hover:bg-white/10 transition-colors">
-                <item.icon className="h-10 w-10 text-blue-400 mb-6 group-hover:scale-110 transition-transform" />
+                <item.icon className="h-10 w-10 text-blue-400 mb-6" />
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed font-medium">{item.desc}</p>
               </div>

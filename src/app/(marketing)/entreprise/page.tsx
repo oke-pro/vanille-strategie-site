@@ -35,7 +35,7 @@ export default function EntreprisePage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image 
             src="/images/port-louis.jpg" 
             alt="Implantation entreprise Maurice" 
@@ -48,12 +48,12 @@ export default function EntreprisePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
 
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-violet-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-pink-500/10 rounded-full blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-violet-500/10 rounded-full blur-2xl delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="inline-block rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-purple-300 backdrop-blur-sm">
               Parcours Entreprise — Vanille Stratégie
             </p>
@@ -89,7 +89,7 @@ export default function EntreprisePage() {
             {services.map((s, idx) => (
               <Card 
                 key={s.title} 
-                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-slate-100 bg-white"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
@@ -132,7 +132,7 @@ export default function EntreprisePage() {
             ].map((a, idx) => (
               <div 
                 key={a.label} 
-                className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <p className="text-4xl font-black text-white mb-2">{a.stat}</p>
@@ -194,7 +194,7 @@ export default function EntreprisePage() {
           </p>
           <div className="mt-12">
             <Link href="/contact">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-purple-500/20 text-white border-none transition-all duration-300">
+              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-purple-500/20 text-white border-none transition-all duration-300">
                 Lancer mon étude d&apos;implantation
               </Button>
             </Link>

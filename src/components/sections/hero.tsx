@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="group relative min-h-[95vh] overflow-hidden flex items-center">
       {/* Background image with parallax-like effect */}
-      <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+      <div className="absolute inset-0">
         <Image
           src="/images/hero-paradise.jpg"
           alt="Île Maurice — Le Morne Brabant"
@@ -53,7 +53,7 @@ export function HeroSection() {
               <Link href="/contact" className="animate-[fadeSlideUp_0.8s_ease-out_0.4s_both]">
                 <Button
                   size="lg"
-                  className="h-16 rounded-full bg-blue-600 px-10 text-lg font-bold shadow-[0_20px_50px_rgba(37,99,235,0.3)] transition-all hover:bg-blue-500 hover:shadow-[0_20px_50px_rgba(37,99,235,0.5)] hover:-translate-y-1"
+                  className="h-16 rounded-full bg-blue-600 px-10 text-lg font-bold shadow-[0_20px_50px_rgba(37,99,235,0.3)] transition-all hover:bg-blue-700 hover:shadow-[0_20px_50px_rgba(37,99,235,0.5)] hover:-translate-y-1"
                 >
                   Étude de faisabilité gratuite
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -104,7 +104,7 @@ export function HeroSection() {
           <div className="grid grid-cols-2 gap-12 sm:grid-cols-4 lg:gap-20">
             {trustStats.map((stat) => (
               <div key={stat.label} className="group relative text-center sm:text-left">
-                <p className="text-4xl font-black text-white sm:text-5xl lg:text-6xl tracking-tight transition-transform group-hover:scale-105">
+                <p className="text-4xl font-black text-white sm:text-5xl lg:text-6xl tracking-tight">
                   {stat.value}
                   <span className="text-blue-500">
                     {stat.suffix}

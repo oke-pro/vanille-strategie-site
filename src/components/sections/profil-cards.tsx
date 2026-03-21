@@ -25,10 +25,10 @@ export function ProfilCards() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
             Votre Projet, Votre Parcours
           </div>
-          <h2 className="animate-[fadeSlideUp_0.6s_ease-out] text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl lg:text-6xl">
+          <h2 className="text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl lg:text-6xl">
             Comment souhaitez-vous vivre à Maurice ?
           </h2>
-          <p className="mt-8 animate-[fadeSlideUp_0.7s_ease-out] text-lg leading-relaxed text-slate-600 font-light lg:text-xl">
+          <p className="mt-8 text-lg leading-relaxed text-slate-600 font-light lg:text-xl">
             Chaque expatriation est une aventure singulière. Notre cabinet a conçu des écosystèmes dédiés pour chaque profil, de l&apos;entrepreneur tech au retraité en quête de sérénité.
           </p>
         </div>
@@ -48,7 +48,7 @@ export function ProfilCards() {
                 src={imageMap[p.slug] || "/images/hero-maurice.jpg"}
                 alt={p.title}
                 fill
-                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                className="object-cover"
               />
               
               {/* Sophisticated Gradient Overlay */}
@@ -57,9 +57,9 @@ export function ProfilCards() {
               
               <div className="relative flex h-full flex-col justify-end p-10 text-white">
                 {/* Glass Icon */}
-                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/20 shadow-xl transition-all duration-500 group-hover:bg-blue-600/30 group-hover:border-blue-400/50 group-hover:scale-110 group-hover:rotate-3">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/20 shadow-xl transition-all duration-500 group-hover:bg-blue-600/30 group-hover:border-blue-400/50 group-hover:rotate-3">
                   <svg
-                    className="h-8 w-8 text-white transition-transform duration-500 group-hover:scale-110"
+                    className="h-8 w-8 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}

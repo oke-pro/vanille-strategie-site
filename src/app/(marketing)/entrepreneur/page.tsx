@@ -42,7 +42,7 @@ export default function EntrepreneurPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image
             src="/images/entrepreneur-maurice.jpg"
             alt="Entrepreneur à Maurice"
@@ -55,12 +55,12 @@ export default function EntrepreneurPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
 
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="inline-block rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-blue-300 backdrop-blur-sm">
               Parcours Entrepreneur — Vanille Stratégie
             </p>
@@ -104,7 +104,7 @@ export default function EntrepreneurPage() {
             {companyTypes.map((c, idx) => (
               <Card
                 key={c.shortName}
-                className="group relative flex flex-col overflow-hidden border-none shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="group relative flex flex-col overflow-hidden border-none shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 {/* Header with Gradient */}
@@ -178,7 +178,7 @@ export default function EntrepreneurPage() {
                 L&apos;Occupation Permit (OP) est votre sésame pour vivre et travailler à Maurice. Nous identifions la catégorie la plus agile pour votre projet.
               </p>
             </div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-amber-600 text-sm font-bold border border-amber-100 shadow-sm animate-pulse">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-amber-600 text-sm font-bold border border-amber-100 shadow-sm">
               <ShieldCheck className="h-4 w-4" />
               <span>Guidelines EDB du 19 août 2025</span>
             </div>
@@ -188,7 +188,7 @@ export default function EntrepreneurPage() {
             {investorPermits.map((p, idx) => (
               <Card 
                 key={p.type} 
-                className="p-8 transition-all duration-300 hover:shadow-xl border-none bg-white animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="p-8 transition-all duration-300 hover:shadow-xl border-none bg-white"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 mb-6">
@@ -228,7 +228,7 @@ export default function EntrepreneurPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-16 lg:grid-cols-2">
-            <div className="animate-[fadeSlideUp_0.8s_ease-out]">
+            <div>
               <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl leading-tight">
                 L&apos;accompagnement <br />
                 <span className="text-blue-600 underline decoration-blue-100 underline-offset-8">zéro sous-traitance</span>
@@ -249,7 +249,7 @@ export default function EntrepreneurPage() {
                   { text: "Dashboard OKE inclus", icon: Zap },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100 transition-colors hover:bg-white hover:shadow-md group">
-                    <item.icon className="h-4 w-4 text-blue-500 group-hover:scale-110 transition-transform" />
+                    <item.icon className="h-4 w-4 text-blue-500" />
                     <span className="text-sm font-bold text-slate-700 leading-tight">{item.text}</span>
                   </div>
                 ))}
@@ -262,7 +262,7 @@ export default function EntrepreneurPage() {
               </div>
             </div>
             
-            <div className="relative aspect-square md:aspect-auto md:h-[600px] overflow-hidden rounded-3xl shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div className="relative aspect-square md:aspect-auto md:h-[600px] overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/images/grand-baie.jpg"
                 alt="Grand Baie, Maurice"
@@ -336,12 +336,12 @@ export default function EntrepreneurPage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-blue-500/20 transition-all duration-300">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-blue-500/20 transition-all duration-300">
                 Lancer mon projet
               </Button>
             </Link>
             <Link href="/services/creation-societe">
-              <Button size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:scale-105 backdrop-blur-sm px-12 h-16 text-lg font-bold transition-all duration-300">
+              <Button size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm px-12 h-16 text-lg font-bold transition-all duration-300">
                 Détails des services
               </Button>
             </Link>

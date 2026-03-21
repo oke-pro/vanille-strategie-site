@@ -26,7 +26,7 @@ export default function DidierPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="group relative min-h-[70vh] overflow-hidden flex items-center">
-        <div className="absolute inset-0 transition-transform duration-10000 group-hover:scale-110">
+        <div className="absolute inset-0">
           <Image 
             src="/images/bureau-moderne.jpg" 
             alt="Didier Laroussinie - Vanille Stratégie" 
@@ -39,13 +39,13 @@ export default function DidierPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
 
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-3 gap-12 items-center">
-            <div className="lg:col-span-2 animate-[fadeSlideUp_0.8s_ease-out]">
+            <div className="lg:col-span-2">
               <p className="inline-block rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-blue-300 backdrop-blur-sm">
                 Direction & Expertise — Vanille Stratégie
               </p>
@@ -77,7 +77,7 @@ export default function DidierPage() {
               </div>
             </div>
             
-            <div className="hidden lg:flex justify-center animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
+            <div className="hidden lg:flex justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full" />
                 <Image
@@ -143,7 +143,7 @@ export default function DidierPage() {
                 desc: "Référence de l'implantation à Maurice. Accompagnement de centaines d'investisseurs. Supervision de BD Star (MIPA).",
               },
             ].map((item, idx) => (
-              <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group animate-[fadeSlideUp_0.8s_ease-out_both]" style={{ animationDelay: `${idx * 0.1}s` }}>
+              <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group" style={{ animationDelay: `${idx * 0.1}s` }}>
                 {/* Dot */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-100 group-hover:bg-blue-600 group-hover:text-white text-slate-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors duration-300">
                   <item.icon className="h-5 w-5" />
@@ -175,10 +175,10 @@ export default function DidierPage() {
             ].map((c, idx) => (
               <div 
                 key={c.label} 
-                className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm text-center transition-all hover:bg-white/10 group animate-[fadeSlideUp_0.8s_ease-out_both]"
+                className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm text-center transition-all hover:bg-white/10 group"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
-                <c.icon className="h-8 w-8 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <c.icon className="h-8 w-8 text-blue-400 mx-auto mb-4" />
                 <p className="text-4xl font-black text-white mb-2">{c.value}</p>
                 <p className="text-xs font-black uppercase tracking-widest text-blue-400 mb-1">{c.label}</p>
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-tighter">{c.sub}</p>
@@ -204,7 +204,7 @@ export default function DidierPage() {
               </p>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 text-white px-10 h-16 text-lg font-bold border-none shadow-2xl transition-all duration-300">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 h-16 text-lg font-bold border-none shadow-2xl transition-all duration-300">
                     Réserver une consultation
                   </Button>
                 </Link>

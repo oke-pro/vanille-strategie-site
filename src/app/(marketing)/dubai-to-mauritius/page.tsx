@@ -29,7 +29,7 @@ export default function DubaiToMauritiusPage() {
         <Image src="/images/hero-paradise.jpg" alt="Maurice paradis tropical" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/60" />
         <div className="relative mx-auto flex min-h-[60vh] max-w-7xl items-center px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
+          <div className="max-w-3xl">
             <p className="mb-3 inline-block rounded-full border border-red-400/30 bg-red-500/10 px-4 py-1 text-sm font-medium uppercase tracking-widest text-red-300">
               Opportunité 2026
             </p>

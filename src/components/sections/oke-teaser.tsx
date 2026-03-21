@@ -75,7 +75,7 @@ export function OkeTeaser() {
 
             <div className="mt-12 flex flex-wrap gap-5">
               <Link href="/contact">
-                <Button size="lg" className="h-14 px-8 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-xl shadow-blue-900/20 border-none transition-all hover:-translate-y-1">
+                <Button size="lg" className="h-14 px-8 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-xl shadow-blue-900/20 border-none transition-all hover:-translate-y-1">
                   Demander une d&eacute;mo
                 </Button>
               </Link>
@@ -86,7 +86,7 @@ export function OkeTeaser() {
           </div>
 
           {/* Right — Realistic Dashboard Mockup */}
-          <div className="relative lg:ml-4 animate-[fadeSlideUp_1s_ease-out]">
+          <div className="relative lg:ml-4">
             {/* Background Glow for Mockup */}
             <div className="absolute -inset-10 bg-blue-600/20 rounded-full blur-[80px]" />
             
@@ -126,7 +126,7 @@ export function OkeTeaser() {
                     { label: "Ventes", value: "€ 284,000", trend: "+24%" },
                     { label: "TVA à payer", value: "€ 42,100", trend: "-2%" }
                   ].map((stat, i) => (
-                    <div key={i} className="rounded-2xl bg-slate-950/50 border border-white/5 p-5 transition-transform hover:scale-105">
+                    <div key={i} className="rounded-2xl bg-slate-950/50 border border-white/5 p-5">
                       <p className="text-xs text-slate-500 font-black uppercase tracking-widest">{stat.label}</p>
                       <div className="flex items-end justify-between mt-2">
                         <p className="text-xl font-black">{stat.value}</p>
