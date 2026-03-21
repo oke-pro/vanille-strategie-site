@@ -43,14 +43,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/ressources/analyse-vat-act", changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 
-  // Articles de blog (uniquement ceux qui ont un contenu généré)
+  // Articles de blog (tous)
   const blogSlugs = [
+    "routes-financieres-dubai-maurice-transition",
     "structures-juridiques-maurice-2026",
     "fiscalite-maurice-2026",
     "permis-residence-maurice-guide-2026",
     "convention-fiscale-france-maurice",
     "quitter-dubai-pourquoi-maurice",
     "ecommerce-depuis-maurice",
+    "substance-requirements-maurice",
+    "comparatif-maurice-maroc-portugal-dubai",
+    "transfer-pricing-maurice-2025",
+    "devises-mur-conversion-maurice",
+    "edb-mauritius-role-programmes",
+    "paiements-en-ligne-maurice-stripe-alternatives",
+    "ecosysteme-tech-startups-maurice",
+    "industries-cles-maurice-opportunites",
+    "maurice-reunion-liaisons-expats-francais",
+    "infrastructures-maurice-telecom-sante-education",
+    "qualite-de-vie-maurice-lifestyle-golf-business",
+    "reseaux-entrepreneurs-clubs-affaires-maurice",
+    "ouvrir-compte-bancaire-maurice-guide",
+    "crypto-vasp-licence-maurice",
+    "succession-internationale-france-maurice",
+    "droit-travail-maurice-workers-rights-act",
+    "ecoles-internationales-maurice-education",
+    "sources-officielles-fiscalite-maurice",
   ];
 
   const blogPages = blogSlugs.map((slug) => ({
