@@ -1,12 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
-} from "@/components/ui/select";
+import { ContactForm } from "@/components/forms/contact-form";
 import { siteConfig, founder } from "@/data/site";
 import { 
   Phone, 
@@ -56,67 +50,7 @@ export default function ContactPage() {
                 Bénéficiez d&apos;une étude de faisabilité gratuite et confidentielle. Nous analysons votre projet et vous répondons sous 24h ouvrées.
               </p>
 
-              <form className="mt-12 p-8 md:p-10 rounded-3xl bg-white shadow-2xl shadow-blue-500/5 border border-slate-100 space-y-6">
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <Label htmlFor="prenom" className="text-xs font-black uppercase tracking-widest text-slate-400">Prénom *</Label>
-                    <Input id="prenom" placeholder="Ex: Jean" className="h-12 bg-slate-50/50 border-slate-200 focus:bg-white transition-all" required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="nom" className="text-xs font-black uppercase tracking-widest text-slate-400">Nom *</Label>
-                    <Input id="nom" placeholder="Ex: Dupont" className="h-12 bg-slate-50/50 border-slate-200 focus:bg-white transition-all" required />
-                  </div>
-                </div>
-                
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-xs font-black uppercase tracking-widest text-slate-400">Email Professionnel *</Label>
-                    <Input id="email" type="email" placeholder="jean.dupont@entreprise.com" className="h-12 bg-slate-50/50 border-slate-200 focus:bg-white transition-all" required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="telephone" className="text-xs font-black uppercase tracking-widest text-slate-400">Téléphone / WhatsApp</Label>
-                    <Input id="telephone" type="tel" placeholder="+33 6 00 00 00 00" className="h-12 bg-slate-50/50 border-slate-200 focus:bg-white transition-all" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="profil" className="text-xs font-black uppercase tracking-widest text-slate-400">Votre profil *</Label>
-                  <Select>
-                    <SelectTrigger className="h-12 bg-slate-50/50 border-slate-200 focus:bg-white transition-all">
-                      <SelectValue placeholder="Quel est votre projet ?" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="entrepreneur">Entrepreneur — Créer / Délocaliser</SelectItem>
-                      <SelectItem value="digital-nomad">Digital Nomad / E-commerçant</SelectItem>
-                      <SelectItem value="retraite">Retraité — S&apos;installer à Maurice</SelectItem>
-                      <SelectItem value="entreprise">Entreprise — Implanter une filiale</SelectItem>
-                      <SelectItem value="investisseur">Investisseur immobilier</SelectItem>
-                      <SelectItem value="comptabilite">Expertise Comptable / Fiscalité</SelectItem>
-                      <SelectItem value="autre">Autre demande</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-xs font-black uppercase tracking-widest text-slate-400">Détails du projet</Label>
-                  <Textarea id="message" placeholder="Décrivez brièvement votre situation et vos objectifs..." className="min-h-[150px] bg-slate-50/50 border-slate-200 focus:bg-white transition-all" />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full h-14 bg-blue-600 text-lg font-bold hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition-all group">
-                  Envoyer ma demande <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                
-                <div className="flex items-center justify-center gap-4 pt-4">
-                  <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
-                    <ShieldCheck className="h-3.5 w-3.5 text-blue-500" />
-                    Confidentialité garantie
-                  </div>
-                  <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
-                    <Clock className="h-3.5 w-3.5 text-blue-500" />
-                    Réponse sous 24h
-                  </div>
-                </div>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Sidebar contact */}
