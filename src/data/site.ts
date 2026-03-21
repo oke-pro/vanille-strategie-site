@@ -8,13 +8,13 @@ export const siteConfig = {
   description:
     "Depuis 2012, le groupe Vanille Stratégie & BD Star accompagne entrepreneurs, familles et retraités dans leur implantation à l'Île Maurice. Expert-Comptable diplômé, fiscaliste international, comptabilité temps réel.",
   url: "https://vanillestrategie.fr",
-  phone: "+230 466 6166",
-  whatsapp: "+2304666166",
-  email: "dl@vanillestrategie.com",
+  phone: "+230 59 43 74 83",
+  whatsapp: "+23059437483",
+  email: "dl@vanillestrategie.fr",
   addresses: {
     grandBaie: {
       label: "Vanille Stratégie — Conseil & Implantation",
-      line1: "Grand Baie Road",
+      line1: "Sottise Road",
       city: "Grand Baie",
       country: "Maurice",
     },
@@ -40,8 +40,8 @@ export const siteConfig = {
 
 export const founder = {
   name: "Didier Laroussinie",
-  title: "Expert-Comptable | Fiscaliste International",
-  role: "CEO — Vanille Stratégie",
+  title: "Expert-Comptable — Fiscaliste",
+  role: "CEO — Groupe Vanille Stratégie",
   experience: "40+",
   basedSince: "2015",
   specialties: [
