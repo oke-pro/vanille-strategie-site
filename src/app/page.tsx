@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { HeroSection } from "@/components/sections/hero";
 import { ProfilCards } from "@/components/sections/profil-cards";
+import { CoreServices } from "@/components/sections/core-services";
 import { MauriceStats } from "@/components/sections/maurice-stats";
 import { FunnelTimeline } from "@/components/sections/funnel-timeline";
 import { TestimonialsSection } from "@/components/sections/testimonials";
@@ -27,10 +28,13 @@ export default function HomePage() {
         {/* 1. Hero — Emotional entry + authority */}
         <HeroSection />
 
-        {/* 2. "Quel profil êtes-vous ?" — Qualification */}
+        {/* 2. Services core — Le business */}
+        <CoreServices />
+
+        {/* 3. "Quel profil êtes-vous ?" — Qualification */}
         <ProfilCards />
 
-        {/* 3. Pourquoi Maurice — Stats from EDB + VS */}
+        {/* 4. Pourquoi Maurice — Stats from EDB + VS */}
         <MauriceStats />
 
         {/* 4. Notre approche — Funnel subtil en 4 étapes */}
