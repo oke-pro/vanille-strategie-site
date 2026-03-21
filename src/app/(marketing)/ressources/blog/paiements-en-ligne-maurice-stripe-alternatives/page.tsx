@@ -5,7 +5,7 @@ import { founder, officialSources } from "@/data/site";
 
 export const metadata: Metadata = {
   title:
-    "Paiements en ligne a Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
+    "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
   description:
     "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations reglementaires et comptables.",
 };
@@ -34,7 +34,7 @@ export default function PaiementsEnLigneMauricePage() {
           </div>
 
           <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Paiements en ligne a Maurice — Stripe, Airwallex et alternatives
+            Paiements en ligne à Maurice — Stripe, Airwallex et alternatives
             pour les entreprises digitales
           </h1>
 
@@ -64,26 +64,26 @@ export default function PaiementsEnLigneMauricePage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            Le defi des paiements pour les entreprises digitales a Maurice
+            Le defi des paiements pour les entreprises digitales à Maurice
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
               Maurice attire chaque annee davantage d&apos;entrepreneurs
               digitaux : e-commercants, editeurs SaaS, freelances,
-              infopreneurs. La fiscalite est imbattable (15&nbsp;% IS, 0&nbsp;%
+              infopreneurs. La fiscalité est imbattable (15&nbsp;% IS, 0&nbsp;%
               dividendes, 0&nbsp;% plus-values), le cadre de vie exceptionnel
               et le Premium Visa facilite l&apos;installation.
             </p>
             <p>
-              Mais une realite s&apos;impose rapidement : Maurice n&apos;est
+              Mais une réalité s&apos;impose rapidement : Maurice n&apos;est
               pas un pays &laquo;&nbsp;mainstream&nbsp;&raquo; pour les
               prestataires de services de paiement (PSP). Certaines plateformes
               ne supportent tout simplement pas le code pays MU. D&apos;autres
               imposent des restrictions sur les devises ou les retraits.
             </p>
             <p>
-              Le choix de votre infrastructure de paiement a des consequences
-              directes sur votre tresorerie, votre comptabilite et votre
+              Le choix de votre infrastructure de paiement à des consequences
+              directes sur votre tresorerie, votre comptabilité et votre
               conformite reglementaire. Ce guide fait le point sur toutes les
               options disponibles en 2026.
             </p>
@@ -91,11 +91,11 @@ export default function PaiementsEnLigneMauricePage() {
         </div>
       </section>
 
-      {/* ── 2. Stripe a Maurice ────────────────────────────── */}
+      {/* ── 2. Stripe à Maurice ────────────────────────────── */}
       <section className="bg-slate-50 py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            Stripe a Maurice : la situation reelle
+            Stripe à Maurice : la situation reelle
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
@@ -106,7 +106,7 @@ export default function PaiementsEnLigneMauricePage() {
               Afrique du Sud, Cote d&apos;Ivoire) n&apos;incluent pas Maurice.
             </p>
             <p>
-              Concretement, cela signifie qu&apos;une societe mauricienne
+              Concretement, cela signifie qu&apos;une société mauricienne
               (Domestic Company ou GBC) ne peut pas ouvrir un compte Stripe
               directement avec son enregistrement CBRD.
             </p>
@@ -133,7 +133,7 @@ export default function PaiementsEnLigneMauricePage() {
                 </li>
                 <li>
                   Un risque de conflit de substance fiscale si votre activite
-                  reelle est a Maurice
+                  reelle est à Maurice
                 </li>
                 <li>
                   Des frais annuels supplementaires (agent enregistre, franchise
@@ -150,15 +150,15 @@ export default function PaiementsEnLigneMauricePage() {
         </div>
       </section>
 
-      {/* ── 3. PayPal a Maurice ────────────────────────────── */}
+      {/* ── 3. PayPal à Maurice ────────────────────────────── */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            PayPal a Maurice : possible mais limite
+            PayPal à Maurice : possible mais limite
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
-              PayPal est disponible a Maurice et permet de{" "}
+              PayPal est disponible à Maurice et permet de{" "}
               <strong>recevoir des paiements</strong>. Cependant, les
               limitations sont significatives :
             </p>
@@ -177,7 +177,7 @@ export default function PaiementsEnLigneMauricePage() {
               <li>
                 <strong>Verification d&apos;identite complexe :</strong>{" "}
                 l&apos;option &laquo;&nbsp;lier une banque&nbsp;&raquo; pour
-                verifier le compte n&apos;est pas toujours disponible a Maurice,
+                verifier le compte n&apos;est pas toujours disponible à Maurice,
                 ce qui peut entrainer des blocages de fonds
               </li>
               <li>
@@ -222,7 +222,7 @@ export default function PaiementsEnLigneMauricePage() {
               enregistrees dans 50+ pays.
             </p>
             <p>
-              Pour une entreprise basee a Maurice, Airwallex presente plusieurs
+              Pour une entreprise basee à Maurice, Airwallex présenté plusieurs
               avantages :
             </p>
             <ul className="ml-4 list-disc space-y-2">
@@ -271,7 +271,7 @@ export default function PaiementsEnLigneMauricePage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            Autres alternatives pour les entreprises a Maurice
+            Autres alternatives pour les entreprises à Maurice
           </h2>
 
           {/* Wise Business */}
@@ -289,7 +289,7 @@ export default function PaiementsEnLigneMauricePage() {
               </p>
               <p>
                 <strong>Limitation importante :</strong> la Wise Card
-                (debit) n&apos;est pas encore disponible pour les residents de
+                (debit) n&apos;est pas encore disponible pour les résidents de
                 Maurice. En revanche, les transferts et la reception de
                 paiements fonctionnent. C&apos;est une excellente solution
                 complementaire pour recevoir en EUR ou GBP a moindre cout.
@@ -328,13 +328,13 @@ export default function PaiementsEnLigneMauricePage() {
                 Paddle fonctionne comme{" "}
                 <strong>Merchant of Record</strong> : il vend votre produit en
                 votre nom, gere la TVA/GST dans chaque pays et vous reverse le
-                net. C&apos;est ideal pour les SaaS qui vendent a des clients
+                net. C&apos;est ideal pour les SaaS qui vendent à des clients
                 dans l&apos;UE (ou la TVA est un casse-tete).
               </p>
               <p>
                 L&apos;avantage majeur : vous n&apos;avez pas besoin de
-                vous enregistrer a la TVA dans chaque pays europeen. Le MoR
-                s&apos;en charge. Les reversements peuvent etre effectues
+                vous enregistrer à la TVA dans chaque pays europeen. Le MoR
+                s&apos;en charge. Les reversements peuvent être effectues
                 vers votre compte bancaire mauricien.
               </p>
             </div>
@@ -348,12 +348,12 @@ export default function PaiementsEnLigneMauricePage() {
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
                 Adyen est une plateforme de paiement de niveau enterprise,
-                utilisee par Uber, Spotify et eBay. Elle supporte 250+ methodes
+                utilisee par Uber, Spotify et eBay. Elle supporte 250+ méthodes
                 de paiement dans le monde et offre des frais tres competitifs
                 pour les volumes superieurs a 100&nbsp;000&nbsp;$/mois.
               </p>
               <p>
-                Si votre entreprise basee a Maurice traite des volumes
+                Si votre entreprise basee à Maurice traite des volumes
                 importants, Adyen peut accepter de travailler avec vous
                 directement. Pour les plus petites structures, les solutions
                 comme Wise ou Payoneer sont plus adaptees.
@@ -378,7 +378,7 @@ export default function PaiementsEnLigneMauricePage() {
               </p>
               <p>
                 L&apos;API REST permet une integration poussee, et les
-                reversements peuvent etre effectues vers votre compte bancaire
+                reversements peuvent être effectues vers votre compte bancaire
                 mauricien.
               </p>
             </div>
@@ -410,7 +410,7 @@ export default function PaiementsEnLigneMauricePage() {
                 <strong>Flutterwave</strong> est le PSP de reference pour les
                 paiements en Afrique. Si votre entreprise mauricienne cible des
                 marches africains (Nigeria, Kenya, Ghana, etc.), Flutterwave
-                facilite l&apos;encaissement dans les devises et methodes de
+                facilite l&apos;encaissement dans les devises et méthodes de
                 paiement locales (mobile money, cartes, virements). API REST
                 complete.
               </p>
@@ -420,14 +420,14 @@ export default function PaiementsEnLigneMauricePage() {
           {/* MIPS */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              MIPS (Payment Digital Ecosystem) — L&apos;alternative N°1 a Stripe a Maurice
+              MIPS (Payment Digital Ecosystem) — L&apos;alternative N°1 a Stripe à Maurice
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
                 <strong>MIPS</strong> est la passerelle de paiement locale la
-                plus robuste et la plus populaire a Maurice. Elle offre une
+                plus robuste et la plus populaire à Maurice. Elle offre une
                 integration native avec les principales plateformes e-commerce
-                (Shopify, WooCommerce, Magento) et supporte a la fois les{" "}
+                (Shopify, WooCommerce, Magento) et supporte à la fois les{" "}
                 <strong>cartes de credit internationales</strong> et les{" "}
                 <strong>paiements locaux</strong> comme MCB Juice.
               </p>
@@ -436,7 +436,7 @@ export default function PaiementsEnLigneMauricePage() {
                 souple, et le support local — reactif en anglais et en
                 francais — est un avantage decisif par rapport aux PSP
                 internationaux. C&apos;est la solution a considerer en priorite
-                pour toute entreprise basee a Maurice qui vend en ligne.
+                pour toute entreprise basee à Maurice qui vend en ligne.
               </p>
             </div>
           </div>
@@ -444,20 +444,20 @@ export default function PaiementsEnLigneMauricePage() {
           {/* Peach Payments */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              Peach Payments — Acteur majeur Afrique du Sud present a Maurice
+              Peach Payments — Acteur majeur Afrique du Sud present à Maurice
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
                 <strong>Peach Payments</strong> est un PSP sud-africain avec
-                une forte presence a Maurice. L&apos;interface est moderne,
+                une forte presence à Maurice. L&apos;interface est moderne,
                 la documentation API excellente et la certification{" "}
                 <strong>PCI DSS Level 1</strong> garantit le plus haut niveau
-                de securite pour les donnees de carte.
+                de sécurité pour les donnees de carte.
               </p>
               <p>
                 Peach Payments supporte les cartes de credit, les cartes de
                 debit et le mobile money. C&apos;est une alternative serieuse a
-                MIPS, en particulier pour les entreprises qui operent egalement
+                MIPS, en particulier pour les entreprises qui opèrent egalement
                 en Afrique du Sud ou dans d&apos;autres pays africains.
               </p>
             </div>
@@ -466,7 +466,7 @@ export default function PaiementsEnLigneMauricePage() {
           {/* MCB Juice */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              MCB Juice — Le paiement mobile QR le plus utilise a Maurice
+              MCB Juice — Le paiement mobile QR le plus utilise à Maurice
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
@@ -540,7 +540,7 @@ export default function PaiementsEnLigneMauricePage() {
               devrez avoir une{" "}
               <strong>Business Registration Card (BRC) mauricienne valide</strong>{" "}
               pour ouvrir un compte marchand. C&apos;est une condition prealable
-              a toute integration de passerelle de paiement locale.
+              à toute integration de passerelle de paiement locale.
             </p>
           </div>
         </div>
@@ -556,7 +556,7 @@ export default function PaiementsEnLigneMauricePage() {
             <p>
               Les banques mauriciennes proposent leurs propres passerelles de
               paiement e-commerce. C&apos;est la solution a privilegier si vous
-              vendez aussi a une clientele locale ou si vous avez besoin
+              vendez aussi à une clientele locale ou si vous avez besoin
               d&apos;encaisser en MUR.
             </p>
           </div>
@@ -572,7 +572,7 @@ export default function PaiementsEnLigneMauricePage() {
                 (MPGS) et son propre Internet Gateway Service (MiGS). Elle
                 accepte Visa, MasterCard et les cartes prepayees. Disponible en
                 B2C et B2B, la passerelle supporte les transactions en MUR, USD,
-                EUR et GBP. C&apos;est la solution la plus repandue a Maurice
+                EUR et GBP. C&apos;est la solution la plus repandue à Maurice
                 pour l&apos;e-commerce local.
               </p>
             </div>
@@ -587,7 +587,7 @@ export default function PaiementsEnLigneMauricePage() {
                 multi-devises (MUR, USD, GBP, EUR, JPY). La plateforme offre un
                 traitement securise des transactions par carte et des outils de
                 gestion des paiements pour les commercants en ligne. Alternative
-                solide a la MCB, notamment pour les entreprises en relation
+                solide à la MCB, notamment pour les entreprises en relation
                 bancaire avec SBM.
               </p>
             </div>
@@ -598,7 +598,7 @@ export default function PaiementsEnLigneMauricePage() {
                 Autres acteurs locaux
               </h3>
               <p className="mt-2 text-sm text-slate-700">
-                D&apos;autres prestataires operent a Maurice, notamment dans la
+                D&apos;autres prestataires opèrent à Maurice, notamment dans la
                 gestion des paiements salariaux (payroll). Pour le e-commerce
                 pur, MCB et SBM restent les references bancaires locales.
                 AfrAsia Bank propose egalement des solutions pour les GBC avec
@@ -639,8 +639,8 @@ export default function PaiementsEnLigneMauricePage() {
               Licence Bank of Mauritius (BoM)
             </h3>
             <p>
-              Toute entite qui fournit des services de paiement a Maurice doit
-              etre agreee par la Bank of Mauritius en vertu du National Payment
+              Toute entite qui fournit des services de paiement à Maurice doit
+              être agreee par la Bank of Mauritius en vertu du National Payment
               Systems Act. Cela concerne les PSP, pas les commercants qui
               utilisent un PSP. Si vous etes un simple commercant qui accepte
               les paiements via MCB ou PayPal, vous n&apos;avez pas besoin de
@@ -664,10 +664,10 @@ export default function PaiementsEnLigneMauricePage() {
             </h3>
             <p>
               Tous les revenus, quelle que soit la devise d&apos;encaissement,
-              doivent etre declares a la Mauritius Revenue Authority (MRA). Les
+              doivent être declares à la Mauritius Revenue Authority (MRA). Les
               revenus en devises etrangeres sont convertis en MUR au taux de
-              change de la Bank of Mauritius a la date de la transaction.
-              L&apos;IS de 15&nbsp;% s&apos;applique sur le benefice net, apres
+              change de la Bank of Mauritius à la date de la transaction.
+              L&apos;IS de 15&nbsp;% s&apos;applique sur le bénéfice net, apres
               deduction des charges.
             </p>
           </div>
@@ -677,10 +677,10 @@ export default function PaiementsEnLigneMauricePage() {
               Point de vigilance — Rapatriement des fonds
             </p>
             <p className="mt-2 text-sm text-red-700">
-              Si vous collectez des paiements via une entite etrangere (LLC US
+              Si vous collectez des paiements via une entite étrangère (LLC US
               pour Stripe, par exemple), le rapatriement des fonds vers Maurice
-              doit etre documente et justifie. Les transferts entre entites
-              liees sont soumis aux regles de Transfer Pricing renforcees par le
+              doit être documente et justifie. Les transferts entre entites
+              liées sont soumis aux règles de Transfer Pricing renforcees par le
               Finance Act 2025. Conservez les contrats, factures et preuves de
               prestations.
             </p>
@@ -696,7 +696,7 @@ export default function PaiementsEnLigneMauricePage() {
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
-              La multiplication des PSP et des devises cree un defi comptable
+              La multiplication des PSP et des devises crée un defi comptable
               majeur. Chaque plateforme a ses propres releves, ses propres
               formats et ses propres delais de reglement. Voici comment
               structurer votre comptabilite.
@@ -706,11 +706,11 @@ export default function PaiementsEnLigneMauricePage() {
               Quel taux de change utiliser ?
             </h3>
             <p>
-              La regle est claire : c&apos;est le{" "}
+              La règle est claire : c&apos;est le{" "}
               <strong>
                 taux de reference de la Bank of Mauritius (BoM)
               </strong>{" "}
-              a la date de la transaction qui fait foi. Ce taux est publie
+              à la date de la transaction qui fait foi. Ce taux est publie
               quotidiennement sur le site de la BoM. Pour les ecritures de fin
               de mois, les soldes en devises sont reevalues au taux BoM de
               cloture, et les ecarts de change sont comptabilises en produits ou
@@ -721,7 +721,7 @@ export default function PaiementsEnLigneMauricePage() {
               Reconciliation multi-plateformes
             </h3>
             <p>
-              Un e-commercant typique a Maurice peut avoir simultanement : un
+              Un e-commercant typique à Maurice peut avoir simultanement : un
               compte PayPal (USD), un compte Wise (EUR + GBP), un compte
               Payoneer (USD), un compte MCB (MUR) et peut-etre un compte
               bancaire US pour Stripe. Reconcilier manuellement ces flux est un
@@ -733,14 +733,14 @@ export default function PaiementsEnLigneMauricePage() {
             </h3>
             <p>
               Notre application{" "}
-              <strong>OKE</strong> se connecte directement a vos comptes
+              <strong>OKE</strong> se connecte directement à vos comptes
               Stripe, PayPal, vos plateformes e-commerce (Shopify, Amazon,
               WooCommerce) et vos banques mauriciennes (MCB, AfrAsia). Chaque
               transaction est automatiquement rapprochee, categorisee et
               convertie au bon taux de change.
             </p>
             <p>
-              Le resultat : une comptabilite temps reel, des ecritures
+              Le resultat : une comptabilité temps reel, des ecritures
               multi-devises generees automatiquement avec une precision
               superieure a 85&nbsp;%, et un temps de reconciliation divise par
               dix. Plus besoin d&apos;exporter des CSV et de faire des
@@ -1067,7 +1067,7 @@ export default function PaiementsEnLigneMauricePage() {
             </p>
             <p className="mt-2 text-sm text-green-700">
               Quel que soit le nombre de PSP que vous utilisez, votre
-              comptabilite doit rester unifiee. C&apos;est exactement ce que
+              comptabilité doit rester unifiee. C&apos;est exactement ce que
               nous faisons : BD Star reconcilie l&apos;ensemble de vos flux
               (Stripe US, PayPal, Wise, MCB) dans un seul plan comptable
               mauricien, avec les ecritures de change correspondantes.
@@ -1086,7 +1086,7 @@ export default function PaiementsEnLigneMauricePage() {
               My.t Money (a venir), Blink (a venir), PAYSKY (a venir),
               2Checkout (a venir), et d&apos;autres PSP internationaux (sous réserve de disponibilité à Maurice).
               Chaque transaction est connectee automatiquement a votre
-              comptabilite — plus de saisie manuelle, plus de CSV a importer.
+              comptabilité — plus de saisie manuelle, plus de CSV a importer.
             </p>
           </div>
         </div>
@@ -1177,7 +1177,7 @@ export default function PaiementsEnLigneMauricePage() {
             Besoin d&apos;aide pour structurer vos paiements ?
           </h2>
           <p className="mt-3 text-slate-400">
-            {founder.name} analyse votre activite et recommande
+            {founder.name} analyse votre activité et recommande
             l&apos;infrastructure de paiement optimale — en conformite avec la
             reglementation mauricienne.
           </p>

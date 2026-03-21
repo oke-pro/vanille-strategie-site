@@ -34,7 +34,7 @@ export default function OuvrirCompteBancaireMauricePage() {
           </h1>
           <p className="mt-4 text-lg text-slate-300">
             Avant de créer votre société, avant même de déposer votre demande
-            d&apos;Occupation Permit, il y a une étape que tout expatrié doit
+            d&apos;Occupation Permit, il y à une étape que tout expatrié doit
             maîtriser : ouvrir un compte bancaire mauricien. Trois grandes
             banques dominent le paysage. Voici comment choisir — et surtout,
             comment éviter les erreurs qui coûtent des semaines.

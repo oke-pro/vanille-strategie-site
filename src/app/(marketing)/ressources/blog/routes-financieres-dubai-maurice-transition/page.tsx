@@ -454,7 +454,7 @@ export default function RoutesDubaiMauricePage() {
               <p className="mt-2 text-sm text-amber-900">
                 Si vous percevez des revenus aux EAU pendant que vous devenez
                 r&eacute;sident fiscal mauricien, la convention bilatérale
-                d&eacute;termine quel pays a le droit d&apos;imposer. Un
+                d&eacute;termine quel pays à le droit d&apos;imposer. Un
                 accompagnement fiscal sp&eacute;cifique est indispensable pour
                 &eacute;viter les zones grises. Ne laissez pas cette question
                 sans r&eacute;ponse.

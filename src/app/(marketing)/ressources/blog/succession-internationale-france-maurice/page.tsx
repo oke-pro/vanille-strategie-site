@@ -63,7 +63,7 @@ export default function SuccessionInternationalePage() {
       <section className="bg-white py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            1. L&apos;avantage massif : 0% de droits de succession a Maurice
+            1. L&apos;avantage massif : 0% de droits de succession à Maurice
           </h2>
           <p>
             Maurice ne preleve aucun droit de succession, aucun droit de
@@ -78,10 +78,10 @@ export default function SuccessionInternationalePage() {
             non-parents), cette absence totale de taxation successorale
             represente un avantage considerable. Sur un patrimoine de 2 millions
             d&apos;euros transmis a deux enfants, l&apos;economie peut depasser
-            400 000 euros par rapport a la France.
+            400 000 euros par rapport à la France.
           </p>
           <p>
-            Cette fiscalite zero sur les successions s&apos;inscrit dans la
+            Cette fiscalité zero sur les successions s&apos;inscrit dans la
             philosophie fiscale globale de Maurice : attirer les talents, les
             entrepreneurs et les capitaux internationaux en proposant un cadre
             fiscal simple, competitif et stable. A cela s&apos;ajoutent l&apos;absence
@@ -93,10 +93,10 @@ export default function SuccessionInternationalePage() {
               Bonne nouvelle
             </p>
             <p className="mt-1 text-sm text-green-700">
-              Ce 0% s&apos;applique a tous les residents fiscaux mauriciens, quelle
-              que soit leur nationalite. Un Francais installe a Maurice qui
+              Ce 0% s&apos;applique a tous les résidents fiscaux mauriciens, quelle
+              que soit leur nationalite. Un Francais installe à Maurice qui
               transmet son patrimoine mauricien a ses enfants (eux aussi
-              residents a Maurice) ne paiera strictement aucun droit de
+              résidents à Maurice) ne paiera strictement aucun droit de
               succession. C&apos;est l&apos;un des atouts les plus puissants de
               la juridiction.
             </p>
@@ -121,7 +121,7 @@ export default function SuccessionInternationalePage() {
               convention en matiere d&apos;impots sur le revenu
             </strong>
             . Elle couvre l&apos;impot sur le revenu, l&apos;impot sur les
-            societes et — dans une certaine mesure — l&apos;impot sur la
+            sociétés et — dans une certaine mesure — l&apos;impot sur la
             fortune. Mais elle ne couvre{" "}
             <strong>ni les droits de succession, ni les droits de donation</strong>.
           </p>
@@ -165,7 +165,7 @@ export default function SuccessionInternationalePage() {
           </h2>
           <p>
             Le Code general des impots francais (articles 750 ter et suivants)
-            definit des regles de territorialite tres larges en matiere de droits
+            definit des règles de territorialite tres larges en matiere de droits
             de succession. La France s&apos;estime competente pour taxer une
             succession dans trois cas :
           </p>
@@ -192,8 +192,8 @@ export default function SuccessionInternationalePage() {
           </ul>
           <p>
             Le scenario le plus dangereux est le suivant : un Francais installe
-            a Maurice depuis 3 ans decede en laissant un patrimoine
-            immobilier en France et des comptes bancaires a Maurice. La France
+            à Maurice depuis 3 ans decede en laissant un patrimoine
+            immobilier en France et des comptes bancaires à Maurice. La France
             taxera l&apos;integralite du patrimoine (car les heritiers, restes
             en France, y sont domicilies), tandis que Maurice ne taxera rien.
             Il n&apos;y a pas de double imposition au sens strict — mais la
@@ -207,7 +207,7 @@ export default function SuccessionInternationalePage() {
             <p className="mt-1 text-sm text-amber-700">
               Le vrai risque n&apos;est pas la double imposition (puisque Maurice
               ne taxe rien), mais la taxation francaise integrale malgre
-              l&apos;expatriation. Vous pouvez vivre a Maurice depuis 10 ans et
+              l&apos;expatriation. Vous pouvez vivre à Maurice depuis 10 ans et
               voir la totalite de votre patrimoine mondial soumis aux droits de
               succession francais si vos heritiers resident en France.
               L&apos;expatriation du defunt ne suffit pas : c&apos;est aussi le
@@ -223,7 +223,7 @@ export default function SuccessionInternationalePage() {
       <section className="bg-slate-50 py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            4. La regle des 6 ans : quand les heritiers residents en France
+            4. La règle des 6 ans : quand les heritiers résidents en France
             restent imposables
           </h2>
           <p>
@@ -237,15 +237,15 @@ export default function SuccessionInternationalePage() {
           </p>
           <p>
             Concretement, si vos enfants vivent en France (ce qui est le cas
-            dans la majorite des situations d&apos;expatriation a Maurice), ils
+            dans la majorite des situations d&apos;expatriation à Maurice), ils
             remplissent quasi systematiquement cette condition. Et dans ce cas,
-            la totalite de ce qu&apos;ils recoivent — y compris les comptes
-            bancaires a Maurice, les parts de societes mauriciennes, les biens
-            immobiliers a Maurice — est soumise aux droits de succession
+            la totalite de ce qu&apos;ils reçoivent — y compris les comptes
+            bancaires à Maurice, les parts de sociétés mauriciennes, les biens
+            immobiliers à Maurice — est soumise aux droits de succession
             francais.
           </p>
           <p>
-            Cette regle a un corollaire important : meme si le defunt a quitte
+            Cette règle à un corollaire important : meme si le defunt a quitte
             la France depuis longtemps et est devenu resident fiscal mauricien,
             la France reste competente du fait du domicile fiscal des heritiers.
             L&apos;expatriation du defunt est neutralisee par la residence des
@@ -257,8 +257,8 @@ export default function SuccessionInternationalePage() {
             </p>
             <p className="mt-1 text-sm text-red-700">
               C&apos;est le piege le plus frequent dans les familles
-              franco-mauriciennes. Le parent s&apos;installe a Maurice pour
-              beneficier de la fiscalite avantageuse, mais les enfants restent en
+              franco-mauriciennes. Le parent s&apos;installe à Maurice pour
+              beneficier de la fiscalité avantageuse, mais les enfants restent en
               France (etudes, emploi, vie de famille). Au deces, la France taxe
               la totalite de la transmission aux taux francais. Le 0% mauricien
               ne sert a rien si les heritiers sont en France.
@@ -272,7 +272,7 @@ export default function SuccessionInternationalePage() {
               Si la planification successorale est l&apos;un des motifs de votre
               expatriation, il faut penser la situation de maniere globale :
               residence du defunt, residence des heritiers, localisation des
-              biens. Ces trois parametres doivent etre alignes. L&apos;expatriation
+              biens. Ces trois parametres doivent être alignes. L&apos;expatriation
               du seul parent ne suffit generalement pas a echapper a la
               competence fiscale francaise.
             </p>
@@ -298,9 +298,9 @@ export default function SuccessionInternationalePage() {
           <p>
             Si le defunt est considere comme domicilie fiscal en France au jour
             de son deces (au sens de l&apos;article 4 B du CGI : foyer, lieu
-            de sejour principal, activite professionnelle principale, centre des
+            de sejour principal, activité professionnelle principale, centre des
             interets economiques), la France taxe la totalite du patrimoine
-            mondial, y compris les biens situes a Maurice.
+            mondial, y compris les biens situes à Maurice.
           </p>
           <p>
             Il est donc essentiel de pouvoir prouver, de maniere irrefutable,
@@ -317,15 +317,15 @@ export default function SuccessionInternationalePage() {
               Authority (MRA)
             </li>
             <li>
-              Une presence physique effective a Maurice (plus de 183 jours par an)
+              Une presence physique effective à Maurice (plus de 183 jours par an)
             </li>
             <li>
-              Le centre des interets economiques et familiaux a Maurice
+              Le centre des interets economiques et familiaux à Maurice
               (logement principal, compte bancaire principal, activite
               professionnelle)
             </li>
             <li>
-              La desinscription du fichier des residents fiscaux francais et la
+              La desinscription du fichier des résidents fiscaux francais et la
               regularisation aupres du service des impots des non-residents
             </li>
           </ul>
@@ -368,11 +368,11 @@ export default function SuccessionInternationalePage() {
             biens immobiliers francais pour les besoins des droits de succession.
           </p>
           <p>
-            Plus subtil : les parts de societes etrangeres (y compris
+            Plus subtil : les parts de sociétés etrangeres (y compris
             mauriciennes) dont l&apos;actif est constitue majoritairement de
-            biens immobiliers en France peuvent egalement etre requalifiees comme
+            biens immobiliers en France peuvent egalement être requalifiees comme
             des actifs immobiliers francais par l&apos;administration fiscale.
-            Creer une societe mauricienne pour detenir un appartement a Paris ne
+            Creer une société mauricienne pour detenir un appartement a Paris ne
             vous protege pas.
           </p>
           <div className="rounded-lg border border-red-200 bg-red-50 p-4 not-prose">
@@ -384,7 +384,7 @@ export default function SuccessionInternationalePage() {
               immobilier francais dans une structure etrangere, ils echappent aux
               droits de succession francais. C&apos;est une erreur grave.
               L&apos;article 750 ter du CGI et la doctrine administrative visent
-              explicitement les montages interposant des societes etrangeres pour
+              explicitement les montages interposant des sociétés etrangeres pour
               detenir de l&apos;immobilier francais. Le risque n&apos;est pas
               seulement fiscal — il est penal (abus de droit, fraude fiscale).
             </p>
@@ -395,10 +395,10 @@ export default function SuccessionInternationalePage() {
             </p>
             <p className="mt-1 text-sm text-green-700">
               Si vous conservez de l&apos;immobilier en France apres votre
-              expatriation a Maurice, integrez-le explicitement dans votre
+              expatriation à Maurice, integrez-le explicitement dans votre
               planification successorale. Il sera taxe en France, c&apos;est
               inevitable. Mais les abattements legaux (100 000 euros par enfant
-              en ligne directe), le demembrement de propriete et les donations
+              en ligne directe), le demembrement de propriété et les donations
               anticipees permettent de reduire considerablement la facture. La
               cle est d&apos;anticiper.
             </p>
@@ -418,14 +418,14 @@ export default function SuccessionInternationalePage() {
             L&apos;assurance-vie est le placement prefere des Francais — et pour
             cause : en France, elle beneficie d&apos;un regime fiscal
             successoral tres favorable. Les capitaux verses avant 70 ans
-            beneficient d&apos;un abattement de 152 500 euros par beneficiaire
+            bénéficient d&apos;un abattement de 152 500 euros par beneficiaire
             (article 990 I du CGI), et ceux verses apres 70 ans d&apos;un
             abattement global de 30 500 euros (article 757 B du CGI).
           </p>
           <p>
-            Mais attention : ces regles s&apos;appliquent aux contrats francais,
+            Mais attention : ces règles s&apos;appliquent aux contrats francais,
             et la question de leur application dans un contexte international est
-            complexe. Plusieurs situations doivent etre distinguees :
+            complexe. Plusieurs situations doivent être distinguees :
           </p>
           <ul>
             <li>
@@ -444,18 +444,18 @@ export default function SuccessionInternationalePage() {
               </strong>{" "}
               : une exoneration est possible si le beneficiaire n&apos;a pas ete
               domicilie en France pendant au moins six ans au cours des dix
-              dernieres annees (condition similaire a la regle des successions).
+              dernieres annees (condition similaire à la règle des successions).
               C&apos;est un avantage majeur pour les beneficiaires installes a
               Maurice depuis longtemps.
             </li>
             <li>
               <strong>
-                Contrat d&apos;assurance-vie souscrit a Maurice
+                Contrat d&apos;assurance-vie souscrit à Maurice
               </strong>{" "}
-              : aucune taxation a Maurice (0% de droits de succession). Mais si
-              les beneficiaires sont residents fiscaux francais, la France peut
+              : aucune taxation à Maurice (0% de droits de succession). Mais si
+              les beneficiaires sont résidents fiscaux francais, la France peut
               reclamer des droits de succession sur ces capitaux en vertu de la
-              regle des 6 ans.
+              règle des 6 ans.
             </li>
           </ul>
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose">
@@ -463,9 +463,9 @@ export default function SuccessionInternationalePage() {
               Point d&apos;attention
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              L&apos;assurance-vie est souvent presentee comme l&apos;outil
+              L&apos;assurance-vie est souvent présentée comme l&apos;outil
               miracle de la planification successorale franco-mauricienne. La
-              realite est plus nuancee. Le benefice fiscal depend entierement du
+              réalité est plus nuancee. Le bénéfice fiscal depend entierement du
               profil du beneficiaire (resident ou non resident, depuis combien de
               temps) et de la localisation du contrat (France ou Maurice). Une
               analyse au cas par cas est indispensable.
@@ -476,7 +476,7 @@ export default function SuccessionInternationalePage() {
               Conseil de Didier
             </p>
             <p className="mt-1 text-sm text-blue-700">
-              Pour un expatrie francais a Maurice dont les enfants restent en
+              Pour un expatrie francais à Maurice dont les enfants restent en
               France, le contrat d&apos;assurance-vie francais reste un outil
               puissant : il permet de transmettre jusqu&apos;a 152 500 euros par
               enfant en franchise de droits (primes versees avant 70 ans). Ce
@@ -505,7 +505,7 @@ export default function SuccessionInternationalePage() {
             beneficiaires et la gestion des actifs.
           </p>
           <p>
-            Le trust mauricien peut etre un outil puissant de planification
+            Le trust mauricien peut être un outil puissant de planification
             successorale : les actifs places dans un trust irrevocable sortent
             du patrimoine du constituant (settlor) et ne font donc plus partie
             de sa succession. Au deces du settlor, les actifs du trust sont
@@ -522,12 +522,12 @@ export default function SuccessionInternationalePage() {
               Danger
             </p>
             <p className="mt-1 text-sm text-red-700">
-              La France a une relation tres hostile avec les trusts. Depuis la
+              La France à une relation tres hostile avec les trusts. Depuis la
               loi du 29 juillet 2011 et les articles 792-0 bis et 990 J du CGI,
               les biens places dans un trust sont consideres comme faisant
               partie du patrimoine du constituant pour les besoins des droits de
               succession francais. Un trust mauricien detenant des actifs au
-              benefice d&apos;heritiers residents en France ne vous protege pas
+              bénéfice d&apos;heritiers résidents en France ne vous protege pas
               de la taxation francaise — il peut meme aggraver votre situation
               (taxe speciale de 20% a 45%, voire sanctions pour dissimulation).
             </p>
@@ -540,7 +540,7 @@ export default function SuccessionInternationalePage() {
               Le trust mauricien est un outil pertinent uniquement lorsque le
               constituant, les beneficiaires ET les actifs sont tous en dehors
               du champ fiscal francais. Si l&apos;un de ces trois elements a un
-              lien avec la France, le trust doit etre analyse avec la plus grande
+              lien avec la France, le trust doit être analyse avec la plus grande
               prudence. Des obligations declaratives lourdes existent en France
               pour les trusts etrangers (declaration annuelle 2181-TRUST).
             </p>
@@ -561,12 +561,12 @@ export default function SuccessionInternationalePage() {
             se reconstituent tous les 15 ans. Cela signifie qu&apos;un parent
             peut donner 100 000 euros a chaque enfant en franchise de droits, et
             renouveler cette donation 15 ans plus tard. Sur 30 ans, c&apos;est
-            donc 300 000 euros par enfant qui peuvent etre transmis sans droits,
+            donc 300 000 euros par enfant qui peuvent être transmis sans droits,
             en plus de ce qui sera transmis au deces.
           </p>
           <p>
             Cette strategie de donations successives prend tout son sens dans un
-            contexte d&apos;expatriation a Maurice. Voici pourquoi :
+            contexte d&apos;expatriation à Maurice. Voici pourquoi :
           </p>
           <ul>
             <li>
@@ -593,7 +593,7 @@ export default function SuccessionInternationalePage() {
               <strong>
                 Les dons portant sur des biens situes en France
               </strong>{" "}
-              (immobilier, parts de societes francaises) : toujours soumis aux
+              (immobilier, parts de sociétés francaises) : toujours soumis aux
               droits de donation francais, quelle que soit la residence du
               donateur et du donataire.
             </li>
@@ -617,15 +617,15 @@ export default function SuccessionInternationalePage() {
               Strategie avancee : le demembrement
             </p>
             <p className="mt-1 text-sm text-blue-700">
-              Le demembrement de propriete (donation de la nue-propriete avec
+              Le demembrement de propriété (donation de la nue-propriete avec
               reserve d&apos;usufruit) est une technique particulierement
               efficace dans un contexte France-Maurice. Le donateur conserve
               l&apos;usufruit (et donc les revenus) du bien, tandis que les
-              enfants recoivent la nue-propriete avec un abattement lie a
+              enfants reçoivent la nue-propriete avec un abattement lie a
               l&apos;age. Au deces du donateur, les enfants deviennent pleins
               proprietaires sans droits supplementaires. Cette technique
               s&apos;applique aussi bien a l&apos;immobilier qu&apos;aux parts
-              de societes ou aux contrats d&apos;assurance-vie.
+              de sociétés ou aux contrats d&apos;assurance-vie.
             </p>
           </div>
         </div>
@@ -644,16 +644,16 @@ export default function SuccessionInternationalePage() {
             La planification successorale dans un contexte France-Maurice est
             un exercice multidisciplinaire qui fait intervenir le droit fiscal
             francais, le droit fiscal mauricien, le droit civil (regimes
-            matrimoniaux, devolution successorale), le droit des societes et
+            matrimoniaux, devolution successorale), le droit des sociétés et
             parfois le droit des assurances. Aucune de ces disciplines ne peut
-            etre apprehendee isolement.
+            être apprehendee isolement.
           </p>
           <p>
             C&apos;est precisement la ou un expert-comptable fiscaliste
-            specialise en fiscalite internationale apporte une valeur
+            specialise en fiscalité internationale apporte une valeur
             decisive. Chez Vanille Strategie, {founder.name} intervient
             personnellement sur chaque dossier de planification successorale,
-            avec 40 ans d&apos;experience en fiscalite internationale et une
+            avec 40 ans d&apos;experience en fiscalité internationale et une
             connaissance approfondie des deux legislations.
           </p>
           <p>
@@ -670,7 +670,7 @@ export default function SuccessionInternationalePage() {
                 autres juridictions), identification des actifs soumis aux droits
                 de succession francais, analyse de la situation fiscale de
                 chaque heritier potentiel. Ce diagnostic est le prealable
-                indispensable a toute strategie.
+                indispensable à toute strategie.
               </p>
             </div>
 
@@ -705,7 +705,7 @@ export default function SuccessionInternationalePage() {
                 Suivi dans la duree
               </p>
               <p className="mt-1 text-sm text-blue-700">
-                La legislation evolue (en France comme a Maurice), les
+                La legislation evolue (en France comme à Maurice), les
                 situations familiales changent (mariage, divorce, naissance),
                 les patrimoines se transforment. Nous assurons un suivi annuel
                 de votre strategie successorale pour l&apos;adapter aux
@@ -722,7 +722,7 @@ export default function SuccessionInternationalePage() {
               &ldquo;En 40 ans de carriere, j&apos;ai vu des familles
               perdre des centaines de milliers d&apos;euros en droits de
               succession parce qu&apos;elles n&apos;avaient pas anticipe.
-              L&apos;expatriation a Maurice ne suffit pas a elle seule a
+              L&apos;expatriation à Maurice ne suffit pas a elle seule a
               proteger le patrimoine familial. Il faut une strategie globale,
               mise en place AVANT le depart — pas apres. Chaque annee de retard
               est une annee d&apos;abattement perdue, une donation non faite, une
@@ -745,7 +745,7 @@ export default function SuccessionInternationalePage() {
           <p>
             A la lumiere de tout ce qui precede, voici les recommandations clés
             que nous formulons systematiquement a nos clients qui envisagent
-            une expatriation a Maurice ou qui y sont deja installes :
+            une expatriation à Maurice ou qui y sont deja installes :
           </p>
 
           <div className="space-y-4 not-prose mt-6">
@@ -757,7 +757,7 @@ export default function SuccessionInternationalePage() {
                 Cartographiez votre patrimoine, identifiez les actifs a risque
                 (immobilier francais, parts de SCI, contrats d&apos;assurance-vie),
                 analysez la situation fiscale de vos heritiers. Cet audit doit
-                etre realise 12 a 18 mois avant le depart pour laisser le temps
+                être réalise 12 a 18 mois avant le depart pour laisser le temps
                 de mettre en place les solutions.
               </p>
             </div>
@@ -782,7 +782,7 @@ export default function SuccessionInternationalePage() {
               <p className="mt-1 text-sm text-green-700">
                 Obtenez votre certificat de residence fiscale MRA, maintenez une
                 presence physique superieure a 183 jours par an, et assurez-vous
-                que votre centre de vie est incontestablement a Maurice. Evitez
+                que votre centre de vie est incontestablement à Maurice. Evitez
                 de conserver des indices de domiciliation en France (logement,
                 vehicule, comptes bancaires actifs).
               </p>
@@ -822,7 +822,7 @@ export default function SuccessionInternationalePage() {
                 Expert-comptable fiscaliste (Vanille Strategie), notaire francais,
                 avocat fiscaliste, conseiller en gestion de patrimoine. La
                 planification successorale France-Maurice est trop complexe pour
-                etre geree par un seul professionnel. Chaque conseil doit
+                être geree par un seul professionnel. Chaque conseil doit
                 intervenir dans son domaine de competence, sous la coordination
                 d&apos;un pilote qui maitrise les deux legislations.
               </p>
@@ -834,13 +834,13 @@ export default function SuccessionInternationalePage() {
               Erreur fatale a eviter
             </p>
             <p className="mt-1 text-sm text-red-700">
-              Ne partez jamais a Maurice en pensant que le 0% de droits de
+              Ne partez jamais à Maurice en pensant que le 0% de droits de
               succession rèsout tout. C&apos;est une condition necessaire mais
               pas suffisante. Sans planification, sans anticipation des
               implications francaises, sans structuration en amont, vous risquez
-              de laisser a vos heritiers une facture fiscale que vous pensiez
+              de laisser à vos heritiers une facture fiscale que vous pensiez
               avoir evitee. Le cout d&apos;un accompagnement en planification
-              successorale est une fraction de l&apos;economie realisee — et une
+              successorale est une fraction de l&apos;economie réalisée — et une
               fraction encore plus infime du cout d&apos;une succession mal
               anticipee.
             </p>
@@ -919,7 +919,7 @@ export default function SuccessionInternationalePage() {
             conseil fiscal ou juridique personnalise. La planification
             successorale internationale est un domaine complexe qui depend
             etroitement de votre situation personnelle. Contactez nos experts
-            pour une analyse adaptee a votre cas.
+            pour une analyse adaptée à votre cas.
           </p>
         </div>
       </section>

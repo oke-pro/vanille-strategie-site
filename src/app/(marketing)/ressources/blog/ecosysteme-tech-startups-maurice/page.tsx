@@ -5,7 +5,7 @@ import { founder, officialSources } from "@/data/site";
 
 export const metadata: Metadata = {
   title:
-    "Ecosysteme tech et digital a Maurice — Incubateurs, programmes et opportunites pour les startups",
+    "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
   description:
     "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
 };
@@ -32,7 +32,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             <span className="text-xs text-slate-500">· 22 min</span>
           </div>
           <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight">
-            L&apos;ecosysteme tech et digital a Maurice — Incubateurs,
+            L&apos;ecosysteme tech et digital à Maurice — Incubateurs,
             programmes et opportunites pour les startups
           </h1>
           <p className="mt-4 text-lg text-slate-300 leading-relaxed">
@@ -84,7 +84,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             En parallele, le plan Digital Mauritius 2030 prevoit des grants
             allant jusqu&apos;a <strong>Rs 5 millions</strong> pour des projets
             de R&D, tandis qu&apos;un programme dedie aux startups innovantes a
-            ete cree sous l&apos;egide du MITCI. L&apos;objectif est clair :
+            ete crée sous l&apos;égide du MITCI. L&apos;objectif est clair :
             faire de Maurice un pole d&apos;innovation capable de rivaliser avec
             Singapour pour l&apos;Afrique et l&apos;ocean Indien.
           </p>
@@ -94,7 +94,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             </p>
             <p className="mt-1 text-sm text-blue-700">
               Le budget 2025-2026 prevoit egalement Rs 70 millions pour un Data
-              Centre gouvernemental Tier IV dedie a la reprise apres sinistre,
+              Centre gouvernemental Tier IV dedie à la reprise apres sinistre,
               ainsi que l&apos;alignement des lois sur la protection des donnees
               et la cybersecurite avec les normes internationales. Maurice joue
               dans la cour des grands.
@@ -122,7 +122,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Turbine — L&apos;accelerateur de reference
           </h3>
           <p>
-            Base a Maurice,{" "}
+            Base à Maurice,{" "}
             <a
               href="https://turbine.mu/"
               target="_blank"
@@ -134,14 +134,14 @@ export default function EcosystemeTechStartupsMauricePage() {
             est un incubateur et accelerateur qui fournit du coworking, du
             mentorat et un acces au financement. En tant que membre de{" "}
             <strong>Catalytic Africa</strong>, les startups incubees chez
-            Turbine peuvent acceder a des grants de{" "}
+            Turbine peuvent acceder à des grants de{" "}
             <strong>20 000 a 60 000 USD</strong> une fois qu&apos;elles
             securisent un investissement d&apos;un business angel enregistre
             aupres de l&apos;ABAN (African Business Angel Network).
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            La Plage Factory — Incubation a la francaise
+            La Plage Factory — Incubation à la francaise
           </h3>
           <p>
             Fondee en 2017 et accreditee par le{" "}
@@ -201,7 +201,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             les fondateurs etrangers
           </h3>
           <p>
-            L&apos;Economic Development Board (EDB) a cree un permis
+            L&apos;Economic Development Board (EDB) a crée un permis
             specifiquement concu pour les entrepreneurs innovants : l&apos;
             <strong>Innovator Permit</strong>. Ses caracteristiques sont
             exceptionnelles :
@@ -251,7 +251,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h2>
           <p>
             Maurice ne se contente pas de creer un environnement favorable — le
-            gouvernement met la main a la poche. Voici les principaux
+            gouvernement met la main à la poche. Voici les principaux
             dispositifs de financement et d&apos;accompagnement disponibles pour
             les startups.
           </p>
@@ -287,7 +287,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </ul>
           <p>
             <strong>Condition :</strong> un minimum de 51 % de l&apos;
-            actionnariat doit etre detenu par un national mauricien. Pour les
+            actionnariat doit être detenu par un national mauricien. Pour les
             fondateurs etrangers, un montage avec un partenaire local est donc
             envisageable.
           </p>
@@ -326,7 +326,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             >
               DBM
             </a>{" "}
-            propose des prets dedies aux PME et startups a des conditions
+            propose des prets dedies aux PME et startups à des conditions
             preferentielles. C&apos;est souvent la premiere source de
             financement bancaire pour les jeunes entreprises mauriciennes qui
             n&apos;ont pas encore acces aux banques commerciales traditionnelles.
@@ -361,8 +361,8 @@ export default function EcosystemeTechStartupsMauricePage() {
             <p className="mt-1 text-sm text-blue-700">
               Le CRIGS est particulierement interessant pour les startups tech :
               en partenariat avec l&apos;Universite de Maurice ou le Mauritius
-              Institute of Education, vous accedez a un financement de Rs 5
-              millions ET a des talents de recherche. Les appels a propositions
+              Institute of Education, vous accedez à un financement de Rs 5
+              millions ET à des talents de recherche. Les appels a propositions
               sont lances regulierement — surveillez le site du MRIC.
             </p>
           </div>
@@ -422,16 +422,16 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            Entreprises tech installees
+            Entreprises tech installées
           </h3>
           <p>
             De nombreuses entreprises tech ont fait d&apos;Ebene leur base
             operationnelle : <strong>Bocasay</strong> (developpement web et
             logiciel sur mesure), <strong>Artover</strong> (agence digitale
             depuis 2009), <strong>Future Buzz</strong> (marketing digital), ainsi
-            que des societes de BPO, des firmes fintech et des cabinets de
+            que des sociétés de BPO, des firmes fintech et des cabinets de
             conseil en IT. L&apos;ecosysteme Ebene est un melange d&apos;
-            entreprises locales et internationales qui cree une dynamique
+            entreprises locales et internationales qui crée une dynamique
             unique.
           </p>
 
@@ -440,7 +440,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Bonne pratique
             </p>
             <p className="mt-1 text-sm text-green-700">
-              Si vous lancez votre startup a Maurice, installez-vous a Ebene
+              Si vous lancez votre startup à Maurice, installez-vous a Ebene
               ou dans un coworking a proximite. L&apos;effet reseau y est
               puissant : vous croisez des investisseurs, des developpeurs, des
               comptables (coucou BD Star !) et des partenaires potentiels au
@@ -513,9 +513,9 @@ export default function EcosystemeTechStartupsMauricePage() {
             </p>
             <p className="mt-1 text-sm text-amber-700">
               La procedure de licensing VASP aupres de la FSC prend en moyenne 6
-              a 9 mois. Les applicants doivent etre une societe mauricienne,
+              a 9 mois. Les applicants doivent être une société mauricienne,
               dirigee et geree depuis Maurice, avec un bureau physique. Les
-              criteres fit-and-proper sont stricts : integrite, competence et
+              critères fit-and-proper sont stricts : integrite, competence et
               solvabilite des controleurs, beneficiaires effectifs et officers
               sont examines par la FSC.
             </p>
@@ -525,7 +525,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             EdTech — Un marche en pleine expansion
           </h3>
           <p>
-            Avec des universites locales de qualite (University of Mauritius,
+            Avec des universites locales de qualité (University of Mauritius,
             Universite des Mascareignes) et des partenariats avec des
             institutions internationales (Middlesex University, Curtin
             University), Maurice offre un terrain fertile pour les startups
@@ -540,7 +540,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             Le systeme de sante mauricien se digitalise. Le gouvernement
             prevoit le deploiement de systemes ameliores dans le secteur de la
-            sante, de la telesante a la gestion des dossiers patients. Pour les
+            sante, de la telesante à la gestion des dossiers patients. Pour les
             startups specialisees en health management, en telemedicine ou en
             dispositifs medicaux connectes, le marche est ouvert.
           </p>
@@ -564,8 +564,8 @@ export default function EcosystemeTechStartupsMauricePage() {
             Avec l&apos;alignement des lois sur la cybersecurite avec les normes
             internationales et l&apos;obligation pour tous les VASP de passer
             des audits annuels de cybersecurite, la demande en solutions de
-            securite explose. Les startups specialisees en cybersecurite
-            beneficient d&apos;un marche captif local et d&apos;un potentiel
+            sécurité explose. Les startups specialisees en cybersecurite
+            bénéficient d&apos;un marche captif local et d&apos;un potentiel
             d&apos;export vers toute la region Afrique-ocean Indien.
           </p>
         </div>
@@ -587,10 +587,10 @@ export default function EcosystemeTechStartupsMauricePage() {
           <div className="space-y-4 not-prose mt-6">
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <p className="text-sm font-semibold text-slate-800">
-                Impot sur les societes : 15 % flat
+                Impot sur les sociétés : 15 % flat
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                Le taux d&apos;IS a Maurice est un flat rate de 15 % — l&apos;un
+                Le taux d&apos;IS à Maurice est un flat rate de 15 % — l&apos;un
                 des plus bas au monde. Pour les Global Business Companies (GBC),
                 le taux effectif peut descendre a environ 3 % grace au systeme
                 de Foreign Tax Credit et au Partial Exemption Regime (80 %
@@ -603,7 +603,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 0 % TVA sur les services exportes
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                Les services fournis a des clients hors de Maurice sont{" "}
+                Les services fournis à des clients hors de Maurice sont{" "}
                 <strong>zero-rated</strong> en matiere de TVA. Pour une startup
                 SaaS, une agence de developpement ou un cabinet de conseil tech
                 qui exporte ses services, cela signifie zero TVA facturee aux
@@ -616,7 +616,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Credit d&apos;impot R&D
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                Les depenses en capital liees a la R&D beneficient d&apos;
+                Les depenses en capital liées à la R&D bénéficient d&apos;
                 allowances fiscales. Le Finance Act 2025 a elargi les depenses
                 en capital eligibles pour les entreprises ayant un chiffre
                 d&apos;affaires ne depassant pas Rs 100 millions — ce qui couvre
@@ -632,7 +632,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Maurice n&apos;impose ni les dividendes, ni les plus-values en
                 capital. Pour les fondateurs de startups qui anticipent une
                 revente ou une levee de fonds, c&apos;est un avantage
-                considerable par rapport a la France (30 % flat tax) ou a la
+                considerable par rapport à la France (30 % flat tax) ou a la
                 plupart des pays europeens.
               </p>
             </div>
@@ -676,7 +676,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Grubmates — La foodtech qui decolle
               </p>
               <p className="mt-1 text-sm text-emerald-700">
-                Plateforme de livraison de repas a la demande, Grubmates affiche
+                Plateforme de livraison de repas à la demande, Grubmates affiche
                 une croissance de 16 % mois apres mois. 60 % de leurs ventes
                 passent par des paiements digitaux — preuve de la maturite du
                 marche fintech local.
@@ -689,7 +689,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               </p>
               <p className="mt-1 text-sm text-emerald-700">
                 Talenteum connecte les entreprises du monde entier aux meilleurs
-                talents africains. Basee a Maurice, la startup a su tirer parti
+                talents africains. Basee à Maurice, la startup a su tirer parti
                 de la position de l&apos;ile comme pont entre l&apos;Afrique,
                 l&apos;Europe et l&apos;Asie pour scaler rapidement.
               </p>
@@ -759,7 +759,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             8. L&apos;avantage Vanille Strategie pour les startups tech
           </h2>
           <p>
-            Lancer une startup a Maurice, c&apos;est excitant. Mais sans un
+            Lancer une startup à Maurice, c&apos;est excitant. Mais sans un
             accompagnement solide des les premiers jours, les erreurs
             administratives, fiscales et comptables peuvent couter tres cher.
             C&apos;est la que le groupe Vanille Strategie entre en jeu.
@@ -777,7 +777,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            App OKE : votre comptabilite connectee
+            App OKE : votre comptabilité connectee
           </h3>
           <p>
             Notre application OKE est directement connectee aux plateformes
@@ -792,7 +792,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             Basee au 12e etage de The Core a Ebene Cybercity, BD Star
             Management Services est la branche comptable du groupe. On ne vous
-            attend pas a la fin de l&apos;annee fiscale : la comptabilite
+            attend pas à la fin de l&apos;annee fiscale : la comptabilite
             demarre le jour de la creation de votre societe. Declarations
             fiscales, TVA, paie, conformite MRA — tout est pris en charge, en
             temps reel, des le premier jour.
@@ -836,7 +836,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Le groupe Vanille Strategie dispose de ses propres espaces de
             travail a <strong>Grand Baie</strong> (Sottise Road) et a{" "}
             <strong>Ebene</strong> (The Core, Cybercity). Au-dela du simple
-            bureau, vous accedez a tout l&apos;ecosysteme Vanille Strategie :
+            bureau, vous accedez à tout l&apos;ecosysteme Vanille Strategie :
             comptabilite, fiscalite, creation de societe, permis de residence —
             tout sous le meme toit.
           </p>
@@ -853,7 +853,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             >
               Workshop17
             </a>{" "}
-            est le leader du coworking premium a Maurice avec 4 espaces : Vivea
+            est le leader du coworking premium à Maurice avec 4 espaces : Vivea
             Business Park (Moka), The Precinct (Grand Baie), et Savannah (Gros
             Bois). Les tarifs commencent a Rs 500/jour et vont de Rs 3 000 a Rs
             18 000 par mois pour un abonnement. Les espaces sont ouverts 24/7
@@ -864,7 +864,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Le site de <strong>Grand Baie (The Precinct)</strong> est
             strategiquement situe a l&apos;entree de Grand Baie, le long de
             l&apos;autoroute M2, dans un batiment de 10 057 m2 — ideal pour les
-            startups qui veulent combiner qualite de vie (plages a 5 minutes)
+            startups qui veulent combiner qualité de vie (plages a 5 minutes)
             et environnement professionnel.
           </p>
 
@@ -893,7 +893,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             <p className="mt-1 text-sm text-blue-700">
               Ne sous-estimez pas l&apos;importance du choix de votre espace de
               travail. Un coworking dans un incubateur (La Plage, Turbine) vous
-              donne acces a du mentorat et a un reseau. Un bureau dans un
+              donne acces a du mentorat et à un reseau. Un bureau dans un
               business center (Vanille, Workshop17) vous donne une adresse
               professionnelle et de la flexibilite. Et si vous avez besoin
               d&apos;une domiciliation rapide pour votre societe, les Vanille
@@ -1126,12 +1126,12 @@ export default function EcosystemeTechStartupsMauricePage() {
       <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-2xl font-bold text-white">
-            Pret a lancer votre startup a Maurice ?
+            Pret a lancer votre startup à Maurice ?
           </h2>
           <p className="mt-3 text-slate-400">
             Etude de faisabilite gratuite par {founder.name},{" "}
             {founder.title}. Innovator Permit, creation de societe,
-            comptabilite, fiscalite — on vous accompagne du premier jour
+            comptabilite, fiscalité — on vous accompagne du premier jour
             jusqu&apos;au scale-up.
           </p>
           <div className="mt-6">

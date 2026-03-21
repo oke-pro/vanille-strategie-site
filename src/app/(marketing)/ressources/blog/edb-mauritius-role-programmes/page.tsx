@@ -25,7 +25,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "L'EDB Mauritius -- Votre partenaire institutionnel pour investir a Maurice | Vanille Strategie",
+    "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice | Vanille Strategie",
   description:
     "Decouvrez le role de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
   keywords: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "L'EDB Mauritius -- Votre partenaire institutionnel pour investir a Maurice",
+      "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice",
     description:
       "Guide complet sur l'Economic Development Board : missions, Occupation Permits, programmes, Freeport, secteurs prioritaires.",
     type: "article",
@@ -103,7 +103,7 @@ const prioritySectors = [
     name: "Blue Economy",
     icon: Ship,
     description:
-      "Aquaculture, biotechnologies marines, energies oceaniennes. Zone economique exclusive de 2,3 millions km2.",
+      "Aquaculture, biotechnologies marines, energies oceaniennes. Zone économique exclusive de 2,3 millions km2.",
   },
   {
     name: "Renewable Energy",
@@ -159,13 +159,13 @@ export default function EDBMauritiusPage() {
             L&apos;EDB Mauritius -- Votre partenaire institutionnel pour
             investir{" "}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-              a Maurice
+              à Maurice
             </span>
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-slate-300">
             L&apos;Economic Development Board (EDB) est l&apos;organisme
-            central qui facilite l&apos;investissement etranger a Maurice.
+            central qui facilite l&apos;investissement étranger à Maurice.
             Guide complet : missions, Occupation Permits, programmes de
             soutien, Freeport et secteurs prioritaires.
           </p>
@@ -206,7 +206,7 @@ export default function EDBMauritiusPage() {
           <div className="prose prose-slate prose-lg mt-8 max-w-none">
             <p>
               L&apos;<strong>Economic Development Board (EDB)</strong> a ete
-              cree en 2017 par le gouvernement mauricien, issu de la{" "}
+              crée en 2017 par le gouvernement mauricien, issu de la{" "}
               <strong>
                 fusion du Board of Investment (BOI) et d&apos;Enterprise
                 Mauritius
@@ -217,9 +217,9 @@ export default function EDBMauritiusPage() {
             </p>
             <p>
               L&apos;EDB est le point de contact principal pour tout
-              investisseur souhaitant s&apos;implanter a Maurice. Il opere
+              investisseur souhaitant s&apos;implanter à Maurice. Il opere
               sous la tutelle du Premier Ministre et joue un role
-              strategique dans la diversification economique du pays.
+              strategique dans la diversification économique du pays.
             </p>
           </div>
 
@@ -269,7 +269,7 @@ export default function EDBMauritiusPage() {
                 Facilitation des permis
               </h3>
               <p className="mt-2 text-sm text-slate-600">
-                Instruction et delivrance des Occupation Permits (Investor,
+                Instruction et délivrance des Occupation Permits (Investor,
                 Self-Employed, Professional), des Premium Investor
                 Certificates et des Innovator Permits.
               </p>
@@ -305,7 +305,7 @@ export default function EDBMauritiusPage() {
               </h2>
               <p className="mt-1 text-sm text-slate-500">
                 Via le portail residency.mu -- de la constitution du dossier
-                a la delivrance
+                à la délivrance
               </p>
             </div>
           </div>
@@ -650,7 +650,7 @@ export default function EDBMauritiusPage() {
                 Freeport Mauritius : la zone franche logistique
               </h2>
               <p className="mt-1 text-sm text-slate-400">
-                Un regime special pour les activites de transit, stockage et
+                Un regime special pour les activités de transit, stockage et
                 transformation
               </p>
             </div>
@@ -660,7 +660,7 @@ export default function EDBMauritiusPage() {
             <p>
               Le <strong className="text-white">Freeport de Maurice</strong>{" "}
               est un regime de zone franche qui permet aux operateurs agrees
-              de mener des activites de{" "}
+              de mener des activités de{" "}
               <strong className="text-white">
                 stockage, conditionnement, assemblage leger et
                 reexportation
@@ -736,7 +736,7 @@ export default function EDBMauritiusPage() {
               Les projets dans les secteurs prioritaires beneficient
               d&apos;un traitement accelere par l&apos;EDB, d&apos;un acces
               facilite aux incentives fiscaux et aux programmes de
-              financement. Si votre activite touche a la fintech, aux
+              financement. Si votre activité touche à la fintech, aux
               energies renouvelables, a l&apos;economie bleue ou a
               l&apos;ICT, votre dossier sera traite en priorite.
             </p>
@@ -763,7 +763,7 @@ export default function EDBMauritiusPage() {
             </p>
             <p>
               Cette experience cumulee nous donne un avantage decisif :
-              nous connaissons les criteres d&apos;evaluation precis des
+              nous connaissons les critères d&apos;evaluation precis des
               officiers de l&apos;EDB, les motifs de rejet les plus
               frequents, et les elements qui font la difference dans un
               dossier.
@@ -774,7 +774,7 @@ export default function EDBMauritiusPage() {
             {[
               {
                 title: "Pre-qualification du dossier",
-                desc: "Avant tout depot, nous verifions que votre dossier repond a 100% des criteres EDB. Zero mauvaise surprise.",
+                desc: "Avant tout depot, nous verifions que votre dossier repond a 100% des critères EDB. Zero mauvaise surprise.",
               },
               {
                 title: "Business plan conforme",
@@ -938,7 +938,7 @@ export default function EDBMauritiusPage() {
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-20">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Vous avez un projet d&apos;investissement a Maurice ?
+            Vous avez un projet d&apos;investissement à Maurice ?
           </h2>
           <p className="mt-4 text-lg text-slate-300">
             {founder.name}, {founder.title}, analyse votre projet

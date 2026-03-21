@@ -84,8 +84,8 @@ export default function QualiteDeVieMauricePage() {
           {/* ── Introduction ── */}
           <div className="prose prose-slate prose-lg mx-auto max-w-3xl">
             <p>
-              Il y a des destinations o&ugrave; l&apos;on s&apos;expatrie pour
-              payer moins d&apos;imp&ocirc;ts. Et il y a Maurice &mdash; o&ugrave;
+              Il y à des destinations o&ugrave; l&apos;on s&apos;expatrie pour
+              payer moins d&apos;imp&ocirc;ts. Et il y à Maurice &mdash; o&ugrave;
               l&apos;on s&apos;installe pour{" "}
               <strong>vivre mieux, tout simplement</strong>.
             </p>
@@ -850,8 +850,8 @@ export default function QualiteDeVieMauricePage() {
               Maurice &mdash; L&agrave; o&ugrave; la vie est un art
             </h2>
             <p>
-              Il y a des &icirc;les o&ugrave; l&apos;on passe des vacances. Et
-              il y a Maurice &mdash; o&ugrave; l&apos;on <em>vit</em>.
+              Il y à des &icirc;les o&ugrave; l&apos;on passe des vacances. Et
+              il y à Maurice &mdash; o&ugrave; l&apos;on <em>vit</em>.
               V&eacute;ritablement.
             </p>
             <p>
