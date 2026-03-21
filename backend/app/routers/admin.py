@@ -15,7 +15,7 @@ async def verify_api_key(x_api_key: str = Header(...)):
 @router.get("/leads", dependencies=[Depends(verify_api_key)])
 async def list_leads():
     """Liste tous les leads (protégé par API key)."""
-    leads = get_all_leads()
+    leads = await get_all_leads()
     return {
         "count": len(leads),
         "leads": [l.model_dump() for l in leads],
@@ -25,4 +25,4 @@ async def list_leads():
 @router.get("/leads/stats", dependencies=[Depends(verify_api_key)])
 async def leads_stats():
     """Statistiques des leads (protégé par API key)."""
-    return get_leads_count()
+    return await get_leads_count()

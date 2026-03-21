@@ -109,7 +109,7 @@ export default function SimulateurVisaPage() {
                   const email = (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value;
                   if (email && result) {
                     await submitSimulateurVisa({ email, answers, result_visa: result.visa, result_invest: result.invest, result_duration: result.duration });
-                    alert("Analyse envoyée !");
+                    setSuccess(true);
                   }
                 }}>
                   <Input name="email" type="email" placeholder="votre@email.com" className="h-10" required />

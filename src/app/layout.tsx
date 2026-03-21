@@ -71,9 +71,6 @@ export const metadata: Metadata = {
       "Depuis 2012, le seul groupe à Maurice qui intègre conseil, compta MIPA, RH et dashboard temps réel.",
     images: ["/images/hero-paradise.jpg"],
   },
-  alternates: {
-    canonical: "https://vanillestrategie.fr",
-  },
   verification: {
     // google: "VOTRE_CODE_GOOGLE_SEARCH_CONSOLE",
   },

@@ -122,7 +122,7 @@ export default function SimulateurFiscalPage() {
                   const email = (e.currentTarget.elements.namedItem("capture-email") as HTMLInputElement)?.value;
                   if (email) {
                     await submitSimulateurFiscal({ email, ca: parseFloat(ca), benefice: b, dividendes: d, economie_vs_france: economie });
-                    alert("Simulation envoyée !");
+                    setSuccess(true);
                   }
                 }}>
                   <Input name="capture-email" type="email" placeholder="votre@email.com" className="h-10" required />
