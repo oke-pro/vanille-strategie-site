@@ -1,0 +1,26 @@
+services:
+  # --- Frontend Next.js ---
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: https://vanille-strategie-api.oke.pro
+    ports:
+      - "3100:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # --- Backend FastAPI ---
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8100:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - FRONTEND_URL=https://vanille-strategie.oke.pro
+    restart: unless-stopped
