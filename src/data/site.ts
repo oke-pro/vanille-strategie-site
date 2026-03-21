@@ -381,7 +381,28 @@ export const officialSources = [
   { name: "MIPA", url: "https://www.mipa.mu", description: "Mauritius Institute of Professional Accountants" },
   { name: "Bank of Mauritius", url: "https://www.bom.mu", description: "Banque centrale" },
   { name: "Residency Portal", url: "https://residency.mu", description: "Portail officiel résidence" },
-  { name: "Convention FR-MU", url: "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ile_maurice/ile-maurice_convention-avec-l-ile-maurice_fd_1920.pdf", description: "Texte consolidé" },
+  { name: "Convention FR-MU", url: "/documents/convention-fiscale-france-maurice.pdf", description: "Texte consolidé (PDF)" },
+] as const;
+
+// ============================================================
+// Documents officiels téléchargeables
+// ============================================================
+
+export const officialDocuments = [
+  {
+    title: "Finance Act 2025",
+    description: "Texte officiel de la loi de finances 2025 de la République de Maurice (Act No. 18 of 2025).",
+    url: "/documents/finance-act-2025-mauritius.pdf",
+    source: "National Assembly of Mauritius",
+    size: "1.6 MB",
+  },
+  {
+    title: "Convention fiscale France-Maurice",
+    description: "Convention de non-double imposition entre la France et Maurice (11 déc. 1980, amendée 23 juin 2011). Version consolidée.",
+    url: "/documents/convention-fiscale-france-maurice.pdf",
+    source: "impots.gouv.fr",
+    size: "112 KB",
+  },
 ] as const;
 
 // ============================================================

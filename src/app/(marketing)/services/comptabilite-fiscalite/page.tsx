@@ -43,7 +43,7 @@ export default function ComptaFiscalitePage() {
       title: "Dashboard OKE", 
       icon: Cpu,
       color: "cyan",
-      items: ["Connecteurs AfrAsia & MCB", "12 plateformes e-commerce", "IA classification (85%+)", "Réconciliation bancaire ML"] 
+      items: ["Connecteurs AfrAsia & MCB", "12 plateformes e-commerce", "Classification automatique (85%+)", "Réconciliation bancaire intelligente"] 
     },
     { 
       title: "Conseil fiscal", 

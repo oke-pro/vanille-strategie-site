@@ -83,7 +83,7 @@ const articles: Record<string, { title: string; category: string; date: string; 
       "Si vous décidez de rester, l'OP Self-Employed (50 000 $) ou Investor vous donnent un permis de 10 ans avec résidence fiscale mauricienne : 15% IS, 0% dividendes, 0% plus-values.",
       "Avantage massif pour le e-commerce : les services exportés vers l'UE ne sont pas soumis à la TVA mauricienne. Si vos clients sont en Europe, vous facturez sans TVA depuis Maurice.",
       "Notre dashboard OKE se connecte à 12 plateformes e-commerce : Shopify, Amazon, WooCommerce, PrestaShop, eBay, Cdiscount, Rakuten, ManoMano, Back Market, Zalando, Magento et Mirakl. Chaque vente génère automatiquement une écriture comptable.",
-      "Avec les connecteurs bancaires AfrAsia et MCB, la réconciliation est automatique. L'IA classe vos transactions à 85%+ de confiance. Votre comptabilité tourne en autopilote.",
+      "Avec les connecteurs bancaires AfrAsia et MCB, la réconciliation est automatique. Vos transactions sont classées automatiquement avec 85%+ de précision. Votre comptabilité tourne en autopilote.",
     ],
   },
 };
