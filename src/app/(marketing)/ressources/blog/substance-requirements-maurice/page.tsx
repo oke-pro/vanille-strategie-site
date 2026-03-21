@@ -264,7 +264,7 @@ export default function SubstanceRequirementsPage() {
         <p>
           Les actions BEPS 5 (pratiques fiscales dommageables) et 6 (abus de
           conventions fiscales) ont pousse Maurice a reformer en profondeur son
-          cadre reglementaire. L&apos;ancien regime du Category 1 Global
+          cadre réglementaire. L&apos;ancien regime du Category 1 Global
           Business Licence a ete remplace en 2018-2019 par le systeme actuel des
           GBC, avec des exigences de substance considerablement renforcees.
         </p>
@@ -275,7 +275,7 @@ export default function SubstanceRequirementsPage() {
             sur la transparence et l&apos;echange de renseignements. Chaque
             revue par les pairs examine la réalité de la substance des entites
             enregistrees. Une mauvaise evaluation aurait des consequences
-            desastreuses sur l&apos;attractivite de la juridiction.
+            desastreuses sur l&apos;attractivité de la juridiction.
           </p>
         </Callout>
 
@@ -283,7 +283,7 @@ export default function SubstanceRequirementsPage() {
           L&apos;Union europeenne a egalement exerce une pression significative.
           Maurice a figure sur la liste grise de l&apos;UE avant d&apos;en etre
           retiree, precisement grace au renforcement de ses exigences de
-          substance. Aujourd&apos;hui, maintenir cette conformite est vital pour
+          substance. Aujourd&apos;hui, maintenir cette conformité est vital pour
           le pays et pour chaque société qui y est enregistree.
         </p>
         <p>
@@ -301,12 +301,12 @@ export default function SubstanceRequirementsPage() {
         </h2>
         <p>
           Les CIGA sont les activités essentielles qui generent les revenus de
-          la societe. La FSC exige que ces activités soient effectuees à Maurice
+          la société. La FSC exige que ces activités soient effectuees à Maurice
           — pas dans un autre pays, pas sous-traitees a l&apos;etranger sans
           supervision locale reelle.
         </p>
         <p>
-          La nature des CIGA varie selon le type d&apos;activite de la GBC :
+          La nature des CIGA varie selon le type d&apos;activité de la GBC :
         </p>
 
         <div className="my-6 overflow-hidden rounded-lg border border-slate-200">
@@ -314,7 +314,7 @@ export default function SubstanceRequirementsPage() {
             <thead className="bg-slate-100">
               <tr>
                 <th className="px-4 py-3 font-semibold text-slate-700">
-                  Type d&apos;activite
+                  Type d&apos;activité
                 </th>
                 <th className="px-4 py-3 font-semibold text-slate-700">
                   Exemples de CIGA
@@ -357,7 +357,7 @@ export default function SubstanceRequirementsPage() {
               <tr>
                 <td className="px-4 py-3 font-medium">Shipping</td>
                 <td className="px-4 py-3">
-                  Gestion de flotte, logistique maritime, negociation des
+                  Gestion de flotte, logistique maritime, négociation des
                   affretements
                 </td>
               </tr>
@@ -394,15 +394,15 @@ export default function SubstanceRequirementsPage() {
         <p>
           Chaque GBC doit avoir au minimum deux directeurs résidents à Maurice.
           Mais attention : il ne s&apos;agit pas de simples preteurs de noms. La
-          FSC attend des directeurs qui ont les competences, l&apos;experience
-          et le temps necessaires pour exercer un role reel dans la gouvernance
-          de la societe.
+          FSC attend des directeurs qui ont les competences, l&apos;expérience
+          et le temps necessaires pour exercer un rôle reel dans la gouvernance
+          de la société.
         </p>
 
-        <Callout variant="red" title="Piege a eviter">
+        <Callout variant="red" title="Piege a éviter">
           <p>
             Les directeurs nominees passifs — ceux qui signent sans lire, sans
-            participer aux reunions, sans comprendre l&apos;activite — sont un
+            participer aux reunions, sans comprendre l&apos;activité — sont un
             signal d&apos;alarme majeur pour la FSC. Si vos directeurs ne
             peuvent pas expliquer le modele économique de la société lors
             d&apos;un controle, vous avez un probleme.
@@ -416,7 +416,7 @@ export default function SubstanceRequirementsPage() {
         <p>
           Le principal bank account de la GBC doit être tenu à Maurice, aupres
           d&apos;une banque locale agressee par la Bank of Mauritius. Les flux
-          financiers doivent transiter de maniere significative par ce compte.
+          financiers doivent transiter de manière significative par ce compte.
           Avoir un compte chez AfrAsia, MCB ou SBI Maurice ne suffit pas : il
           faut que ce compte soit le centre nevralgique des operations
           financieres.
@@ -507,17 +507,17 @@ export default function SubstanceRequirementsPage() {
             Le changement cle
           </p>
           <p className="mt-2 text-sm leading-relaxed text-slate-700">
-            Avant le Finance Act 2025, c&apos;etait <strong>la societe</strong>{" "}
+            Avant le Finance Act 2025, c&apos;était <strong>la société</strong>{" "}
             qui devait satisfaire les conditions de substance. Desormais,
             c&apos;est{" "}
-            <strong>l&apos;activite generant le revenu</strong> qui doit les
+            <strong>l&apos;activité generant le revenu</strong> qui doit les
             satisfaire. La nuance est considerable.
           </p>
         </div>
 
         <p>
           Concretement, cela signifie que si votre GBC a plusieurs lignes
-          d&apos;activite, chaque activité generatrice de revenus doit
+          d&apos;activité, chaque activité generatrice de revenus doit
           individuellement demontrer une substance suffisante à Maurice. Il ne
           suffit plus d&apos;avoir un bureau et deux directeurs pour couvrir
           l&apos;ensemble des activités — chaque source de revenus est examinee
@@ -528,7 +528,7 @@ export default function SubstanceRequirementsPage() {
           <p>
             Une GBC qui fait du trading international ET du conseil en
             investissement doit demontrer une substance distincte pour chacune de
-            ces deux activites. Les CIGA du trading (negociation, logistique)
+            ces deux activités. Les CIGA du trading (négociation, logistique)
             doivent être conduites à Maurice, ET les CIGA du conseil (analyse,
             recommandations) doivent egalement l&apos;etre.
           </p>
@@ -545,8 +545,8 @@ export default function SubstanceRequirementsPage() {
           <p>
             Pour les entrepreneurs qui ont une seule activité claire (e-commerce,
             consulting, holding), le changement est mineur : demontrez la
-            substance pour cette activite, et vous etes conforme. Pour les
-            structures multi-activites, il faut repenser l&apos;organisation
+            substance pour cette activité, et vous êtes conforme. Pour les
+            structures multi-activités, il faut repenser l&apos;organisation
             interne.
           </p>
         </Callout>
@@ -630,7 +630,7 @@ export default function SubstanceRequirementsPage() {
           7. Les erreurs courantes qui coutent cher
         </h2>
         <p>
-          En 14 ans d&apos;activite à Maurice, nous avons vu des dizaines de
+          En 14 ans d&apos;activité à Maurice, nous avons vu des dizaines de
           structures echouer a satisfaire les exigences de substance. Voici les
           erreurs les plus frequentes — et les plus couteuses :
         </p>
@@ -638,7 +638,7 @@ export default function SubstanceRequirementsPage() {
         <Callout variant="red" title="Erreur n 1 : la shell company deguisee">
           <p>
             Creer une GBC avec un registered office chez un agent, deux
-            directeurs nominees qui ne connaissent pas l&apos;activite, pas
+            directeurs nominees qui ne connaissent pas l&apos;activité, pas
             d&apos;employe, pas de bureau reel. Cette configuration est
             transparente pour la FSC. Resultat : perte du PER, redressement
             fiscal, et potentiellement perte de la licence.
@@ -651,7 +651,7 @@ export default function SubstanceRequirementsPage() {
             sans participer aux decisions. La FSC attend des directeurs qui
             comprennent le business, qui challengent les propositions, qui
             prennent des decisions informees. Un directeur qui ne peut pas
-            repondre à des questions basiques sur l&apos;activite de la societe
+            répondre à des questions basiques sur l&apos;activité de la société
             lors d&apos;un audit est un risque majeur.
           </p>
         </Callout>
@@ -691,7 +691,7 @@ export default function SubstanceRequirementsPage() {
         </h2>
         <p>
           BD Star Management Services, la branche comptabilité et services du
-          groupe Vanille Strategie, a ete concue pour repondre exactement aux
+          groupe Vanille Strategie, a ete concue pour répondre exactement aux
           exigences de substance de la FSC et de l&apos;EDB. Voici comment :
         </p>
 
@@ -701,7 +701,7 @@ export default function SubstanceRequirementsPage() {
         <p>
           Nos locaux se situent au 12e etage de The Core, 62 ICT Avenue,
           Cybercity, Ebene 72201. C&apos;est le coeur du district financier de
-          Maurice — le meme immeuble qui abrite des cabinets internationaux, des
+          Maurice — le même immeuble qui abrite des cabinets internationaux, des
           banques et des sociétés de gestion. Votre GBC dispose d&apos;une
           adresse physique reelle dans un environnement professionnel reconnu par
           les regulateurs.
@@ -722,8 +722,8 @@ export default function SubstanceRequirementsPage() {
         </h3>
         <p>
           Nos directeurs résidents ne sont pas des preteurs de noms. Ils
-          comprennent votre activite, participent activement aux board meetings,
-          et sont capables de repondre aux questions de la FSC lors d&apos;un
+          comprennent votre activité, participent activement aux board meetings,
+          et sont capables de répondre aux questions de la FSC lors d&apos;un
           controle. C&apos;est une difference fondamentale avec les management
           companies qui proposent des directeurs à la chaine sans aucune
           implication reelle.
@@ -796,11 +796,11 @@ export default function SubstanceRequirementsPage() {
           </p>
         </Callout>
 
-        <Callout variant="green" title="Revue annuelle de conformite">
+        <Callout variant="green" title="Revue annuelle de conformité">
           <p>
             Faites realiser une revue annuelle de votre substance par un
             professionnel. Les exigences evoluent (comme le Finance Act 2025
-            l&apos;a montre). Ce qui etait suffisant l&apos;annee derniere peut
+            l&apos;a montre). Ce qui etait suffisant l&apos;annee dernière peut
             ne plus l&apos;etre aujourd&apos;hui.
           </p>
         </Callout>

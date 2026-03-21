@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
   description:
-    "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations reglementaires et comptables.",
+    "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations réglementaires et comptables.",
 };
 
 export default function PaiementsEnLigneMauricePage() {
@@ -84,7 +84,7 @@ export default function PaiementsEnLigneMauricePage() {
             <p>
               Le choix de votre infrastructure de paiement à des consequences
               directes sur votre tresorerie, votre comptabilité et votre
-              conformite reglementaire. Ce guide fait le point sur toutes les
+              conformité réglementaire. Ce guide fait le point sur toutes les
               options disponibles en 2026.
             </p>
           </div>
@@ -132,7 +132,7 @@ export default function PaiementsEnLigneMauricePage() {
                   Un compte bancaire US (Mercury, Relay) a gerer en parallele
                 </li>
                 <li>
-                  Un risque de conflit de substance fiscale si votre activite
+                  Un risque de conflit de substance fiscale si votre activité
                   reelle est à Maurice
                 </li>
                 <li>
@@ -143,7 +143,7 @@ export default function PaiementsEnLigneMauricePage() {
               <p>
                 <strong>Notre conseil :</strong> si vous optez pour cette
                 structure, faites-la valider par un fiscaliste international
-                pour eviter les pieges de double imposition et de substance.
+                pour éviter les pieges de double imposition et de substance.
               </p>
             </div>
           </div>
@@ -256,8 +256,8 @@ export default function PaiementsEnLigneMauricePage() {
               Astuce — Ouverture de compte Airwallex
             </p>
             <p className="mt-2 text-sm text-blue-700">
-              L&apos;eligibilite depend de la juridiction d&apos;enregistrement
-              de votre societe. Si votre Domestic Company mauricienne n&apos;est
+              L&apos;éligibilité depend de la juridiction d&apos;enregistrement
+              de votre société. Si votre Domestic Company mauricienne n&apos;est
               pas directement eligible, une GBC avec de la substance
               internationale ou une entite dans un pays supporte (Singapour,
               Hong Kong, Australie) peut servir de point d&apos;entree. Contactez
@@ -371,7 +371,7 @@ export default function PaiementsEnLigneMauricePage() {
                 <strong>2Checkout</strong> (desormais sous la marque Verifone)
                 fonctionne comme Merchant of Record : il{" "}
                 <strong>gere les taxes de vente internationales</strong> pour
-                vous, ce qui simplifie enormement la conformite fiscale
+                vous, ce qui simplifie enormement la conformité fiscale
                 multi-pays. C&apos;est une solution tres utilisee par les
                 entrepreneurs mauriciens qui vendent des produits digitaux ou
                 des abonnements SaaS a l&apos;international.
@@ -434,7 +434,7 @@ export default function PaiementsEnLigneMauricePage() {
               <p>
                 L&apos;API REST avec webhooks permet une integration technique
                 souple, et le support local — reactif en anglais et en
-                francais — est un avantage decisif par rapport aux PSP
+                français — est un avantage decisif par rapport aux PSP
                 internationaux. C&apos;est la solution a considerer en priorite
                 pour toute entreprise basee à Maurice qui vend en ligne.
               </p>
@@ -626,12 +626,12 @@ export default function PaiementsEnLigneMauricePage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            Considerations reglementaires
+            Considerations réglementaires
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
               La gestion des paiements en ligne depuis Maurice implique le
-              respect de plusieurs cadres reglementaires. Voici les points
+              respect de plusieurs cadres réglementaires. Voici les points
               essentiels :
             </p>
 
@@ -642,7 +642,7 @@ export default function PaiementsEnLigneMauricePage() {
               Toute entite qui fournit des services de paiement à Maurice doit
               être agreee par la Bank of Mauritius en vertu du National Payment
               Systems Act. Cela concerne les PSP, pas les commercants qui
-              utilisent un PSP. Si vous etes un simple commercant qui accepte
+              utilisent un PSP. Si vous êtes un simple commercant qui accepte
               les paiements via MCB ou PayPal, vous n&apos;avez pas besoin de
               licence.
             </p>
@@ -699,7 +699,7 @@ export default function PaiementsEnLigneMauricePage() {
               La multiplication des PSP et des devises crée un defi comptable
               majeur. Chaque plateforme a ses propres releves, ses propres
               formats et ses propres delais de reglement. Voici comment
-              structurer votre comptabilite.
+              structurer votre comptabilité.
             </p>
 
             <h3 className="mt-6 text-lg font-semibold text-slate-900">
@@ -741,7 +741,7 @@ export default function PaiementsEnLigneMauricePage() {
             </p>
             <p>
               Le resultat : une comptabilité temps reel, des ecritures
-              multi-devises generees automatiquement avec une precision
+              multi-devises generees automatiquement avec une précision
               superieure a 85&nbsp;%, et un temps de reconciliation divise par
               dix. Plus besoin d&apos;exporter des CSV et de faire des
               copier-coller entre les plateformes.
@@ -755,7 +755,7 @@ export default function PaiementsEnLigneMauricePage() {
             <p className="mt-2 text-sm text-blue-700">
               OKE integre des connecteurs directs avec les banques
               mauriciennes (MCB, AfrAsia). Vos releves bancaires sont importes
-              automatiquement et les transactions sont classees de maniere
+              automatiquement et les transactions sont classees de manière
               intelligente. Le rapprochement bancaire qui prenait des heures se
               fait desormais en quelques minutes.
             </p>
@@ -1106,7 +1106,7 @@ export default function PaiementsEnLigneMauricePage() {
               {
                 name: "Financial Services Commission",
                 url: "https://www.fscmauritius.org",
-                detail: "Licences GBC, cadre reglementaire",
+                detail: "Licences GBC, cadre réglementaire",
               },
               {
                 name: "Mauritius Revenue Authority",
@@ -1163,7 +1163,7 @@ export default function PaiementsEnLigneMauricePage() {
 
           <p className="mt-6 text-xs text-slate-400">
             Cet article est fourni a titre informatif et ne constitue pas un
-            conseil juridique ou fiscal. Les informations sur la disponibilite
+            conseil juridique ou fiscal. Les informations sur la disponibilité
             des PSP sont verifiees en mars 2026 et peuvent evoluer. Contactez
             nos experts pour une analyse personnalisee de votre situation.
           </p>
@@ -1178,7 +1178,7 @@ export default function PaiementsEnLigneMauricePage() {
           </h2>
           <p className="mt-3 text-slate-400">
             {founder.name} analyse votre activité et recommande
-            l&apos;infrastructure de paiement optimale — en conformite avec la
+            l&apos;infrastructure de paiement optimale — en conformité avec la
             reglementation mauricienne.
           </p>
           <p className="mt-2 text-sm text-slate-500">

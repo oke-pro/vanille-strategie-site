@@ -96,7 +96,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Le budget 2025-2026 prevoit egalement Rs 70 millions pour un Data
               Centre gouvernemental Tier IV dedie à la reprise apres sinistre,
               ainsi que l&apos;alignement des lois sur la protection des donnees
-              et la cybersecurite avec les normes internationales. Maurice joue
+              et la cybersécurité avec les normes internationales. Maurice joue
               dans la cour des grands.
             </p>
           </div>
@@ -132,7 +132,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Turbine
             </a>{" "}
             est un incubateur et accelerateur qui fournit du coworking, du
-            mentorat et un acces au financement. En tant que membre de{" "}
+            mentorat et un accès au financement. En tant que membre de{" "}
             <strong>Catalytic Africa</strong>, les startups incubees chez
             Turbine peuvent acceder à des grants de{" "}
             <strong>20 000 a 60 000 USD</strong> une fois qu&apos;elles
@@ -141,7 +141,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            La Plage Factory — Incubation à la francaise
+            La Plage Factory — Incubation à la française
           </h3>
           <p>
             Fondee en 2017 et accreditee par le{" "}
@@ -160,7 +160,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             propose un programme d&apos;incubation de 7 mois (Growth &
             Innovation Programme) pour les entreprises en phase early-stage.
             Le programme accueille 12 entrepreneurs par cohorte et offre :
-            mentorat dedie, acces gratuit au coworking, evenements communautaires
+            mentorat dedie, accès gratuit au coworking, evenements communautaires
             et utilisation de la plateforme Vianeo pour le business modelling.
             C&apos;est l&apos;adresse ideale pour les entreprises tech ciblant
             l&apos;Afrique et l&apos;Europe depuis Maurice.
@@ -234,7 +234,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Passez par un incubateur accredite MRIC (comme La Plage Factory
               ou Turbine) pour obtenir votre Innovator Permit : la procedure est
               plus rapide et vous beneficiez d&apos;un accompagnement des le
-              depart. L&apos;EDB effectue des revues de conformite a 5 ans et 10
+              depart. L&apos;EDB effectue des revues de conformité a 5 ans et 10
               ans — assurez-vous que votre projet genere de la valeur reelle.
             </p>
           </div>
@@ -327,9 +327,9 @@ export default function EcosystemeTechStartupsMauricePage() {
               DBM
             </a>{" "}
             propose des prets dedies aux PME et startups à des conditions
-            preferentielles. C&apos;est souvent la premiere source de
+            preferentielles. C&apos;est souvent la première source de
             financement bancaire pour les jeunes entreprises mauriciennes qui
-            n&apos;ont pas encore acces aux banques commerciales traditionnelles.
+            n&apos;ont pas encore accès aux banques commerciales traditionnelles.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -415,7 +415,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             La Cybercity dispose d&apos;une connectivite fibre optique haut
             debit, de <strong>data centers</strong> (dont le Cybercity Data
-            Centre) et d&apos;un acces aux cables sous-marins internationaux
+            Centre) et d&apos;un accès aux cables sous-marins internationaux
             (SAFE, LION, MARS). Le budget 2025-2026 renforce cette
             infrastructure avec un investissement de Rs 70 millions dans un Data
             Centre gouvernemental Tier IV.
@@ -468,11 +468,11 @@ export default function EcosystemeTechStartupsMauricePage() {
             Fintech — Le secteur roi
           </h3>
           <p>
-            Maurice dispose d&apos;un cadre reglementaire mature pour la
+            Maurice dispose d&apos;un cadre réglementaire mature pour la
             fintech. La <strong>Financial Services Commission (FSC)</strong>{" "}
             delivre des licences adaptees a differents modeles : paiements,
             crowdfunding, forex, gestion d&apos;actifs. Le pays beneficie
-            egalement d&apos;une <strong>sandbox reglementaire</strong> qui
+            egalement d&apos;une <strong>sandbox réglementaire</strong> qui
             permet aux startups fintech de tester leurs produits dans un
             environnement controle avant d&apos;obtenir une licence complete.
           </p>
@@ -486,7 +486,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Virtual Asset and Initial Token Offering Services Act (VAITOS)
               de 2021
             </strong>
-            , Maurice offre un cadre reglementaire FATF-aligned pour les actifs
+            , Maurice offre un cadre réglementaire FATF-aligned pour les actifs
             virtuels, supervise par la FSC. Cinq classes de licences VASP
             couvrent :
           </p>
@@ -501,7 +501,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Depuis mars 2025, des obligations AML/CFT renforcees sont en
             vigueur, incluant le monitoring des transactions en temps reel, le
             reporting des transferts transfrontaliers au-dela de certains
-            seuils, et des audits annuels de cybersecurite. Les stablecoins
+            seuils, et des audits annuels de cybersécurité. Les stablecoins
             emis depuis Maurice doivent maintenir une reserve fiat 1:1 dans des
             comptes bancaires separes, avec des audits trimestriels
             independants.
@@ -549,7 +549,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             GreenTech / CleanTech
           </h3>
           <p>
-            Maurice s&apos;est fixe des objectifs ambitieux en matiere
+            Maurice s&apos;est fixe des objectifs ambitieux en matière
             d&apos;energies renouvelables. Les startups travaillant sur le
             solaire, la gestion des dechets, le recyclage, la mobilite
             electrique ou l&apos;economie circulaire trouveront un marche
@@ -558,13 +558,13 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            Cybersecurite
+            Cybersécurité
           </h3>
           <p>
-            Avec l&apos;alignement des lois sur la cybersecurite avec les normes
+            Avec l&apos;alignement des lois sur la cybersécurité avec les normes
             internationales et l&apos;obligation pour tous les VASP de passer
-            des audits annuels de cybersecurite, la demande en solutions de
-            sécurité explose. Les startups specialisees en cybersecurite
+            des audits annuels de cybersécurité, la demande en solutions de
+            sécurité explose. Les startups specialisees en cybersécurité
             bénéficient d&apos;un marche captif local et d&apos;un potentiel
             d&apos;export vers toute la region Afrique-ocean Indien.
           </p>
@@ -587,7 +587,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <div className="space-y-4 not-prose mt-6">
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <p className="text-sm font-semibold text-slate-800">
-                Impot sur les sociétés : 15 % flat
+                Impôt sur les sociétés : 15 % flat
               </p>
               <p className="mt-1 text-sm text-slate-600">
                 Le taux d&apos;IS à Maurice est un flat rate de 15 % — l&apos;un
@@ -604,7 +604,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               </p>
               <p className="mt-1 text-sm text-slate-600">
                 Les services fournis à des clients hors de Maurice sont{" "}
-                <strong>zero-rated</strong> en matiere de TVA. Pour une startup
+                <strong>zero-rated</strong> en matière de TVA. Pour une startup
                 SaaS, une agence de developpement ou un cabinet de conseil tech
                 qui exporte ses services, cela signifie zero TVA facturee aux
                 clients internationaux. Un avantage competitif majeur.
@@ -613,7 +613,7 @@ export default function EcosystemeTechStartupsMauricePage() {
 
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <p className="text-sm font-semibold text-slate-800">
-                Credit d&apos;impot R&D
+                Credit d&apos;impôt R&D
               </p>
               <p className="mt-1 text-sm text-slate-600">
                 Les depenses en capital liées à la R&D bénéficient d&apos;
@@ -644,7 +644,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             </p>
             <p className="mt-1 text-sm text-amber-700">
               Le Finance Act 2025 a significativement reduit les incentives
-              Smart City. Les exemptions d&apos;impot sur 8 ans et les
+              Smart City. Les exemptions d&apos;impôt sur 8 ans et les
               exemptions de droits d&apos;enregistrement ont ete grandfatherees
               uniquement pour les projets ayant recu une letter of comfort avant
               le 5 juin 2025. Desormais, les incentives fiscaux Smart City sont
@@ -792,9 +792,9 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             Basee au 12e etage de The Core a Ebene Cybercity, BD Star
             Management Services est la branche comptable du groupe. On ne vous
-            attend pas à la fin de l&apos;annee fiscale : la comptabilite
-            demarre le jour de la creation de votre societe. Declarations
-            fiscales, TVA, paie, conformite MRA — tout est pris en charge, en
+            attend pas à la fin de l&apos;annee fiscale : la comptabilité
+            demarre le jour de la creation de votre société. Declarations
+            fiscales, TVA, paie, conformité MRA — tout est pris en charge, en
             temps reel, des le premier jour.
           </p>
 
@@ -806,7 +806,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Les startups ont des besoins specifiques : cash-flow tendu,
               croissance rapide, pivots frequents. Nous proposons des packages
               comptables adaptes aux startups en phase early-stage, avec une
-              montee en puissance progressive a mesure que l&apos;activite
+              montee en puissance progressive a mesure que l&apos;activité
               croit. Pas de surfacturation, pas de surprise — un expert-
               comptable qui comprend les startups parce qu&apos;il en
               accompagne depuis des annees.
@@ -837,8 +837,8 @@ export default function EcosystemeTechStartupsMauricePage() {
             travail a <strong>Grand Baie</strong> (Sottise Road) et a{" "}
             <strong>Ebene</strong> (The Core, Cybercity). Au-dela du simple
             bureau, vous accedez à tout l&apos;ecosysteme Vanille Strategie :
-            comptabilite, fiscalite, creation de societe, permis de residence —
-            tout sous le meme toit.
+            comptabilité, fiscalité, creation de société, permis de residence —
+            tout sous le même toit.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -893,10 +893,10 @@ export default function EcosystemeTechStartupsMauricePage() {
             <p className="mt-1 text-sm text-blue-700">
               Ne sous-estimez pas l&apos;importance du choix de votre espace de
               travail. Un coworking dans un incubateur (La Plage, Turbine) vous
-              donne acces a du mentorat et à un reseau. Un bureau dans un
+              donne accès a du mentorat et à un reseau. Un bureau dans un
               business center (Vanille, Workshop17) vous donne une adresse
               professionnelle et de la flexibilite. Et si vous avez besoin
-              d&apos;une domiciliation rapide pour votre societe, les Vanille
+              d&apos;une domiciliation rapide pour votre société, les Vanille
               Business Centers offrent ce service des la creation.
             </p>
           </div>
@@ -1113,7 +1113,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p className="mt-4 text-xs text-slate-400">
             Cet article est fourni a titre informatif et ne constitue pas un
             conseil fiscal ou juridique personnalise. Les dispositifs de
-            financement, les conditions d&apos;eligibilite et les avantages
+            financement, les conditions d&apos;éligibilité et les avantages
             fiscaux peuvent evoluer. Contactez nos experts pour une analyse
             personnalisee de votre projet.
           </p>
@@ -1130,8 +1130,8 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h2>
           <p className="mt-3 text-slate-400">
             Etude de faisabilite gratuite par {founder.name},{" "}
-            {founder.title}. Innovator Permit, creation de societe,
-            comptabilite, fiscalité — on vous accompagne du premier jour
+            {founder.title}. Innovator Permit, creation de société,
+            comptabilité, fiscalité — on vous accompagne du premier jour
             jusqu&apos;au scale-up.
           </p>
           <div className="mt-6">

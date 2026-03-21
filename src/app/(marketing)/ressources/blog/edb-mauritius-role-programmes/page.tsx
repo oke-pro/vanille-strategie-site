@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title:
     "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice | Vanille Strategie",
   description:
-    "Decouvrez le role de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
+    "Decouvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
   keywords: [
     "EDB Mauritius",
     "Economic Development Board Maurice",
@@ -97,7 +97,7 @@ const prioritySectors = [
     name: "Fintech & Financial Services",
     icon: TrendingUp,
     description:
-      "Sandbox reglementaire, licences FSC accelerees, hub blockchain et paiements numeriques.",
+      "Sandbox réglementaire, licences FSC accelerees, hub blockchain et paiements numeriques.",
   },
   {
     name: "Blue Economy",
@@ -283,7 +283,7 @@ export default function EDBMauritiusPage() {
               <p className="mt-2 text-sm text-slate-600">
                 Apres l&apos;installation, l&apos;EDB continue d&apos;assister
                 les entreprises : mise en relation, resolution de
-                problemes administratifs, acces aux programmes de soutien.
+                problemes administratifs, accès aux programmes de soutien.
               </p>
             </Card>
           </div>
@@ -342,7 +342,7 @@ export default function EDBMauritiusPage() {
           {/* Callout */}
           <div className="mt-6 rounded-xl border-l-4 border-emerald-500 bg-emerald-50 p-6">
             <p className="text-sm font-bold text-emerald-800">
-              Notre experience
+              Notre expérience
             </p>
             <p className="mt-2 text-sm text-emerald-700">
               Vanille Strategie depose entre 30 et 50 dossiers d&apos;Occupation
@@ -383,7 +383,7 @@ export default function EDBMauritiusPage() {
                 Grants pouvant atteindre{" "}
                 <strong>Rs 200 000</strong> pour les PME mauriciennes.
                 Couvrent le marketing, la formation, la certification
-                qualite, l&apos;innovation produit et l&apos;acces aux
+                qualité, l&apos;innovation produit et l&apos;acces aux
                 marches d&apos;exportation.
               </p>
               <ul className="mt-3 space-y-1.5">
@@ -441,7 +441,7 @@ export default function EDBMauritiusPage() {
             <p className="mt-2 text-sm text-pink-700">
               Maurice a mis en place des programmes dedies aux femmes
               entrepreneures, avec des grants specifiques, du mentoring et
-              un acces facilite au financement DBM. L&apos;EDB joue un role
+              un accès facilite au financement DBM. L&apos;EDB joue un role
               de coordination entre les differentes agences pour simplifier
               les demarches.
             </p>
@@ -544,7 +544,7 @@ export default function EDBMauritiusPage() {
               Le candidat doit presenter un projet innovant valide par
               l&apos;EDB, avec un business plan demontrant le potentiel de
               creation d&apos;emplois et de valeur ajoutee pour
-              l&apos;economie mauricienne. L&apos;EDB evalue le caractere
+              l&apos;economie mauricienne. L&apos;EDB evalue le caractère
               innovant du projet et le profil du fondateur.
             </p>
           </div>
@@ -565,7 +565,7 @@ export default function EDBMauritiusPage() {
             <Card className="bg-teal-50 p-5 text-center">
               <p className="text-3xl font-bold text-teal-700">15%</p>
               <p className="mt-1 text-sm text-teal-600">
-                IS flat -- meme regime que tous
+                IS flat -- même regime que tous
               </p>
             </Card>
           </div>
@@ -762,7 +762,7 @@ export default function EDBMauritiusPage() {
               l&apos;institution.
             </p>
             <p>
-              Cette experience cumulee nous donne un avantage decisif :
+              Cette expérience cumulee nous donne un avantage decisif :
               nous connaissons les critères d&apos;evaluation precis des
               officiers de l&apos;EDB, les motifs de rejet les plus
               frequents, et les elements qui font la difference dans un

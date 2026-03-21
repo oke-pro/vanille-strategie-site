@@ -116,8 +116,8 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               Principe fondamental
             </p>
             <p className="mt-1 text-sm text-blue-700">
-              En fiscalite, seule la loi publiee fait autorite. Les articles de
-              presse, les sites de conseil et meme les circulaires
+              En fiscalité, seule la loi publiée fait autorite. Les articles de
+              presse, les sites de conseil et même les circulaires
               administratives ne sont que des interpretations. Remontez toujours
               au texte source pour valider une information.
             </p>
@@ -158,7 +158,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             </li>
             <li>
               <strong>L&apos;Income Tax Act 1995</strong> — la loi fondamentale
-              en matiere d&apos;impot sur le revenu et d&apos;impot sur les
+              en matière d&apos;impôt sur le revenu et d&apos;impôt sur les
               sociétés à Maurice.
             </li>
             <li>
@@ -236,7 +236,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             >
               Legislations
             </a>{" "}
-            du site de la MRA donne acces aux textes de loi sous un angle
+            du site de la MRA donne accès aux textes de loi sous un angle
             pratique. Vous y trouverez les Acts principaux, les Finance Acts
             annuels et les reglements d&apos;application.
           </p>
@@ -245,7 +245,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </h3>
           <p>
             Les <strong>Statements of Practice</strong> sont des notes
-            d&apos;interpretation officielles publiees par la MRA sur des points
+            d&apos;interpretation officielles publiées par la MRA sur des points
             techniques precis. Elles n&apos;ont pas force de loi au sens strict,
             mais elles indiquent la position de l&apos;administration fiscale sur
             un sujet donne. En pratique, les contribuables qui suivent les SP
@@ -262,7 +262,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           <p>
             Les <strong>Rulings</strong> sont des decisions rendues par le
             Directeur General de la MRA sur des cas specifiques soumis par des
-            contribuables. Ils sont publies de maniere anonymisee et constituent
+            contribuables. Ils sont publies de manière anonymisee et constituent
             une jurisprudence administrative precieuse. Avant de structurer une
             operation complexe, il est utile de verifier si un Ruling existant
             couvre un cas similaire au votre.
@@ -294,7 +294,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           <p>
             La <strong>Government Gazette</strong> est le journal officiel de la
             Republique de Maurice. C&apos;est l&apos;equivalent du Journal
-            officiel de la Republique francaise (JORF). Son role est
+            officiel de la Republique française (JORF). Son rôle est
             fondamental : un texte de loi n&apos;a force de loi qu&apos;une
             fois publie dans la Gazette.
           </p>
@@ -316,7 +316,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             </li>
             <li>
               <strong>Reglements</strong> : les Regulations (textes
-              d&apos;application) sont publiees dans la Gazette avant
+              d&apos;application) sont publiées dans la Gazette avant
               d&apos;etre integrees aux versions consolidees des lois.
             </li>
           </ul>
@@ -333,7 +333,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             >
               Prime Minister&apos;s Office (pmo.govmu.org)
             </a>
-            . Les editions sont publiees chaque semaine et archivees au format
+            . Les editions sont publiées chaque semaine et archivees au format
             PDF. Utilisez la fonction de recherche pour localiser une loi ou un
             reglement specifique par son numero ou son titre.
           </p>
@@ -393,7 +393,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                     Income Tax Act 1995
                   </td>
                   <td className="px-4 py-3 text-slate-600">
-                    Impot sur le revenu et les societes
+                    Impôt sur le revenu et les sociétés
                   </td>
                   <td className="px-4 py-3 text-slate-600">
                     Taux IS 15%, regime de Partial Exemption, retenues a la
@@ -452,7 +452,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                     Services financiers
                   </td>
                   <td className="px-4 py-3 text-slate-600">
-                    Licences GBC, regulation FSC, obligations de conformite,
+                    Licences GBC, régulation FSC, obligations de conformité,
                     substance requirements
                   </td>
                 </tr>
@@ -460,7 +460,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                   <td className="px-4 py-3 font-medium text-slate-900">
                     Companies Act 2001
                   </td>
-                  <td className="px-4 py-3 text-slate-600">Droit des societes</td>
+                  <td className="px-4 py-3 text-slate-600">Droit des sociétés</td>
                   <td className="px-4 py-3 text-slate-600">
                     Constitution, administration, obligations des directeurs,
                     liquidation
@@ -694,7 +694,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                 FSC Mauritius (fscmauritius.org)
               </a>{" "}
               — Financial Services Commission. Delivre les licences GBC et VASP,
-              publie les guides de conformite et les circulaires reglementaires.
+              publie les guides de conformité et les circulaires réglementaires.
               Incontournable pour toute activité de services financiers. Voir
               aussi notre article{" "}
               <Link
@@ -722,7 +722,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                 href="/ressources/blog/edb-mauritius-role-programmes"
                 className="text-blue-600 hover:underline"
               >
-                Le role de l&apos;EDB
+                Le rôle de l&apos;EDB
               </Link>
               .
             </li>
@@ -751,7 +751,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               </a>{" "}
               — Companies and Business Registration Department. Le registre
               des sociétés mauriciennes. Vous pouvez y verifier
-              l&apos;existence d&apos;une societe, consulter ses directeurs
+              l&apos;existence d&apos;une société, consulter ses directeurs
               enregistres et obtenir des copies d&apos;actes constitutifs.
             </li>
             <li>
@@ -839,8 +839,8 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </p>
           <p>
             Chez BD Star Management Services, notre equipe comptable et fiscale
-            applique ces textes au quotidien pour nos clients : declarations
-            d&apos;impots, calcul des charges sociales, mise en conformite TVA,
+            applique ces textes au quotidien pour nos clients : déclarations
+            d&apos;impots, calcul des charges sociales, mise en conformité TVA,
             preparation des dossiers de Transfer Pricing, demandes de Rulings
             aupres de la MRA.
           </p>
@@ -996,7 +996,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           <p className="mt-4 text-xs text-slate-400">
             Cet article est fourni a titre informatif et ne constitue pas un
             conseil fiscal personnalise. La legislation mauricienne evolue
-            frequemment — verifiez toujours la date de derniere mise a jour des
+            frequemment — verifiez toujours la date de dernière mise a jour des
             textes cites. Pour un conseil adapte à votre situation, contactez
             nos experts.
           </p>
@@ -1014,7 +1014,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           <p className="mt-3 text-slate-400">
             Etude de faisabilite gratuite par {founder.name},{" "}
             {founder.title}. Analyse de textes, veille legislative, mise en
-            conformite — nous vous accompagnons avec rigueur et precision.
+            conformité — nous vous accompagnons avec rigueur et précision.
           </p>
           <div className="mt-6">
             <Link href="/contact">

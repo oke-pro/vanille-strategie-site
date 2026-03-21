@@ -142,7 +142,7 @@ export default function DroitTravailMauricePage() {
             Embaucher à Maurice est simple, mais pas sans regles. Le
             Workers&apos; Rights Act 2019 encadre contrats, salaires, congés,
             licenciements et charges sociales. Ce guide vous donne toutes les
-            cles pour être en conformite — et eviter les mauvaises surprises.
+            cles pour être en conformité — et éviter les mauvaises surprises.
           </p>
 
           <div className="mt-6 flex items-center gap-3">
@@ -216,7 +216,7 @@ export default function DroitTravailMauricePage() {
             </li>
             <li>
               <a href="#bd-star" className="hover:underline">
-                Le role de BD Star : paie externalisee
+                Le rôle de BD Star : paie externalisée
               </a>
             </li>
             <li>
@@ -299,7 +299,7 @@ export default function DroitTravailMauricePage() {
         </h3>
         <p>
           Un salarie a temps partiel travaille moins que les heures normales
-          prevues pour un employe a temps plein dans la meme categorie. Ses
+          prevues pour un employe a temps plein dans la même categorie. Ses
           droits (congés, CSG, PRGF) sont calcules au prorata de ses heures de
           travail.
         </p>
@@ -433,7 +433,7 @@ export default function DroitTravailMauricePage() {
           <p>
             La CSG n&apos;a <strong>pas de plafond</strong> — contrairement a
             l&apos;ancien NPF. Les hauts salaires generent donc des cotisations
-            significatives. Les declarations CSG sont mensuelles et doivent etre
+            significatives. Les déclarations CSG sont mensuelles et doivent etre
             deposees avant le 20 du mois suivant.
           </p>
         </Callout>
@@ -445,7 +445,7 @@ export default function DroitTravailMauricePage() {
           5. PAYE (Pay As You Earn) — retenue à la source
         </h2>
         <p>
-          Le systeme PAYE est le mecanisme de prelevement de l&apos;impot sur le
+          Le systeme PAYE est le mecanisme de prelevement de l&apos;impôt sur le
           revenu directement sur le salaire. L&apos;employeur est responsable du
           calcul, de la retenue et du versement à la MRA.
         </p>
@@ -498,7 +498,7 @@ export default function DroitTravailMauricePage() {
         <p>
           Concretement, un salarie gagnant jusqu&apos;a{" "}
           <strong>Rs 41 667/mois</strong> (soit Rs 500 000/an) est totalement
-          exonere d&apos;impot sur le revenu. Le seuil mensuel pour etre
+          exonere d&apos;impôt sur le revenu. Le seuil mensuel pour etre
           considere comme <em>exempt person</em> est de{" "}
           <strong>Rs 38 462</strong>.
         </p>
@@ -550,7 +550,7 @@ export default function DroitTravailMauricePage() {
 
         <Callout variant="amber" title="Echeancier PRGF">
           <p>
-            Les declarations PRGF sont mensuelles. L&apos;employeur doit
+            Les déclarations PRGF sont mensuelles. L&apos;employeur doit
             soumettre le <em>PRGF Return</em> à la MRA et verser les
             contributions avant le <strong>20 du mois suivant</strong>. Le
             non-respect entraine des pénalités de retard.
@@ -580,7 +580,7 @@ export default function DroitTravailMauricePage() {
         </h3>
         <p>
           Le WRA accorde <strong>15 jours ouvrables</strong> de conge maladie
-          par an, entierement payes par l&apos;employeur. Les jours non utilises
+          par an, entièrement payes par l&apos;employeur. Les jours non utilises
           sont cumulables d&apos;une annee sur l&apos;autre, sans plafond
           explicite dans la loi.
         </p>
@@ -782,7 +782,7 @@ export default function DroitTravailMauricePage() {
           pourvu par un candidat local (sauf dans les secteurs en tension
           identifies par l&apos;EDB). L&apos;employeur doit egalement s&apos;assurer
           que le salarie étranger beneficie des memes droits que les salaries
-          mauriciens en matiere de CSG, PRGF, congés et conditions de travail.
+          mauriciens en matière de CSG, PRGF, congés et conditions de travail.
         </p>
 
         <Callout variant="blue" title="A noter">
@@ -798,7 +798,7 @@ export default function DroitTravailMauricePage() {
       {/* ===== 11. BD STAR ===== */}
       <Section id="bd-star" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          11. Le role de BD Star : paie externalisee, conformite, bulletins
+          11. Le rôle de BD Star : paie externalisée, conformité, bulletins
         </h2>
         <p>
           <strong>BD Star Management Services</strong>, la branche
@@ -836,7 +836,7 @@ export default function DroitTravailMauricePage() {
             etrangers aupres de l&apos;EDB
           </li>
           <li>
-            <strong>Veille reglementaire continue</strong> : chaque modification
+            <strong>Veille réglementaire continue</strong> : chaque modification
             du WRA ou du Finance Act est immediatement integree dans les
             processus de paie
           </li>
@@ -845,11 +845,11 @@ export default function DroitTravailMauricePage() {
         <Callout variant="green" title="Pourquoi externaliser la paie ?">
           <p>
             La complexite du systeme mauricien (CSG par tranches, PRGF, NSF,
-            compensation salariale, declarations multiples) rend la paie
+            compensation salariale, déclarations multiples) rend la paie
             particulierement technique. Une erreur de calcul peut entrainer des
             pénalités MRA et des litiges prudhommaux. L&apos;externalisation
             aupres d&apos;un cabinet specialise est le meilleur moyen de
-            securiser votre conformite.
+            securiser votre conformité.
           </p>
         </Callout>
       </Section>
@@ -1037,7 +1037,7 @@ export default function DroitTravailMauricePage() {
               >
                 MRA — CSG
               </a>{" "}
-              — Taux et declarations CSG
+              — Taux et déclarations CSG
             </li>
             <li>
               <a
@@ -1073,7 +1073,7 @@ export default function DroitTravailMauricePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-300">
             BD Star gere la paie de dizaines d&apos;entreprises à Maurice —
-            bulletins, declarations MRA, conformite Workers&apos; Rights Act.
+            bulletins, déclarations MRA, conformité Workers&apos; Rights Act.
             Contactez-nous pour un devis personnalise.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

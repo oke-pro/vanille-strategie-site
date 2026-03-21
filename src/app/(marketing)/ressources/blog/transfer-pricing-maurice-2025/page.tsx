@@ -35,8 +35,8 @@ export default function TransferPricingPage() {
             2025
           </h1>
           <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-            Pour la premiere fois, Maurice se dote d&apos;un cadre documentaire
-            formel en matiere de prix de transfert. Ce que ca change pour les
+            Pour la première fois, Maurice se dote d&apos;un cadre documentaire
+            formel en matière de prix de transfert. Ce que ca change pour les
             GBC, les groupes internationaux et les entrepreneurs.
           </p>
           <div className="mt-6 flex items-center gap-3">
@@ -63,7 +63,7 @@ export default function TransferPricingPage() {
           <p>
             Jusqu&apos;au Finance Act 2025 (Act No. 18 of 2025, publie le 9
             aout 2025), Maurice ne disposait d&apos;aucun cadre legislatif
-            formel en matiere de prix de transfert. La Mauritius Revenue
+            formel en matière de prix de transfert. La Mauritius Revenue
             Authority (MRA) pouvait contester des transactions entre parties
             liees, mais sans texte specifique imposant une documentation
             structuree.
@@ -74,7 +74,7 @@ export default function TransferPricingPage() {
             Cadre inclusif BEPS, qui exigent des juridictions qu&apos;elles
             adoptent des règles de prix de transfert conformes au Principe de
             pleine concurrence (arm&apos;s length principle). D&apos;autre part,
-            elle creait une insecurite juridique pour les entreprises
+            elle creait une insécurité juridique pour les entreprises
             elles-memes : sans règles claires, impossible de savoir si une
             politique de prix etait conforme ou non.
           </p>
@@ -82,7 +82,7 @@ export default function TransferPricingPage() {
             Le Finance Act 2025 corrige cela en introduisant, dans l&apos;Income
             Tax Act, des dispositions specifiques sur le Transfer Pricing. Ce
             n&apos;est pas un durcissement fiscal — c&apos;est une mise en
-            conformite avec les standards internationaux.
+            conformité avec les standards internationaux.
           </p>
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 not-prose">
             <p className="text-sm font-semibold text-blue-800">
@@ -116,7 +116,7 @@ export default function TransferPricingPage() {
           </p>
           <ul>
             <li>
-              Les sociétés du meme groupe (societe mère, filiales, societes
+              Les sociétés du même groupe (société mère, filiales, sociétés
               soeurs)
             </li>
             <li>
@@ -145,11 +145,11 @@ export default function TransferPricingPage() {
               Point d&apos;attention
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              Si vous etes un entrepreneur avec une seule Domestic Company a
+              Si vous êtes un entrepreneur avec une seule Domestic Company a
               Maurice, sans transactions avec des entites liées a
               l&apos;etranger, vous n&apos;etes probablement pas concerne par
               ces nouvelles obligations. Mais si vous avez une structure en
-              France ET à Maurice, meme simple, vous devez vous poser la
+              France ET à Maurice, même simple, vous devez vous poser la
               question. En cas de doute, faites-nous analyser votre situation.
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function TransferPricingPage() {
             <li>
               <strong>Un Master File</strong> (fichier principal) : description
               du groupe, de son organisation, de sa strategie commerciale, de
-              ses activités intangibles (propriete intellectuelle, marques,
+              ses activités intangibles (propriété intellectuelle, marques,
               brevets) et de ses arrangements financiers intergroupe.
             </li>
             <li>
@@ -227,9 +227,9 @@ export default function TransferPricingPage() {
           </h2>
           <p>
             Maurice adopte les cinq méthodes reconnues par les{" "}
-            <strong>Principes de l&apos;OCDE applicables en matiere de prix de transfert</strong>. Le choix de
+            <strong>Principes de l&apos;OCDE applicables en matière de prix de transfert</strong>. Le choix de
             la méthode depend de la nature de la transaction et de la
-            disponibilite des donnees comparables.
+            disponibilité des donnees comparables.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -299,7 +299,7 @@ export default function TransferPricingPage() {
             Les bénéfices combines des parties liées sont repartis en fonction de
             leur contribution respective (fonctions, actifs, risques). Reservee
             aux transactions hautement integrees ou aucune partie ne peut etre
-            testee de maniere isolee — typiquement, quand les deux parties
+            testee de manière isolee — typiquement, quand les deux parties
             apportent des actifs incorporels uniques.
           </p>
 
@@ -325,7 +325,7 @@ export default function TransferPricingPage() {
       <section className="bg-white py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            5. Penalites en cas de non-conformite
+            5. Penalites en cas de non-conformité
           </h2>
           <p>
             Le legislateur mauricien a prevu un regime de sanctions pour les
@@ -338,12 +338,12 @@ export default function TransferPricingPage() {
               Transfer Pricing effectue par la MRA. Autrement dit, si la MRA
               requalifie une transaction et augmente votre base imposable de 10
               millions MUR, vous payez 500 000 MUR de pénalité en sus de
-              l&apos;impot supplementaire.
+              l&apos;impôt supplementaire.
             </li>
             <li>
               <strong>Interets de retard de 0,25% par mois</strong> (soit 3% par
-              an) sur l&apos;impot supplementaire du, calcules a compter de la
-              date a laquelle l&apos;impot aurait du être paye.
+              an) sur l&apos;impôt supplementaire du, calcules a compter de la
+              date a laquelle l&apos;impôt aurait du être paye.
             </li>
             <li>
               <strong>Sanctions supplementaires</strong> en cas de fraude
@@ -352,7 +352,7 @@ export default function TransferPricingPage() {
             </li>
           </ul>
           <p>
-            Ces pénalités s&apos;ajoutent a l&apos;impot supplementaire
+            Ces pénalités s&apos;ajoutent a l&apos;impôt supplementaire
             lui-meme. En pratique, un redressement de Transfer Pricing peut donc
             couter significativement plus que le simple ecart d&apos;impot.
           </p>
@@ -381,7 +381,7 @@ export default function TransferPricingPage() {
             6. Impact sur les GBC et les groupes internationaux
           </h2>
           <p>
-            Les Global Business Companies (GBC) sont en premiere ligne de ces
+            Les Global Business Companies (GBC) sont en première ligne de ces
             nouvelles obligations. Par nature, les GBC sont des entites de droit
             mauricien qui opèrent principalement a l&apos;international et
             realisent la majorite de leurs transactions avec des parties liees
@@ -394,7 +394,7 @@ export default function TransferPricingPage() {
             <li>
               <strong>Les management fees et les service fees</strong> :
               facturation de services de gestion, de direction ou
-              d&apos;administration entre la GBC et ses filiales ou sa societe
+              d&apos;administration entre la GBC et ses filiales ou sa société
               mere. La MRA verifiera que la remuneration correspond a des
               services reellement rendus et que le prix est conforme au marche.
             </li>
@@ -431,7 +431,7 @@ export default function TransferPricingPage() {
               management fees significatifs doit prouver qu&apos;elle dispose du
               personnel qualifie, des bureaux et des moyens pour rendre
               effectivement ces services depuis Maurice. La substance et le
-              Transfer Pricing sont les deux faces d&apos;une meme medaille.
+              Transfer Pricing sont les deux faces d&apos;une même medaille.
             </p>
           </div>
         </div>
@@ -447,7 +447,7 @@ export default function TransferPricingPage() {
           </h2>
           <p>
             Voici les actions concretes que je recommande a nos clients pour se
-            mettre en conformite avec les nouvelles obligations de Transfer
+            mettre en conformité avec les nouvelles obligations de Transfer
             Pricing :
           </p>
 
@@ -525,9 +525,9 @@ export default function TransferPricingPage() {
             <p className="mt-1 text-sm text-amber-700">
               &ldquo;En 40 ans de carriere en fiscalité internationale, j&apos;ai
               vu beaucoup de juridictions introduire des règles de Transfer
-              Pricing. Le schema est toujours le meme : les textes sont adoptes,
+              Pricing. Le schema est toujours le même : les textes sont adoptes,
               puis la pratique administrative suit avec 12 a 24 mois de decalage.
-              Les sociétés qui se mettent en conformite maintenant beneficient
+              Les sociétés qui se mettent en conformité maintenant beneficient
               d&apos;un avantage considerable : elles definissent leurs
               politiques de prix sereinement, sans la pression d&apos;un
               controle. Celles qui attendent paieront plus cher — en temps, en
@@ -604,7 +604,7 @@ export default function TransferPricingPage() {
               simultanement le Transfer Pricing formel, le QDMTT et la Fair
               Share Contribution, le pays se positionne comme une juridiction
               transparente et conforme aux standards internationaux — tout en
-              conservant son attractivite fiscale (15% IS flat, 0% dividendes,
+              conservant son attractivité fiscale (15% IS flat, 0% dividendes,
               0% plus-values). Ce n&apos;est pas la fin de l&apos;avantage
               mauricien, c&apos;est sa consolidation sur des bases durables.
             </p>
@@ -689,7 +689,7 @@ export default function TransferPricingPage() {
           <p className="mt-3 text-slate-400">
             Etude de faisabilite gratuite par {founder.name},{" "}
             {founder.title}. Documentation TP, politique de prix, audit de
-            conformite — nous vous accompagnons de A a Z.
+            conformité — nous vous accompagnons de A a Z.
           </p>
           <div className="mt-6">
             <Link href="/contact">
