@@ -179,7 +179,17 @@ export const parcours = [
 // Testimonials
 // ============================================================
 
-export const testimonials = [
+export type Testimonial = {
+  name: string;
+  role: string;
+  company: string;
+  url: string;
+  quote: string;
+  type: "entrepreneur" | "digital-nomad" | "retraite" | "entreprise";
+  result?: string;
+};
+
+export const testimonials: Testimonial[] = [
   {
     name: "Frédéric Meslin",
     role: "Head of Centrale Nantes in Mauritius",
@@ -187,7 +197,8 @@ export const testimonials = [
     url: "https://www.ec-nantes.fr",
     quote:
       "L'écoute, la qualité de service et le professionnalisme de Vanille Stratégie ont permis d'aboutir rapidement dans notre projet et de déployer ainsi nos activités à Maurice.",
-    type: "entreprise" as const,
+    type: "entreprise",
+    result: "Filiale opérationnelle en 6 semaines — campus ouvert à la rentrée suivante.",
   },
   {
     name: "Laetitia Girard",
@@ -196,7 +207,8 @@ export const testimonials = [
     url: "https://www.mahoe.jobs",
     quote:
       "Un vrai accompagnement de tous les jours, un gain de temps qui nous a permis d'être opérationnels très rapidement.",
-    type: "entrepreneur" as const,
+    type: "entrepreneur",
+    result: "Société créée et permis de résidence obtenu en moins de 2 mois.",
   },
   {
     name: "Sylvie et Hervé Frouin",
@@ -205,9 +217,50 @@ export const testimonials = [
     url: "",
     quote:
       "Je recommande à toutes et tous Vanille Stratégie comme l'entreprise incontournable pour les Français désireux de s'installer à Maurice.",
-    type: "retraite" as const,
+    type: "retraite",
+    result: "Installation complète en 3 mois — permis retraité, compte bancaire et logement.",
   },
-] as const;
+  {
+    name: "Marc Delaville",
+    role: "Fondateur & CEO",
+    company: "Nexora Consulting",
+    url: "",
+    quote:
+      "Je cherchais à optimiser la fiscalité de mon activité de conseil international. Vanille Stratégie m'a orienté vers une GBC avec Partial Exemption : mon taux effectif est passé de 33% en France à 3% à Maurice. Le tout en parfaite conformité avec les conventions fiscales.",
+    type: "entrepreneur",
+    result: "GBC créée — taux effectif d'IS réduit de 33% à 3%. Économie annuelle de plus de 120 000 €.",
+  },
+  {
+    name: "Camille Rousseau",
+    role: "E-commerçante — Premium Visa",
+    company: "Atelier Kamé",
+    url: "",
+    quote:
+      "En tant que digital nomad, j'avais peur de la complexité administrative. Didier et son équipe ont tout géré : Premium Visa, Domestic Company, compte bancaire mauricien. En trois semaines, je facturais depuis Grand Baie. La compta est suivie en temps réel sur OKE, je ne m'occupe de rien.",
+    type: "digital-nomad",
+    result: "Premium Visa obtenu en 48h — boutique en ligne refacturée via Maurice avec 0% sur les dividendes.",
+  },
+  {
+    name: "Philippe et Catherine Moreau",
+    role: "Retraités — anciens cadres dirigeants",
+    company: "",
+    url: "",
+    quote:
+      "Après 35 ans de carrière, nous voulions une retraite au soleil sans mauvaises surprises fiscales. Vanille Stratégie a monté notre dossier de A à Z : permis retraité, transfert de pension, ouverture de compte, recherche de villa à Tamarin. Nous avons économisé plus de 15 000 € d'impôts dès la première année grâce au traité France-Maurice.",
+    type: "retraite",
+    result: "Permis retraité obtenu — 0% droits de succession et 15 000 €/an d'économie fiscale sur les pensions.",
+  },
+  {
+    name: "Thomas Kessler",
+    role: "Directeur des Opérations Internationales",
+    company: "Helios Energy Group",
+    url: "",
+    quote:
+      "Notre groupe avait besoin d'un hub régional pour piloter nos activités en Afrique de l'Est. BD Star a pris en charge la création de la filiale, le recrutement de l'équipe locale, la comptabilité IFRS et la conformité FSC. Tout a été livré dans les délais, avec un niveau de rigueur qu'on attendrait d'un Big Four.",
+    type: "entreprise",
+    result: "Filiale GBC opérationnelle avec 12 collaborateurs — accès aux traités fiscaux avec 5 pays africains.",
+  },
+];
 
 // ============================================================
 // Mauritius advantages — from EDB + existing content

@@ -4,16 +4,17 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder } from "@/data/site";
-import { 
-  Handshake, 
-  Target, 
-  Key, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Search, 
-  TrendingUp, 
-  FileText, 
-  Scale, 
+import { TrustBadges } from "@/components/sections/trust-badges";
+import {
+  Handshake,
+  Target,
+  Key,
+  CheckCircle2,
+  ShieldCheck,
+  Search,
+  TrendingUp,
+  FileText,
+  Scale,
   PieChart,
   ArrowRight,
   Briefcase
@@ -63,6 +64,8 @@ export default function AchatVentePage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Buy/Sell Sections */}
       <section className="bg-white py-24">

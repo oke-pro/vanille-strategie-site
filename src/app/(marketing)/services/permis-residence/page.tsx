@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { permits, founder } from "@/data/site";
+import { TrustBadges } from "@/components/sections/trust-badges";
 import {
   Briefcase,
   Laptop,
@@ -70,6 +71,8 @@ export default function PermisResidencePage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Permits Grid */}
       <section className="bg-slate-50 py-24">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { companyTypes, founder } from "@/data/site";
+import { TrustBadges } from "@/components/sections/trust-badges";
 import {
   Building2,
   Globe2,
@@ -71,6 +72,8 @@ export default function CreationSocietePage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Company Types Grid */}
       <section className="bg-white py-24 relative">

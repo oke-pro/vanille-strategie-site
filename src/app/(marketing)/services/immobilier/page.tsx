@@ -3,17 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { 
-  TreePalm, 
-  Home, 
-  Building2, 
-  Globe, 
-  Layout, 
-  Bed, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Search, 
-  Key, 
+import { TrustBadges } from "@/components/sections/trust-badges";
+import {
+  TreePalm,
+  Home,
+  Building2,
+  Globe,
+  Layout,
+  Bed,
+  CheckCircle2,
+  ShieldCheck,
+  Search,
+  Key,
   ArrowRight,
   TrendingUp,
   MapPin
@@ -72,6 +73,8 @@ export default function ImmobilierPage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Schemes Grid */}
       <section className="bg-white py-24">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder } from "@/data/site";
+import { TrustBadges } from "@/components/sections/trust-badges";
 import {
   Calculator,
   PieChart,
@@ -98,6 +99,8 @@ export default function ComptaFiscalitePage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Services Grid */}
       <section className="bg-slate-50 py-24">

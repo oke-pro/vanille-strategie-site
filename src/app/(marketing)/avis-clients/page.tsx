@@ -27,6 +27,14 @@ export default function AvisClientsPage() {
                 <blockquote className="text-lg leading-relaxed text-slate-700 italic">
                   &laquo;&nbsp;{t.quote}&nbsp;&raquo;
                 </blockquote>
+                {t.result && (
+                  <div className="mt-4 rounded-lg border border-emerald-200 bg-gradient-to-r from-emerald-50 to-teal-50 px-5 py-3">
+                    <p className="text-sm font-semibold text-emerald-800">
+                      <span className="mr-2 inline-block text-emerald-600">&#10003;</span>
+                      {t.result}
+                    </p>
+                  </div>
+                )}
                 <div className="mt-6 flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 text-sm font-bold text-white">
                     {t.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { TrustBadges } from "@/components/sections/trust-badges";
 import {
   FileText,
   Globe,
@@ -101,6 +102,8 @@ export default function RhPaiePage() {
           </div>
         </div>
       </section>
+
+      <TrustBadges />
 
       {/* Features Grid */}
       <section className="bg-white py-24">
