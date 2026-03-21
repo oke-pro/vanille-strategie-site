@@ -318,18 +318,18 @@ export default function PaiementsEnLigneMauricePage() {
             </div>
           </div>
 
-          {/* Paddle / 2Checkout */}
+          {/* Paddle */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              Paddle et 2Checkout — pour les editeurs SaaS
+              Paddle — Merchant of Record pour les editeurs SaaS
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
-                Ces plateformes fonctionnent comme{" "}
-                <strong>Merchant of Record</strong> : elles vendent votre
-                produit en votre nom, gerent la TVA/GST dans chaque pays et
-                vous reversent le net. C&apos;est ideal pour les SaaS qui
-                vendent a des clients dans l&apos;UE (ou la TVA est un casse-tete).
+                Paddle fonctionne comme{" "}
+                <strong>Merchant of Record</strong> : il vend votre produit en
+                votre nom, gere la TVA/GST dans chaque pays et vous reverse le
+                net. C&apos;est ideal pour les SaaS qui vendent a des clients
+                dans l&apos;UE (ou la TVA est un casse-tete).
               </p>
               <p>
                 L&apos;avantage majeur : vous n&apos;avez pas besoin de
@@ -357,6 +357,62 @@ export default function PaiementsEnLigneMauricePage() {
                 importants, Adyen peut accepter de travailler avec vous
                 directement. Pour les plus petites structures, les solutions
                 comme Wise ou Payoneer sont plus adaptees.
+              </p>
+            </div>
+          </div>
+
+          {/* 2Checkout */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              2Checkout (Verifone) — Merchant of Record pour le digital
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>2Checkout</strong> (desormais sous la marque Verifone)
+                fonctionne comme Merchant of Record : il{" "}
+                <strong>gere les taxes de vente internationales</strong> pour
+                vous, ce qui simplifie enormement la conformite fiscale
+                multi-pays. C&apos;est une solution tres utilisee par les
+                entrepreneurs mauriciens qui vendent des produits digitaux ou
+                des abonnements SaaS a l&apos;international.
+              </p>
+              <p>
+                L&apos;API REST permet une integration poussee, et les
+                reversements peuvent etre effectues vers votre compte bancaire
+                mauricien.
+              </p>
+            </div>
+          </div>
+
+          {/* Razorpay */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              Razorpay — Populaire entre l&apos;Inde et Maurice
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>Razorpay</strong> est un PSP indien qui gagne en
+                popularite aupres des entreprises mauriciennes ayant des liens
+                commerciaux avec l&apos;Inde. L&apos;API REST est bien
+                documentee et les frais sont competitifs pour les transactions
+                en INR et en USD.
+              </p>
+            </div>
+          </div>
+
+          {/* Flutterwave */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              Flutterwave — Specialiste des paiements en Afrique
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>Flutterwave</strong> est le PSP de reference pour les
+                paiements en Afrique. Si votre entreprise mauricienne cible des
+                marches africains (Nigeria, Kenya, Ghana, etc.), Flutterwave
+                facilite l&apos;encaissement dans les devises et methodes de
+                paiement locales (mobile money, cartes, virements). API REST
+                complete.
               </p>
             </div>
           </div>
@@ -844,7 +900,7 @@ export default function PaiementsEnLigneMauricePage() {
                   </tr>
                   <tr className="bg-slate-50">
                     <td className="px-3 py-3 font-medium text-slate-900">
-                      Paddle / 2Checkout
+                      Paddle
                     </td>
                     <td className="px-3 py-3 text-green-600">Oui (MoR)</td>
                     <td className="px-3 py-3 text-slate-600">Multi</td>
@@ -890,6 +946,111 @@ export default function PaiementsEnLigneMauricePage() {
                     </td>
                     <td className="px-3 py-3 text-slate-500">A venir</td>
                   </tr>
+                  <tr className="bg-slate-50">
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      MIPS
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      MUR, USD, EUR, GBP
+                    </td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Connecte</td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      Peach Payments
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      MUR, USD, ZAR
+                    </td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Connecte</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      MCB Juice
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">MUR</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Connecte</td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      My.t Money
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">MUR</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      Blink (SBM)
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">MUR</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      PAYSKY
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui</td>
+                    <td className="px-3 py-3 text-slate-600">MUR</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      Sur devis
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      2Checkout (Verifone)
+                    </td>
+                    <td className="px-3 py-3 text-green-600">Oui (MoR)</td>
+                    <td className="px-3 py-3 text-slate-600">Multi</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      3,5&nbsp;% + 0,35&nbsp;$
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      Razorpay
+                    </td>
+                    <td className="px-3 py-3 text-amber-600">Selon structure</td>
+                    <td className="px-3 py-3 text-slate-600">INR, USD</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      2&nbsp;% par transaction
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
+                  <tr className="bg-slate-50">
+                    <td className="px-3 py-3 font-medium text-slate-900">
+                      Flutterwave
+                    </td>
+                    <td className="px-3 py-3 text-amber-600">Selon structure</td>
+                    <td className="px-3 py-3 text-slate-600">
+                      NGN, KES, GHS, USD
+                    </td>
+                    <td className="px-3 py-3 text-slate-600">
+                      1,4&nbsp;% local, 3,8&nbsp;% intl
+                    </td>
+                    <td className="px-3 py-3 text-slate-500">A venir</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -911,6 +1072,21 @@ export default function PaiementsEnLigneMauricePage() {
               (Stripe US, PayPal, Wise, MCB) dans un seul plan comptable
               mauricien, avec les ecritures de change correspondantes.
               L&apos;app OKE centralise tout en temps reel.
+            </p>
+          </div>
+
+          <div className="mt-6 rounded-lg border border-green-200 bg-green-50 p-5">
+            <p className="text-sm font-semibold text-green-800">
+              OKE par BD Star — Connecte automatiquement a tous vos PSP
+            </p>
+            <p className="mt-2 text-sm text-green-700">
+              L&apos;app OKE va proposer des connecteurs pour{" "}
+              <strong>tous les PSP presentes dans cet article</strong> : MIPS
+              (disponible), MCB Juice (disponible), Peach Payments (disponible),
+              My.t Money (a venir), Blink (a venir), PAYSKY (a venir),
+              2Checkout (a venir), Razorpay (a venir) et Flutterwave (a venir).
+              Chaque transaction est connectee automatiquement a votre
+              comptabilite — plus de saisie manuelle, plus de CSV a importer.
             </p>
           </div>
         </div>
