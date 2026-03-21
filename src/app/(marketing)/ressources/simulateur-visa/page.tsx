@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
+import { submitSimulateurVisa } from "@/lib/api";
 
 type Result = { visa: string; desc: string; invest: string; duration: string; color: string } | null;
 
@@ -99,13 +101,28 @@ export default function SimulateurVisaPage() {
                   <p className="mt-1 font-bold text-slate-900">{result.duration}</p>
                 </div>
               </div>
-              <div className="mt-8 flex gap-4">
+              {/* Capture email pour recevoir l'analyse détaillée */}
+              <div className="mt-8 rounded-xl border border-blue-100 bg-blue-50/50 p-6">
+                <p className="text-sm font-bold text-slate-900">Recevez votre analyse détaillée par email</p>
+                <form className="mt-3 flex gap-2" onSubmit={async (e) => {
+                  e.preventDefault();
+                  const email = (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value;
+                  if (email && result) {
+                    await submitSimulateurVisa({ email, answers, result_visa: result.visa, result_invest: result.invest, result_duration: result.duration });
+                    alert("Analyse envoyée !");
+                  }
+                }}>
+                  <Input name="email" type="email" placeholder="votre@email.com" className="h-10" required />
+                  <Button type="submit" className="h-10 bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Recevoir</Button>
+                </form>
+              </div>
+              <div className="mt-6 flex gap-4">
                 <Link href="/contact" className="flex-1">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">Étude personnalisée gratuite</Button>
                 </Link>
                 <Button variant="outline" onClick={reset}>Recommencer</Button>
               </div>
-              <p className="mt-4 text-xs text-slate-400">Ce résultat est indicatif. Contactez-nous pour une analyse personnalisée de votre situation.</p>
+              <p className="mt-4 text-xs text-slate-400">Ce résultat est indicatif. Contactez-nous pour une analyse personnalisée.</p>
             </Card>
           )}
         </div>

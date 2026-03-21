@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
+import { submitSimulateurFiscal } from "@/lib/api";
 
 export default function SimulateurFiscalPage() {
   const [ca, setCa] = useState("");
@@ -113,8 +114,24 @@ export default function SimulateurFiscalPage() {
                 </Card>
               )}
 
+              {/* Capture email pour recevoir l'analyse détaillée */}
+              <div className="rounded-xl border border-blue-100 bg-blue-50/50 p-6">
+                <p className="text-sm font-bold text-slate-900">Recevez votre simulation détaillée par email</p>
+                <form className="mt-3 flex gap-2" onSubmit={async (e) => {
+                  e.preventDefault();
+                  const email = (e.currentTarget.elements.namedItem("capture-email") as HTMLInputElement)?.value;
+                  if (email) {
+                    await submitSimulateurFiscal({ email, ca: parseFloat(ca), benefice: b, dividendes: d, economie_vs_france: economie });
+                    alert("Simulation envoyée !");
+                  }
+                }}>
+                  <Input name="capture-email" type="email" placeholder="votre@email.com" className="h-10" required />
+                  <Button type="submit" className="h-10 bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Recevoir</Button>
+                </form>
+              </div>
+
               <p className="text-xs text-slate-400">
-                Simulation indicative simplifiée. Ne tient pas compte des charges sociales, de l&apos;Exit Tax, des conventions fiscales ni des situations particulières. Contactez-nous pour une analyse personnalisée.
+                Simulation indicative simplifiée. Contactez-nous pour une analyse personnalisée.
               </p>
 
               <div className="text-center">
