@@ -117,7 +117,7 @@ export default function RetraitePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-[fadeSlideUp_0.8s_ease-out]">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-[10px] font-black uppercase tracking-widest mb-6 border border-amber-200">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-black uppercase tracking-widest mb-6 border border-amber-200">
                 <TrendingUp className="h-3 w-3" />
                 <span>Mis à jour — Finance Act 2025</span>
               </div>
@@ -247,7 +247,7 @@ export default function RetraitePage() {
               </Button>
             </Link>
           </div>
-          <p className="mt-8 text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+          <p className="mt-8 text-xs font-black uppercase tracking-[0.3em] text-slate-500">
             Conseil Patrimonial · Fiscalité Internationale · Installation
           </p>
         </div>

@@ -118,7 +118,7 @@ export default function MauricePage() {
             ].map((article) => (
               <Link key={article.href} href={article.href}>
                 <div className="group rounded-xl border border-slate-200 bg-slate-50 p-4 transition-all hover:bg-white hover:shadow-md hover:border-blue-300">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600">{article.badge}</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-blue-600">{article.badge}</span>
                   <h3 className="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600">{article.title}</h3>
                 </div>
               </Link>

@@ -31,7 +31,7 @@ async def send_lead_notification(lead_type: str, data: dict) -> bool:
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
         <div style="background:#1e293b;padding:20px;border-radius:12px 12px 0 0;">
             <h2 style="color:white;margin:0;">Nouveau lead — {lead_type}</h2>
-            <p style="color:#94a3b8;margin:4px 0 0;">vanille-strategie.oke.pro</p>
+            <p style="color:#94a3b8;margin:4px 0 0;">vanillestrategie.fr</p>
         </div>
         <div style="background:white;padding:20px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 12px 12px;">
             <table style="width:100%;border-collapse:collapse;">{rows}</table>
@@ -78,9 +78,9 @@ async def send_confirmation_email(to_email: str, prenom: str) -> bool:
             </p>
             <p style="color:#475569;line-height:1.6;">
                 En attendant, consultez nos
-                <a href="https://vanille-strategie.oke.pro/ressources/guides" style="color:#2563eb;">guides experts</a>
+                <a href="https://vanillestrategie.fr/ressources/guides" style="color:#2563eb;">guides experts</a>
                 ou notre
-                <a href="https://vanille-strategie.oke.pro/ressources/faq" style="color:#2563eb;">FAQ</a>.
+                <a href="https://vanillestrategie.fr/ressources/faq" style="color:#2563eb;">FAQ</a>.
             </p>
             <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
             <p style="color:#94a3b8;font-size:12px;">

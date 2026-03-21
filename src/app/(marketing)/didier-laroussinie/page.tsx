@@ -184,7 +184,7 @@ export default function DidierPage() {
                 <c.icon className="h-8 w-8 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <p className="text-4xl font-black text-white mb-2">{c.value}</p>
                 <p className="text-xs font-black uppercase tracking-widest text-blue-400 mb-1">{c.label}</p>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">{c.sub}</p>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-tighter">{c.sub}</p>
               </div>
             ))}
           </div>
@@ -212,7 +212,7 @@ export default function DidierPage() {
                   </Button>
                 </Link>
               </div>
-              <p className="mt-8 text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+              <p className="mt-8 text-xs font-black uppercase tracking-[0.3em] text-slate-500">
                 Confidentialité Totale · Réponse sous 24h
               </p>
             </div>

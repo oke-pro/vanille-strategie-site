@@ -51,7 +51,7 @@ export function FunnelTimeline() {
                     <Icon className="h-8 w-8" />
                   </div>
 
-                  <p className="text-[10px] font-black uppercase tracking-[0.25em] text-blue-600 mb-2">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600 mb-2">
                     {s.label}
                   </p>
                   <h3 className="text-2xl font-bold tracking-tight text-slate-950">

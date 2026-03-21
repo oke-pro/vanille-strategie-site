@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="grid gap-12 lg:grid-cols-5">
             {/* Formulaire */}
             <div className="lg:col-span-3 animate-[fadeSlideUp_0.8s_ease-out]">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-widest mb-6 border border-blue-100">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-black uppercase tracking-widest mb-6 border border-blue-100">
                 <MessageSquare className="h-3 w-3" />
                 <span>Contact Direct</span>
               </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                         <Phone className="h-5 w-5" />
                       </div>
                       <div>
-                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 leading-none">Téléphone / WhatsApp</p>
+                        <p className="text-xs font-black uppercase tracking-widest text-slate-400 leading-none">Téléphone / WhatsApp</p>
                         <p className="text-sm font-bold text-slate-900 mt-1">{siteConfig.phone}</p>
                       </div>
                     </a>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                         <Mail className="h-5 w-5" />
                       </div>
                       <div>
-                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 leading-none">Email</p>
+                        <p className="text-xs font-black uppercase tracking-widest text-slate-400 leading-none">Email</p>
                         <p className="text-sm font-bold text-slate-900 mt-1">{siteConfig.email}</p>
                       </div>
                     </a>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   
-                  <div className="mt-8 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-500">
+                  <div className="mt-8 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-500">
                     <Globe className="h-3 w-3" />
                     <span>GMT +4 · Fuseau Océan Indien</span>
                   </div>

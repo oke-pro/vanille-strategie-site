@@ -142,11 +142,11 @@ export default function EntrepreneurPage() {
                   </ul>
                   
                   <div className="mt-8 pt-6 border-t border-slate-50 flex flex-wrap gap-y-2 gap-x-4">
-                    <div className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-slate-400">
                       <Globe2 className="h-3 w-3" />
                       <span>Résident : {c.taxResident ? "OUI" : "NON"}</span>
                     </div>
-                    <div className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-slate-400">
                       <ShieldCheck className="h-3 w-3" />
                       <span>Traités : {c.treatyAccess ? "37 PAYS" : "NON"}</span>
                     </div>
@@ -201,11 +201,11 @@ export default function EntrepreneurPage() {
                 
                 <div className="mt-8 space-y-4">
                   <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Investissement</span>
+                    <span className="text-xs font-black uppercase tracking-widest text-slate-400">Investissement</span>
                     <span className="text-sm font-bold text-slate-900">{p.investment}</span>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Validité</span>
+                    <span className="text-xs font-black uppercase tracking-widest text-slate-400">Validité</span>
                     <span className="text-sm font-bold text-slate-900 flex items-center gap-2">
                       <Clock className="h-3.5 w-3.5 text-blue-500" />
                       {p.duration}
@@ -215,7 +215,7 @@ export default function EntrepreneurPage() {
 
                 {p.renewal.includes("NOUVEAU") && (
                   <div className="mt-6 p-3 rounded-xl bg-amber-50 border border-amber-100/50">
-                    <p className="text-[10px] font-black text-amber-700 uppercase leading-tight tracking-tight">
+                    <p className="text-xs font-black text-amber-700 uppercase leading-tight tracking-tight">
                       {p.renewal}
                     </p>
                   </div>

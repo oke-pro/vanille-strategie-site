@@ -205,7 +205,7 @@ export default function EntreprisePage() {
               </Button>
             </Link>
           </div>
-          <p className="mt-8 text-[10px] font-black uppercase tracking-[0.4em] text-slate-500">
+          <p className="mt-8 text-xs font-black uppercase tracking-[0.4em] text-slate-500">
             Audit · Recrutement · Comptabilité IFRS · Pilotage
           </p>
         </div>

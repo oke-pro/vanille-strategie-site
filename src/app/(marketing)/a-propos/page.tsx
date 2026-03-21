@@ -79,7 +79,7 @@ export default function AProposPage() {
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-2">
                     <div className={`h-1 w-12 rounded-full ${idx === 0 ? 'bg-blue-600' : 'bg-cyan-500'}`} />
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Entité du Groupe</span>
+                    <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Entité du Groupe</span>
                   </div>
                   <h2 className="text-3xl font-black text-slate-900">{group.entity}</h2>
                   <p className="mt-2 text-lg font-bold text-blue-600 italic">{group.subtitle}</p>
@@ -110,7 +110,7 @@ export default function AProposPage() {
             
             <div className="relative flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/20 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6 border border-blue-500/30">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/20 text-blue-400 text-xs font-black uppercase tracking-widest mb-6 border border-blue-500/30">
                   <Zap className="h-3 w-3" />
                   <span>Innovation Tech</span>
                 </div>
@@ -181,7 +181,7 @@ export default function AProposPage() {
             </div>
             
             <div className="animate-[fadeSlideUp_0.8s_ease-out_0.2s_both]">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-[10px] font-black uppercase tracking-widest mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest mb-4">
                 <Medal className="h-3 w-3" />
                 <span>Expert-Comptable DEC</span>
               </div>

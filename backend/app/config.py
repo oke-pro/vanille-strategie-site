@@ -7,13 +7,13 @@ class Settings(BaseSettings):
 
     # Resend
     resend_api_key: str = ""
-    email_from: str = "Vanille Stratégie <noreply@vanille-strategie.oke.pro>"
+    email_from: str = "Vanille Stratégie <noreply@vanillestrategie.fr>"
 
     # Leads
-    leads_notify_email: str = "dl@vanillestrategie.com"
+    leads_notify_email: str = "dl@vanillestrategie.fr"
 
     # CORS
-    frontend_url: str = "https://vanille-strategie.oke.pro"
+    frontend_url: str = "https://vanillestrategie.fr"
 
     # API
     api_key: str = ""

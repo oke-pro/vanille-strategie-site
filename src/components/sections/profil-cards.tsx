@@ -87,7 +87,7 @@ export function ProfilCards() {
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 border border-white/20 transition-all group-hover:bg-blue-600 group-hover:border-blue-400">
                     <ArrowUpRight className="h-4 w-4" />
                   </div>
-                  <span className="tracking-wide uppercase text-[10px] font-bold">Explorer la solution</span>
+                  <span className="tracking-wide uppercase text-xs font-bold">Explorer la solution</span>
                 </div>
               </div>
             </Link>

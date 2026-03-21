@@ -49,7 +49,7 @@ export default function FaqPage() {
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto animate-[fadeSlideUp_0.8s_ease-out]">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6 border border-blue-500/20 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-black uppercase tracking-widest mb-6 border border-blue-500/20 backdrop-blur-sm">
               <HelpCircle className="h-3 w-3" />
               <span>Centre d&apos;Aide & Ressources</span>
             </div>
