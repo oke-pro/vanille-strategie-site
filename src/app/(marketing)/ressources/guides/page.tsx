@@ -41,6 +41,32 @@ export default function GuidesPage() {
         </div>
       </section>
 
+      {/* Documents officiels */}
+      <section className="bg-slate-50 py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Documents officiels</h2>
+          <p className="mt-2 text-slate-600">Textes de loi et conventions fiscales téléchargeables.</p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <a href="/documents/finance-act-2025-mauritius.pdf" target="_blank" rel="noopener noreferrer">
+              <Card className="group h-full p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-blue-400">
+                <p className="text-3xl">📄</p>
+                <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-blue-600">Finance Act 2025</h3>
+                <p className="mt-1 text-sm text-slate-600">Texte officiel de la loi de finances 2025 de la République de Maurice (Act No. 18 of 2025).</p>
+                <p className="mt-2 text-xs text-slate-400">Source : National Assembly of Mauritius · 1.6 MB</p>
+              </Card>
+            </a>
+            <a href="/documents/convention-fiscale-france-maurice.pdf" target="_blank" rel="noopener noreferrer">
+              <Card className="group h-full p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-blue-400">
+                <p className="text-3xl">📄</p>
+                <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-blue-600">Convention fiscale France-Maurice</h3>
+                <p className="mt-1 text-sm text-slate-600">Convention de non-double imposition du 11 déc. 1980, amendée le 23 juin 2011. Version consolidée.</p>
+                <p className="mt-2 text-xs text-slate-400">Source : impots.gouv.fr · 112 KB</p>
+              </Card>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-2xl font-bold text-white">Besoin d&apos;un accompagnement personnalisé ?</h2>
