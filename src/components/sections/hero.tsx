@@ -46,9 +46,13 @@ export function HeroSection() {
 
           {/* Founder authority card */}
           <div className="mt-8 flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-md transition-colors hover:bg-white/10">
-            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 text-xl font-bold text-white">
-              DL
-            </div>
+            <Image
+              src="/images/didier-bureau.jpg"
+              alt={founder.name}
+              width={56}
+              height={56}
+              className="h-14 w-14 flex-shrink-0 rounded-full object-cover border-2 border-white/20"
+            />
             <div>
               <p className="text-sm font-semibold text-white">{founder.name}</p>
               <p className="text-xs font-medium text-blue-300">{founder.title}</p>
