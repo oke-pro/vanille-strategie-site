@@ -27,10 +27,10 @@ export const siteConfig = {
     },
   },
   social: {
-    facebook:
-      "https://www.facebook.com/p/Vanille-Strategie-Expertise-Comptable-100067023412463/",
+    facebook: "https://www.facebook.com/p/Vanille-Strategie-Expertise-Comptable-100067023412463/",
     twitter: "https://x.com/mauriceisland",
-    linkedin: "https://www.linkedin.com/in/didier-laroussinie-bab4765b/",
+    linkedinDidier: "https://www.linkedin.com/in/didier-laroussinie-bab4765b/",
+    linkedinDidier2: "https://mu.linkedin.com/in/didier-laroussinie-a89194225",
   },
 } as const;
 

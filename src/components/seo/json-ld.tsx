@@ -36,7 +36,7 @@ export function OrganizationJsonLd() {
     sameAs: [
       siteConfig.social.facebook,
       siteConfig.social.twitter,
-      siteConfig.social.linkedin,
+      siteConfig.social.linkedinDidier,
     ],
     areaServed: {
       "@type": "Country",
