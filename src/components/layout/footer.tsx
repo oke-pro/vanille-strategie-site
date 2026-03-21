@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig, officialSources, founder } from "@/data/site";
 import { CheckCircle2, ShieldCheck, Linkedin, Facebook, Twitter } from "lucide-react";
 
@@ -26,13 +27,14 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Col 1 — Groupe */}
           <div className="space-y-6">
-            <Link href="/" className="group flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white transition-transform group-hover:scale-110">
-                <span className="text-sm font-bold">V</span>
-              </div>
-              <span className="text-base font-bold tracking-tighter text-white uppercase">
-                Vanille Stratégie
-              </span>
+            <Link href="/" className="group inline-block">
+              <Image
+                src="/images/logo-vanille-strategie.png"
+                alt="Vanille Stratégie"
+                width={150}
+                height={50}
+                className="h-10 w-auto brightness-0 invert transition-transform group-hover:scale-105"
+              />
             </Link>
             <p className="text-sm leading-relaxed font-light">
               Le groupe de référence pour l&apos;expatriation et l&apos;investissement à l&apos;Île Maurice. Expertise comptable, juridique et fiscale sans compromis.

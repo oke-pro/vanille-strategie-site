@@ -10,14 +10,6 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    slug: "routes-financieres-dubai-maurice-transition",
-    title: "Quitter Dubaï pour Maurice — Routes financières, transfert de patrimoine et guide de transition",
-    excerpt: "Guide urgent mars 2026 : transferts bancaires, fiscalité de transition, création de société, permis de résidence. Tout pour quitter Dubaï pendant la guerre Iran.",
-    category: "Actualité",
-    date: "Mars 2026",
-    readTime: "22 min",
-  },
-  {
     slug: "structures-juridiques-maurice-2026",
     title: "Domestic Company, GBC ou Authorised Company : quel statut choisir en 2026 ?",
     excerpt: "Comparatif actualisé post-Finance Act 2025 des 3 structures juridiques à Maurice. Taux effectifs, substance requirements, accès aux traités.",
@@ -64,22 +56,6 @@ const articles = [
     category: "Digital",
     date: "Mars 2026",
     readTime: "9 min",
-  },
-  {
-    slug: "substance-requirements-maurice",
-    title: "Substance Requirements à Maurice — Ce que l'EDB et la FSC attendent vraiment",
-    excerpt: "CIGA, directeurs résidents, Partial Exemption Regime, Finance Act 2025 — guide complet sur les exigences de substance économique pour les GBC.",
-    category: "Fiscalité",
-    date: "Mars 2026",
-    readTime: "18 min",
-  },
-  {
-    slug: "comparatif-maurice-maroc-portugal-dubai",
-    title: "Maurice vs Maroc vs Portugal vs Dubaï — Comparatif expatriation 360°",
-    excerpt: "IS, dividendes, plus-values, succession, TVA, risque géopolitique, coût de la vie : tableau comparatif complet des 4 destinations préférées des entrepreneurs francophones.",
-    category: "Comparatif",
-    date: "Mars 2026",
-    readTime: "18 min",
   },
 ];
 

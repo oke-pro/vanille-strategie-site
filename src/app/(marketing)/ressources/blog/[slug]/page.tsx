@@ -18,7 +18,7 @@ const articles: Record<string, { title: string; category: string; date: string; 
       "Notre recommandation : faites analyser votre situation par un Expert-Comptable Fiscaliste International avant de choisir. Les implications fiscales peuvent différer considérablement selon votre profil.",
     ],
   },
-  "fiscalité-maurice-2026": {
+  "fiscalite-maurice-2026": {
     title: "Fiscalité Maurice 2026 : ce qui a vraiment changé",
     category: "Fiscalité",
     date: "Mars 2026",

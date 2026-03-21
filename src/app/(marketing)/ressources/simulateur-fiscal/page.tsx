@@ -13,6 +13,7 @@ export default function SimulateurFiscalPage() {
   const [benefice, setBenefice] = useState("");
   const [dividendes, setDividendes] = useState("");
   const [computed, setComputed] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const b = parseFloat(benefice) || 0;
   const d = parseFloat(dividendes) || 0;
@@ -117,17 +118,21 @@ export default function SimulateurFiscalPage() {
               {/* Capture email pour recevoir l'analyse détaillée */}
               <div className="rounded-xl border border-blue-100 bg-blue-50/50 p-6">
                 <p className="text-sm font-bold text-slate-900">Recevez votre simulation détaillée par email</p>
-                <form className="mt-3 flex gap-2" onSubmit={async (e) => {
-                  e.preventDefault();
-                  const email = (e.currentTarget.elements.namedItem("capture-email") as HTMLInputElement)?.value;
-                  if (email) {
-                    await submitSimulateurFiscal({ email, ca: parseFloat(ca), benefice: b, dividendes: d, economie_vs_france: economie });
-                    setSuccess(true);
-                  }
-                }}>
-                  <Input name="capture-email" type="email" placeholder="votre@email.com" className="h-10" required />
-                  <Button type="submit" className="h-10 bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Recevoir</Button>
-                </form>
+                {success ? (
+                  <p className="mt-3 text-sm font-medium text-green-600">Votre simulation a été envoyée avec succès.</p>
+                ) : (
+                  <form className="mt-3 flex gap-2" onSubmit={async (e) => {
+                    e.preventDefault();
+                    const email = (e.currentTarget.elements.namedItem("capture-email") as HTMLInputElement)?.value;
+                    if (email) {
+                      await submitSimulateurFiscal({ email, ca: parseFloat(ca), benefice: b, dividendes: d, economie_vs_france: economie });
+                      setSuccess(true);
+                    }
+                  }}>
+                    <Input name="capture-email" type="email" placeholder="votre@email.com" className="h-10" required />
+                    <Button type="submit" className="h-10 bg-blue-600 hover:bg-blue-700 whitespace-nowrap">Recevoir</Button>
+                  </form>
+                )}
               </div>
 
               <p className="text-xs text-slate-400">

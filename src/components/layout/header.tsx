@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -78,17 +79,14 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white transition-transform group-hover:scale-110 group-hover:rotate-3">
-            <span className="text-xl font-bold">V</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-bold leading-none tracking-tighter text-slate-950 uppercase">
-              Vanille Stratégie
-            </span>
-            <span className="text-xs font-bold tracking-[0.2em] text-blue-600 uppercase mt-0.5">
-              Expertise Maurice
-            </span>
-          </div>
+          <Image
+            src="/images/logo-vanille-strategie.png"
+            alt="Vanille Stratégie"
+            width={180}
+            height={60}
+            priority
+            className="h-12 w-auto transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Nav */}
