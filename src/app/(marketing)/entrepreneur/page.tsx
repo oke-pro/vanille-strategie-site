@@ -281,6 +281,32 @@ export default function EntrepreneurPage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-slate-50 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Approfondir votre projet</h2>
+          <p className="mt-2 text-slate-600">Nos guides experts pour les entrepreneurs à Maurice.</p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/ressources/blog/transfer-pricing-maurice-2025", title: "Transfer Pricing à Maurice", desc: "Nouvelles obligations du Finance Act 2025 pour les groupes internationaux.", badge: "Fiscalité" },
+              { href: "/ressources/blog/substance-requirements-maurice", title: "Substance Requirements", desc: "Ce que l'EDB et la FSC attendent vraiment de votre GBC.", badge: "Conformité" },
+              { href: "/ressources/blog/ouvrir-compte-bancaire-maurice-guide", title: "Ouvrir un compte bancaire", desc: "AfrAsia vs MCB vs SBM — le guide complet pour les entrepreneurs.", badge: "Pratique" },
+              { href: "/ressources/blog/paiements-en-ligne-maurice-stripe-alternatives", title: "Paiements en ligne", desc: "Stripe, MIPS, PayPal — toutes les options pour collecter vos paiements.", badge: "Digital" },
+              { href: "/ressources/blog/droit-travail-maurice-workers-rights-act", title: "Droit du travail", desc: "Workers' Rights Act, salaires, charges — embaucher en toute conformité.", badge: "RH" },
+              { href: "/ressources/blog/edb-mauritius-role-programmes", title: "L'EDB, votre partenaire", desc: "Programmes d'accompagnement, grants et Freeport.", badge: "Institutions" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href}>
+                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-blue-300">
+                  <span className="inline-block rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">{article.badge}</span>
+                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-blue-600">{article.title}</h3>
+                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="bg-slate-900 py-24 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />

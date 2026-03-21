@@ -163,6 +163,26 @@ export default function RhPaiePage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold text-slate-900">Articles liés</h3>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {[
+              { href: "/ressources/blog/droit-travail-maurice-workers-rights-act", title: "Droit du travail à Maurice", desc: "Workers' Rights Act 2019 : contrats, congés, licenciement et obligations employeur." },
+              { href: "/ressources/blog/ecoles-internationales-maurice-education", title: "Écoles internationales à Maurice", desc: "Panorama des établissements scolaires pour les familles expatriées." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href}>
+                <div className="group rounded-xl border bg-white p-4 transition-all hover:shadow-md hover:border-blue-300">
+                  <h4 className="font-bold text-slate-900 group-hover:text-blue-600">{a.title}</h4>
+                  <p className="mt-1 text-sm text-slate-500">{a.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-slate-900 py-24">
         <div className="mx-auto max-w-3xl px-4 text-center">

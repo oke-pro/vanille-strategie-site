@@ -167,6 +167,26 @@ export default function ImmobilierPage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold text-slate-900">Articles liés</h3>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {[
+              { href: "/ressources/blog/succession-internationale-france-maurice", title: "Succession internationale France-Maurice", desc: "Règles successorales, convention bilatérale et planification patrimoniale." },
+              { href: "/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business", title: "Qualité de vie à Maurice", desc: "Lifestyle, golf, business : pourquoi Maurice séduit les investisseurs." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href}>
+                <div className="group rounded-xl border bg-white p-4 transition-all hover:shadow-md hover:border-blue-300">
+                  <h4 className="font-bold text-slate-900 group-hover:text-blue-600">{a.title}</h4>
+                  <p className="mt-1 text-sm text-slate-500">{a.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-slate-900 py-24 relative">
         <div className="absolute inset-0 opacity-10">

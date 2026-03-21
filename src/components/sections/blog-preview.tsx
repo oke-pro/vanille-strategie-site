@@ -4,30 +4,59 @@ import { founder } from "@/data/site";
 
 const articles = [
   {
-    slug: "structures-juridiques-maurice-2026",
-    title: "Domestic Company, GBC ou Authorised Company : quel statut choisir en 2026 ?",
-    excerpt:
-      "Comparatif actualisé post-Finance Act 2025 des 3 structures juridiques à Maurice. Taux effectifs, substance requirements, acc\u00e8s aux traités.",
-    category: "Guide",
+    slug: "routes-financieres-dubai-maurice-transition",
+    title: "Quitter Dubaï pour Maurice — Routes financières et guide de transition",
+    excerpt: "Transfert de patrimoine, checklist 30 jours, comparatif fiscal. Le guide urgent pour les entrepreneurs en exode.",
+    category: "Urgent",
     date: "Mars 2026",
   },
   {
-    slug: "fiscalite-maurice-2026",
-    title: "Fiscalité Maurice 2026 : ce qui a vraiment changé",
-    excerpt:
-      "Fair Share Contribution, QDMTT, Alternative Minimum Tax, Transfer Pricing — décryptage des réformes par un Expert-Comptable.",
+    slug: "transfer-pricing-maurice-2025",
+    title: "Transfer Pricing à Maurice — Nouvelles obligations 2025",
+    excerpt: "Le Finance Act 2025 introduit un cadre documentaire formel. Ce que ça change pour votre groupe.",
     category: "Fiscalité",
     date: "Mars 2026",
   },
   {
-    slug: "permis-residence-maurice-guide-2026",
-    title: "Permis de résidence à Maurice en 2026 : le guide complet post-réforme",
-    excerpt:
-      "OP Investor, Self-Employed, ProPass, Expert Pass, Retired, Premium Visa — conditions mises à jour, mid-term review, PR durci.",
-    category: "Permis",
+    slug: "qualite-de-vie-maurice-lifestyle-golf-business",
+    title: "Vivre à Maurice — Golfs, lifestyle et art de vivre business",
+    excerpt: "5 golfs de classe mondiale, gastronomie fusion, sundowner culture. Le rêve mauricien au quotidien.",
+    category: "Lifestyle",
+    date: "Mars 2026",
+  },
+  {
+    slug: "paiements-en-ligne-maurice-stripe-alternatives",
+    title: "Paiements en ligne — Stripe, MIPS et alternatives à Maurice",
+    excerpt: "Stripe n'est pas disponible à Maurice. Voici les solutions qui fonctionnent vraiment.",
+    category: "Digital",
+    date: "Mars 2026",
+  },
+  {
+    slug: "succession-internationale-france-maurice",
+    title: "Succession FR-MU — 0% de droits, mais attention aux pièges",
+    excerpt: "La convention fiscale ne couvre PAS les successions. Les erreurs à éviter absolument.",
+    category: "Patrimoine",
+    date: "Mars 2026",
+  },
+  {
+    slug: "ecosysteme-tech-startups-maurice",
+    title: "Écosystème tech à Maurice — Incubateurs et opportunités",
+    excerpt: "Turbine, La Plage Factory, Innovator Permit. Maurice se positionne comme hub tech.",
+    category: "Tech",
     date: "Mars 2026",
   },
 ];
+
+const categoryColors: Record<string, string> = {
+  Urgent: "bg-red-100 text-red-700",
+  Fiscalité: "bg-orange-100 text-orange-700",
+  Lifestyle: "bg-emerald-100 text-emerald-700",
+  Digital: "bg-teal-100 text-teal-700",
+  Patrimoine: "bg-purple-100 text-purple-700",
+  Tech: "bg-cyan-100 text-cyan-700",
+  Guide: "bg-blue-100 text-blue-700",
+  Permis: "bg-green-100 text-green-700",
+};
 
 export function BlogPreview() {
   return (
@@ -55,7 +84,7 @@ export function BlogPreview() {
             <Link key={a.slug} href={`/ressources/blog/${a.slug}`}>
               <Card className="group h-full p-6 transition-shadow hover:shadow-md">
                 <div className="flex items-center gap-2">
-                  <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
+                  <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${categoryColors[a.category] || "bg-blue-100 text-blue-700"}`}>
                     {a.category}
                   </span>
                   <span className="text-xs text-slate-400">{a.date}</span>

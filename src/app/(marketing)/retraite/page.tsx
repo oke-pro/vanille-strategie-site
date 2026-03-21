@@ -188,6 +188,31 @@ export default function RetraitePage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Préparer votre retraite à Maurice</h2>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/ressources/blog/succession-internationale-france-maurice", title: "Succession FR-MU", desc: "0% de droits à Maurice, mais attention aux pièges avec la France.", badge: "Patrimoine" },
+              { href: "/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business", title: "Qualité de vie", desc: "Golfs, plages, gastronomie — le lifestyle qui vous attend.", badge: "Lifestyle" },
+              { href: "/ressources/blog/infrastructures-maurice-telecom-sante-education", title: "Santé & Infrastructures", desc: "Cliniques privées, CHU La Réunion à 45 min, assurance santé.", badge: "Santé" },
+              { href: "/ressources/blog/maurice-reunion-liaisons-expats-francais", title: "Maurice ↔ La Réunion", desc: "La France à 45 minutes pour vos démarches et votre famille.", badge: "Mobilité" },
+              { href: "/ressources/blog/ouvrir-compte-bancaire-maurice-guide", title: "Ouvrir un compte bancaire", desc: "AfrAsia vs MCB vs SBM — multi-devises, apps mobiles.", badge: "Banque" },
+              { href: "/ressources/blog/reseaux-entrepreneurs-clubs-affaires-maurice", title: "Vie sociale & Réseaux", desc: "Clubs francophones, associations, communauté expatriée.", badge: "Social" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href}>
+                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-amber-300">
+                  <span className="inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">{article.badge}</span>
+                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-amber-600">{article.title}</h3>
+                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="bg-slate-900 py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />

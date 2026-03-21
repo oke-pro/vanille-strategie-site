@@ -100,6 +100,33 @@ export default function MauricePage() {
         </section>
       ))}
 
+      {/* Explorer en profondeur */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Explorer Maurice en profondeur</h2>
+          <p className="mt-2 text-slate-600">Nos analyses détaillées pour tout savoir avant de vous installer.</p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { href: "/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business", title: "Qualité de vie & Golfs", badge: "Lifestyle" },
+              { href: "/ressources/blog/infrastructures-maurice-telecom-sante-education", title: "Infrastructures", badge: "Pratique" },
+              { href: "/ressources/blog/industries-cles-maurice-opportunites", title: "Industries & Commerce", badge: "Business" },
+              { href: "/ressources/blog/ecosysteme-tech-startups-maurice", title: "Écosystème Tech", badge: "Digital" },
+              { href: "/ressources/blog/maurice-reunion-liaisons-expats-francais", title: "Maurice ↔ La Réunion", badge: "Mobilité" },
+              { href: "/ressources/blog/ecoles-internationales-maurice-education", title: "Écoles internationales", badge: "Famille" },
+              { href: "/ressources/blog/reseaux-entrepreneurs-clubs-affaires-maurice", title: "Réseaux & Clubs", badge: "Social" },
+              { href: "/ressources/blog/comparatif-maurice-maroc-portugal-dubai", title: "Maurice vs le monde", badge: "Comparatif" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href}>
+                <div className="group rounded-xl border border-slate-200 bg-slate-50 p-4 transition-all hover:bg-white hover:shadow-md hover:border-blue-300">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600">{article.badge}</span>
+                  <h3 className="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600">{article.title}</h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sources officielles */}
       <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">

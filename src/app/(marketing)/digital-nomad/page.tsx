@@ -204,6 +204,31 @@ export default function DigitalNomadPage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">Guides pour digital entrepreneurs</h2>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/ressources/blog/paiements-en-ligne-maurice-stripe-alternatives", title: "Paiements en ligne à Maurice", desc: "Stripe, MIPS, PayPal, Airwallex — toutes les options pour votre business digital.", badge: "Paiements" },
+              { href: "/ressources/blog/devises-mur-conversion-maurice", title: "Le piège des devises", desc: "Convertir des MUR en devises étrangères — stratégies et risques.", badge: "Finance" },
+              { href: "/ressources/blog/ecosysteme-tech-startups-maurice", title: "Écosystème tech Maurice", desc: "Incubateurs, programmes, coworking — le guide des startups.", badge: "Tech" },
+              { href: "/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business", title: "Qualité de vie à Maurice", desc: "Golfs, plages, restaurants — le lifestyle qui vous attend.", badge: "Lifestyle" },
+              { href: "/ressources/blog/maurice-reunion-liaisons-expats-francais", title: "Maurice ↔ La Réunion", desc: "La France à 45 minutes — 27 vols par semaine.", badge: "Mobilité" },
+              { href: "/ressources/blog/crypto-vasp-licence-maurice", title: "Crypto & VASP", desc: "Licence FSC, taux effectif 3%, regulatory sandbox.", badge: "Fintech" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href}>
+                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-teal-300">
+                  <span className="inline-block rounded-full bg-teal-100 px-2 py-0.5 text-xs font-medium text-teal-700">{article.badge}</span>
+                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-teal-600">{article.title}</h3>
+                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0">

@@ -189,6 +189,27 @@ export default function ComptaFiscalitePage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold text-slate-900">Articles liés</h3>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {[
+              { href: "/ressources/blog/transfer-pricing-maurice-2025", title: "Transfer Pricing à Maurice", desc: "Règles de prix de transfert post-Finance Act 2025 : obligations, seuils et documentation." },
+              { href: "/ressources/blog/substance-requirements-maurice", title: "Substance Requirements", desc: "Critères de substance économique pour les sociétés GBC à Maurice." },
+              { href: "/ressources/blog/devises-mur-conversion-maurice", title: "Gestion des devises à Maurice", desc: "Taux de change, comptes multi-devises et stratégies de conversion MUR." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href}>
+                <div className="group rounded-xl border bg-white p-4 transition-all hover:shadow-md hover:border-blue-300">
+                  <h4 className="font-bold text-slate-900 group-hover:text-blue-600">{a.title}</h4>
+                  <p className="mt-1 text-sm text-slate-500">{a.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-4xl px-4 text-center">

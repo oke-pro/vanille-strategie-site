@@ -189,6 +189,27 @@ export default function CreationSocietePage() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold text-slate-900">Articles liés</h3>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {[
+              { href: "/ressources/blog/substance-requirements-maurice", title: "Substance Requirements", desc: "Critères de substance économique pour les sociétés GBC à Maurice." },
+              { href: "/ressources/blog/edb-mauritius-role-programmes", title: "EDB Mauritius", desc: "Rôle et programmes de l'Economic Development Board pour les investisseurs." },
+              { href: "/ressources/blog/ouvrir-compte-bancaire-maurice-guide", title: "Ouvrir un compte bancaire", desc: "Guide pratique pour l'ouverture de compte AfrAsia, MCB ou SBM." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href}>
+                <div className="group rounded-xl border bg-white p-4 transition-all hover:shadow-md hover:border-blue-300">
+                  <h4 className="font-bold text-slate-900 group-hover:text-blue-600">{a.title}</h4>
+                  <p className="mt-1 text-sm text-slate-500">{a.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-5xl px-4">

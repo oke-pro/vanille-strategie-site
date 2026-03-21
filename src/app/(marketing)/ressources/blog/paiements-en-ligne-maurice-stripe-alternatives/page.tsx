@@ -361,21 +361,131 @@ export default function PaiementsEnLigneMauricePage() {
             </div>
           </div>
 
-          {/* Solutions locales */}
+          {/* MIPS */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              Solutions locales : MCB Juice et MyT Money
+              MIPS (Payment Digital Ecosystem) — L&apos;alternative N°1 a Stripe a Maurice
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
-                Pour les paiements domestiques en roupies mauriciennes,{" "}
-                <strong>MCB Juice</strong> (en partenariat avec Peach Payments)
-                et <strong>MyT Money</strong> (Mauritius Telecom) sont les
-                solutions de paiement mobile dominantes. Elles sont utiles si
-                vous avez une clientele locale, mais ne conviennent pas pour
-                l&apos;encaissement international.
+                <strong>MIPS</strong> est la passerelle de paiement locale la
+                plus robuste et la plus populaire a Maurice. Elle offre une
+                integration native avec les principales plateformes e-commerce
+                (Shopify, WooCommerce, Magento) et supporte a la fois les{" "}
+                <strong>cartes de credit internationales</strong> et les{" "}
+                <strong>paiements locaux</strong> comme MCB Juice.
+              </p>
+              <p>
+                L&apos;API REST avec webhooks permet une integration technique
+                souple, et le support local — reactif en anglais et en
+                francais — est un avantage decisif par rapport aux PSP
+                internationaux. C&apos;est la solution a considerer en priorite
+                pour toute entreprise basee a Maurice qui vend en ligne.
               </p>
             </div>
+          </div>
+
+          {/* Peach Payments */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              Peach Payments — Acteur majeur Afrique du Sud present a Maurice
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>Peach Payments</strong> est un PSP sud-africain avec
+                une forte presence a Maurice. L&apos;interface est moderne,
+                la documentation API excellente et la certification{" "}
+                <strong>PCI DSS Level 1</strong> garantit le plus haut niveau
+                de securite pour les donnees de carte.
+              </p>
+              <p>
+                Peach Payments supporte les cartes de credit, les cartes de
+                debit et le mobile money. C&apos;est une alternative serieuse a
+                MIPS, en particulier pour les entreprises qui operent egalement
+                en Afrique du Sud ou dans d&apos;autres pays africains.
+              </p>
+            </div>
+          </div>
+
+          {/* MCB Juice */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              MCB Juice — Le paiement mobile QR le plus utilise a Maurice
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>MCB Juice</strong> est le portefeuille mobile de la
+                Mauritius Commercial Bank. C&apos;est le moyen de paiement
+                mobile le plus utilise par les Mauriciens au quotidien. Le
+                systeme repose sur des <strong>QR codes</strong> integrables
+                directement sur vos sites web, factures et points de vente.
+              </p>
+              <p>
+                L&apos;API MCB permet d&apos;automatiser les encaissements.
+                Incontournable si vous avez une clientele locale mauricienne.
+              </p>
+            </div>
+          </div>
+
+          {/* My.t Money */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              My.t Money — Mobile money par Mauritius Telecom
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>My.t Money</strong> est la solution de paiement mobile
+                de Mauritius Telecom. Elle permet les transferts d&apos;argent,
+                le paiement de factures et les achats en ligne via
+                l&apos;application mobile. L&apos;API Mauritius Telecom permet
+                l&apos;integration sur les sites marchands.
+              </p>
+            </div>
+          </div>
+
+          {/* Blink */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              Blink — Paiement mobile SBM
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>Blink</strong> est la solution de paiement mobile de
+                SBM Bank. Elle offre des fonctionnalites similaires a MCB Juice
+                — transferts, paiements QR et achats en ligne — pour les
+                clients SBM. L&apos;API SBM permet l&apos;integration
+                e-commerce.
+              </p>
+            </div>
+          </div>
+
+          {/* PAYSKY */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-slate-900">
+              PAYSKY — Solution montante
+            </h3>
+            <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                <strong>PAYSKY</strong> propose une offre combinee de paiement
+                digital et de terminaux physiques pour les commercants. Son API
+                REST permet l&apos;integration en ligne. C&apos;est un acteur
+                en croissance a surveiller sur le marche mauricien.
+              </p>
+            </div>
+          </div>
+
+          {/* Note BRC */}
+          <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5">
+            <p className="text-sm font-semibold text-amber-800">
+              Important — Business Registration Card requise
+            </p>
+            <p className="mt-2 text-sm text-amber-700">
+              Pour les solutions locales comme MIPS ou Peach Payments, vous
+              devrez avoir une{" "}
+              <strong>Business Registration Card (BRC) mauricienne valide</strong>{" "}
+              pour ouvrir un compte marchand. C&apos;est une condition prealable
+              a toute integration de passerelle de paiement locale.
+            </p>
           </div>
         </div>
       </section>
