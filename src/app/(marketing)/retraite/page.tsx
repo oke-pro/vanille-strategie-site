@@ -4,21 +4,22 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder, testimonials } from "@/data/site";
-import { 
-  Palmtree, 
-  Heart, 
-  ShieldCheck, 
-  Clock, 
-  Sun, 
-  Users, 
-  CheckCircle2, 
+import {
+  Palmtree,
+  Heart,
+  ShieldCheck,
+  Clock,
+  Sun,
+  Users,
+  CheckCircle2,
   ArrowRight,
   TrendingUp,
   Home,
   GraduationCap,
   Plane,
   Coins,
-  Medal
+  Medal,
+  FileText
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -54,6 +55,11 @@ export default function RetraitePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-yellow-500/10 rounded-full blur-2xl animate-pulse delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
@@ -202,10 +208,17 @@ export default function RetraitePage() {
               { href: "/ressources/blog/reseaux-entrepreneurs-clubs-affaires-maurice", title: "Vie sociale & Réseaux", desc: "Clubs francophones, associations, communauté expatriée.", badge: "Social" },
             ].map((article) => (
               <Link key={article.href} href={article.href}>
-                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-amber-300">
-                  <span className="inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">{article.badge}</span>
-                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-amber-600">{article.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                <div className="group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 hover:border-amber-300/50 overflow-hidden">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-amber-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-amber-100 to-amber-50 px-3 py-1 text-xs font-bold text-amber-700 shadow-sm">
+                    <FileText className="h-3 w-3" />
+                    {article.badge}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold text-slate-900 group-hover:text-amber-600 leading-tight">{article.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">{article.desc}</p>
+                  <div className="mt-4 flex items-center gap-1 text-xs font-bold text-amber-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                    Lire l'article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -229,7 +242,7 @@ export default function RetraitePage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-amber-500/20 text-white border-none">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-amber-500/20 text-white border-none transition-all duration-300">
                 Planifier mon départ
               </Button>
             </Link>

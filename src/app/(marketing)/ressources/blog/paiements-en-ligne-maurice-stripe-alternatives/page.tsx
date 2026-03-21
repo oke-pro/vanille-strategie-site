@@ -387,7 +387,7 @@ export default function PaiementsEnLigneMauricePage() {
           {/* Razorpay */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              Razorpay — Populaire entre l&apos;Inde et Maurice
+              Razorpay — NON DISPONIBLE à Maurice (corridor Inde uniquement)
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
@@ -403,7 +403,7 @@ export default function PaiementsEnLigneMauricePage() {
           {/* Flutterwave */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-slate-900">
-              Flutterwave — Specialiste des paiements en Afrique
+              Flutterwave — NON DISPONIBLE à Maurice (Afrique continentale uniquement)
             </h3>
             <div className="mt-3 space-y-3 text-slate-700 leading-relaxed">
               <p>
@@ -1084,7 +1084,7 @@ export default function PaiementsEnLigneMauricePage() {
               <strong>tous les PSP presentes dans cet article</strong> : MIPS
               (disponible), MCB Juice (disponible), Peach Payments (disponible),
               My.t Money (a venir), Blink (a venir), PAYSKY (a venir),
-              2Checkout (a venir), Razorpay (a venir) et Flutterwave (a venir).
+              2Checkout (a venir), et d&apos;autres PSP internationaux (sous réserve de disponibilité à Maurice).
               Chaque transaction est connectee automatiquement a votre
               comptabilite — plus de saisie manuelle, plus de CSV a importer.
             </p>

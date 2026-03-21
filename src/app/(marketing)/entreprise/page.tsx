@@ -52,6 +52,11 @@ export default function EntreprisePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-violet-500/10 rounded-full blur-2xl animate-pulse delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
@@ -195,7 +200,7 @@ export default function EntreprisePage() {
           </p>
           <div className="mt-12">
             <Link href="/contact">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-purple-500/20 text-white border-none">
+              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-purple-500/20 text-white border-none transition-all duration-300">
                 Lancer mon étude d&apos;implantation
               </Button>
             </Link>

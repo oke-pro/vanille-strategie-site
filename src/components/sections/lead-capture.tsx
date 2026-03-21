@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-// Native select for dark form (avoids base-ui typing issues)
 import { siteConfig } from "@/data/site";
 import { submitQuickLead } from "@/lib/api";
+import { CheckCircle2, ShieldCheck, Zap, ArrowRight, Loader2 } from "lucide-react";
 
 export function LeadCaptureSection() {
   const [loading, setLoading] = useState(false);
@@ -37,15 +37,21 @@ export function LeadCaptureSection() {
 
   if (success) {
     return (
-      <section className="bg-slate-900 py-16 sm:py-24" id="contact-rapide">
+      <section className="bg-white py-24 sm:py-32" id="contact-rapide">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-green-500/20 bg-green-500/10 p-10">
-            <p className="text-4xl">✓</p>
-            <h2 className="mt-4 text-2xl font-bold text-white">Merci !</h2>
-            <p className="mt-2 text-slate-300">
-              Nous avons bien reçu votre demande. Didier Laroussinie vous
-              répondra personnellement sous 24h.
+          <div className="rounded-[2.5rem] border border-emerald-100 bg-emerald-50/30 p-12 backdrop-blur-xl animate-[scaleIn_0.5s_ease-out]">
+            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-500 text-white shadow-xl shadow-emerald-200">
+              <CheckCircle2 className="h-10 w-10" />
+            </div>
+            <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Demande transmise !</h2>
+            <p className="mt-6 text-lg text-slate-600 font-light leading-relaxed">
+              Didier Laroussinie a bien reçu votre message. Vous recevrez une analyse préliminaire de votre projet par email <span className="font-bold text-slate-900 text-emerald-600">sous 24h ouvrées</span>.
             </p>
+            <div className="mt-8 flex justify-center gap-4">
+              <Button variant="outline" className="rounded-full px-8" onClick={() => setSuccess(false)}>
+                Envoyer un autre message
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -53,64 +59,105 @@ export function LeadCaptureSection() {
   }
 
   return (
-    <section className="bg-slate-900 py-16 sm:py-24" id="contact-rapide">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Prêt à franchir le pas ?
-        </h2>
-        <p className="mt-3 text-lg text-slate-300">
-          Bénéficiez d&apos;une étude de faisabilité gratuite sur votre projet.
-          Nous vous répondons sous 24h.
-        </p>
+    <section className="bg-slate-50 py-24 sm:py-32" id="contact-rapide">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="relative rounded-[3rem] border border-white bg-white/70 p-8 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)] backdrop-blur-2xl sm:p-16">
+          {/* Decorative Glow */}
+          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-100/50 blur-3xl" />
+          
+          <div className="relative z-10 text-center max-w-2xl mx-auto">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-blue-600">
+              Étude de faisabilité gratuite
+            </div>
+            <h2 className="text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl">
+              Prêt à franchir le pas ?
+            </h2>
+            <p className="mt-6 text-lg text-slate-600 font-light leading-relaxed">
+              Décrivez-nous votre projet en 30 secondes. Didier Laroussinie vous répondra personnellement avec un premier avis d&apos;expert.
+            </p>
+          </div>
 
-        <form onSubmit={handleSubmit} className="mt-10 grid gap-4 text-left sm:grid-cols-2">
-          <div>
-            <Label htmlFor="prenom" className="text-slate-300">Prénom</Label>
-            <Input name="prenom" id="prenom" placeholder="Votre prénom" className="mt-1 bg-slate-800 text-white border-slate-700" required />
-          </div>
-          <div>
-            <Label htmlFor="email" className="text-slate-300">Email</Label>
-            <Input name="email" id="email" type="email" placeholder="vous@email.com" className="mt-1 bg-slate-800 text-white border-slate-700" required />
-          </div>
-          <div>
-            <Label htmlFor="telephone" className="text-slate-300">Téléphone</Label>
-            <Input name="telephone" id="telephone" type="tel" placeholder="+33 6 ..." className="mt-1 bg-slate-800 text-white border-slate-700" />
-          </div>
-          <div>
-            <Label htmlFor="profil" className="text-slate-300">Je suis</Label>
-            <select
-              name="profil"
-              value={profil}
-              onChange={(e) => setProfil(e.target.value)}
-              required
-              className="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-white"
-            >
-              <option value="">Sélectionnez votre profil</option>
-              <option value="entrepreneur">Entrepreneur</option>
-              <option value="digital-nomad">Digital Nomad / E-commerçant</option>
-              <option value="retraite">Retraité</option>
-              <option value="entreprise">Entreprise / Filiale</option>
-              <option value="investisseur">Investisseur immobilier</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div className="sm:col-span-2">
-            <Button type="submit" size="lg" className="w-full bg-blue-600 text-base hover:bg-blue-700" disabled={loading}>
-              {loading ? "Envoi en cours..." : "Obtenir mon analyse gratuite"}
-            </Button>
-          </div>
-          {error && (
-            <p className="sm:col-span-2 text-sm text-red-400">{error}</p>
-          )}
-        </form>
+          <form onSubmit={handleSubmit} className="relative z-10 mt-12 grid gap-6 sm:grid-cols-2">
+            <div className="space-y-2">
+              <Label htmlFor="prenom" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Prénom</Label>
+              <Input 
+                name="prenom" 
+                id="prenom" 
+                placeholder="Ex: Jean" 
+                className="h-14 rounded-2xl border-slate-200 bg-white/50 px-6 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all" 
+                required 
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Email professionnel</Label>
+              <Input 
+                name="email" 
+                id="email" 
+                type="email" 
+                placeholder="vous@exemple.com" 
+                className="h-14 rounded-2xl border-slate-200 bg-white/50 px-6 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all" 
+                required 
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="telephone" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Téléphone / WhatsApp</Label>
+              <Input 
+                name="telephone" 
+                id="telephone" 
+                type="tel" 
+                placeholder="+33 6 ..." 
+                className="h-14 rounded-2xl border-slate-200 bg-white/50 px-6 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all" 
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="profil" className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Votre Profil actuel</Label>
+              <select
+                name="profil"
+                value={profil}
+                onChange={(e) => setProfil(e.target.value)}
+                required
+                className="flex h-14 w-full rounded-2xl border border-slate-200 bg-white/50 px-6 py-2 text-sm focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all outline-none"
+              >
+                <option value="">Sélectionnez votre profil</option>
+                <option value="entrepreneur">Entrepreneur</option>
+                <option value="digital-nomad">Digital Nomad / E-commerçant</option>
+                <option value="retraite">Retraité</option>
+                <option value="entreprise">Entreprise / Filiale</option>
+                <option value="investisseur">Investisseur immobilier</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div className="sm:col-span-2 mt-4">
+              <Button type="submit" size="lg" className="h-16 w-full rounded-full bg-blue-600 text-lg font-bold shadow-2xl shadow-blue-200 hover:bg-blue-500 hover:shadow-blue-300 transition-all hover:-translate-y-1 group" disabled={loading}>
+                {loading ? (
+                  <Loader2 className="h-6 w-6 animate-spin" />
+                ) : (
+                  <>
+                    Obtenir mon analyse gratuite
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </>
+                )}
+              </Button>
+            </div>
+            {error && (
+              <p className="sm:col-span-2 text-center text-sm font-bold text-rose-500 bg-rose-50 p-4 rounded-xl border border-rose-100 animate-pulse">{error}</p>
+            )}
+          </form>
 
-        <p className="mt-6 text-sm text-slate-500">
-          Ou appelez-nous directement :{" "}
-          <a href={`tel:${siteConfig.phone}`} className="text-blue-400 hover:underline">
-            {siteConfig.phone}
-          </a>{" "}
-          · WhatsApp disponible
-        </p>
+          <div className="relative z-10 mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 border-t border-slate-100 pt-8">
+            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+              <ShieldCheck className="h-4 w-4 text-emerald-500" />
+              Données 100% sécurisées
+            </div>
+            <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
+              <Zap className="h-4 w-4 text-yellow-500" />
+              Réponse sous 24h
+            </div>
+            <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+              Appel direct : <a href={`tel:${siteConfig.phone}`} className="text-blue-600 hover:underline">{siteConfig.phone}</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

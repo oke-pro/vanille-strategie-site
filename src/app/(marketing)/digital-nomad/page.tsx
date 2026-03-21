@@ -4,22 +4,23 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder } from "@/data/site";
-import { 
-  Laptop, 
-  Globe, 
-  Wifi, 
-  Plane, 
-  Palmtree, 
-  TrendingUp, 
-  Zap, 
-  ShieldCheck, 
-  CheckCircle2, 
+import {
+  Laptop,
+  Globe,
+  Wifi,
+  Plane,
+  Palmtree,
+  TrendingUp,
+  Zap,
+  ShieldCheck,
+  CheckCircle2,
   ArrowRight,
   Database,
   Cpu,
   ShoppingCart,
   CreditCard,
-  BarChart3
+  BarChart3,
+  FileText
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -60,6 +61,11 @@ export default function DigitalNomadPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-teal-900/95 via-teal-900/80 to-teal-900/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-teal-900 via-transparent to-transparent" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl animate-pulse delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
@@ -87,6 +93,9 @@ export default function DigitalNomadPage() {
           </div>
         </div>
       </section>
+
+      {/* Separator */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-teal-200/50 to-transparent" />
 
       {/* Advantages Grid */}
       <section className="bg-white py-24">
@@ -218,10 +227,17 @@ export default function DigitalNomadPage() {
               { href: "/ressources/blog/crypto-vasp-licence-maurice", title: "Crypto & VASP", desc: "Licence FSC, taux effectif 3%, regulatory sandbox.", badge: "Fintech" },
             ].map((article) => (
               <Link key={article.href} href={article.href}>
-                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-teal-300">
-                  <span className="inline-block rounded-full bg-teal-100 px-2 py-0.5 text-xs font-medium text-teal-700">{article.badge}</span>
-                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-teal-600">{article.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                <div className="group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/10 hover:border-teal-300/50 overflow-hidden">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-teal-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-teal-100 to-teal-50 px-3 py-1 text-xs font-bold text-teal-700 shadow-sm">
+                    <FileText className="h-3 w-3" />
+                    {article.badge}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold text-slate-900 group-hover:text-teal-600 leading-tight">{article.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">{article.desc}</p>
+                  <div className="mt-4 flex items-center gap-1 text-xs font-bold text-teal-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                    Lire l'article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -246,7 +262,7 @@ export default function DigitalNomadPage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             <Link href="/contact">
-              <Button size="lg" className="bg-white hover:bg-teal-50 text-teal-900 px-12 h-16 text-lg font-bold shadow-2xl">
+              <Button size="lg" className="bg-white hover:bg-teal-50 hover:scale-105 text-teal-900 px-12 h-16 text-lg font-bold shadow-2xl transition-all duration-300">
                 Lancer mon étude gratuite
               </Button>
             </Link>

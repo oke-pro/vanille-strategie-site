@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
+import { ChevronDown, Menu, Phone, ArrowRight } from "lucide-react";
 
 const navigation = [
   {
@@ -68,33 +69,38 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
+        "sticky top-0 z-50 w-full transition-all duration-500",
         isScrolled
-          ? "border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-white border-b border-slate-100"
+          ? "border-b border-slate-200/50 bg-white/80 backdrop-blur-xl py-3"
+          : "bg-white border-b border-transparent py-5"
       )}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className={cn(
-            "text-xl font-bold tracking-tight transition-colors",
-            "text-slate-900"
-          )}>
-            Vanille Stratégie
-          </span>
+        <Link href="/" className="group flex items-center gap-2">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white transition-transform group-hover:scale-110 group-hover:rotate-3">
+            <span className="text-xl font-black">V</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-black leading-none tracking-tighter text-slate-950 uppercase">
+              Vanille Stratégie
+            </span>
+            <span className="text-[10px] font-bold tracking-[0.2em] text-blue-600 uppercase mt-0.5">
+              Expertise Maurice
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-2 lg:flex">
           {navigation.map((item) => (
             <div key={item.label} className="group relative">
               {"href" in item ? (
                 <Link
                   href={item.href}
                   className={cn(
-                    "rounded-md px-3 py-2 text-sm font-medium transition-all hover:bg-slate-100/50 hover:text-slate-900",
-                    "text-slate-700 hover:text-slate-900"
+                    "rounded-full px-4 py-2 text-xs font-black uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
+                    "text-slate-600"
                   )}
                 >
                   {item.label}
@@ -102,22 +108,26 @@ export function Header() {
               ) : (
                 <>
                   <button className={cn(
-                    "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-all hover:bg-slate-100/50 hover:text-slate-900",
-                    "text-slate-700 hover:text-slate-900"
+                    "flex items-center gap-1 rounded-full px-4 py-2 text-xs font-black uppercase tracking-widest transition-all hover:bg-slate-100 hover:text-slate-950",
+                    "text-slate-600 group-hover:text-slate-950 group-hover:bg-slate-50"
                   )}>
                     {item.label}
-                    <svg className="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                    <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
                   </button>
-                  <div className="invisible absolute left-0 top-full z-50 min-w-[220px] rounded-lg border bg-white p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block rounded-md px-3 py-2 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  {/* Glass Dropdown */}
+                  <div className="invisible absolute left-0 top-full z-50 mt-2 min-w-[240px] translate-y-2 rounded-2xl border border-slate-200/50 bg-white/90 p-3 opacity-0 shadow-2xl backdrop-blur-2xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                    <div className="grid gap-1">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="group/item flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-bold text-slate-600 transition-all hover:bg-blue-600 hover:text-white"
+                        >
+                          {child.label}
+                          <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0" />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </>
               )}
@@ -126,60 +136,69 @@ export function Header() {
         </nav>
 
         {/* CTA + Mobile */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
+          <div className="hidden flex-col items-end md:flex">
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="flex items-center gap-2 text-xs font-black text-slate-950 hover:text-blue-600 transition-colors"
+            >
+              <Phone className="h-3 w-3" />
+              {siteConfig.phone}
+            </a>
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Disponible 7j/7</span>
+          </div>
+          
           <Link href="/contact" className="hidden sm:block">
-            <Button variant="default" size="sm">
+            <Button className="h-11 rounded-full bg-slate-950 px-6 text-xs font-black uppercase tracking-widest shadow-xl shadow-slate-200 transition-all hover:bg-slate-800 hover:shadow-slate-300 hover:-translate-y-0.5">
               Étude gratuite
             </Button>
           </Link>
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="hidden text-sm font-medium text-slate-600 transition-colors hover:text-slate-900 md:block"
-          >
-            {siteConfig.phone}
-          </a>
 
           {/* Mobile hamburger */}
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger
-              className="rounded-md p-2 text-slate-600 transition-colors hover:bg-slate-100 lg:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-xl transition-colors hover:bg-slate-100 lg:hidden"
             >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+              <Menu className="h-6 w-6 text-slate-950" />
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 overflow-y-auto">
-              <nav className="mt-8 flex flex-col gap-1">
+            <SheetContent side="right" className="w-full sm:w-[400px] overflow-y-auto border-none bg-white/95 backdrop-blur-2xl">
+              <nav className="mt-12 flex flex-col gap-2">
                 {navigation.map((item) => (
-                  <div key={item.label}>
+                  <div key={item.label} className="border-b border-slate-100 pb-2">
                     {"href" in item ? (
                       <Link
                         href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-slate-900"
+                        className="block px-4 py-3 text-xl font-black tracking-tighter text-slate-950"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.label}
                       </Link>
                     ) : (
                       <>
-                        <p className="px-3 pt-4 pb-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                        <p className="px-4 pt-6 pb-2 text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">
                           {item.label}
                         </p>
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                        <div className="grid gap-1">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className="block rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50 transition-colors"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
                       </>
                     )}
                   </div>
                 ))}
-                <div className="mt-6 border-t pt-4">
+                <div className="mt-8 px-4">
                   <Link href="/contact" onClick={() => setMobileOpen(false)}>
-                    <Button className="w-full">Étude gratuite</Button>
+                    <Button className="h-16 w-full rounded-2xl bg-slate-950 text-lg font-black tracking-tight shadow-2xl">
+                      Démarrer mon projet
+                    </Button>
                   </Link>
                 </div>
               </nav>

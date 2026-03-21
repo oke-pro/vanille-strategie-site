@@ -55,6 +55,11 @@ export default function EntrepreneurPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl animate-pulse delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl animate-[fadeSlideUp_0.8s_ease-out]">
@@ -83,6 +88,9 @@ export default function EntrepreneurPage() {
           </div>
         </div>
       </section>
+
+      {/* Separator */}
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-200/50 to-transparent" />
 
       {/* Company Structures */}
       <section id="structures" className="bg-white py-24">
@@ -296,10 +304,17 @@ export default function EntrepreneurPage() {
               { href: "/ressources/blog/edb-mauritius-role-programmes", title: "L'EDB, votre partenaire", desc: "Programmes d'accompagnement, grants et Freeport.", badge: "Institutions" },
             ].map((article) => (
               <Link key={article.href} href={article.href}>
-                <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-blue-300">
-                  <span className="inline-block rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">{article.badge}</span>
-                  <h3 className="mt-3 text-lg font-bold text-slate-900 group-hover:text-blue-600">{article.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{article.desc}</p>
+                <div className="group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-300/50 overflow-hidden">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-100 to-blue-50 px-3 py-1 text-xs font-bold text-blue-700 shadow-sm">
+                    <FileText className="h-3 w-3" />
+                    {article.badge}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold text-slate-900 group-hover:text-blue-600 leading-tight">{article.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">{article.desc}</p>
+                  <div className="mt-4 flex items-center gap-1 text-xs font-bold text-blue-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                    Lire l'article <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -323,12 +338,12 @@ export default function EntrepreneurPage() {
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-12 h-16 text-lg font-bold shadow-2xl shadow-blue-500/20">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover:scale-105 px-12 h-16 text-lg font-bold shadow-2xl shadow-blue-500/20 transition-all duration-300">
                 Lancer mon projet
               </Button>
             </Link>
             <Link href="/services/creation-societe">
-              <Button size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm px-12 h-16 text-lg font-bold">
+              <Button size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:scale-105 backdrop-blur-sm px-12 h-16 text-lg font-bold transition-all duration-300">
                 Détails des services
               </Button>
             </Link>

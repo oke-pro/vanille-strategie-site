@@ -40,6 +40,11 @@ export default function DidierPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl animate-pulse delay-500" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-3 gap-12 items-center">
@@ -202,7 +207,7 @@ export default function DidierPage() {
               </p>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-500 text-white px-10 h-16 text-lg font-bold border-none shadow-2xl">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 text-white px-10 h-16 text-lg font-bold border-none shadow-2xl transition-all duration-300">
                     Réserver une consultation
                   </Button>
                 </Link>
