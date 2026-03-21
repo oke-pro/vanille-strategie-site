@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card } from "@/components/ui/card";
 import { parcours } from "@/data/site";
+import { ArrowUpRight } from "lucide-react";
 
 const imageMap: Record<string, string> = {
   entrepreneur: "/images/entrepreneur-maurice.jpg",
@@ -19,45 +19,50 @@ const iconMap: Record<string, string> = {
 
 export function ProfilCards() {
   return (
-    <section className="bg-slate-50 py-20 sm:py-32">
+    <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="animate-[fadeSlideUp_0.6s_ease-out] text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            Quel est votre projet ?
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/50 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-blue-600">
+            Votre Projet, Votre Parcours
+          </div>
+          <h2 className="animate-[fadeSlideUp_0.6s_ease-out] text-4xl font-extrabold tracking-tighter text-slate-950 sm:text-5xl lg:text-6xl">
+            Comment souhaitez-vous vivre à Maurice ?
           </h2>
-          <p className="mt-4 animate-[fadeSlideUp_0.7s_ease-out] text-lg leading-relaxed text-slate-600">
-            Chaque parcours est unique. Sélectionnez votre profil pour
-            découvrir la solution adaptée à votre situation.
+          <p className="mt-8 animate-[fadeSlideUp_0.7s_ease-out] text-lg leading-relaxed text-slate-600 font-light lg:text-xl">
+            Chaque expatriation est une aventure singulière. Notre cabinet a conçu des écosystèmes dédiés pour chaque profil, de l&apos;entrepreneur tech au retraité en quête de sérénité.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {parcours.map((p, idx) => (
             <Link 
               key={p.slug} 
               href={`/${p.slug}`}
-              className="group relative h-[450px] overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="group relative h-[520px] overflow-hidden rounded-[2.5rem] shadow-2xl transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_30px_60px_-15px_rgba(15,23,42,0.3)]"
               style={{ 
                 animation: `fadeSlideUp 0.6s ease-out ${0.2 + idx * 0.1}s both` 
               }}
             >
-              {/* Background Image */}
+              {/* Background Image with Zoom effect */}
               <Image
                 src={imageMap[p.slug] || "/images/hero-maurice.jpg"}
                 alt={p.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 transition-opacity group-hover:opacity-90" />
               
-              <div className="relative flex h-full flex-col justify-end p-8 text-white">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 backdrop-blur-md border border-white/30 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+              {/* Sophisticated Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-blue-900/10 opacity-0 transition-opacity group-hover:opacity-30 mix-blend-overlay" />
+              
+              <div className="relative flex h-full flex-col justify-end p-10 text-white">
+                {/* Glass Icon */}
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/20 shadow-xl transition-all duration-500 group-hover:bg-blue-600/30 group-hover:border-blue-400/50 group-hover:scale-110 group-hover:rotate-3">
                   <svg
-                    className="h-6 w-6 text-white"
+                    className="h-8 w-8 text-white transition-transform duration-500 group-hover:scale-110"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                     stroke="currentColor"
                   >
                     <path
@@ -67,16 +72,22 @@ export function ProfilCards() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold">{p.title}</h3>
-                <p className="mt-1 text-xs font-bold uppercase tracking-widest text-blue-300">
-                  {p.subtitle}
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-slate-200 line-clamp-3">
-                  {p.description}
-                </p>
-                <div className="mt-6 flex items-center gap-2 text-sm font-bold text-white group-hover:text-blue-300 transition-colors">
-                  <span>Découvrir mon parcours</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+
+                <div className="space-y-3">
+                  <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-400">
+                    {p.subtitle}
+                  </p>
+                  <h3 className="text-3xl font-bold tracking-tight">{p.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-300 font-light line-clamp-3 transition-opacity duration-300 group-hover:text-white">
+                    {p.description}
+                  </p>
+                </div>
+
+                <div className="mt-8 flex items-center gap-3 text-sm font-bold text-white/80 group-hover:text-white transition-all">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 border border-white/20 transition-all group-hover:bg-blue-600 group-hover:border-blue-400">
+                    <ArrowUpRight className="h-4 w-4" />
+                  </div>
+                  <span className="tracking-wide uppercase text-[10px] font-black">Explorer la solution</span>
                 </div>
               </div>
             </Link>
