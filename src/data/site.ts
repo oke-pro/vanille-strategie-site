@@ -435,3 +435,4 @@ export const funnelSteps = [
     description: "Comptabilité, banque, paie — tout est intégré dans votre dashboard. Votre business en autopilote.",
   },
 ] as const;
+
