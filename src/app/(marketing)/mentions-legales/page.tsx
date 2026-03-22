@@ -17,7 +17,7 @@ export default function MentionsLegalesPage() {
           Email : {siteConfig.email}
         </p>
         <h2>Hébergement</h2>
-        <p>Ce site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.</p>
+        <p>Ce site est hébergé par OVHcloud, 2 rue Kellermann, 59100 Roubaix, France.</p>
         <h2>Propriété intellectuelle</h2>
         <p>L&apos;ensemble du contenu de ce site (textes, images, graphismes, logo, icônes) est la propriété exclusive de Vanille Stratégie, sauf mention contraire. Toute reproduction est interdite sans autorisation préalable.</p>
         <h2>Données personnelles</h2>
