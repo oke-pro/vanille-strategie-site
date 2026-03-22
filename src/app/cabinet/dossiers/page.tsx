@@ -42,7 +42,7 @@ const PRIORITY_COLORS: Record<string, string> = {
 };
 
 const TYPE_LABELS: Record<string, string> = {
-  creation_societe: "Création société",
+  création_société: "Création société",
   permis_residence: "Permis résidence",
   fiscal: "Fiscal",
   bancaire: "Bancaire",
@@ -94,7 +94,7 @@ export default function CabinetDossiersPage() {
               className="rounded-lg border border-slate-300 px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             >
               <option value="">Tous</option>
-              <option value="creation_societe">Création société</option>
+              <option value="création_société">Création société</option>
               <option value="permis_residence">Permis résidence</option>
               <option value="fiscal">Fiscal</option>
               <option value="bancaire">Bancaire</option>

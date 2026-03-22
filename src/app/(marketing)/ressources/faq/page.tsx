@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { q: "Combien de temps faut-il pour créer une société à Maurice ?", a: "Une Domestic Company peut être constituée en 3 jours ouvrés via le CBRD. Pour une GBC (Global Business Company) nécessitant une licence FSC, comptez 2-4 semaines. Nous gérons l'ensemble de la procédure." },
-  { q: "Quel est le taux d'imposition à Maurice ?", a: "Le taux standard est de 15% flat sur les bénéfices des sociétés et les revenus personnels. Pour les GBC éligibles au Partial Exemption Regime (80%), le taux effectif descend à 3-3,4%. Il n'y a aucun impôt sur les dividendes, les plus-values ni les successions." },
+  { q: "Quel est le taux d'imposition à Maurice ?", a: "Le taux standard est de 15% flat sur les bénéfices des sociétés et les revenus personnels. Pour les GBC éligibles au Partial Exemption Régime (80%), le taux effectif descend à 3-3,4%. Il n'y a aucun impôt sur les dividendes, les plus-values ni les successions." },
   { q: "Quel permis de résidence me correspond ?", a: "Cela dépend de votre profil : OP Investor (50 000 $ d'investissement), OP Self-Employed (50 000 $ + 3 lettres d'intention), OP Professional (salarié, min. 30 000 MUR/mois), OP Retired (50 ans+, 2 000 $/mois) ou Premium Visa (digital nomad, 1 500 $/mois, gratuit). Nous analysons votre situation pour vous recommandons le bon." },
   { q: "Combien de temps pour obtenir un Occupation Permit ?", a: "En moyenne 15-20 jours ouvrés pour le principe d'approbation après dépôt du dossier complet. Les dépendants (conjoint, enfants) sont traités en ~10 jours après le principal." },
   { q: "Faut-il résider à Maurice pour avoir une société ?", a: "Non. Une Domestic Company ou une GBC peut être détenue à 100% par des étrangers sans obligation de résidence. Cependant, si vous souhaitez travailler depuis Maurice, un permis est nécessaire. Pour une GBC, il faut au minimum 2 directeurs résidents mauriciens." },
@@ -93,7 +93,7 @@ export default function FaqPage() {
                 <Search className="h-6 w-6" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Vous ne trouvez pas votre réponse ?</p>
+                <p className="font-bold text-slate-900">Vous ne trouvez pas votre reponse ?</p>
                 <p className="text-sm text-slate-500 font-medium">Nos experts sont là pour vous aider.</p>
               </div>
             </div>

@@ -27,7 +27,7 @@ export function ContactForm() {
         prenom: form.get("prenom") as string,
         nom: form.get("nom") as string,
         email: form.get("email") as string,
-        telephone: (form.get("telephone") as string) || null,
+        téléphone: (form.get("téléphone") as string) || null,
         profil,
         objet: (form.get("objet") as string) || "Demande de contact",
         message: (form.get("message") as string) || null,
@@ -71,8 +71,8 @@ export function ContactForm() {
           <Input name="email" id="email" type="email" placeholder="vous@email.com" className="h-12 border-slate-200 bg-slate-50/50 transition-all focus:bg-white" required />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="telephone" className="text-xs font-bold uppercase tracking-widest text-slate-400">Téléphone / WhatsApp</Label>
-          <Input name="telephone" id="telephone" type="tel" placeholder="+33 6 ..." className="h-12 border-slate-200 bg-slate-50/50 transition-all focus:bg-white" />
+          <Label htmlFor="téléphone" className="text-xs font-bold uppercase tracking-widest text-slate-400">Téléphone / WhatsApp</Label>
+          <Input name="téléphone" id="téléphone" type="tel" placeholder="+33 6 ..." className="h-12 border-slate-200 bg-slate-50/50 transition-all focus:bg-white" />
         </div>
       </div>
       <div className="space-y-2">

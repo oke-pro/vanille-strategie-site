@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title:
     "Income Tax Act 1995 — Analyse commentée des dispositions clés pour les investisseurs | Vanille Stratégie",
   description:
-    "Analyse commentée par Didier Laroussinie des articles clés de l'Income Tax Act 1995 de Maurice : résidence fiscale (section 73), taux 15 %, dividendes, Partial Exemption Regime, CSG.",
+    "Analyse commentée par Didier Laroussinie des articles clés de l'Income Tax Act 1995 de Maurice : résidence fiscale (section 73), taux 15 %, dividendes, Partial Exemption Régime, CSG.",
   keywords: [
     "Income Tax Act 1995 Maurice",
     "section 73 résident fiscal Maurice",
     "taux imposition 15% Maurice",
     "dividendes Maurice exemption",
-    "Partial Exemption Regime Maurice",
+    "Partial Exemption Régime Maurice",
     "CSG Maurice",
     "fiscalité expatrié Maurice",
     "plus-values Maurice",
@@ -87,16 +87,16 @@ function Callout({
 /* ------------------------------------------------------------------ */
 
 function OfficialText({
-  reference,
+  référence,
   children,
 }: {
-  reference: string;
+  référence: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="my-6 rounded-lg border-l-4 border-blue-500 bg-slate-50 p-5">
       <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-blue-600">
-        {reference}
+        {référence}
       </p>
       <div className="text-sm italic leading-relaxed text-slate-700">
         {children}
@@ -213,7 +213,7 @@ export default function AnalyseIncomeTaxActPage() {
             </li>
             <li>
               <a href="#per" className="hover:underline">
-                Sub-Part C, Second Schedule — Partial Exemption Regime (80 %)
+                Sub-Part C, Second Schedule — Partial Exemption Régime (80 %)
               </a>
             </li>
             <li>
@@ -236,7 +236,7 @@ export default function AnalyseIncomeTaxActPage() {
           Maurice.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 5(1)">
+        <OfficialText référence="Income Tax Act 1995 — Section 5(1)">
           <p>
             &laquo;&nbsp;Subject to this Act, income tax shall be charged for
             each income year at the appropriate rate specified in the Second
@@ -264,14 +264,14 @@ export default function AnalyseIncomeTaxActPage() {
           2. Section 73 — Définition de résident fiscal
         </h2>
         <p>
-          La section 73 définit ce qu&apos;est un &laquo;&nbsp;resident&nbsp;&raquo;
+          La section 73 définit ce qu&apos;est un &laquo;&nbsp;résident&nbsp;&raquo;
           au sens de l&apos;ITA. C&apos;est le critère déterminant pour savoir
           si un individu est assujetti à Maurice.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 73 (extraits)">
+        <OfficialText référence="Income Tax Act 1995 — Section 73 (extraits)">
           <p>
-            &laquo;&nbsp;An individual is resident in Mauritius in an income year
+            &laquo;&nbsp;An individual is résident in Mauritius in an income year
             if he — (a) has his domicile in Mauritius, unless his permanent place
             of abode is outside Mauritius; or (b) has been present in Mauritius
             in that income year for a period of, or an aggregate period of, 183
@@ -296,9 +296,9 @@ export default function AnalyseIncomeTaxActPage() {
           </p>
         </Callout>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 73 (sociétés)">
+        <OfficialText référence="Income Tax Act 1995 — Section 73 (sociétés)">
           <p>
-            &laquo;&nbsp;A company is resident in Mauritius if it is incorporated
+            &laquo;&nbsp;A company is résident in Mauritius if it is incorporated
             in Mauritius or has its central management and control in
             Mauritius.&nbsp;&raquo;
           </p>
@@ -333,7 +333,7 @@ export default function AnalyseIncomeTaxActPage() {
           les particuliers comme pour les sociétés, le taux standard est de 15 %.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Second Schedule, Part I">
+        <OfficialText référence="Income Tax Act 1995 — Second Schedule, Part I">
           <p>
             &laquo;&nbsp;The rate of income tax for an individual shall be 15 per
             cent of his chargeable income.&nbsp;&raquo;
@@ -385,10 +385,10 @@ export default function AnalyseIncomeTaxActPage() {
           place centrale.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 10(1)(a)">
+        <OfficialText référence="Income Tax Act 1995 — Section 10(1)(a)">
           <p>
             &laquo;&nbsp;The following income shall be exempt from income tax —
-            (a) a dividend paid by a company resident in
+            (a) a dividend paid by a company résident in
             Mauritius.&nbsp;&raquo;
           </p>
         </OfficialText>
@@ -405,11 +405,11 @@ export default function AnalyseIncomeTaxActPage() {
           </p>
         </Callout>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 10 (dividendes de source étrangère)">
+        <OfficialText référence="Income Tax Act 1995 — Section 10 (dividendes de source étrangère)">
           <p>
             Les dividendes de source étrangère reçus par une société résidente
             sont en revanche soumis à l&apos;impôt au taux de 15 %, avec
-            possibilité de bénéficier du Partial Exemption Regime (exonération de
+            possibilité de bénéficier du Partial Exemption Régime (exonération de
             80 %) ou du crédit d&apos;impôt étranger.
           </p>
         </OfficialText>
@@ -444,7 +444,7 @@ export default function AnalyseIncomeTaxActPage() {
           dédiée à la taxation des gains en capital.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Constat législatif">
+        <OfficialText référence="Income Tax Act 1995 — Constat législatif">
           <p>
             L&apos;ITA ne contient aucune disposition spécifique créant un impôt
             sur les plus-values mobilières ou immobilières. Les profits tirés de
@@ -485,21 +485,21 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== PARTIAL EXEMPTION REGIME ===== */}
       <Section id="per" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          6. Sub-Part C, Second Schedule — Partial Exemption Regime (80 %)
+          6. Sub-Part C, Second Schedule — Partial Exemption Régime (80 %)
         </h2>
         <p>
-          Le Partial Exemption Regime (PER) est le mécanisme qui permet aux
+          Le Partial Exemption Régime (PER) est le mécanisme qui permet aux
           sociétés titulaires d&apos;une Global Business Licence de réduire leur
           taux effectif d&apos;imposition à 3 %.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Second Schedule, Sub-Part C, Part II">
+        <OfficialText référence="Income Tax Act 1995 — Second Schedule, Sub-Part C, Part II">
           <p>
             &laquo;&nbsp;A company holding a Global Business Licence under the
             Financial Services Act shall be entitled to a partial exemption of 80
             per cent on the following specified income: (a) foreign-source
             dividend; (b) interest income; (c) profit attributable to a
-            permanent establishment of a resident company in a foreign country;
+            permanent establishment of a résident company in a foreign country;
             (d) foreign-source income derived by a CIS manager, CIS
             administrator, investment adviser or asset manager licensed or
             approved by the Financial Services Commission; (e) income derived by
@@ -533,10 +533,10 @@ export default function AnalyseIncomeTaxActPage() {
           <p>
             Pour bénéficier du PER, la société doit démontrer qu&apos;elle
             exerce ses Core Income Generating Activities (CIGA) depuis Maurice :
-            employés qualifiés sur place, decisions stratégiques prises a
-            Maurice, dépenses operationnelles locales adéquates. Ces critères
+            employés qualifiés sur place, décisions stratégiques prises a
+            Maurice, dépenses opérationnelles locales adéquates. Ces critères
             sont vérifiés annuellement par la FSC. Nous accompagnons nos clients
-            GBC dans la mise en conformite permanente avec ces exigences.
+            GBC dans la mise en conformité permanente avec ces exigences.
           </p>
         </Callout>
       </Section>
@@ -552,7 +552,7 @@ export default function AnalyseIncomeTaxActPage() {
           regulations prises en vertu de l&apos;Income Tax Act.
         </p>
 
-        <OfficialText reference="Income Tax (CSG) Regulations 2020 — En vertu de la section 161 de l'ITA">
+        <OfficialText référence="Income Tax (CSG) Regulations 2020 — En vertu de la section 161 de l'ITA">
           <p>
             &laquo;&nbsp;Every employer of a participant and every participant
             shall be liable to pay CSG in respect of each month at the rate
@@ -560,7 +560,7 @@ export default function AnalyseIncomeTaxActPage() {
           </p>
           <p className="mt-2">
             Les taux varient selon la tranche de rémunération de base mensuelle :
-            1,5 % pour l&apos;employe (3 % pour les revenus supérieurs a MUR
+            1,5 % pour l&apos;employé (3 % pour les revenus supérieurs a MUR
             50 000) et 3 % à 6 % pour l&apos;employeur.
           </p>
         </OfficialText>
@@ -598,7 +598,7 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== SYNTHESE ===== */}
       <Section id="synthese" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          En résumé : les chiffres clés
+          En resume : les chiffres clés
         </h2>
         <div className="overflow-x-auto">
           <table className="mt-4 w-full text-sm">

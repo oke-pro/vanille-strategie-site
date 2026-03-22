@@ -27,12 +27,12 @@ export const metadata: Metadata = {
 
 export default function ImmobilierPage() {
   const schemes = [
-    { name: "IRS", full: "Integrated Resort Scheme", icon: TreePalm, desc: "Résidences de luxe dans des domaines intégrés avec golf, spa et services." },
-    { name: "RES", full: "Real Estate Scheme", icon: Home, desc: "Projets résidentiels de taille moyenne, souvent proches des centres animés." },
-    { name: "PDS", full: "Property Development Scheme", icon: Building2, desc: "Développements immobiliers modernes remplaçant l'IRS et le RES." },
-    { name: "Smart City", full: "Smart City Scheme", icon: Globe, desc: "Villes intelligentes mixtes (travail, loisirs, résidentiel). Projets d'envergure." },
-    { name: "G+2", full: "Ground + 2 Apartment", icon: Layout, desc: "Appartements en copropriété (R+2 minimum) — l'option la plus accessible." },
-    { name: "IHS", full: "Invest Hotel Scheme", icon: Bed, desc: "Acquisition d'une chambre ou suite hôtelière avec revenus locatifs garantis." },
+    { slug: "irs", name: "IRS", full: "Integrated Resort Scheme", icon: TreePalm, desc: "Résidences de luxe dans des domaines intégrés avec golf, spa et services." },
+    { slug: "res", name: "RES", full: "Real Estate Scheme", icon: Home, desc: "Projets résidentiels de taille moyenne, souvent proches des centres animés." },
+    { slug: "pds", name: "PDS", full: "Property Development Scheme", icon: Building2, desc: "Développements immobiliers modernes remplaçant l'IRS et le RES." },
+    { slug: "smart-city", name: "Smart City", full: "Smart City Scheme", icon: Globe, desc: "Villes intelligentes mixtes (travail, loisirs, résidentiel). Projets d'envergure." },
+    { slug: "ground-plus-2", name: "G+2", full: "Ground + 2 Apartment", icon: Layout, desc: "Appartements en copropriété (R+2 minimum) — l'option la plus accessible." },
+    { slug: "invest-hotel-scheme", name: "IHS", full: "Invest Hotel Scheme", icon: Bed, desc: "Acquisition d'une chambre ou suite hôtelière avec revenus locatifs garantis." },
   ];
 
   return (
@@ -114,7 +114,7 @@ export default function ImmobilierPage() {
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{p.full}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed flex-1 italic">{p.desc}</p>
                 <div className="mt-6 pt-6 border-t border-slate-50 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
+                  <Link href={`/services/immobilier/${p.slug}`} className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
                     Détails du programme <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -235,7 +235,7 @@ export default function ImmobilierPage() {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Permis de résidence via l&apos;immobilier</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  L&apos;acquisition d&apos;un bien immobilier d&apos;une valeur minimale de 375 000 USD dans un schéma PDS, Smart City ou IHS donne automatiquement droit à un permis de résidence pour l&apos;acheteur, son conjoint et ses enfants à charge de moins de 24 ans. Ce permis est valable tant que le bien reste la propriété de l&apos;investisseur. Il permet de vivre, travailler et scolariser ses enfants à Maurice. Après 10 ans de résidence continue, il est possible de demander la résidence permanente (Permanent Residence Permit). Les titulaires d&apos;un permis de résidence bénéficient de la fiscalité avantageuse de Maurice : flat tax de 15 %, absence de taxe sur les plus-values, absence de droits de succession et convention de non double imposition avec la France.
+                  L&apos;acquisition d&apos;un bien immobilier d&apos;une valeur minimale de 375 000 USD dans un schéma PDS, Smart City ou IHS donne automatiquement droit à un permis de résidence pour l&apos;acheteur, son conjoint et ses enfants à charge de moins de 24 ans. Ce permis est valable tant que le bien reste la propriété de l&apos;investisseur. Il permet de vivre, travailler et scolariser ses enfants à Maurice. Après 10 ans de résidence continue, il est possible de demander la résidence permanente (Permanent Résidence Permit). Les titulaires d&apos;un permis de résidence bénéficient de la fiscalité avantageuse de Maurice : flat tax de 15 %, absence de taxe sur les plus-values, absence de droits de succession et convention de non double imposition avec la France.
                 </p>
               </div>
 
@@ -365,7 +365,7 @@ export default function ImmobilierPage() {
               { step: "1", title: "Sélection et visite", desc: "Nous identifions les biens correspondant à vos critères (budget, zone, type de schéma) et organisons les visites. Chaque bien est préalablement audité par notre équipe : vérification du promoteur, de la GFA (Garantie Financière d'Achèvement), du titre de propriété et des autorisations EDB." },
               { step: "2", title: "Réservation et offre d'achat", desc: "Une fois le bien choisi, vous signez une lettre de réservation accompagnée d'un dépôt de garantie (généralement 10 % du prix). Ce dépôt est versé sur un compte séquestre chez le notaire. L'offre précise les conditions suspensives éventuelles (obtention de financement, approbation EDB)." },
               { step: "3", title: "Due diligence et vérifications", desc: "Notre équipe réalise un audit complet : vérification du titre de propriété au Bureau des Hypothèques, conformité du projet aux normes EDB, analyse des comptes du promoteur, vérification des permis de construire et des certifications environnementales. Cette étape dure généralement 4 à 8 semaines." },
-              { step: "4", title: "Acte de vente notarié", desc: "L'acte de vente est rédigé par un notaire mauricien (obligatoire). Les droits d'enregistrement sont de 5 % du prix de vente pour les biens résidentiels. Les frais de notaire représentent environ 1 à 2 % supplémentaires. L'acte est signé en présence des deux parties et enregistré au Registrar General's Department." },
+              { step: "4", title: "Acte de vente notarié", desc: "L'acte de vente est rédigé par un notaire mauricien (obligatoire). Les droits d'enregistrement sont de 5 % du prix de vente pour les biens résidentiels. Les frais de notaire représentent environ 1 à 2 % supplémentaires. L'acte est signé en présence des deux parties et enregistré au Registrar Général's Department." },
               { step: "5", title: "Demande de permis de résidence", desc: "Pour les acquisitions de 375 000 USD et plus dans un schéma PDS ou Smart City, la demande de permis de résidence est déposée simultanément auprès de l'EDB. Le délai de traitement est de 4 à 6 semaines. Le permis couvre l'acquéreur, son conjoint et ses enfants à charge." },
               { step: "6", title: "Remise des clés et gestion", desc: "Pour les biens en VEFA (Vente en l'État Futur d'Achèvement), la livraison intervient à la date prévue au contrat. Nous organisons la réception du bien, le procès-verbal de livraison et, si vous le souhaitez, la mise en gestion locative via notre pôle BD Star Management Services." }
             ].map((item, i) => (

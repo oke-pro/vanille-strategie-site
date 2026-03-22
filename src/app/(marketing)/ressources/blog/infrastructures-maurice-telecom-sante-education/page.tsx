@@ -158,7 +158,7 @@ export default function InfrastructuresMauricePage() {
                 (Currimjee), offres fibre et mobile 4G/5G.
               </li>
               <li>
-                <strong>MTML (Mahanagar Telephone Mauritius Ltd)</strong>{" "}
+                <strong>MTML (Mahanagar Téléphone Mauritius Ltd)</strong>{" "}
                 &mdash; troisi&egrave;me op&eacute;rateur, offres
                 comp&eacute;titives sur la fibre.
               </li>
@@ -309,7 +309,7 @@ export default function InfrastructuresMauricePage() {
 
             <h3>Autoroute M1 et r&eacute;seau routier</h3>
             <p>
-              L&apos;autoroute <strong>M1</strong> constitue l&apos;axe
+              L&apos;autoroute <strong>M1</strong> constitué l&apos;axe
               nord-sud principal, reliant Port-Louis &agrave;
               l&apos;a&eacute;roport en environ 45 minutes. Le r&eacute;seau
               routier totalise pr&egrave;s de 2&nbsp;400&nbsp;km de routes
@@ -537,7 +537,7 @@ export default function InfrastructuresMauricePage() {
               </table>
             </div>
             <p className="mt-4 text-sm text-slate-600">
-              Principaux assureurs : Swan General, Mauritius Union, MUA, et les
+              Principaux assureurs : Swan Général, Mauritius Union, MUA, et les
               assureurs internationaux (Allianz, Cigna, Henner). Un contrat
               familial couvrant hospitalisation, dentaire et optique
               co&ucirc;te en moyenne 2&nbsp;500&nbsp;EUR/an &mdash; soit deux
@@ -986,7 +986,7 @@ export default function InfrastructuresMauricePage() {
             Bank of Mauritius, sites officiels des &eacute;tablissements
             cit&eacute;s) et refl&egrave;tent la situation en mars 2026. Les
             tarifs et chiffres sont indicatifs et peuvent varier. Cet article ne
-            constitue pas un conseil professionnel personnalis&eacute;.
+            constitué pas un conseil professionnel personnalis&eacute;.
           </p>
         </div>
       </section>

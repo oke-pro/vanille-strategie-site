@@ -124,7 +124,7 @@ export default function TachesPage() {
       setShowNewTask(false);
       fetchTasks();
     } catch (err) {
-      console.error("Erreur creation:", err);
+      console.error("Erreur création:", err);
     }
     setSubmitting(false);
   }
@@ -247,7 +247,7 @@ export default function TachesPage() {
                   disabled={submitting || !newTask.dossier_id || !newTask.title}
                   className="flex-1 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 disabled:opacity-50 transition"
                 >
-                  {submitting ? "Creation..." : "Creer"}
+                  {submitting ? "Création..." : "Créer"}
                 </button>
                 <button
                   onClick={() => setShowNewTask(false)}

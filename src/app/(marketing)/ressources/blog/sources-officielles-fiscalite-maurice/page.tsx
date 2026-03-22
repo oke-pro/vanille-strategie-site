@@ -63,7 +63,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               Reference
             </span>
             <span className="rounded-full bg-orange-500/20 px-2 py-0.5 text-xs font-medium text-orange-300">
-              Fiscalite
+              Fiscalité
             </span>
             <span className="text-xs text-slate-500">Mars 2026</span>
             <span className="text-xs text-slate-500">· 22 min</span>
@@ -76,7 +76,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             Ou trouver les textes de loi, les reglements, les conventions
             fiscales et les interpretations administratives qui regissent la
             fiscalité mauricienne ? Ce guide recense et explique chaque source
-            officielle, pour vous permettre de verifier par vous-meme.
+            officielle, pour vous permettre de vérifier par vous-même.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 text-sm font-bold text-white">
@@ -99,14 +99,14 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             1. Pourquoi connaitre les sources officielles est essentiel
           </h2>
           <p>
-            A Maurice, la fiscalité evolue presque chaque annee. Le Finance Bill
+            A Maurice, la fiscalité évolué presque chaque année. Le Finance Bill
             annuel modifie les taux, introduit de nouvelles obligations et
-            ajuste les regimes existants. Pour tout investisseur, entrepreneur ou
+            ajuste les régimes existants. Pour tout investisseur, entrepreneur ou
             conseiller, il est indispensable de savoir ou trouver les textes a
             jour et de comprendre leur hierarchie juridique.
           </p>
           <p>
-            Trop souvent, les decisions d&apos;implantation ou de structuration
+            Trop souvent, les décisions d&apos;implantation ou de structuration
             sont basées sur des articles de blog, des forums ou des conseils de
             seconde main. Or, en fiscalité internationale, une information
             obsolete ou approximative peut couter très cher : redressement
@@ -114,7 +114,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </p>
           <p>
             Ce guide recense les sources primaires — celles qui font autorite —
-            et vous explique comment les utiliser. Il constitue un complement
+            et vous explique comment les utiliser. Il constitué un complement
             indispensable à nos articles techniques sur le{" "}
             <Link
               href="/ressources/blog/transfer-pricing-maurice-2025"
@@ -158,7 +158,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
       <section className="bg-slate-50 py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            2. Laws of Mauritius — Attorney General&apos;s Office
+            2. Laws of Mauritius — Attorney Général&apos;s Office
           </h2>
           <p>
             Le site{" "}
@@ -170,8 +170,8 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             >
               lawsofmauritius.govmu.org
             </a>{" "}
-            est maintenu par le Bureau de l&apos;Attorney General de la
-            Republique de Maurice. Il constitue la source la plus complete pour
+            est maintenu par le Bureau de l&apos;Attorney Général de la
+            Republique de Maurice. Il constitué la source la plus complete pour
             acceder aux lois consolidees du pays.
           </p>
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -246,7 +246,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             >
               Mauritius Revenue Authority (mra.mu)
             </a>{" "}
-            est l&apos;administration fiscale de Maurice — l&apos;equivalent de
+            est l&apos;administration fiscale de Maurice — l&apos;équivalent de
             la DGFIP en France. Son site web est une mine d&apos;informations
             pratiques pour les contribuables et les professionnels.
           </p>
@@ -287,11 +287,11 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             Les Rulings
           </h3>
           <p>
-            Les <strong>Rulings</strong> sont des decisions rendues par le
-            Directeur General de la MRA sur des cas spécifiques soumis par des
+            Les <strong>Rulings</strong> sont des décisions rendues par le
+            Directeur Général de la MRA sur des cas spécifiques soumis par des
             contribuables. Ils sont publies de manière anonymisee et constituent
             une jurisprudence administrative precieuse. Avant de structurer une
-            operation complexe, il est utile de verifier si un Ruling existant
+            opération complexe, il est utile de vérifier si un Ruling existant
             couvre un cas similaire au votre.
           </p>
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose">
@@ -302,7 +302,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               Les versions des lois disponibles sur le site de la MRA sont
               fournies à titre indicatif (&ldquo;for référence purposes
               only&rdquo;). En cas de divergence avec le texte publie dans la
-              Government Gazette ou sur le site de l&apos;Attorney General, ce
+              Government Gazette ou sur le site de l&apos;Attorney Général, ce
               sont ces derniers qui font foi. Verifiez toujours la date de
               mise à jour.
             </p>
@@ -320,7 +320,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </h2>
           <p>
             La <strong>Government Gazette</strong> est le journal officiel de la
-            Republique de Maurice. C&apos;est l&apos;equivalent du Journal
+            Republique de Maurice. C&apos;est l&apos;équivalent du Journal
             officiel de la Republique française (JORF). Son rôle est
             fondamental : un texte de loi n&apos;a force de loi qu&apos;une
             fois publie dans la Gazette.
@@ -333,7 +333,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               <strong>Date d&apos;entree en vigueur</strong> : de nombreuses lois
               mauriciennes prevoient une entree en vigueur &ldquo;upon
               publication in the Gazette&rdquo; ou à une date fixée par
-              proclamation. Pour verifier si une disposition est en vigueur, la
+              proclamation. Pour vérifier si une disposition est en vigueur, la
               Gazette est l&apos;unique source fiable.
             </li>
             <li>
@@ -372,7 +372,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               Lorsqu&apos;un client nous interroge sur la date d&apos;entree en
               vigueur d&apos;une disposition, nous remontons
               systématiquement à la Government Gazette. C&apos;est le seul
-              moyen de donner une reponse definitive et juridiquement fondee.
+              moyen de donner une réponse définitive et juridiquement fondee.
             </p>
           </div>
         </div>
@@ -526,7 +526,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </div>
           <p className="mt-4 text-xs text-slate-500">
             Tous ces textes sont accessibles gratuitement sur le site de
-            l&apos;Attorney General. Pour le Workers&apos; Rights Act, voir
+            l&apos;Attorney Général. Pour le Workers&apos; Rights Act, voir
             aussi notre article{" "}
             <Link
               href="/ressources/blog/droit-travail-maurice-workers-rights-act"
@@ -552,21 +552,21 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
       <section className="bg-slate-50 py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            6. Le Finance Bill annuel — le moteur de l&apos;evolution fiscale
+            6. Le Finance Bill annuel — le moteur de l&apos;évolution fiscale
           </h2>
           <p>
-            A Maurice, la fiscalité change presque chaque annee via le{" "}
+            A Maurice, la fiscalité change presque chaque année via le{" "}
             <strong>Finance Bill</strong> (projet de loi de finances), qui
             devient le <strong>Finance Act</strong> une fois adopte par
-            l&apos;Assemblee nationale. C&apos;est l&apos;equivalent de la loi
+            l&apos;Assemblee nationale. C&apos;est l&apos;équivalent de la loi
             de finances en France.
           </p>
           <p>
             Le Finance Bill est traditionnellement présenté entre juin et
             aout, à la suite du discours budgetaire du ministre des Finances.
             Il modifie l&apos;Income Tax Act, la VAT Act, le Customs Act et
-            d&apos;autres lois sectorielles. Chaque annee, il apporte son lot de
-            changements : nouveaux taux, nouvelles obligations, nouveaux regimes
+            d&apos;autres lois sectorielles. Chaque année, il apporte son lot de
+            changements : nouveaux taux, nouvelles obligations, nouveaux régimes
             d&apos;incitation.
           </p>
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -578,13 +578,13 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             version <strong>consolidee</strong> de l&apos;Income Tax Act,
             c&apos;est-à-dire la version qui intégré tous les amendements
             successifs. C&apos;est exactement ce que propose le site de
-            l&apos;Attorney General.
+            l&apos;Attorney Général.
           </p>
           <p>
-            En pratique, il y a toujours un delai entre l&apos;adoption du
+            En pratique, il y a toujours un délai entre l&apos;adoption du
             Finance Act et la mise à jour des versions consolidees. Pendant cette
-            periode transitoire, il faut lire le Finance Act en parallele de la
-            version consolidee precedente — un exercice technique qui demande de
+            période transitoire, il faut lire le Finance Act en parallele de la
+            version consolidee précédente — un exercice technique qui demande de
             l&apos;expertise.
           </p>
           <div className="rounded-lg border border-green-200 bg-green-50 p-4 not-prose">
@@ -623,9 +623,9 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </h2>
           <p>
             La convention de non-double imposition entre la France et Maurice a
-            été <strong>signee le 11 décembre 1980</strong> et{" "}
+            été <strong>signée le 11 décembre 1980</strong> et{" "}
             <strong>amendée par avenant le 23 juin 2011</strong>. Elle regit
-            la repartition des droits d&apos;imposer entre les deux pays pour
+            la répartition des droits d&apos;imposer entre les deux pays pour
             les personnes (physiques et morales) qui ont des liens avec les deux
             juridictions.
           </p>
@@ -634,28 +634,28 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </h3>
           <ul>
             <li>
-              <strong>Residence fiscale</strong> (article 4) : critères de
-              determination de l&apos;Etat de résidence en cas de double
+              <strong>Résidence fiscale</strong> (article 4) : critères de
+              determination de l&apos;État de résidence en cas de double
               résidence.
             </li>
             <li>
               <strong>Revenus immobiliers</strong> (article 6) : imposables dans
-              l&apos;Etat ou se situe l&apos;immeuble.
+              l&apos;État ou se situe l&apos;immeuble.
             </li>
             <li>
-              <strong>Benefices des entreprises</strong> (article 7) : imposables
-              dans l&apos;Etat de résidence sauf en cas d&apos;etablissement
+              <strong>Bénéfices des entreprises</strong> (article 7) : imposables
+              dans l&apos;État de résidence sauf en cas d&apos;établissement
               stable.
             </li>
             <li>
               <strong>Dividendes, intérêts, redevances</strong> (articles 10, 11,
-              12) : repartition des droits d&apos;imposer avec retenues a la
+              12) : répartition des droits d&apos;imposer avec retenues a la
               source plafonnees.
             </li>
             <li>
               <strong>Pensions</strong> (article 18) : les pensions privees sont
-              imposables dans l&apos;Etat de résidence — un point clé pour les
-              retraites installes à Maurice.
+              imposables dans l&apos;État de résidence — un point clé pour les
+              retraites installés à Maurice.
             </li>
             <li>
               <strong>Elimination de la double imposition</strong> (article 23) :
@@ -763,7 +763,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                 MIPA (mipa.mu)
               </a>{" "}
               — Mauritius Institute of Professional Accountants. Fixe les normes
-              comptables applicables à Maurice (IFRS pour les entites d&apos;interet
+              comptables applicables à Maurice (IFRS pour les entites d&apos;intérêt
               public, IFRS for SMEs pour les autres). BD Star est inscrit
               auprès du MIPA.
             </li>
@@ -777,7 +777,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                 CBRD (companies.govmu.org)
               </a>{" "}
               — Companies and Business Registration Department. Le registre
-              des sociétés mauriciennes. Vous pouvez y verifier
+              des sociétés mauriciennes. Vous pouvez y vérifier
               l&apos;existence d&apos;une société, consulter ses directeurs
               enregistres et obtenir des copies d&apos;actes constitutifs.
             </li>
@@ -814,18 +814,18 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               Synthetique et bien structure.
             </li>
             <li>
-              <strong>KPMG — Mauritius Tax Guide</strong> : analyse detaillee
-              des regimes fiscaux, y compris les conventions fiscales et les
-              regimes d&apos;incitation.
+              <strong>KPMG — Mauritius Tax Guide</strong> : analyse détaillée
+              des régimes fiscaux, y compris les conventions fiscales et les
+              régimes d&apos;incitation.
             </li>
             <li>
               <strong>EY — Worldwide Tax Guide</strong> : fiche pays Mauritius
               avec les taux, les basés d&apos;imposition et les principaux
-              regimes.
+              régimes.
             </li>
             <li>
               <strong>Deloitte — International Tax Highlights</strong> : résumé
-              compare des systemes fiscaux, utile pour le benchmarking entre
+              compare des systèmes fiscaux, utile pour le benchmarking entre
               juridictions.
             </li>
           </ul>
@@ -859,15 +859,15 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             l&apos;expertise de Vanille Stratégie fait la différence.
           </p>
           <p>
-            {founder.name} assure une veille permanente sur les evolutions
-            legislatives mauriciennes. Chaque Finance Bill est analyse des sa
-            publication, chaque Statement of Practice est decortique, chaque
+            {founder.name} assure une veille permanente sur les évolutions
+            législatives mauriciennes. Chaque Finance Bill est analyse des sa
+            publication, chaque Statement of Practice est décortique, chaque
             Ruling pertinent est intégré a notre base de connaissances.
           </p>
           <p>
             Chez BD Star Management Services, notre équipe comptable et fiscale
             applique ces textes au quotidien pour nos clients : déclarations
-            d&apos;impots, calcul des charges sociales, mise en conformité TVA,
+            d&apos;impôts, calcul des charges sociales, mise en conformité TVA,
             preparation des dossiers de Transfer Pricing, demandes de Rulings
             auprès de la MRA.
           </p>
@@ -952,7 +952,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           </h3>
           <ul className="mt-3 space-y-1 text-xs text-slate-500">
             <li>
-              Laws of Mauritius — Attorney General&apos;s Office —{" "}
+              Laws of Mauritius — Attorney Général&apos;s Office —{" "}
               <a
                 href="https://lawsofmauritius.govmu.org"
                 target="_blank"
@@ -970,7 +970,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                mra.mu/legislations
+                mra.mu/législations
               </a>
             </li>
             <li>
@@ -1021,10 +1021,10 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             ))}
           </ul>
           <p className="mt-4 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
-            conseil fiscal personnalise. La legislation mauricienne evolue
-            frequemment — verifiez toujours la date de dernière mise à jour des
-            textes cites. Pour un conseil adapte à votre situation, contactez
+            Cet article est fourni à titre informatif et ne constitué pas un
+            conseil fiscal personnalisé. La législation mauricienne évolué
+            fréquemment — verifiez toujours la date de dernière mise à jour des
+            textes cites. Pour un conseil adapté à votre situation, contactez
             nos experts.
           </p>
         </div>
@@ -1039,7 +1039,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             Besoin d&apos;un eclairage sur un texte fiscal mauricien ?
           </h2>
           <p className="mt-3 text-slate-400">
-            Etude de faisabilite gratuite par {founder.name},{" "}
+            Étude de faisabilite gratuite par {founder.name},{" "}
             {founder.title}. Analyse de textes, veille législative, mise en
             conformité — nous vous accompagnons avec rigueur et précision.
           </p>

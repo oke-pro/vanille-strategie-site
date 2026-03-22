@@ -9,7 +9,7 @@ export function OrganizationJsonLd() {
     url: siteConfig.url,
     logo: `${siteConfig.url}/images/logo-vanille-strategie.png`,
     description: siteConfig.description,
-    telephone: siteConfig.phone,
+    téléphone: siteConfig.phone,
     email: siteConfig.email,
     address: [
       {

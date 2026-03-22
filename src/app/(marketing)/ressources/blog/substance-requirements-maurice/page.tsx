@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title:
     "Substance Requirements à Maurice — Ce que l'EDB et la FSC attendent vraiment | Vanille Stratégie",
   description:
-    "Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Regime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
+    "Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Régime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
   keywords: [
     "substance requirements Maurice",
     "substance économique GBC",
     "CIGA Maurice",
-    "Partial Exemption Regime",
+    "Partial Exemption Régime",
     "Finance Act 2025 Maurice",
     "EDB Maurice",
     "FSC Maurice",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Substance Requirements à Maurice — Ce que l'EDB et la FSC attendent vraiment | Vanille Stratégie",
     description:
-      "Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Regime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
+      "Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Régime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
     images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
@@ -129,7 +129,7 @@ export default function SubstanceRequirementsPage() {
     <>
       <BlogPostingJsonLd
         title="Substance Requirements à Maurice — Ce que l&apos;EDB et la FSC attendent vraiment | Vanille Stratégie"
-        description="Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Regime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste."
+        description="Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs résidents, Partial Exemption Régime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste."
         slug="substance-requirements-maurice"
         datePublished="2026-03-06"
       />
@@ -152,7 +152,7 @@ export default function SubstanceRequirementsPage() {
 
           <div className="mt-4 flex items-center gap-2">
             <span className="rounded-full bg-orange-500/20 px-2 py-0.5 text-xs font-medium text-orange-300">
-              Fiscalite
+              Fiscalité
             </span>
             <span className="text-xs text-slate-500">Mars 2026</span>
             <span className="text-xs text-slate-500">&middot; 18 min</span>
@@ -165,7 +165,7 @@ export default function SubstanceRequirementsPage() {
           <p className="mt-4 text-lg text-slate-300">
             En 2026, la substance économique n&apos;est plus une formalite
             administrative. C&apos;est la condition sine qua non pour acceder au
-            Partial Exemption Regime et à la credibilite internationale de votre
+            Partial Exemption Régime et à la credibilite internationale de votre
             GBC. Voici ce que les regulateurs attendent concrètement.
           </p>
 
@@ -215,7 +215,7 @@ export default function SubstanceRequirementsPage() {
             </li>
             <li>
               <a href="#per" className="hover:underline">
-                Impact sur le Partial Exemption Regime
+                Impact sur le Partial Exemption Régime
               </a>
             </li>
             <li>
@@ -238,17 +238,17 @@ export default function SubstanceRequirementsPage() {
       </section>
 
       {/* ===== 1. DEFINITION ===== */}
-      <Section id="definition" bg="white">
+      <Section id="définition" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
           1. Qu&apos;est-ce que la substance économique ?
         </h2>
         <p>
-          La substance économique designe l&apos;ensemble des elements concrets
+          La substance économique désigné l&apos;ensemble des éléments concrets
           prouvant qu&apos;une société exerce une activité réelle et
           significative dans la juridiction ou elle est enregistree. Ce
           n&apos;est pas un concept abstrait : il s&apos;agit de démontrer que
           la société dispose de locaux, de personnel qualifie, de processus
-          decisionnels effectifs et de dépenses operationnelles reelles a
+          décisionnels effectifs et de dépenses opérationnelles réelles a
           Maurice.
         </p>
         <p>
@@ -262,13 +262,13 @@ export default function SubstanceRequirementsPage() {
           <p>
             La substance n&apos;est pas une option. C&apos;est une obligation
             légale imposee par la Financial Services Commission (FSC) et
-            verifiee par l&apos;Economic Development Board (EDB). Sans
+            vérifiée par l&apos;Economic Development Board (EDB). Sans
             substance, pas d&apos;avantages fiscaux.
           </p>
         </Callout>
 
         <p>
-          Concrètement, les regulateurs veulent voir que les decisions
+          Concrètement, les regulateurs veulent voir que les décisions
           stratégiques sont prises à Maurice, que les comptes sont tenus
           localement, que des employés qualifiés travaillent sur place et que la
           société génère une activité économique réelle sur le territoire.
@@ -289,7 +289,7 @@ export default function SubstanceRequirementsPage() {
         </p>
         <p>
           Les actions BEPS 5 (pratiques fiscales dommageables) et 6 (abus de
-          conventions fiscales) ont pousse Maurice a reformer en profondeur son
+          conventions fiscales) ont pousse Maurice a réformer en profondeur son
           cadre réglementaire. L&apos;ancien régime du Category 1 Global
           Business Licence a été remplacé en 2018-2019 par le système actuel des
           GBC, avec des exigences de substance considérablement renforcées.
@@ -297,18 +297,18 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="amber" title="Pression continue">
           <p>
-            Maurice figure regulierement dans les evaluations du Forum mondial
+            Maurice figure régulièrement dans les évaluations du Forum mondial
             sur la transparence et l&apos;echange de renseignements. Chaque
             revue par les pairs examine la réalité de la substance des entites
-            enregistrees. Une mauvaise evaluation aurait des consequences
+            enregistrees. Une mauvaise évaluation aurait des conséquences
             desastreuses sur l&apos;attractivité de la juridiction.
           </p>
         </Callout>
 
         <p>
           L&apos;Union europeenne a également exerce une pression significative.
-          Maurice a figure sur la liste grise de l&apos;UE avant d&apos;en etre
-          retiree, precisement grâce au renforcement de ses exigences de
+          Maurice a figure sur la liste grise de l&apos;UE avant d&apos;en être
+          retiree, précisément grâce au renforcement de ses exigences de
           substance. Aujourd&apos;hui, maintenir cette conformité est vital pour
           le pays et pour chaque société qui y est enregistree.
         </p>
@@ -420,17 +420,17 @@ export default function SubstanceRequirementsPage() {
         <p>
           Chaque GBC doit avoir au minimum deux directeurs résidents à Maurice.
           Mais attention : il ne s&apos;agit pas de simples preteurs de noms. La
-          FSC attend des directeurs qui ont les competences, l&apos;expérience
-          et le temps necessaires pour exercer un rôle reel dans la gouvernance
+          FSC attend des directeurs qui ont les compétences, l&apos;expérience
+          et le temps nécessaires pour exercer un rôle réel dans la gouvernance
           de la société.
         </p>
 
-        <Callout variant="red" title="Piege a éviter">
+        <Callout variant="red" title="Piège a éviter">
           <p>
             Les directeurs nominees passifs — ceux qui signent sans lire, sans
             participer aux reunions, sans comprendre l&apos;activité — sont un
             signal d&apos;alarme majeur pour la FSC. Si vos directeurs ne
-            peuvent pas expliquer le modele économique de la société lors
+            peuvent pas expliquer le modèle économique de la société lors
             d&apos;un contrôle, vous avez un problème.
           </p>
         </Callout>
@@ -444,7 +444,7 @@ export default function SubstanceRequirementsPage() {
           d&apos;une banque locale agressee par la Bank of Mauritius. Les flux
           financiers doivent transiter de manière significative par ce compte.
           Avoir un compte chez AfrAsia, MCB ou SBI Maurice ne suffit pas : il
-          faut que ce compte soit le centre nevralgique des operations
+          faut que ce compte soit le centre névralgique des opérations
           financieres.
         </p>
 
@@ -462,9 +462,9 @@ export default function SubstanceRequirementsPage() {
           4.3. Comptabilite tenue à Maurice
         </h3>
         <p>
-          Les livres comptables et les registres de la société doivent etre
-          conserves au registered office à Maurice. La tenue comptable doit etre
-          effectuee par un professionnel comptable qualifie, idealement inscrit
+          Les livres comptables et les registres de la société doivent être
+          conserves au registered office à Maurice. La tenue comptable doit être
+          effectuée par un professionnel comptable qualifie, idéalement inscrit
           au MIPA (Mauritius Institute of Professional Accountants).
         </p>
         <p>
@@ -476,18 +476,18 @@ export default function SubstanceRequirementsPage() {
 
         {/* 4.4 */}
         <h3 className="mt-8 text-xl font-bold text-slate-800">
-          4.4. Etats financiers audites à Maurice
+          4.4. États financiers audites à Maurice
         </h3>
         <p>
-          Les etats financiers annuels de la GBC doivent être audites par un
-          cabinet d&apos;audit agréé à Maurice. L&apos;audit doit être realise
+          Les états financiers annuels de la GBC doivent être audites par un
+          cabinet d&apos;audit agréé à Maurice. L&apos;audit doit être réalisé
           conformement aux normes internationales (ISA) et déposé auprès de la
           FSC dans les délais prescrits.
         </p>
 
         <Callout variant="amber" title="Attention aux délais">
           <p>
-            Le depet tardif des etats financiers audites est une cause fréquente
+            Le depet tardif des états financiers audites est une cause fréquente
             de sanctions par la FSC. Les pénalités peuvent aller de
             l&apos;amendé à la suspension de la licence GBC. Anticipez :
             planifiez votre audit au moins 3 mois avant la date limite.
@@ -500,16 +500,16 @@ export default function SubstanceRequirementsPage() {
         </h3>
         <p>
           Les reunions du conseil d&apos;administration doivent se tenir a
-          Maurice — physiquement ou avec une majorite de directeurs presents sur
+          Maurice — physiquement ou avec une majorité de directeurs presents sur
           le territoire. Les proces-verbaux doivent refleter des discussions
-          substantielles et des decisions reelles, pas de simples approbations
+          substantielles et des décisions réelles, pas de simples approbations
           formelles.
         </p>
 
         <Callout variant="green" title="Bonne pratique">
           <p>
             Tenez au minimum 4 board meetings par an à Maurice. Conservez des
-            PV detailles qui montrent que les decisions stratégiques
+            PV detailles qui montrent que les décisions stratégiques
             (investissements, contrats majeurs, politique de dividendes) sont
             effectivement prises sur place. Gardez les preuves : convocations,
             listes de présence, ordre du jour, presentations.
@@ -556,13 +556,13 @@ export default function SubstanceRequirementsPage() {
             investissement doit démontrer une substance distincte pour chacune de
             ces deux activités. Les CIGA du trading (négociation, logistique)
             doivent être conduites à Maurice, ET les CIGA du conseil (analyse,
-            recommandations) doivent également l&apos;etre.
+            recommandations) doivent également l&apos;être.
           </p>
         </Callout>
 
         <p>
           Ce changement s&apos;inscrit dans la logique BEPS : les avantages
-          fiscaux doivent être lies à une creation de valeur réelle dans la
+          fiscaux doivent être lies à une création de valeur réelle dans la
           juridiction. L&apos;OCDE et l&apos;UE scrutent désormais non pas
           l&apos;entite juridique, mais le flux de revenus.
         </p>
@@ -581,10 +581,10 @@ export default function SubstanceRequirementsPage() {
       {/* ===== 6. PER ===== */}
       <Section id="per" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          6. Impact sur le Partial Exemption Regime (80%)
+          6. Impact sur le Partial Exemption Régime (80%)
         </h2>
         <p>
-          Le Partial Exemption Regime (PER) est l&apos;avantage fiscal phare de
+          Le Partial Exemption Régime (PER) est l&apos;avantage fiscal phare de
           la GBC : il permet une exemption de 80% sur certains revenus
           (dividendes étrangers, bénéfices de source étrangère, intérêts,
           royalties), ramenant le taux effectif d&apos;imposition de 15% a
@@ -627,14 +627,14 @@ export default function SubstanceRequirementsPage() {
         <Callout variant="red" title="L'enjeu financier est colossal">
           <p>
             Sur un bénéfice de 500 000 EUR, la différence entre 3% et 15%
-            represente 60 000 EUR d&apos;impet supplémentaire par an. Sur 5 ans,
+            représente 60 000 EUR d&apos;impet supplémentaire par an. Sur 5 ans,
             c&apos;est 300 000 EUR. La substance n&apos;est pas un coût :
             c&apos;est un investissement qui rapporte 5 a 10 fois sa mise.
           </p>
         </Callout>
 
         <p>
-          La MRA (Mauritius Revenue Authority) verifie de plus en plus
+          La MRA (Mauritius Revenue Authority) vérifié de plus en plus
           rigoureusement que les conditions de substance sont remplies avant
           d&apos;accorder le bénéfice du PER. Les contreles se sont intensifies
           depuis 2024, avec des demandes de justificatifs detailles :
@@ -663,10 +663,10 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="red" title="Erreur n 1 : la shell company deguisee">
           <p>
-            Creer une GBC avec un registered office chez un agent, deux
+            Créer une GBC avec un registered office chez un agent, deux
             directeurs nominees qui ne connaissent pas l&apos;activité, pas
-            d&apos;employe, pas de bureau reel. Cette configuration est
-            transparente pour la FSC. Resultat : perte du PER, redressement
+            d&apos;employé, pas de bureau réel. Cette configuration est
+            transparente pour la FSC. Résultat : perte du PER, redressement
             fiscal, et potentiellement perte de la licence.
           </p>
         </Callout>
@@ -674,15 +674,15 @@ export default function SubstanceRequirementsPage() {
         <Callout variant="red" title="Erreur n 2 : les directeurs nominees passifs">
           <p>
             Des directeurs qui se contentent de signer des documents pre-rediges
-            sans participer aux decisions. La FSC attend des directeurs qui
+            sans participer aux décisions. La FSC attend des directeurs qui
             comprennent le business, qui challengent les propositions, qui
-            prennent des decisions informees. Un directeur qui ne peut pas
+            prennent des décisions informees. Un directeur qui ne peut pas
             répondre à des questions basiques sur l&apos;activité de la société
             lors d&apos;un audit est un risque majeur.
           </p>
         </Callout>
 
-        <Callout variant="red" title="Erreur n 3 : pas de bureau reel">
+        <Callout variant="red" title="Erreur n 3 : pas de bureau réel">
           <p>
             Utiliser une simple adresse postale comme registered office sans
             aucune présence physique. La FSC peut effectuer des visites inopinees.
@@ -694,7 +694,7 @@ export default function SubstanceRequirementsPage() {
         <Callout variant="amber" title="Erreur n 4 : comptabilité offshore">
           <p>
             Faire tenir la comptabilité par un cabinet a Paris, Dubai ou
-            Singapour. Meme si les ecritures sont justes, le fait que la
+            Singapour. Même si les ecritures sont justes, le fait que la
             comptabilité ne soit pas tenue physiquement à Maurice affaiblit
             considérablement la demonstration de substance.
           </p>
@@ -704,7 +704,7 @@ export default function SubstanceRequirementsPage() {
           <p>
             Des PV de reunions qui n&apos;ont jamais eu lieu, ou des reunions
             tenues exclusivement par visioconference sans jamais de présence
-            physique à Maurice. La FSC attend une majorite de reunions en
+            physique à Maurice. La FSC attend une majorité de reunions en
             presentiel sur le territoire.
           </p>
         </Callout>
@@ -759,7 +759,7 @@ export default function SubstanceRequirementsPage() {
           <p>
             Chaque GBC gérée par BD Star dispose d&apos;un dossier de substance
             complet : bail commercial, contrats de travail, PV de board meetings
-            detailles, preuves de présence physique, relevees bancaires, etats
+            detailles, preuves de présence physique, relevees bancaires, états
             financiers audites. Ce dossier est mis à jour en continu et
             disponible en cas de contrôle.
           </p>
@@ -778,7 +778,7 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="green" title="Locaux et présence physique">
           <p>
-            Disposez d&apos;un bureau reel à Maurice — pas une simple boite
+            Disposez d&apos;un bureau réel à Maurice — pas une simple boite
             postale. Idealement, un espace dans une zone reconnue comme Ebene
             Cybercity, Port Louis CBD ou Moka Smart City. Assurez-vous que du
             personnel y travaille effectivement.
@@ -788,7 +788,7 @@ export default function SubstanceRequirementsPage() {
         <Callout variant="green" title="Gouvernance active">
           <p>
             Tenez au minimum 4 board meetings par an en presentiel à Maurice.
-            Redigez des PV qui refletent des discussions reelles et des decisions
+            Rédigez des PV qui reflètent des discussions réelles et des décisions
             argumentees. Invitez vos directeurs a challenger les propositions, a
             poser des questions, a demander des clarifications.
           </p>
@@ -796,7 +796,7 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="green" title="Flux financiers centralises">
           <p>
-            Faites transiter la majorite de vos flux par votre compte bancaire
+            Faites transiter la majorité de vos flux par votre compte bancaire
             mauricien. Payez vos fournisseurs, recevez vos paiements clients et
             versez les salaires depuis Maurice. Les releves bancaires sont une
             preuve de substance puissante.
@@ -807,8 +807,8 @@ export default function SubstanceRequirementsPage() {
           <p>
             Constituez et maintenez un dossier de substance à jour : bail,
             contrats de travail, fiches de paie, factures de prestataires
-            locaux, PV de reunions, emails decisionnels, rapports d&apos;analyse
-            produits localement. Ce dossier doit être pret à tout moment pour un
+            locaux, PV de reunions, emails décisionnels, rapports d&apos;analyse
+            produits localement. Ce dossier doit être prêt à tout moment pour un
             contrôle FSC ou MRA.
           </p>
         </Callout>
@@ -824,18 +824,18 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="green" title="Revue annuelle de conformité">
           <p>
-            Faites realiser une revue annuelle de votre substance par un
+            Faites réaliser une revue annuelle de votre substance par un
             professionnel. Les exigences evoluent (comme le Finance Act 2025
-            l&apos;a montre). Ce qui etait suffisant l&apos;annee dernière peut
-            ne plus l&apos;etre aujourd&apos;hui.
+            l&apos;a montre). Ce qui était suffisant l&apos;année dernière peut
+            ne plus l&apos;être aujourd&apos;hui.
           </p>
         </Callout>
 
-        <Callout variant="amber" title="Anticipez les controles">
+        <Callout variant="amber" title="Anticipez les contrôles">
           <p>
             La FSC et la MRA ont renforcé leurs moyens de contrôle depuis 2024.
             Les visites inopinees, les demandes de documentation et les
-            entretiens avec les directeurs sont de plus en plus frequents.
+            entretiens avec les directeurs sont de plus en plus fréquents.
             N&apos;attendez pas un contrôle pour mettre votre substance en
             ordre.
           </p>
@@ -876,7 +876,7 @@ export default function SubstanceRequirementsPage() {
             <span>OECD BEPS Inclusive Framework — Action 5</span>
           </p>
           <p className="mt-3 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
+            Cet article est fourni à titre informatif et ne constitué pas un
             conseil juridique ou fiscal. Chaque situation est unique — contactez
             nos experts pour une analyse personnalisée.
           </p>
@@ -890,7 +890,7 @@ export default function SubstanceRequirementsPage() {
             Votre GBC respecte-t-elle les substance requirements ?
           </h2>
           <p className="mt-4 text-slate-400">
-            Ne prenez pas le risque de perdre le Partial Exemption Regime.
+            Ne prenez pas le risque de perdre le Partial Exemption Régime.
             Demandez un audit de substance gratuit par {founder.name},{" "}
             {founder.title}.
           </p>

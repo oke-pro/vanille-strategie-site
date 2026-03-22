@@ -529,7 +529,7 @@ export default function CryptoVaspLicenceMauricePage() {
 
               <div>
                 <h3 className="text-lg font-semibold text-slate-900">
-                  Partial Exemption Regime (PER) 80&nbsp;%
+                  Partial Exemption Régime (PER) 80&nbsp;%
                 </h3>
                 <p className="mt-2">
                   Le r&eacute;gime d&apos;exemption partielle permet aux
@@ -749,7 +749,7 @@ export default function CryptoVaspLicenceMauricePage() {
                 La FSC dispose de pouvoirs &eacute;tendus : suspension ou
                 r&eacute;vocation de licence, amendes administratives,
                 poursuites p&eacute;nales. L&apos;op&eacute;ration d&apos;un
-                service d&apos;actifs virtuels sans licence VASP constitue une
+                service d&apos;actifs virtuels sans licence VASP constitué une
                 infraction p&eacute;nale &agrave; Maurice.
               </p>
             </div>

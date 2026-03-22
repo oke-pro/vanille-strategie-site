@@ -65,7 +65,7 @@ export default function CabinetMessagesPage() {
       {filtered.length === 0 ? (
         <div className="bg-white rounded-xl border border-slate-200 p-8 text-center">
           <p className="text-slate-500">
-            {search ? "Aucun resultat pour cette recherche." : "Aucune conversation pour le moment."}
+            {search ? "Aucun résultat pour cette recherche." : "Aucune conversation pour le moment."}
           </p>
         </div>
       ) : (

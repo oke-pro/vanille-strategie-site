@@ -27,6 +27,16 @@ export const metadata: Metadata = {
   description: "Constitution en 3 jours, tarifs tout compris, 3 structures juridiques possibles. Analyse fiscale par un Expert-Comptable diplômé.",
 };
 
+// ============================================================
+// Company Type to Slug Mapping
+// ============================================================
+
+const companyTypeSlugs: Record<string, string> = {
+  "Domestic Company": "domestic-company",
+  "Global Business Company": "global-business-company",
+  "Authorised Company": "authorised-company",
+};
+
 export default function CreationSocietePage() {
   const gradients = [
     "from-blue-600 to-indigo-600",
@@ -129,7 +139,7 @@ export default function CreationSocietePage() {
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-slate-100">
-                    <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:gap-3 transition-all">
+                    <Link href={`/services/creation-societe/${companyTypeSlugs[c.type as keyof typeof companyTypeSlugs]}`} className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:gap-3 transition-all">
                       En savoir plus <ArrowRight className="h-4 w-4" />
                     </Link>
                   </div>
@@ -304,7 +314,7 @@ export default function CreationSocietePage() {
                     Le Business Registration Number (BRN) est l&apos;identifiant fiscal unique de votre société à Maurice. Il est attribué automatiquement lors de l&apos;enregistrement au CBRD. Nous procédons ensuite à l&apos;enregistrement auprès de la Mauritius Revenue Authority (MRA) pour la TVA (si le chiffre d&apos;affaires dépasse MUR 6 millions/an) et l&apos;impôt sur les sociétés.
                   </p>
                   <p className="text-slate-600 leading-relaxed">
-                    Pour les GBC, cette étape intervient après l&apos;obtention de la licence FSC. Nous préparons également la documentation pour le Tax Residence Certificate (TRC) qui permet l&apos;accès au réseau de 47 conventions fiscales de Maurice.
+                    Pour les GBC, cette étape intervient après l&apos;obtention de la licence FSC. Nous préparons également la documentation pour le Tax Résidence Certificate (TRC) qui permet l&apos;accès au réseau de 47 conventions fiscales de Maurice.
                   </p>
                 </div>
               </div>

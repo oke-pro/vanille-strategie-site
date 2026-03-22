@@ -306,12 +306,12 @@ export default function OuvrirCompteBancaireMauricePage() {
           {/* SBM */}
           <div className="mt-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-slate-900">
-              SBM (State Bank of Mauritius) — La banque d&apos;Etat
+              SBM (State Bank of Mauritius) — La banque d&apos;État
             </h3>
             <p className="mt-2 text-slate-600">
               Fondée en 1973, la SBM est la{" "}
               <strong>deuxième plus grande banque de Maurice</strong>. Détenue
-              majoritairement par l&apos;Etat, elle offre des tarifs souvent
+              majoritairement par l&apos;État, elle offre des tarifs souvent
               plus compétitifs et un accès à des programmes gouvernementaux.
               Elle s&apos;est récemment modernisée avec le lancement de SBM Tag.
             </p>
@@ -779,7 +779,7 @@ export default function OuvrirCompteBancaireMauricePage() {
               ~2 %). Perte annuelle : environ 7 200 EUR. Avec un compte
               multi-devises, il garde ses EUR, convertit en USD directement
               (spread ~1 %) et ne convertit en MUR que pour ses dépenses
-              locales. Economie annuelle : plus de 5 000 EUR.
+              locales. Économie annuelle : plus de 5 000 EUR.
             </p>
           </div>
         </div>
@@ -1129,7 +1129,7 @@ export default function OuvrirCompteBancaireMauricePage() {
             </a>
           </p>
           <p className="mt-2 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
+            Cet article est fourni à titre informatif et ne constitué pas un
             conseil juridique ou financier. Les frais, services et conditions
             mentionnés sont indicatifs et susceptibles d&apos;évoluer.
             Contactez nos experts pour un accompagnement personnalisé.

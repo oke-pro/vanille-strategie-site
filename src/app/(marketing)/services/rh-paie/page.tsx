@@ -198,7 +198,7 @@ export default function RhPaiePage() {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Recrutement local et international</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Notre équipe identifie les profils les plus adaptés à votre activité, qu&apos;il s&apos;agisse de talents locaux bilingues français-anglais ou de cadres expatriés. Nous gérons l&apos;intégralité du processus : rédaction et diffusion des annonces sur les plateformes mauriciennes (MyJob.mu, LinkedIn Maurice), présélection des candidatures, entretiens de qualification, vérification des références et négociation salariale. Pour les profils étrangers, nous coordonnons les démarches de Work Permit et d&apos;Occupation Permit auprès de l&apos;Economic Development Board (EDB).
+                  Notre équipe identifié les profils les plus adaptés à votre activité, qu&apos;il s&apos;agisse de talents locaux bilingues français-anglais ou de cadres expatriés. Nous gérons l&apos;intégralité du processus : rédaction et diffusion des annonces sur les plateformes mauriciennes (MyJob.mu, LinkedIn Maurice), présélection des candidatures, entretiens de qualification, vérification des références et négociation salariale. Pour les profils étrangers, nous coordonnons les démarches de Work Permit et d&apos;Occupation Permit auprès de l&apos;Economic Development Board (EDB).
                 </p>
               </div>
 
@@ -292,7 +292,7 @@ export default function RhPaiePage() {
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
               <h3 className="text-lg font-bold text-slate-900 mb-3">Déclarations mensuelles MRA</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Chaque mois, l&apos;employeur doit soumettre l&apos;Employee Declaration Form (EDF) à la Mauritius Revenue Authority (MRA). Ce formulaire récapitule les salaires versés, les retenues PAYE et les contributions CSG pour chaque employé. La date limite est le 20 du mois suivant. En fin d&apos;année fiscale (30 juin), l&apos;employeur produit un relevé annuel pour chaque salarié (formulaire EDF annuel). Notre équipe se charge de l&apos;ensemble de ces déclarations.
+                Chaque mois, l&apos;employeur doit soumettre l&apos;Employee Déclaration Form (EDF) à la Mauritius Revenue Authority (MRA). Ce formulaire récapitule les salaires versés, les retenues PAYE et les contributions CSG pour chaque employé. La date limite est le 20 du mois suivant. En fin d&apos;année fiscale (30 juin), l&apos;employeur produit un relevé annuel pour chaque salarié (formulaire EDF annuel). Notre équipe se charge de l&apos;ensemble de ces déclarations.
               </p>
             </div>
           </div>

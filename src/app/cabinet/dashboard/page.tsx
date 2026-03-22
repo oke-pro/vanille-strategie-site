@@ -251,7 +251,7 @@ export default function CabinetDashboard() {
           </ul>
         </div>
 
-        {/* Messages recents */}
+        {/* Messages récents */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm">
           <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
             <h2 className="font-medium text-slate-900">Messages</h2>

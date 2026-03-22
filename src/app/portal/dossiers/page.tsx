@@ -16,7 +16,7 @@ interface Dossier {
 }
 
 const TYPE_ICONS: Record<string, string> = {
-  creation_societe: "building",
+  création_société: "building",
   permis_residence: "id-card",
   fiscal: "calculator",
   bancaire: "bank",
@@ -41,7 +41,7 @@ const STATUS_LABELS: Record<string, string> = {
 };
 
 const TYPE_LABELS: Record<string, string> = {
-  creation_societe: "Création de société",
+  création_société: "Création de société",
   permis_residence: "Permis de résidence",
   fiscal: "Dossier fiscal",
   bancaire: "Ouverture bancaire",
@@ -96,7 +96,7 @@ export default function PortalDossiersPage() {
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">
-                    {dossier.type === "creation_societe" && "🏢"}
+                    {dossier.type === "création_société" && "🏢"}
                     {dossier.type === "permis_residence" && "🪪"}
                     {dossier.type === "fiscal" && "📊"}
                     {dossier.type === "bancaire" && "🏦"}

@@ -183,7 +183,7 @@ export default function HomePage() {
                   Income Tax Act 1995
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  Analyse commentée : résidence fiscale (section 73), taux 15%, dividendes, Partial Exemption Regime, CSG, Fair Share Contribution. Chaque article décrypté avec ses implications pour les investisseurs étrangers.
+                  Analyse commentée : résidence fiscale (section 73), taux 15%, dividendes, Partial Exemption Régime, CSG, Fair Share Contribution. Chaque article décrypté avec ses implications pour les investisseurs étrangers.
                 </p>
                 <p className="mt-4 flex items-center gap-2 text-sm font-semibold text-blue-600">
                   Lire l&apos;analyse complète

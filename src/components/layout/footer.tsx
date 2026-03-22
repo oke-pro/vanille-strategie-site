@@ -140,7 +140,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Social + Legal */}
+        {/* Social + Légal */}
         <div className="mt-12 flex flex-wrap items-center justify-between gap-8 border-t border-white/5 pt-10 text-xs font-bold uppercase tracking-widest text-slate-600">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name} — Excellence Mauricienne.</p>
           <div className="flex gap-8">

@@ -438,8 +438,8 @@ export default function ComptaFiscalitePage() {
                 a: "La Mauritius Revenue Authority (MRA) peut effectuer des contrôles fiscaux dans les 3 ans suivant le dépôt de la déclaration (7 ans en cas de fraude présumée). Le contrôle prend généralement la forme d\u2019une demande écrite de documents et de clarifications, suivie éventuellement d\u2019une visite sur site. Notre cabinet assiste nos clients à chaque étape du contrôle : préparation des documents, réponse aux questionnaires, représentation devant la MRA et, le cas échéant, négociation ou contestation des redressements. Notre piste d\u2019audit inaltérable facilite considérablement ces contrôles."
               },
               {
-                q: "Qu\u2019est-ce que le Tax Residence Certificate (TRC) et comment l\u2019obtenir ?",
-                a: "Le Tax Residence Certificate est un document délivré par la MRA attestant que votre société est résidente fiscale de Maurice. Il est indispensable pour bénéficier des conventions fiscales signées par Maurice (47 traités en vigueur). L\u2019obtention du TRC nécessite de démontrer que la société est effectivement gérée et contrôlée depuis Maurice (substance requirements). Nous préparons chaque année le dossier de demande de TRC pour nos clients GBC et assurons son renouvellement."
+                q: "Qu\u2019est-ce que le Tax Résidence Certificate (TRC) et comment l\u2019obtenir ?",
+                a: "Le Tax Résidence Certificate est un document délivré par la MRA attestant que votre société est résidente fiscale de Maurice. Il est indispensable pour bénéficier des conventions fiscales signées par Maurice (47 traités en vigueur). L\u2019obtention du TRC nécessite de démontrer que la société est effectivement gérée et contrôlée depuis Maurice (substance requirements). Nous préparons chaque année le dossier de demande de TRC pour nos clients GBC et assurons son renouvellement."
               },
               {
                 q: "Quelle est la différence entre le système fiscal français et mauricien ?",

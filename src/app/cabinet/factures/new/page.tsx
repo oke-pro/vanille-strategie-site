@@ -50,7 +50,7 @@ export default function CabinetNewFacturePage() {
       .catch(() => {});
   }, []);
 
-  // Charger les dossiers du client selectionne
+  // Charger les dossiers du client sélectionné
   useEffect(() => {
     if (!selectedClientId) {
       setDossiers([]);
@@ -318,7 +318,7 @@ export default function CabinetNewFacturePage() {
             disabled={submitting}
             className="px-6 py-2.5 bg-slate-900 text-white text-sm font-medium rounded-lg hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition"
           >
-            {submitting ? "Creation..." : "Creer la facture"}
+            {submitting ? "Création..." : "Créer la facture"}
           </button>
         </div>
       </form>

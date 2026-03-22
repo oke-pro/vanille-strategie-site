@@ -8,7 +8,7 @@ const stepIcons = [PhoneCall, FileSearch, Rocket, BarChart3];
 export function FunnelTimeline() {
   return (
     <section className="relative py-24 sm:py-32 overflow-hidden bg-slate-50">
-      {/* Abstract Background Elements */}
+      {/* Abstract Background Éléments */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
         <div className="absolute top-1/2 -left-24 w-72 h-72 bg-cyan-100/30 rounded-full blur-3xl" />

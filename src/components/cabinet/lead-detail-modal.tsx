@@ -97,10 +97,10 @@ export default function LeadDetailModal({ lead, onClose, onUpdated }: LeadDetail
                 <p className="text-slate-900 font-medium">{lead.email}</p>
               </div>
             )}
-            {lead.telephone && (
+            {lead.téléphone && (
               <div>
-                <span className="text-slate-500">Telephone</span>
-                <p className="text-slate-900 font-medium">{lead.telephone}</p>
+                <span className="text-slate-500">Téléphone</span>
+                <p className="text-slate-900 font-medium">{lead.téléphone}</p>
               </div>
             )}
             {lead.profil && (

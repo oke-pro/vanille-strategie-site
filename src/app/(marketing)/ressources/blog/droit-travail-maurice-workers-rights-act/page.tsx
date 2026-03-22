@@ -165,7 +165,7 @@ export default function DroitTravailMauricePage() {
             charges : ce que tout employeur doit savoir
           </h1>
           <p className="mt-4 text-lg text-slate-300">
-            Embaucher à Maurice est simple, mais pas sans regles. Le
+            Embaucher à Maurice est simple, mais pas sans règles. Le
             Workers&apos; Rights Act 2019 encadre contrats, salaires, congés,
             licenciements et charges sociales. Ce guide vous donne toutes les
             clés pour être en conformité — et éviter les mauvaises surprises.
@@ -262,7 +262,7 @@ export default function DroitTravailMauricePage() {
         <p>
           Le <strong>Workers&apos; Rights Act 2019</strong> (WRA) est entre en
           vigueur le 24 octobre 2019, remplacant l&apos;ancien Employment Rights
-          Act 2008 et l&apos;Employment Relations Act 2008. Il constitue
+          Act 2008 et l&apos;Employment Relations Act 2008. Il constitué
           désormais le texte unique regissant les relations de travail à Maurice.
         </p>
         <p>
@@ -275,7 +275,7 @@ export default function DroitTravailMauricePage() {
           internationale.
         </p>
         <p>
-          Le texte est regulierement amendé par les Finance Acts successifs.
+          Le texte est régulièrement amendé par les Finance Acts successifs.
           Le <strong>Finance Act 2025</strong> a introduit plusieurs ajustements
           (compensation salariale, seuils PAYE, taux CSG) qu&apos;il est
           essentiel de suivre.
@@ -285,7 +285,7 @@ export default function DroitTravailMauricePage() {
           <p>
             Le WRA s&apos;applique a <strong>tous les employeurs prives</strong>{" "}
             à Maurice, y compris les sociétés a capitaux étrangers. Le
-            non-respect de ses dispositions expose à des sanctions penales et
+            non-respect de ses dispositions expose à des sanctions pénales et
             civiles.
           </p>
         </Callout>
@@ -301,21 +301,21 @@ export default function DroitTravailMauricePage() {
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Contrat a duree indeterminee (CDI)
+          Contrat a durée indeterminee (CDI)
         </h3>
         <p>
           C&apos;est la forme par défaut. Tout contrat qui ne stipule pas
-          expressement une duree determinee est automatiquement considere comme
-          un CDI. Le contrat doit être écrit et remis au salarie dans les{" "}
+          expressement une durée déterminée est automatiquement considéré comme
+          un CDI. Le contrat doit être écrit et remis au salarié dans les{" "}
           <strong>14 jours</strong> suivant le debut de l&apos;emploi.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Contrat a duree determinee (CDD)
+          Contrat a durée déterminée (CDD)
         </h3>
         <p>
           Le CDD est autorise pour des projets spécifiques, des remplacements ou
-          des activités saisonnieres. Sa duree ne peut exceder{" "}
+          des activités saisonnieres. Sa durée ne peut exceder{" "}
           <strong>24 mois</strong>. Au-dela, ou en cas de renouvellement
           successif, le contrat est automatiquement requalifie en CDI.
         </p>
@@ -324,8 +324,8 @@ export default function DroitTravailMauricePage() {
           Contrat a temps partiel
         </h3>
         <p>
-          Un salarie a temps partiel travaille moins que les heures normales
-          prevues pour un employe a temps plein dans la même categorie. Ses
+          Un salarié a temps partiel travaille moins que les heures normales
+          prévues pour un employé a temps plein dans la même categorie. Ses
           droits (congés, CSG, PRGF) sont calcules au prorata de ses heures de
           travail.
         </p>
@@ -333,7 +333,7 @@ export default function DroitTravailMauricePage() {
         <Callout variant="amber" title="Obligation légale">
           <p>
             Tout contrat de travail doit mentionner : la rémunération, les
-            horaires, la description du poste, la duree de la periode
+            horaires, la description du poste, la durée de la période
             d&apos;essai (maximum 12 mois pour les cadres, 6 mois pour les
             autres categories) et les conditions de preavis.
           </p>
@@ -358,12 +358,12 @@ export default function DroitTravailMauricePage() {
           </p>
         </div>
         <p>
-          Ce montant represente une hausse de <strong>Rs 635</strong> par
+          Ce montant représente une hausse de <strong>Rs 635</strong> par
           rapport à 2025 (Rs 17 110), soit une augmentation d&apos;environ 3,7%.
         </p>
         <p>
           En complement, une <strong>compensation salariale</strong> de
-          Rs 635/mois est versée a tous les salaries dont le salaire de base ne
+          Rs 635/mois est versée a tous les salariés dont le salaire de base ne
           dépassé pas Rs 50 000 par mois. Cette compensation est à la charge de
           l&apos;employeur, mais les entreprises ayant un chiffre d&apos;affaires
           inferieur a Rs 50 millions peuvent bénéficier d&apos;une aide
@@ -407,7 +407,7 @@ export default function DroitTravailMauricePage() {
                   Part employeur
                 </th>
                 <th className="px-4 py-3 text-center font-semibold text-slate-700">
-                  Part salarie
+                  Part salarié
                 </th>
                 <th className="px-4 py-3 text-center font-semibold text-slate-700">
                   Total
@@ -459,7 +459,7 @@ export default function DroitTravailMauricePage() {
           <p>
             La CSG n&apos;a <strong>pas de plafond</strong> — contrairement a
             l&apos;ancien NPF. Les hauts salaires génèrent donc des cotisations
-            significatives. Les déclarations CSG sont mensuelles et doivent etre
+            significatives. Les déclarations CSG sont mensuelles et doivent être
             deposees avant le 20 du mois suivant.
           </p>
         </Callout>
@@ -522,10 +522,10 @@ export default function DroitTravailMauricePage() {
         </div>
 
         <p>
-          Concrètement, un salarie gagnant jusqu&apos;a{" "}
+          Concrètement, un salarié gagnant jusqu&apos;a{" "}
           <strong>Rs 41 667/mois</strong> (soit Rs 500 000/an) est totalement
-          exonéré d&apos;impôt sur le revenu. Le seuil mensuel pour etre
-          considere comme <em>exempt person</em> est de{" "}
+          exonéré d&apos;impôt sur le revenu. Le seuil mensuel pour être
+          considéré comme <em>exempt person</em> est de{" "}
           <strong>Rs 38 462</strong>.
         </p>
         <p>
@@ -553,19 +553,19 @@ export default function DroitTravailMauricePage() {
           Le PRGF est un fonds de pension obligatoire introduit par le
           Workers&apos; Rights Act. Depuis le{" "}
           <strong>1er janvier 2022</strong>, tout employeur du secteur prive doit
-          y cotiser pour chacun de ses salaries.
+          y cotiser pour chacun de ses salariés.
         </p>
         <p>
           Le taux de contribution est de{" "}
           <strong>4,5% de la rémunération mensuelle</strong> du salarié. La
           rémunération prise en compte comprend le salaire de base, les primes de
-          productivite et de présence, ainsi que les heures supplémentaires.
+          productivité et de présence, ainsi que les heures supplémentaires.
         </p>
         <p>
           Le PRGF est <strong>portable</strong> : les droits accumules suivent
-          le salarie d&apos;un employeur à l&apos;autre tout au long de sa
-          carriere. En cas de départ à la retraite ou de cessation d&apos;emploi,
-          le salarie recupere l&apos;intégralité de ses droits.
+          le salarié d&apos;un employeur à l&apos;autre tout au long de sa
+          carrière. En cas de départ à la retraite ou de cessation d&apos;emploi,
+          le salarié récupère l&apos;intégralité de ses droits.
         </p>
         <p>
           L&apos;employeur peut deduire de sa contribution PRGF toute
@@ -594,9 +594,9 @@ export default function DroitTravailMauricePage() {
           Congés annuels
         </h3>
         <p>
-          Tout salarie a temps plein a droit a{" "}
+          Tout salarié a temps plein a droit a{" "}
           <strong>20 jours ouvrables</strong> de congés annuels payes par an
-          (contre 14 jours sous l&apos;ancienne legislation). Les congés non
+          (contre 14 jours sous l&apos;ancienne législation). Les congés non
           pris sont cumulables et peuvent être reportes ou indemnises en fin de
           contrat.
         </p>
@@ -607,7 +607,7 @@ export default function DroitTravailMauricePage() {
         <p>
           Le WRA accorde <strong>15 jours ouvrables</strong> de conge maladie
           par an, entièrement payes par l&apos;employeur. Les jours non utilisés
-          sont cumulables d&apos;une annee sur l&apos;autre, sans plafond
+          sont cumulables d&apos;une année sur l&apos;autre, sans plafond
           explicite dans la loi.
         </p>
 
@@ -618,23 +618,23 @@ export default function DroitTravailMauricePage() {
           Les salariees bénéficient de{" "}
           <strong>14 semaines de conge maternité</strong> (contre 12 sous
           l&apos;ancienne loi), dont au moins 7 semaines doivent être prises
-          après l&apos;accouchement. Le conge est remunere a 100% du salaire.
+          après l&apos;accouchement. Le conge est rémunéré a 100% du salaire.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Autres congés prevus par la loi
+          Autres congés prévus par la loi
         </h3>
         <ul>
           <li>
             <strong>Conge paternite :</strong> 5 jours ouvrables continus
           </li>
           <li>
-            <strong>Conge deuil :</strong> 3 jours en cas de deces d&apos;un
+            <strong>Conge deuil :</strong> 3 jours en cas de décès d&apos;un
             proche
           </li>
           <li>
-            <strong>Jours feries :</strong> Maurice compte environ 15 jours
-            feries par an ; si le salarie travaille un jour ferie, il a droit a
+            <strong>Jours fériés :</strong> Maurice compte environ 15 jours
+            fériés par an ; si le salarié travaille un jour férié, il a droit a
             une majoration de 100%
           </li>
         </ul>
@@ -655,9 +655,9 @@ export default function DroitTravailMauricePage() {
           8. Heures de travail et heures supplémentaires
         </h2>
         <p>
-          La duree légale maximale de travail est de{" "}
+          La durée légale maximale de travail est de{" "}
           <strong>45 heures par semaine</strong>, généralement reparties sur 5 ou
-          6 jours. Au-dela, toute heure effectuee est considérée comme
+          6 jours. Au-dela, toute heure effectuée est considérée comme
           supplémentaire.
         </p>
 
@@ -695,7 +695,7 @@ export default function DroitTravailMauricePage() {
               </tr>
               <tr>
                 <td className="px-4 py-3 text-slate-700">
-                  Travail un jour ferie
+                  Travail un jour férié
                 </td>
                 <td className="px-4 py-3 text-center font-bold text-slate-900">
                   + 100%
@@ -708,7 +708,7 @@ export default function DroitTravailMauricePage() {
         <p>
           L&apos;employeur ne peut pas imposer plus de{" "}
           <strong>12 heures de travail</strong> par jour (heures normales +
-          supplémentaires). Le salarie a droit à un repos minimum de{" "}
+          supplémentaires). Le salarié a droit à un repos minimum de{" "}
           <strong>11 heures consecutives</strong> entre deux journees de travail.
         </p>
 
@@ -741,7 +741,7 @@ export default function DroitTravailMauricePage() {
           Le preavis minimum est de <strong>30 jours</strong> pour un CDI. En
           cas de faute grave (<em>summary dismissal</em>), aucun preavis
           n&apos;est requis, mais l&apos;employeur doit prouver la gravite de la
-          faute. Le salarie licencie pour motif non disciplinaire a droit à un
+          faute. Le salarié licencié pour motif non disciplinaire a droit à un
           preavis paye ou à une indemnité compensatrice equivalente.
         </p>
 
@@ -750,8 +750,8 @@ export default function DroitTravailMauricePage() {
         </h3>
         <p>
           En cas de licenciement pour motif économique (<em>redundancy</em>), le
-          salarie a droit à une indemnité de{" "}
-          <strong>3 mois de rémunération par annee de service</strong>. Cette
+          salarié a droit à une indemnité de{" "}
+          <strong>3 mois de rémunération par année de service</strong>. Cette
           indemnité est distincte des droits PRGF accumules.
         </p>
         <p>
@@ -764,7 +764,7 @@ export default function DroitTravailMauricePage() {
         <Callout variant="red" title="Risque employeur">
           <p>
             Un licenciement mal documente ou sans procedure disciplinaire
-            prealable est quasi systématiquement requalifie en licenciement
+            préalable est quasi systématiquement requalifie en licenciement
             abusif. L&apos;accompagnement juridique est fortement recommandé
             avant toute rupture de contrat.
           </p>
@@ -772,16 +772,16 @@ export default function DroitTravailMauricePage() {
       </Section>
 
       {/* ===== 10. TRAVAILLEURS ETRANGERS ===== */}
-      <Section id="etrangers" bg="slate">
+      <Section id="étrangers" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
           10. Emploi de travailleurs étrangers
         </h2>
         <p>
           Tout ressortissant étranger souhaitant travailler à Maurice doit
           détenir un permis de travail valide. Depuis la réforme du système des
-          permis, le vehicule principal est l&apos;
+          permis, le véhicule principal est l&apos;
           <strong>Occupation Permit (OP) — categorie Professional</strong>,
-          delivre par l&apos;Economic Development Board (EDB).
+          délivré par l&apos;Economic Development Board (EDB).
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
@@ -789,7 +789,7 @@ export default function DroitTravailMauricePage() {
         </h3>
         <ul>
           <li>
-            <strong>ProPass :</strong> pour les salaries, avec un salaire
+            <strong>ProPass :</strong> pour les salariés, avec un salaire
             minimum de Rs 30 000/mois. Valable 10 ans.
           </li>
           <li>
@@ -804,17 +804,17 @@ export default function DroitTravailMauricePage() {
         </h3>
         <p>
           L&apos;employeur est responsable de la demande d&apos;OP pour ses
-          salaries étrangers. Il doit démontrer que le poste ne peut pas etre
+          salariés étrangers. Il doit démontrer que le poste ne peut pas être
           pourvu par un candidat local (sauf dans les secteurs en tension
           identifies par l&apos;EDB). L&apos;employeur doit également s&apos;assurer
-          que le salarie étranger beneficie des memes droits que les salaries
+          que le salarié étranger bénéficie des mêmes droits que les salariés
           mauriciens en matière de CSG, PRGF, congés et conditions de travail.
         </p>
 
         <Callout variant="blue" title="A noter">
           <p>
             Le traitement d&apos;une demande d&apos;OP Professional prend en
-            general <strong>4 a 8 semaines</strong>. Il est conseille
+            général <strong>4 a 8 semaines</strong>. Il est conseille
             d&apos;anticiper les recrutements étrangers en lancant la procedure
             des la signature de la promesse d&apos;embauche.
           </p>
@@ -838,7 +838,7 @@ export default function DroitTravailMauricePage() {
         </h3>
         <ul>
           <li>
-            <strong>Calcul et emission des bulletins de paie</strong> conformes
+            <strong>Calcul et émission des bulletins de paie</strong> conformes
             au WRA, incluant CSG, PAYE, PRGF et NSF
           </li>
           <li>
@@ -847,10 +847,10 @@ export default function DroitTravailMauricePage() {
           </li>
           <li>
             <strong>Redaction des contrats de travail</strong> conformes a la
-            legislation en vigueur
+            législation en vigueur
           </li>
           <li>
-            <strong>Gestion des congés et absences</strong> avec suivi temps reel
+            <strong>Gestion des congés et absences</strong> avec suivi temps réel
             via la plateforme OKE
           </li>
           <li>
@@ -858,12 +858,12 @@ export default function DroitTravailMauricePage() {
             (documentation, calcul des indemnités, mediation)
           </li>
           <li>
-            <strong>Demandes d&apos;Occupation Permit</strong> pour les salaries
+            <strong>Demandes d&apos;Occupation Permit</strong> pour les salariés
             étrangers auprès de l&apos;EDB
           </li>
           <li>
             <strong>Veille réglementaire continue</strong> : chaque modification
-            du WRA ou du Finance Act est immediatement integree dans les
+            du WRA ou du Finance Act est immédiatement intégrée dans les
             processus de paie
           </li>
         </ul>
@@ -875,7 +875,7 @@ export default function DroitTravailMauricePage() {
             particulièrement technique. Une erreur de calcul peut entrainer des
             pénalités MRA et des litiges prudhommaux. L&apos;externalisation
             auprès d&apos;un cabinet spécialisé est le meilleur moyen de
-            securiser votre conformité.
+            sécuriser votre conformité.
           </p>
         </Callout>
       </Section>
@@ -1021,7 +1021,7 @@ export default function DroitTravailMauricePage() {
 
         <Callout variant="blue" title="Comparaison internationale">
           <p>
-            A Maurice, le coût total employeur represente environ{" "}
+            A Maurice, le coût total employeur représente environ{" "}
             <strong>11 à 15%</strong> du salaire brut en charges patronales.
             C&apos;est nettement inferieur à la France (~42%), au Maroc (~26%)
             ou au Portugal (~23%). C&apos;est l&apos;un des atouts majeurs de
@@ -1100,7 +1100,7 @@ export default function DroitTravailMauricePage() {
           <p className="mx-auto mt-4 max-w-xl text-slate-300">
             BD Star gère la paie de dizaines d&apos;entreprises à Maurice —
             bulletins, déclarations MRA, conformité Workers&apos; Rights Act.
-            Contactez-nous pour un devis personnalise.
+            Contactez-nous pour un devis personnalisé.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg">

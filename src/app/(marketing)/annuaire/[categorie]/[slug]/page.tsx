@@ -81,7 +81,7 @@ function LocalBusinessSchema({
         addressCountry: "MU",
       },
     }),
-    ...(company.phone && { telephone: company.phone }),
+    ...(company.phone && { téléphone: company.phone }),
     ...(company.email && { email: company.email }),
     ...(company.website && { url: company.website }),
     ...(company.rating != null && {

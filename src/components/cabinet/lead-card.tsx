@@ -7,7 +7,7 @@ export interface LeadPipeline {
   prenom: string | null;
   nom: string | null;
   email: string | null;
-  telephone: string | null;
+  téléphone: string | null;
   profil: string | null;
   budget: string | null;
   timeline: string | null;

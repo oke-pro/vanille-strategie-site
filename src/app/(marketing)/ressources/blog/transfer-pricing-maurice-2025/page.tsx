@@ -58,7 +58,7 @@ export default function TransferPricingPage() {
           </Link>
           <div className="mt-4 flex items-center gap-2">
             <span className="rounded-full bg-orange-500/20 px-2 py-0.5 text-xs font-medium text-orange-300">
-              Fiscalite
+              Fiscalité
             </span>
             <span className="text-xs text-slate-500">Mars 2026</span>
             <span className="text-xs text-slate-500">· 18 min</span>
@@ -108,8 +108,8 @@ export default function TransferPricingPage() {
             adoptent des règles de prix de transfert conformes au Principe de
             pleine concurrence (arm&apos;s length principle). D&apos;autre part,
             elle creait une insécurité juridique pour les entreprises
-            elles-memes : sans règles claires, impossible de savoir si une
-            politique de prix etait conforme ou non.
+            elles-mêmes : sans règles claires, impossible de savoir si une
+            politique de prix était conforme ou non.
           </p>
           <p>
             Le Finance Act 2025 corrige cela en introduisant, dans l&apos;Income
@@ -125,8 +125,8 @@ export default function TransferPricingPage() {
               Le Transfer Pricing n&apos;est pas un nouvel impôt. C&apos;est un
               ensemble de règles qui encadrent la fixation des prix dans les
               transactions entre sociétés liees, pour s&apos;assurer
-              qu&apos;elles refletent les conditions du marche. Maurice rejoint
-              ainsi la majorite des juridictions qui appliquent déjà ces regles
+              qu&apos;elles reflètent les conditions du marche. Maurice rejoint
+              ainsi la majorité des juridictions qui appliquent déjà ces règles
               (France, Royaume-Uni, Singapour, Inde, Afrique du Sud...).
             </p>
           </div>
@@ -220,10 +220,10 @@ export default function TransferPricingPage() {
             <li>
               <strong>Les contrats</strong> encadrant les transactions
               intragroupe (contrats de management fees, de prestations de
-              services, de licences, de prets...).
+              services, de licences, de prêts...).
             </li>
             <li>
-              <strong>Les etudes de comparabilite</strong> (benchmarking) ou
+              <strong>Les études de comparabilite</strong> (benchmarking) ou
               toute analyse demontrant que le prix est conforme au principe de
               pleine concurrence.
             </li>
@@ -277,7 +277,7 @@ export default function TransferPricingPage() {
           </p>
           <p>
             On compare le prix de la transaction contrôlée au prix pratique dans
-            une transaction comparable entre parties independantes. C&apos;est la
+            une transaction comparable entre parties indépendantes. C&apos;est la
             méthode la plus directe, mais elle exige des comparables très
             proches, ce qui est rarement le cas.
           </p>
@@ -331,7 +331,7 @@ export default function TransferPricingPage() {
           <p>
             Les bénéfices combines des parties liées sont repartis en fonction de
             leur contribution respective (fonctions, actifs, risques). Reservee
-            aux transactions hautement integrees ou aucune partie ne peut etre
+            aux transactions hautement integrees ou aucune partie ne peut être
             testee de manière isolee — typiquement, quand les deux parties
             apportent des actifs incorporels uniques.
           </p>
@@ -343,7 +343,7 @@ export default function TransferPricingPage() {
             <p className="mt-1 text-sm text-blue-700">
               Pour les GBC mauriciennes qui fournissent des services de
               management, la méthode Cost Plus est généralement la plus
-              adaptee. Pour les activités de distribution, la TNMM sera souvent
+              adaptée. Pour les activités de distribution, la TNMM sera souvent
               privilegiee. Le choix de la méthode doit être documente et
               justifie — ne le laissez pas au hasard. Un mauvais choix de
               méthode peut invalider toute votre politique de prix.
@@ -368,7 +368,7 @@ export default function TransferPricingPage() {
           <ul>
             <li>
               <strong>Penalty tax de 5%</strong> sur l&apos;ajustement de
-              Transfer Pricing effectue par la MRA. Autrement dit, si la MRA
+              Transfer Pricing effectué par la MRA. Autrement dit, si la MRA
               requalifie une transaction et augmente votre base imposable de 10
               millions MUR, vous payez 500 000 MUR de pénalité en sus de
               l&apos;impôt supplémentaire.
@@ -417,7 +417,7 @@ export default function TransferPricingPage() {
             Les Global Business Companies (GBC) sont en première ligne de ces
             nouvelles obligations. Par nature, les GBC sont des entites de droit
             mauricien qui opèrent principalement à l&apos;international et
-            realisent la majorite de leurs transactions avec des parties liees
+            realisent la majorité de leurs transactions avec des parties liees
             situées dans d&apos;autres juridictions.
           </p>
           <p>
@@ -432,26 +432,26 @@ export default function TransferPricingPage() {
               services reellement rendus et que le prix est conforme au marche.
             </li>
             <li>
-              <strong>Les prets intragroupe et les garanties</strong> : les taux
-              d&apos;interet sur les prets entre sociétés liées doivent
+              <strong>Les prêts intragroupe et les garanties</strong> : les taux
+              d&apos;intérêt sur les prêts entre sociétés liées doivent
               refleter les conditions de marché (taux de référence + spread de
-              crédit adapte). Les garanties gratuites entre sociétés du groupe
-              pourront être requalifiees.
+              crédit adapté). Les garanties gratuites entre sociétés du groupe
+              pourront être requalifiées.
             </li>
             <li>
               <strong>
                 Les redevances et les licences de propriété intellectuelle
               </strong>{" "}
               : utilisation de marques, brevets, logiciels, savoir-faire —
-              chaque flux doit être justifie par une creation de valeur réelle et
-              remunere à un prix de pleine concurrence.
+              chaque flux doit être justifie par une création de valeur réelle et
+              rémunéré à un prix de pleine concurrence.
             </li>
           </ul>
           <p>
             Pour les groupes internationaux utilisant Maurice comme hub regional
             (Afrique, Asie), cette réforme renforcé la credibilite de la
             juridiction. Les partenaires commerciaux et les administrations
-            fiscales etrangeres prendront Maurice plus au serieux si le pays
+            fiscales étrangères prendront Maurice plus au serieux si le pays
             applique les standards OCDE.
           </p>
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose">
@@ -491,8 +491,8 @@ export default function TransferPricingPage() {
               </p>
               <p className="mt-1 text-sm text-blue-700">
                 Identifiez toutes les transactions entre vos entites liées :
-                ventes de biens, prestations de services, prets, garanties,
-                redevances, refacturations de frais. Chaque flux doit etre
+                ventes de biens, prestations de services, prêts, garanties,
+                redevances, refacturations de frais. Chaque flux doit être
                 documente avec un contrat ecrit, une analyse fonctionnelle et une
                 justification du prix.
               </p>
@@ -504,7 +504,7 @@ export default function TransferPricingPage() {
               </p>
               <p className="mt-1 text-sm text-blue-700">
                 Pour chaque type de transaction, selectionnez la méthode la plus
-                appropriee (CUP, Cost Plus, TNMM...) et redigez une analyse
+                appropriee (CUP, Cost Plus, TNMM...) et rédigez une analyse
                 expliquant pourquoi cette méthode est la plus fiable dans votre
                 cas. Conservez les donnees de comparabilite (benchmarks) que vous
                 avez utilisees.
@@ -513,14 +513,14 @@ export default function TransferPricingPage() {
 
             <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
               <p className="text-sm font-semibold text-blue-800">
-                3. Preparer la documentation en temps reel
+                3. Préparer la documentation en temps réel
               </p>
               <p className="mt-1 text-sm text-blue-700">
                 Ne remettez pas la documentation a plus tard. Integrez la
                 preparation du Master File et du Local File dans votre processus
                 de cloture annuelle. Notre équipe chez BD Star peut vous
                 accompagner dans la mise en place d&apos;un dossier de Transfer
-                Pricing conforme, mis à jour chaque annee.
+                Pricing conforme, mis à jour chaque année.
               </p>
             </div>
 
@@ -530,7 +530,7 @@ export default function TransferPricingPage() {
               </p>
               <p className="mt-1 text-sm text-blue-700">
                 Beaucoup de sociétés opèrent avec des contrats obsolètes, mal
-                rediges ou inexistants. Chaque transaction intragroupe doit etre
+                rediges ou inexistants. Chaque transaction intragroupe doit être
                 couverte par un contrat écrit qui reflète la réalité économique.
                 Un contrat de management fees signe en 2018 et jamais mis à jour
                 est un signal d&apos;alerte pour la MRA.
@@ -539,13 +539,13 @@ export default function TransferPricingPage() {
 
             <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
               <p className="text-sm font-semibold text-blue-800">
-                5. Anticiper les controles
+                5. Anticiper les contrôles
               </p>
               <p className="mt-1 text-sm text-blue-700">
-                La MRA va monter en competences sur le Transfer Pricing. Les
+                La MRA va monter en compétences sur le Transfer Pricing. Les
                 premiers contrôles seront probablement cibles sur les GBC avec
                 des flux importants vers des juridictions a faible imposition.
-                Etre pret avant le premier contrôle est infiniment moins coûteux
+                Etre prêt avant le premier contrôle est infiniment moins coûteux
                 que de reagir après.
               </p>
             </div>
@@ -556,11 +556,11 @@ export default function TransferPricingPage() {
               Le mot de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              &ldquo;En 40 ans de carriere en fiscalité internationale, j&apos;ai
+              &ldquo;En 40 ans de carrière en fiscalité internationale, j&apos;ai
               vu beaucoup de juridictions introduire des règles de Transfer
               Pricing. Le schema est toujours le même : les textes sont adoptes,
               puis la pratique administrative suit avec 12 a 24 mois de decalage.
-              Les sociétés qui se mettent en conformité maintenant beneficient
+              Les sociétés qui se mettent en conformité maintenant bénéficient
               d&apos;un avantage considérable : elles définissent leurs
               politiques de prix sereinement, sans la pression d&apos;un
               contrôle. Celles qui attendent paieront plus cher — en temps, en
@@ -590,9 +590,9 @@ export default function TransferPricingPage() {
           </h3>
           <p>
             Le projet BEPS (Base Erosion and Profit Shifting) de l&apos;OCDE
-            vise à lutter contre les strategies d&apos;optimisation fiscale qui
-            exploitént les failles entre les systemes fiscaux de differents pays
-            pour transferer artificiellement les bénéfices vers des juridictions
+            vise à lutter contre les stratégies d&apos;optimisation fiscale qui
+            exploitént les failles entre les systèmes fiscaux de differents pays
+            pour transférer artificiellement les bénéfices vers des juridictions
             a faible imposition. Maurice, en tant que membre du Cadre inclusif
             BEPS, s&apos;est engagee a mettre en oeuvre les Actions BEPS —
             dont l&apos;Action 13 sur la documentation de Transfer Pricing.
@@ -607,14 +607,14 @@ export default function TransferPricingPage() {
               Qualified Domestic Minimum Top-up Tax (QDMTT)
             </strong>
             , qui est la transposition du Pilier 2 de l&apos;OCDE à Maurice.
-            Cette taxe complementaire s&apos;applique aux groupes
+            Cette taxe complémentaire s&apos;applique aux groupes
             multinationaux dont le chiffre d&apos;affaires consolidé dépassé 750
             millions d&apos;euros, et garantit un taux d&apos;imposition
             effectif minimum de 15%.
           </p>
           <p>
             Le lien entre Transfer Pricing et QDMTT est direct : si une GBC
-            transfere artificiellement ses bénéfices vers une entite du groupe
+            transféré artificiellement ses bénéfices vers une entite du groupe
             moins imposee, le QDMTT viendra de toute facon appliquer le
             complement d&apos;impôt. Le Transfer Pricing et le QDMTT forment
             ainsi un double filet de sécurité contre l&apos;érosion de la base
@@ -623,7 +623,7 @@ export default function TransferPricingPage() {
           <p>
             Pour les groupes concernés par le QDMTT, une politique de Transfer
             Pricing bien documentee est encore plus critique : les calculs de
-            taux effectif sous le Pilier 2 reposent sur les resultats
+            taux effectif sous le Pilier 2 reposent sur les résultats
             comptables des entites locales, qui sont eux-mêmes influences par
             les prix de transfert.
           </p>
@@ -702,8 +702,8 @@ export default function TransferPricingPage() {
             ))}
           </ul>
           <p className="mt-4 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
-            conseil fiscal personnalise. Les règles de Transfer Pricing
+            Cet article est fourni à titre informatif et ne constitué pas un
+            conseil fiscal personnalisé. Les règles de Transfer Pricing
             s&apos;appliquent differemment selon la taille de l&apos;entreprise,
             la nature des transactions et les juridictions impliquees. Contactez
             nos experts pour une analyse personnalisée de votre situation.
@@ -720,7 +720,7 @@ export default function TransferPricingPage() {
             Besoin d&apos;un accompagnement en Transfer Pricing ?
           </h2>
           <p className="mt-3 text-slate-400">
-            Etude de faisabilite gratuite par {founder.name},{" "}
+            Étude de faisabilite gratuite par {founder.name},{" "}
             {founder.title}. Documentation TP, politique de prix, audit de
             conformité — nous vous accompagnons de A a Z.
           </p>

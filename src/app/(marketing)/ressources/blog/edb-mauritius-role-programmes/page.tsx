@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title:
     "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice | Vanille Stratégie",
   description:
-    "Decouvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
+    "Découvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
   keywords: [
     "EDB Mauritius",
     "Economic Development Board Maurice",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice | Vanille Stratégie",
     description:
-      "Decouvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
+      "Découvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
     images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
@@ -72,7 +72,7 @@ const opSteps = [
     step: 1,
     title: "Constitution du dossier",
     description:
-      "Formulaire de demande, business plan, justificatifs d'identite, extraits bancaires, casier judiciaire, CV, diplomes.",
+      "Formulaire de demande, business plan, justificatifs d'identité, extraits bancaires, casier judiciaire, CV, diplomes.",
     delay: "Variable selon la completude",
   },
   {
@@ -93,7 +93,7 @@ const opSteps = [
     step: 4,
     title: "Approval in Principle (AIP)",
     description:
-      "Lettre d'approbation de principe. Vous pouvez commencer vos demarches bancaires et d'installation.",
+      "Lettre d'approbation de principe. Vous pouvez commencer vos démarches bancaires et d'installation.",
     delay: "15-20 jours ouvres au total",
   },
   {
@@ -116,13 +116,13 @@ const prioritySectors = [
     name: "Blue Economy",
     icon: Ship,
     description:
-      "Aquaculture, biotechnologies marines, energies oceaniennes. Zone économique exclusive de 2,3 millions km2.",
+      "Aquaculture, biotechnologies marines, énergies océaniennes. Zone économique exclusive de 2,3 millions km2.",
   },
   {
     name: "Renewable Energy",
     icon: Zap,
     description:
-      "Objectif 60% d'energies renouvelables d'ici 2030. Solaire, eolien offshore, biomasse.",
+      "Objectif 60% d'énergies renouvelables d'ici 2030. Solaire, éolien offshore, biomasse.",
   },
   {
     name: "ICT & Innovation",
@@ -134,8 +134,8 @@ const prioritySectors = [
 
 const freeportAdvantages = [
   "Exemption de droits de douane sur les importations et reexportations",
-  "Pas de TVA sur les operations en zone franche",
-  "Regime fiscal preferentiel pour les opérateurs agréés",
+  "Pas de TVA sur les opérations en zone franche",
+  "Régime fiscal préférentiel pour les opérateurs agréés",
   "Positionnement stratégique entre l'Afrique, l'Asie et l'Europe",
   "Infrastructure logistique portuaire et aeroportuaire moderne",
   "Acces privilegie aux marches COMESA, SADC et CECPA (Inde)",
@@ -238,7 +238,7 @@ export default function EDBMauritiusPage() {
                 fusion du Board of Investment (BOI) et d&apos;Enterprise
                 Mauritius
               </strong>
-              . Cette consolidation visait a creer un guichet unique, plus
+              . Cette consolidation visait a créer un guichet unique, plus
               efficace, pour la promotion et la facilitation de
               l&apos;investissement étranger.
             </p>
@@ -257,7 +257,7 @@ export default function EDBMauritiusPage() {
             </p>
             <p className="mt-2 text-sm text-blue-700">
               L&apos;EDB n&apos;est pas un simple bureau d&apos;information.
-              C&apos;est l&apos;autorite qui delivre les Occupation Permits,
+              C&apos;est l&apos;autorite qui délivré les Occupation Permits,
               les Premium Investor Certificates, et qui coordonne les
               programmes de soutien aux entreprises. Tout passe par l&apos;EDB.
             </p>
@@ -310,7 +310,7 @@ export default function EDBMauritiusPage() {
               <p className="mt-2 text-sm text-slate-600">
                 Apres l&apos;installation, l&apos;EDB continue d&apos;assister
                 les entreprises : mise en relation, resolution de
-                problemes administratifs, accès aux programmes de soutien.
+                problèmes administratifs, accès aux programmes de soutien.
               </p>
             </Card>
           </div>
@@ -439,14 +439,14 @@ export default function EDBMauritiusPage() {
               </div>
               <p className="mt-3 text-sm text-slate-600">
                 La Development Bank of Mauritius propose des{" "}
-                <strong>prets à taux preferentiels</strong> pour les PME et
+                <strong>prêts à taux préférentiels</strong> pour les PME et
                 les startups. Des lignes de crédit spécifiques existent pour
                 les secteurs prioritaires : green energy, ICT,
                 agro-industrie.
               </p>
               <ul className="mt-3 space-y-1.5">
                 {[
-                  "Taux d'interet réduits (subventionnes par l'Etat)",
+                  "Taux d'intérêt réduits (subventionnes par l'État)",
                   "Prets jusqu'a Rs 5 millions pour les PME",
                   "Ligne spécifique femmes entrepreneures",
                   "Pas de garantie immobilière pour les micro-entreprises",
@@ -466,11 +466,11 @@ export default function EDBMauritiusPage() {
               Focus : Femmes entrepreneures
             </p>
             <p className="mt-2 text-sm text-pink-700">
-              Maurice a mis en place des programmes dedies aux femmes
+              Maurice a mis en place des programmes dédiés aux femmes
               entrepreneures, avec des grants spécifiques, du mentoring et
               un accès facilite au financement DBM. L&apos;EDB joue un rôle
               de coordination entre les differentes agences pour simplifier
-              les demarches.
+              les démarches.
             </p>
           </div>
         </div>
@@ -501,16 +501,16 @@ export default function EDBMauritiusPage() {
               dispositif réserve aux projets d&apos;investissement majeurs,
               avec un seuil minimum de{" "}
               <strong>Rs 500 millions</strong> (environ 10 millions EUR).
-              Il est delivre directement par l&apos;EDB et offre des
+              Il est délivré directement par l&apos;EDB et offre des
               avantages considerables.
             </p>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              "Interlocuteur dedie au sein de l'EDB (fast-track)",
+              "Interlocuteur dédié au sein de l'EDB (fast-track)",
               "Facilitation acceleree de tous les permis et licences",
-              "Exoneration ou reduction de droits de douane",
+              "Exoneration ou réduction de droits de douane",
               "Acces prioritaire au foncier et aux zones franches",
               "Coordination interministerielle par l'EDB",
               "Accompagnement post-investissement pendant 5 ans",
@@ -530,7 +530,7 @@ export default function EDBMauritiusPage() {
               A noter
             </p>
             <p className="mt-2 text-sm text-purple-700">
-              Le PIC est particulièrement adapte aux projets
+              Le PIC est particulièrement adapté aux projets
               d&apos;infrastructure, aux chaines hotelieres internationales,
               aux fonds d&apos;investissement et aux groupes industriels
               souhaitant utiliser Maurice comme base regionale.
@@ -568,9 +568,9 @@ export default function EDBMauritiusPage() {
               <strong>aucun capital minimum d&apos;investissement</strong>.
             </p>
             <p>
-              Le candidat doit presenter un projet innovant valide par
+              Le candidat doit présenter un projet innovant valide par
               l&apos;EDB, avec un business plan demontrant le potentiel de
-              creation d&apos;emplois et de valeur ajoutee pour
+              création d&apos;emplois et de valeur ajoutee pour
               l&apos;économie mauricienne. L&apos;EDB évalue le caractère
               innovant du projet et le profil du fondateur.
             </p>
@@ -586,7 +586,7 @@ export default function EDBMauritiusPage() {
             <Card className="bg-teal-50 p-5 text-center">
               <p className="text-3xl font-bold text-teal-700">10 ans</p>
               <p className="mt-1 text-sm text-teal-600">
-                Duree du permis
+                Durée du permis
               </p>
             </Card>
             <Card className="bg-teal-50 p-5 text-center">
@@ -639,15 +639,15 @@ export default function EDBMauritiusPage() {
             {[
               {
                 title: "Depot en ligne",
-                desc: "Soumission 100% électronique des demandes d'OP, Premium Visa, et Permanent Residence Permit.",
+                desc: "Soumission 100% électronique des demandes d'OP, Premium Visa, et Permanent Résidence Permit.",
               },
               {
-                title: "Suivi en temps reel",
-                desc: "Tableau de bord personnel pour suivre l'avancement de votre dossier à chaque etape.",
+                title: "Suivi en temps réel",
+                desc: "Tableau de bord personnel pour suivre l'avancement de votre dossier à chaque étape.",
               },
               {
                 title: "Upload securise",
-                desc: "Telechargement des justificatifs au format PDF. Systeme de notifications par email.",
+                desc: "Telechargement des justificatifs au format PDF. Système de notifications par email.",
               },
               {
                 title: "Renouvellement simplifie",
@@ -677,7 +677,7 @@ export default function EDBMauritiusPage() {
                 Freeport Mauritius : la zone franche logistique
               </h2>
               <p className="mt-1 text-sm text-slate-400">
-                Un régime special pour les activités de transit, stockage et
+                Un régime spécial pour les activités de transit, stockage et
                 transformation
               </p>
             </div>
@@ -716,8 +716,8 @@ export default function EDBMauritiusPage() {
             <p className="mt-2 text-sm text-cyan-100/80">
               L&apos;obtention du statut d&apos;opérateur Freeport passe par
               une demande auprès de l&apos;EDB, avec un business plan
-              detaillant les operations prevues, les volumes, et les
-              marches cibles. L&apos;agrement est généralement delivre en
+              détaillant les opérations prévues, les volumes, et les
+              marches cibles. L&apos;agrement est généralement délivré en
               4 a 6 semaines.
             </p>
           </div>
@@ -735,7 +735,7 @@ export default function EDBMauritiusPage() {
           <p className="mt-3 text-slate-600">
             L&apos;EDB concentre ses efforts de promotion sur quatre
             secteurs stratégiques ou Maurice dispose d&apos;avantages
-            competitifs differenciants.
+            compétitifs differenciants.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -760,12 +760,12 @@ export default function EDBMauritiusPage() {
               Pourquoi c&apos;est important pour vous
             </p>
             <p className="mt-2 text-sm text-amber-700">
-              Les projets dans les secteurs prioritaires beneficient
+              Les projets dans les secteurs prioritaires bénéficient
               d&apos;un traitement accélère par l&apos;EDB, d&apos;un acces
               facilite aux incentives fiscaux et aux programmes de
               financement. Si votre activité touche à la fintech, aux
-              energies renouvelables, à l&apos;économie bleue ou a
-              l&apos;ICT, votre dossier sera traité en priorite.
+              énergies renouvelables, à l&apos;économie bleue ou a
+              l&apos;ICT, votre dossier sera traité en priorité.
             </p>
           </div>
         </div>
@@ -783,16 +783,16 @@ export default function EDBMauritiusPage() {
           <div className="prose prose-slate prose-lg mt-8 max-w-none">
             <p>
               Depuis 2012, Vanille Stratégie entretient une relation de
-              travail etroite avec l&apos;EDB. Nous deposons entre{" "}
+              travail étroite avec l&apos;EDB. Nous deposons entre{" "}
               <strong>30 et 50 dossiers par an</strong> -- ce qui fait de
               nous l&apos;un des cabinets les plus actifs auprès de
               l&apos;institution.
             </p>
             <p>
               Cette expérience cumulee nous donne un avantage decisif :
-              nous connaissons les critères d&apos;evaluation précis des
+              nous connaissons les critères d&apos;évaluation précis des
               officiers de l&apos;EDB, les motifs de rejet les plus
-              frequents, et les elements qui font la différence dans un
+              fréquents, et les éléments qui font la différence dans un
               dossier.
             </p>
           </div>
@@ -809,7 +809,7 @@ export default function EDBMauritiusPage() {
               },
               {
                 title: "Suivi proactif",
-                desc: "Nous suivons votre dossier à chaque etape et repondons aux demandes de complements sous 24h.",
+                desc: "Nous suivons votre dossier à chaque étape et repondons aux demandes de complements sous 24h.",
               },
               {
                 title: "Relation directe",
@@ -828,11 +828,11 @@ export default function EDBMauritiusPage() {
 
           <div className="mt-8 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 p-6 text-white">
             <p className="text-sm font-bold">
-              Resultat concret
+              Résultat concret
             </p>
             <p className="mt-2 text-sm text-blue-100">
               Grace a notre preparation rigoureuse, nos dossiers ont un taux
-              d&apos;approbation très élevé et un delai moyen de traitement
+              d&apos;approbation très élevé et un délai moyen de traitement
               de 15 a 20 jours ouvres -- contre parfois 2 a 3 mois pour des
               dossiers mal prepares.
             </p>
@@ -878,7 +878,7 @@ export default function EDBMauritiusPage() {
                 <Phone className="mt-1 h-5 w-5 shrink-0 text-blue-600" />
                 <div>
                   <p className="text-sm font-semibold text-slate-900">
-                    Telephone
+                    Téléphone
                   </p>
                   <p className="mt-0.5 text-sm text-slate-600">
                     +230 203 3800
@@ -951,7 +951,7 @@ export default function EDBMauritiusPage() {
             </a>
           </p>
           <p className="mt-2 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
+            Cet article est fourni à titre informatif et ne constitué pas un
             conseil juridique ou fiscal. Les informations sont basées sur les
             donnees officielles disponibles en mars 2026. Contactez nos
             experts pour une analyse personnalisée de votre situation.
@@ -969,7 +969,7 @@ export default function EDBMauritiusPage() {
           </h2>
           <p className="mt-4 text-lg text-slate-300">
             {founder.name}, {founder.title}, analyse votre projet
-            gratuitement et vous accompagne dans toutes vos demarches
+            gratuitement et vous accompagne dans toutes vos démarches
             auprès de l&apos;EDB.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -978,7 +978,7 @@ export default function EDBMauritiusPage() {
                 size="lg"
                 className="bg-blue-600 px-10 text-lg font-bold hover:bg-blue-700"
               >
-                Etude de faisabilite gratuite
+                Étude de faisabilite gratuite
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

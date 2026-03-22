@@ -18,7 +18,7 @@ const categoryColors: Record<string, string> = {
   Comparatif: "bg-purple-100 text-purple-700",
 };
 
-/** Articles sorted by dateISO descending (most recent first) */
+/** Articles sorted by dateISO descending (most récent first) */
 const sortedArticles = [...blogArticles].sort(
   (a, b) => b.dateISO.localeCompare(a.dateISO),
 );

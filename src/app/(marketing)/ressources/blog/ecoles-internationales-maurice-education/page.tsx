@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Northfields International School",
     "Clavis International School",
     "frais scolarité Maurice",
-    "education Maurice expatriation",
+    "éducation Maurice expatriation",
     "baccalaureat français Maurice",
     "Cambridge A-Levels Maurice",
   ],
@@ -902,7 +902,7 @@ export default function EcolesInternationalesMauricePage() {
             </a>
           </p>
           <p className="mt-2 text-xs text-slate-400">
-            Cet article est fourni &agrave; titre informatif et ne constitue pas
+            Cet article est fourni &agrave; titre informatif et ne constitué pas
             un conseil personnalis&eacute;. Les frais de scolarit&eacute;
             indiqu&eacute;s sont des fourchettes indicatives &mdash; contactez
             directement les &eacute;tablissements pour les tarifs exacts

@@ -40,6 +40,15 @@ const iconMap: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>
   plane: Plane,
 };
 
+const permitSlugs: Record<string, string> = {
+  "OP Investor": "occupation-permit-investor",
+  "OP Self-Employed": "occupation-permit-self-employed",
+  "OP Professional — ProPass": "professional-pass",
+  "OP Professional — Expert Pass": "expert-pass",
+  "OP Retired": "permis-retraite",
+  "Premium Visa": "premium-visa",
+};
+
 export default function PermisResidencePage() {
   return (
     <main className="min-h-screen">
@@ -92,51 +101,63 @@ export default function PermisResidencePage() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {permits.map((p, idx) => {
               const Icon = iconMap[p.icon] || Briefcase;
+              const slug = permitSlugs[p.type];
               return (
-                <Card
+                <Link
                   key={p.type}
-                  className="group relative flex flex-col p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-none bg-white"
-                  style={{ animationDelay: `${idx * 0.1}s` }}
+                  href={slug ? `/services/permis-residence/${slug}` : "#"}
+                  className="block"
                 >
-                  <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
-                    <Icon className="h-7 w-7" />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900">{p.type}</h3>
-                  <p className="mt-1 text-sm font-semibold text-blue-600 uppercase tracking-wider">{p.target}</p>
+                  <Card
+                    className="group relative flex flex-col p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-none bg-white h-full cursor-pointer"
+                    style={{ animationDelay: `${idx * 0.1}s` }}
+                  >
+                    <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+                      <Icon className="h-7 w-7" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{p.type}</h3>
+                    <p className="mt-1 text-sm font-semibold text-blue-600 uppercase tracking-wider">{p.target}</p>
 
-                  <div className="mt-6 flex-1 space-y-4 text-sm">
-                    <div className="flex items-start gap-3">
-                      <CreditCard className="h-4 w-4 mt-0.5 text-slate-400" />
-                      <div>
-                        <span className="block text-slate-500 text-xs uppercase font-bold">Investissement</span>
-                        <span className="font-medium text-slate-900">{p.investment}</span>
+                    <div className="mt-6 flex-1 space-y-4 text-sm">
+                      <div className="flex items-start gap-3">
+                        <CreditCard className="h-4 w-4 mt-0.5 text-slate-400" />
+                        <div>
+                          <span className="block text-slate-500 text-xs uppercase font-bold">Investissement</span>
+                          <span className="font-medium text-slate-900">{p.investment}</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <ArrowRight className="h-4 w-4 mt-0.5 text-slate-400" />
+                        <div>
+                          <span className="block text-slate-500 text-xs uppercase font-bold">Revenu / Turnover</span>
+                          <span className="font-medium text-slate-900">{p.turnover}</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <Clock className="h-4 w-4 mt-0.5 text-slate-400" />
+                        <div>
+                          <span className="block text-slate-500 text-xs uppercase font-bold">Validité</span>
+                          <span className="font-medium text-slate-900">{p.duration}</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <ArrowRight className="h-4 w-4 mt-0.5 text-slate-400" />
-                      <div>
-                        <span className="block text-slate-500 text-xs uppercase font-bold">Revenu / Turnover</span>
-                        <span className="font-medium text-slate-900">{p.turnover}</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Clock className="h-4 w-4 mt-0.5 text-slate-400" />
-                      <div>
-                        <span className="block text-slate-500 text-xs uppercase font-bold">Validité</span>
-                        <span className="font-medium text-slate-900">{p.duration}</span>
-                      </div>
-                    </div>
-                  </div>
 
-                  {p.renewal.includes("NOUVEAU") && (
-                    <div className="mt-6 rounded-lg bg-amber-50 px-3 py-2 border border-amber-100">
-                      <p className="text-xs font-bold text-amber-700 flex items-center gap-1.5 uppercase tracking-tight">
-                        <ShieldCheck className="h-3.5 w-3.5" />
-                        {p.renewal}
+                    {p.renewal.includes("NOUVEAU") && (
+                      <div className="mt-6 rounded-lg bg-amber-50 px-3 py-2 border border-amber-100">
+                        <p className="text-xs font-bold text-amber-700 flex items-center gap-1.5 uppercase tracking-tight">
+                          <ShieldCheck className="h-3.5 w-3.5" />
+                          {p.renewal}
+                        </p>
+                      </div>
+                    )}
+
+                    <div className="mt-6 pt-6 border-t border-slate-100">
+                      <p className="text-sm font-semibold text-blue-600 group-hover:text-blue-700 flex items-center gap-2">
+                        En savoir plus <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </p>
                     </div>
-                  )}
-                </Card>
+                  </Card>
+                </Link>
               );
             })}
           </div>
@@ -410,7 +431,7 @@ export default function PermisResidencePage() {
                   <td className="p-4 text-slate-600">Aucune obligation stricte</td>
                 </tr>
                 <tr className="hover:bg-slate-50/50">
-                  <td className="p-4 font-bold text-slate-900">Accès au Permanent Residence</td>
+                  <td className="p-4 font-bold text-slate-900">Accès au Permanent Résidence</td>
                   <td className="p-4 text-slate-600">Après 3 ans sous conditions</td>
                   <td className="p-4 text-slate-600">Après 3 ans sous conditions</td>
                   <td className="p-4 text-slate-600">Après 3 ans sous conditions</td>
@@ -485,9 +506,9 @@ export default function PermisResidencePage() {
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Permanent Residence durci</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Permanent Résidence durci</h3>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  L&apos;accès au Permanent Residence Permit (PRP) a été significativement durci. Désormais, les candidats doivent démontrer 3 années consécutives de résidence effective à Maurice avec un Occupation Permit, un chiffre d&apos;affaires cumulé conforme aux engagements du business plan, et une contribution fiscale substantielle via les impôts payés à la MRA.
+                  L&apos;accès au Permanent Résidence Permit (PRP) a été significativement durci. Désormais, les candidats doivent démontrer 3 années consécutives de résidence effective à Maurice avec un Occupation Permit, un chiffre d&apos;affaires cumulé conforme aux engagements du business plan, et une contribution fiscale substantielle via les impôts payés à la MRA.
                 </p>
                 <p className="text-slate-600 leading-relaxed">
                   Le PRP reste néanmoins un objectif atteignable pour les expatriés sérieusement implantés. Il offre une stabilité à long terme, le droit de travailler sans restriction, et facilite les démarches bancaires et immobilières. Notre cabinet accompagne nos clients dans la préparation de leur dossier de PRP avec un taux de succès historiquement élevé.
@@ -535,8 +556,8 @@ export default function PermisResidencePage() {
                 a: "En devenant résident fiscal mauricien (183+ jours de présence par an), vous bénéficiez du régime fiscal mauricien : IS à 15% maximum, 0% sur les dividendes, 0% sur les plus-values, et accès à la convention fiscale France-Maurice. Attention cependant à l\u2019Exit Tax française (art. 167 bis du CGI) qui s\u2019applique si vous détenez plus de EUR 800 000 de participations ou plus de 50% d\u2019une société. Notre Expert-Comptable réalise une analyse fiscale complète de votre situation avant votre départ."
               },
               {
-                q: "Puis-je obtenir le Permanent Residence directement ?",
-                a: "Non, le Permanent Residence Permit (PRP) ne s\u2019obtient pas directement. Il faut d\u2019abord détenir un Occupation Permit pendant au moins 3 années consécutives et démontrer une contribution effective à l\u2019économie mauricienne. Une alternative existe via l\u2019investissement immobilier dans un projet IRS/RES/PDS/Smart City d\u2019une valeur supérieure à USD 375 000, qui donne accès direct au PRP. Nous vous conseillons sur la stratégie optimale en fonction de votre situation."
+                q: "Puis-je obtenir le Permanent Résidence directement ?",
+                a: "Non, le Permanent Résidence Permit (PRP) ne s\u2019obtient pas directement. Il faut d\u2019abord détenir un Occupation Permit pendant au moins 3 années consécutives et démontrer une contribution effective à l\u2019économie mauricienne. Une alternative existe via l\u2019investissement immobilier dans un projet IRS/RES/PDS/Smart City d\u2019une valeur supérieure à USD 375 000, qui donne accès direct au PRP. Nous vous conseillons sur la stratégie optimale en fonction de votre situation."
               },
               {
                 q: "Que se passe-t-il si mon activité ne décolle pas comme prévu ?",

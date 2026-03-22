@@ -28,7 +28,7 @@ export default function PortalProfil() {
     { label: "Nom", value: user.last_name },
     { label: "Email", value: user.email },
     { label: "Téléphone", value: user.phone || "Non renseigné" },
-    { label: "Role", value: user.role === "client" ? "Client" : "Collaborateur" },
+    { label: "Rôle", value: user.role === "client" ? "Client" : "Collaborateur" },
     {
       label: "Dernière connexion",
       value: user.last_login

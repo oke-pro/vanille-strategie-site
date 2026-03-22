@@ -87,16 +87,16 @@ function Callout({
 /* ------------------------------------------------------------------ */
 
 function OfficialText({
-  reference,
+  référence,
   children,
 }: {
-  reference: string;
+  référence: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="my-6 rounded-lg border-l-4 border-blue-500 bg-slate-50 p-5">
       <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-blue-600">
-        {reference}
+        {référence}
       </p>
       <div className="text-sm italic leading-relaxed text-slate-700">
         {children}
@@ -229,7 +229,7 @@ export default function AnalyseVatActPage() {
           applicable à Maurice.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — Section 8(1)">
+        <OfficialText référence="VAT Act 1998 — Section 8(1)">
           <p>
             &laquo;&nbsp;Subject to subsection (2), every taxable person making
             a taxable supply shall charge VAT on the supply at the rate of 15
@@ -259,7 +259,7 @@ export default function AnalyseVatActPage() {
           tenue de s&apos;enregistrer à la TVA.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — Section 15 (tel qu'amendé par le Finance Act 2025)">
+        <OfficialText référence="VAT Act 1998 — Section 15 (tel qu'amendé par le Finance Act 2025)">
           <p>
             &laquo;&nbsp;A person who carries on a taxable activity shall apply
             for registration as a taxable person where the total value of his
@@ -314,10 +314,10 @@ export default function AnalyseVatActPage() {
           prestataires de services à l&apos;international.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — Fifth Schedule (extraits)">
+        <OfficialText référence="VAT Act 1998 — Fifth Schedule (extraits)">
           <p>
             &laquo;&nbsp;The following supplies of goods and services shall be
-            zero-rated — [...] services supplied to a person who is not resident
+            zero-rated — [...] services supplied to a person who is not résident
             in Mauritius and who is outside Mauritius at the time of the
             performance of the service, where such services are for use outside
             Mauritius.&nbsp;&raquo;
@@ -366,10 +366,10 @@ export default function AnalyseVatActPage() {
           droit à la récupération de la TVA en amont.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — First Schedule (extraits)">
+        <OfficialText référence="VAT Act 1998 — First Schedule (extraits)">
           <p>
             Sont exonérées de TVA notamment : les services financiers (sauf
-            certains services spécifiques), les services d&apos;education, les
+            certains services spécifiques), les services d&apos;éducation, les
             services de sante, la location de biens immobiliers a usage
             d&apos;habitation, le transport public de passagers, certains
             produits alimentaires de base.
@@ -385,7 +385,7 @@ export default function AnalyseVatActPage() {
             pas récupérer la TVA sur vos achats. Si elle est a{" "}
             <em>taux zero</em>, vous recuperez la TVA en amont. Pour un
             prestataire de services financiers, cela signifie que la TVA payee
-            sur les fournitures (loyer, équipement, etc.) constitue un coût
+            sur les fournitures (loyer, équipement, etc.) constitué un coût
             définitif. Ce point doit être intégré dans le business plan des le
             départ.
           </p>
@@ -402,7 +402,7 @@ export default function AnalyseVatActPage() {
           de registres, de facturation et de déclaration périodique.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — Section 20 (Records)">
+        <OfficialText référence="VAT Act 1998 — Section 20 (Records)">
           <p>
             &laquo;&nbsp;Every taxable person shall keep and maintain proper
             records and books of account of his business transactions in
@@ -411,7 +411,7 @@ export default function AnalyseVatActPage() {
           </p>
         </OfficialText>
 
-        <OfficialText reference="VAT Act 1998 — Section 22 (Returns)">
+        <OfficialText référence="VAT Act 1998 — Section 22 (Returns)">
           <p>
             &laquo;&nbsp;Every taxable person shall, within 30 days from the end
             of every taxable period, furnish to the Director-General a return in
@@ -461,7 +461,7 @@ export default function AnalyseVatActPage() {
           consommateurs mauriciens.
         </p>
 
-        <OfficialText reference="Finance Act 2025 — Amendement au VAT Act, Section 8A (services numériques)">
+        <OfficialText référence="Finance Act 2025 — Amendement au VAT Act, Section 8A (services numériques)">
           <p>
             A compter du 1er janvier 2026, les fournisseurs étrangers de
             services numériques ou électroniques (streaming, SaaS, applications,
@@ -473,7 +473,7 @@ export default function AnalyseVatActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Cette mesure aligne Maurice sur la tendance mondiale (cf. regles de
+            Cette mesure aligne Maurice sur la tendance mondiale (cf. règles de
             l&apos;OCDE sur la TVA numérique). Pour les entrepreneurs
             <strong> basés à Maurice</strong> qui vendent des services
             numériques, deux scénarios :
@@ -501,7 +501,7 @@ export default function AnalyseVatActPage() {
       {/* ===== SYNTHESE ===== */}
       <Section id="synthese" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          En résumé : les chiffres clés de la TVA à Maurice
+          En resume : les chiffres clés de la TVA à Maurice
         </h2>
         <div className="overflow-x-auto">
           <table className="mt-4 w-full text-sm">

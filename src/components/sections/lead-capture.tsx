@@ -43,7 +43,7 @@ export function LeadCaptureSection() {
       await submitQuickLead({
         prenom: form.get("prenom") as string,
         email: form.get("email") as string,
-        telephone: (form.get("telephone") as string) || null,
+        téléphone: (form.get("téléphone") as string) || null,
         profil,
         budget,
         timeline,
@@ -153,10 +153,10 @@ export function LeadCaptureSection() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="telephone" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Téléphone / WhatsApp</Label>
+                  <Label htmlFor="téléphone" className="text-xs font-black uppercase tracking-widest text-slate-400 ml-1">Téléphone / WhatsApp</Label>
                   <Input
-                    name="telephone"
-                    id="telephone"
+                    name="téléphone"
+                    id="téléphone"
                     type="tel"
                     placeholder="+33 6 ..."
                     className="h-14 rounded-2xl border-slate-200 bg-white/50 px-6 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all"

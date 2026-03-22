@@ -439,7 +439,7 @@ export default function ComparatifPage() {
             </h2>
             <p>
               Maurice combine un taux d&apos;IS &agrave; 15% flat (descendant
-              &agrave; 3% via une GBC et le Partial Exemption Regime), z&eacute;ro
+              &agrave; 3% via une GBC et le Partial Exemption Régime), z&eacute;ro
               imp&ocirc;t sur les dividendes, z&eacute;ro sur les plus-values,
               z&eacute;ro droit de succession, et aucun ISF. Pour un entrepreneur
               classique, la charge fiscale globale est imbattable.
@@ -669,7 +669,7 @@ export default function ComparatifPage() {
             ))}
           </p>
           <p className="mt-2 text-xs text-slate-400">
-            Cet article est fourni &agrave; titre informatif et ne constitue pas
+            Cet article est fourni &agrave; titre informatif et ne constitué pas
             un conseil fiscal personnalis&eacute;. Chaque situation est unique
             &mdash; contactez nos experts pour une analyse adapt&eacute;e.
           </p>

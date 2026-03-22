@@ -626,7 +626,7 @@ export default function DevisesConversionMauricePage() {
             </a>
           </p>
           <p className="mt-2 text-xs text-slate-400">
-            Cet article est fourni à titre informatif et ne constitue pas un
+            Cet article est fourni à titre informatif et ne constitué pas un
             conseil juridique ou financier. Les taux et conditions mentionnés
             sont indicatifs et peuvent varier. Contactez nos experts pour une
             analyse personnalisée de votre situation.
