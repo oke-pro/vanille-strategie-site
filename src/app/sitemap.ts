@@ -47,6 +47,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Articles de blog (tous)
   const blogSlugs = [
+    "budget-2025-2026-maurice-entrepreneurs",
+    "qdmtt-impot-minimum-multinational-maurice",
+    "immobilier-maurice-nouvelles-regles-2026",
+    "permis-travail-maurice-propass-expertpass",
+    "convention-fiscale-france-maurice-avantages",
+    "maurice-hub-fintech-afrique",
+    "gbc-maurice-nouvelles-obligations-2025",
+    "amt-impot-minimum-alternatif-maurice",
+    "digital-nomad-premium-visa-maurice",
+    "cecpa-inde-maurice-porte-entree-asie",
+    "croissance-maurice-banque-mondiale-2025-2026",
+    "taxe-touristique-maurice-impact-investisseurs",
+    "csr-fund-maurice-responsabilite-entreprise",
+    "mission-edb-afrique-sud-commerce-2026",
+    "retraite-maurice-nouvelles-conditions-2025",
     "routes-financieres-dubai-maurice-transition",
     "structures-juridiques-maurice-2026",
     "fiscalite-maurice-2026",
