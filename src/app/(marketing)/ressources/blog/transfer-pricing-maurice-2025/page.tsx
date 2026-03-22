@@ -305,7 +305,7 @@ export default function TransferPricingPage() {
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 not-prose">
             <p className="text-sm font-semibold text-blue-800">
-              Conseil de Didier
+              Conseil de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-blue-700">
               Pour les GBC mauriciennes qui fournissent des services de
@@ -520,7 +520,7 @@ export default function TransferPricingPage() {
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose mt-6">
             <p className="text-sm font-semibold text-amber-800">
-              Le mot de Didier
+              Le mot de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-amber-700">
               &ldquo;En 40 ans de carriere en fiscalité internationale, j&apos;ai

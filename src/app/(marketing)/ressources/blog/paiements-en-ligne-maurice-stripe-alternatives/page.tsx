@@ -763,7 +763,7 @@ export default function PaiementsEnLigneMauricePage() {
         </div>
       </section>
 
-      {/* ── 9. Recommandations de Didier ───────────────────── */}
+      {/* ── 9. Recommandations de Didier Laroussinie ───────────────────── */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">

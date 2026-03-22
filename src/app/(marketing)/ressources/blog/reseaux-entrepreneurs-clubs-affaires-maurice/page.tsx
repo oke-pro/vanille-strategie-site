@@ -788,7 +788,7 @@ export default function ReseauxEntrepreneursPage() {
               </div>
 
               <div className="rounded-xl bg-white/10 p-5 backdrop-blur-sm">
-                <p className="text-lg font-bold">Didier conna&icirc;t tout le monde</p>
+                <p className="text-lg font-bold">Didier Laroussinie conna&icirc;t tout le monde</p>
                 <p className="mt-1 text-sm text-emerald-100">
                   40&nbsp;ans d&apos;exp&eacute;rience en expertise comptable
                   internationale, dont plus d&apos;une d&eacute;cennie &agrave;
@@ -912,7 +912,7 @@ export default function ReseauxEntrepreneursPage() {
                 size="lg"
                 className="bg-emerald-500 text-white hover:bg-emerald-600"
               >
-                Contactez Didier &rarr;
+                Contactez Didier Laroussinie &rarr;
               </Button>
             </Link>
           </div>

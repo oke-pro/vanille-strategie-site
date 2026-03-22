@@ -71,7 +71,7 @@ export default function DidierPage() {
               <div className="mt-10">
                 <Link href="/contact">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-10 h-14 text-lg font-bold shadow-lg shadow-blue-500/20">
-                    Prendre RDV avec Didier
+                    Prendre RDV avec Didier Laroussinie
                   </Button>
                 </Link>
               </div>

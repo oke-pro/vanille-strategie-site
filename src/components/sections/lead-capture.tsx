@@ -58,7 +58,7 @@ export function LeadCaptureSection() {
 
   // Dynamic CTA based on budget
   const ctaText = budget === "250k€+"
-    ? "Réserver un appel VIP avec Didier"
+    ? "Réserver un appel VIP avec Didier Laroussinie"
     : budget === "100k-250k€"
       ? "Obtenir ma consultation premium"
       : "Obtenir mon analyse gratuite";

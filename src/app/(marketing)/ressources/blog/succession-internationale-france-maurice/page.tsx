@@ -266,7 +266,7 @@ export default function SuccessionInternationalePage() {
           </div>
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 not-prose mt-4">
             <p className="text-sm font-semibold text-blue-800">
-              Conseil de Didier
+              Conseil de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-blue-700">
               Si la planification successorale est l&apos;un des motifs de votre
@@ -473,7 +473,7 @@ export default function SuccessionInternationalePage() {
           </div>
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 not-prose mt-4">
             <p className="text-sm font-semibold text-blue-800">
-              Conseil de Didier
+              Conseil de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-blue-700">
               Pour un expatrie français à Maurice dont les enfants restent en
@@ -716,7 +716,7 @@ export default function SuccessionInternationalePage() {
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose mt-6">
             <p className="text-sm font-semibold text-amber-800">
-              Le mot de Didier
+              Le mot de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-amber-700">
               &ldquo;En 40 ans de carriere, j&apos;ai vu des familles

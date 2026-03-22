@@ -734,7 +734,7 @@ export default function EcosystemeTechStartupsMauricePage() {
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 not-prose mt-6">
             <p className="text-sm font-semibold text-blue-800">
-              Le point de vue de Didier
+              Le point de vue de Didier Laroussinie
             </p>
             <p className="mt-1 text-sm text-blue-700">
               &ldquo;Ce qui me frappe chez ces startups, c&apos;est leur

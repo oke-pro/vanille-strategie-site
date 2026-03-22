@@ -61,7 +61,7 @@ export const founder = {
     "Consolidation IFRS pour sociétés cotées",
     "Développement d'activités en Afrique francophone",
   ],
-  bio: "Installé à l'Île Maurice depuis 2015, Didier accompagne entrepreneurs, investisseurs et groupes internationaux dans leurs projets de structuration et d'implantation. Son expertise repose sur plus de 40 années d'expérience en fiscalité internationale, fusions-acquisitions, restructurations et direction financière — acquise au sein de grands cabinets (Deloitte), en entrepreneuriat et en management opérationnel de groupes.",
+  bio: "Installé à l'Île Maurice depuis 2015, Didier Laroussinie accompagne entrepreneurs, investisseurs et groupes internationaux dans leurs projets de structuration et d'implantation. Son expertise repose sur plus de 40 années d'expérience en fiscalité internationale, fusions-acquisitions, restructurations et direction financière — acquise au sein de grands cabinets (Deloitte), en entrepreneuriat et en management opérationnel de groupes.",
   credentials: [
     { label: "Deloitte", description: "Parcours en Big Four" },
     { label: "MIPA", description: "BD Star inscrit au Mauritius Institute of Professional Accountants" },
@@ -236,7 +236,7 @@ export const testimonials: Testimonial[] = [
     company: "Atelier Kamé",
     url: "",
     quote:
-      "En tant que digital nomad, j'avais peur de la complexité administrative. Didier et son équipe ont tout géré : Premium Visa, Domestic Company, compte bancaire mauricien. En trois semaines, je facturais depuis Grand Baie. La compta est suivie en temps réel sur OKE, je ne m'occupe de rien.",
+      "En tant que digital nomad, j'avais peur de la complexité administrative. Didier Laroussinie et son équipe ont tout géré : Premium Visa, Domestic Company, compte bancaire mauricien. En trois semaines, je facturais depuis Grand Baie. La compta est suivie en temps réel sur OKE, je ne m'occupe de rien.",
     type: "digital-nomad",
     result: "Premium Visa obtenu en 48h — boutique en ligne refacturée via Maurice avec 0% sur les dividendes.",
   },
