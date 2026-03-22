@@ -18,6 +18,9 @@ class Settings(BaseSettings):
     # API
     api_key: str = ""
 
+    # Google Maps
+    google_maps_api_key: str = ""
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

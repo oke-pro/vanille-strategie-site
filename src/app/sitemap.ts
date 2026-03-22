@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
+import { fetchCategories, fetchCompanies } from "@/lib/api-annuaire";
+import { categorySlug } from "@/lib/annuaire-helpers";
 
 const BASE_URL = "https://vanillestrategie.fr";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date().toISOString();
 
   // Pages statiques principales
@@ -78,10 +80,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...analysePages, ...blogPages].map((page) => ({
-    url: `${BASE_URL}${page.url}`,
-    lastModified: now,
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
-  }));
+  // Annuaire pages
+  const annuairePages: typeof staticPages = [
+    { url: "/annuaire", changeFrequency: "weekly" as const, priority: 0.8 },
+  ];
+
+  try {
+    const categories = await fetchCategories();
+
+    // Category pages
+    for (const cat of categories) {
+      const slug = categorySlug(cat.category);
+      annuairePages.push({
+        url: `/annuaire/${slug}`,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      });
+
+      // Fetch companies for each category to include individual pages
+      const data = await fetchCompanies({
+        category: cat.category,
+        page: 1,
+        page_size: 100,
+      });
+      for (const company of data.companies) {
+        annuairePages.push({
+          url: `/annuaire/${slug}/${company.slug}`,
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+        });
+      }
+    }
+  } catch {
+    // If API is unreachable, just include the static annuaire page
+  }
+
+  return [...staticPages, ...analysePages, ...blogPages, ...annuairePages].map(
+    (page) => ({
+      url: `${BASE_URL}${page.url}`,
+      lastModified: now,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })
+  );
 }
