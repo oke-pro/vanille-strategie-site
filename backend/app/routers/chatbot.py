@@ -71,7 +71,9 @@ async def debug_chatbot():
     """Temporary debug endpoint."""
     import anthropic
     from app.config import settings
+    import os
     key = settings.anthropic_api_key
+    env_key = os.environ.get("ANTHROPIC_API_KEY", "NOT_SET")
     has_key = bool(key) and len(key) > 10
     try:
         client = anthropic.AsyncAnthropic(api_key=key)
@@ -80,9 +82,9 @@ async def debug_chatbot():
             max_tokens=50,
             messages=[{"role": "user", "content": "test"}],
         )
-        return {"has_key": has_key, "key_prefix": key[:15] + "..." if key else "EMPTY", "status": "ok", "response": resp.content[0].text[:100]}
+        return {"has_key": has_key, "env_key": env_key[:20] + "..." if len(env_key) > 20 else env_key, "settings_key": key[:20] + "..." if key else "EMPTY", "db_url": settings.database_url[:30] + "...", "status": "ok", "response": resp.content[0].text[:100]}
     except Exception as e:
-        return {"has_key": has_key, "key_prefix": key[:15] + "..." if key else "EMPTY", "status": "error", "error": str(e), "type": type(e).__name__}
+        return {"has_key": has_key, "env_key": env_key[:20] + "..." if len(env_key) > 20 else env_key, "settings_key": key[:20] + "..." if key else "EMPTY", "db_url": settings.database_url[:30] + "...", "status": "error", "error": str(e), "type": type(e).__name__}
 
 
 @router.get("/history", response_model=ChatHistoryResponse)
