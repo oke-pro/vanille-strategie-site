@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import { HeroSection } from "@/components/sections/hero";
 import { CoreServices } from "@/components/sections/core-services";
 import { ProfilCards } from "@/components/sections/profil-cards";
@@ -10,6 +9,7 @@ import { OkeTeaser } from "@/components/sections/oke-teaser";
 import { LeadCaptureSection } from "@/components/sections/lead-capture";
 import { AuthorityBanner } from "@/components/sections/authority-banner";
 import { BlogPreview } from "@/components/sections/blog-preview";
+import { VideoInfographic } from "@/components/sections/video-infographic";
 import Link from "next/link";
 import { Mic, Headphones, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -161,40 +161,8 @@ export default function HomePage() {
       {/* 8. Authority banner — Didier + badges */}
       <AuthorityBanner />
 
-      {/* Infographie — Vue d'ensemble de l'écosystème */}
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-5xl px-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            L&apos;écosystème Vanille Stratégie en un coup d&apos;œil
-          </h2>
-          <Image
-            src="/media/infographie-vanille-strategie.png"
-            alt="Infographie Vanille Stratégie — Écosystème complet d'accompagnement à Maurice"
-            width={1200}
-            height={600}
-            className="mt-8 rounded-2xl shadow-xl"
-          />
-        </div>
-      </section>
-
-      {/* Vidéo teaser — Présentation rapide */}
-      <section className="bg-slate-50 py-16">
-        <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Votre projet à Maurice, simplifié
-          </h2>
-          <p className="mt-4 text-lg text-slate-600">
-            Découvrez notre accompagnement en quelques minutes.
-          </p>
-          <video
-            controls
-            className="mt-8 w-full rounded-2xl shadow-xl"
-            poster="/media/infographie-vanille-strategie.png"
-          >
-            <source src="/media/presentation-maurice.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
+      {/* Vidéo — Infographie cliquable qui lance la présentation */}
+      <VideoInfographic />
 
       {/* 9. Lead capture — CTA final */}
       <LeadCaptureSection />
