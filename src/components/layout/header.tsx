@@ -45,6 +45,10 @@ const navigation = [
     ],
   },
   {
+    label: "Annuaire",
+    href: "/annuaire",
+  },
+  {
     label: "À propos",
     children: [
       { label: "Le Groupe", href: "/a-propos" },
