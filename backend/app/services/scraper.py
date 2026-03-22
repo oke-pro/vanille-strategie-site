@@ -51,8 +51,7 @@ TYPE_TO_CATEGORY: dict[str, tuple[str, str]] = {
     # Éducation
     "school": ("Éducation", "Écoles"),
     "university": ("Éducation", "Universités"),
-    # Juridique
-    "lawyer": ("Juridique & Conseil", "Avocats"),
+    # NB: lawyer/consultant/accounting exclus — concurrents directs
     # Transport & Logistique
     "shipping_company": ("Transport & Logistique", "Transport maritime"),
     "car_rental": ("Transport & Logistique", "Location de véhicules"),
@@ -74,12 +73,11 @@ TEXT_SEARCHES = [
     ("construction company Mauritius", "Industrie & Manufacturing", "Construction"),
     ("renewable energy Mauritius", "Industrie & Manufacturing", "Énergie"),
     # NB: "accounting firm" et "audit firm" exclus — concurrents BD Star/OKE (voir CLAUDE.md)
-    ("law firm Mauritius", "Juridique & Conseil", "Cabinets d'avocats"),
-    ("management company Mauritius", "Finance & Banque", "Management Companies"),
+    # NB: "law firm" et "management company" exclus — concurrents directs
     ("international school Mauritius", "Éducation", "Écoles internationales"),
     ("coworking space Mauritius", "Tech & Digital", "Coworking"),
     ("freight forwarder Mauritius", "Transport & Logistique", "Freight"),
-    ("consulting firm Mauritius", "Juridique & Conseil", "Conseil"),
+    # NB: "consulting firm" exclu — concurrent direct
     ("recruitment agency Mauritius", "Juridique & Conseil", "Recrutement"),
     ("restaurant Mauritius Port Louis", "Tourisme & Hôtellerie", "Restaurants"),
 ]
