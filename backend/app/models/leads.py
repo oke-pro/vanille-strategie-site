@@ -32,6 +32,8 @@ class QuickLeadRequest(BaseModel):
     email: EmailStr
     telephone: str | None = Field(default=None, max_length=20)
     profil: ProfilType
+    budget: str | None = Field(default=None, max_length=30)
+    timeline: str | None = Field(default=None, max_length=30)
     website: str | None = Field(default=None, max_length=200)  # honeypot — must stay empty
 
 
