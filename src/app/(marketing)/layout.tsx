@@ -5,6 +5,7 @@ import { ConversionProvider } from "@/components/conversion/conversion-context";
 import { ExitIntentPopup } from "@/components/conversion/exit-intent-popup";
 import { StickyCTAMobile } from "@/components/conversion/sticky-cta-mobile";
 import { SocialProofNotification } from "@/components/conversion/social-proof-notification";
+import { ChatWidget } from "@/components/conversion/chat-widget";
 
 export default function MarketingLayout({
   children,
@@ -20,6 +21,7 @@ export default function MarketingLayout({
       <StickyCTAMobile />
       <ExitIntentPopup />
       <SocialProofNotification />
+      <ChatWidget />
     </ConversionProvider>
   );
 }

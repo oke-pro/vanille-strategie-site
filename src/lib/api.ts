@@ -32,3 +32,38 @@ export const submitSimulateurVisa = (data: Record<string, unknown>) =>
 
 export const submitSimulateurFiscal = (data: Record<string, unknown>) =>
   submitLead("simulateur-fiscal", data);
+
+// ──────────────── Chatbot ────────────────
+
+export async function sendChatMessage(data: {
+  message: string;
+  visitor_id: string;
+  page_url?: string;
+}): Promise<{ message: string; conversation_id: string }> {
+  const res = await fetch(`${API_URL}/api/v1/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const error = await res.json().catch(() => ({}));
+    throw new Error(error.detail || "Une erreur est survenue.");
+  }
+
+  return res.json();
+}
+
+export async function getChatHistory(visitorId: string): Promise<{
+  messages: Array<{ role: string; content: string; created_at: string }>;
+}> {
+  const res = await fetch(
+    `${API_URL}/api/v1/chat/history?visitor_id=${encodeURIComponent(visitorId)}`
+  );
+
+  if (!res.ok) {
+    return { messages: [] };
+  }
+
+  return res.json();
+}

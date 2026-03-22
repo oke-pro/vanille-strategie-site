@@ -47,6 +47,29 @@ class LeadDB(Base):
         DateTime(timezone=True), default=_utcnow
     )
 
+    # Pipeline CRM (Phase 4)
+    pipeline_stage: Mapped[str] = mapped_column(
+        String(30), default="nouveau", index=True
+    )
+    assigned_to: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("users.id"), nullable=True
+    )
+    converted_client_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("clients.id"), nullable=True
+    )
+    notes: Mapped[str | None] = mapped_column(Text, nullable=True)
+    last_contacted_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), nullable=True
+    )
+
+    # Relations
+    assigned_staff: Mapped["UserDB | None"] = relationship(
+        "UserDB", foreign_keys=[assigned_to]
+    )
+    converted_client: Mapped["ClientDB | None"] = relationship(
+        "ClientDB", foreign_keys=[converted_client_id]
+    )
+
 
 # ──────────────────────────── Companies (existant) ────────────────────────────
 
@@ -356,3 +379,57 @@ class TaskDB(Base):
     # Relations
     dossier: Mapped["DossierDB"] = relationship("DossierDB", back_populates="tasks")
     assignee: Mapped["UserDB"] = relationship("UserDB")
+
+
+# ──────────────────────────── Chat (Phase 5) ────────────────────────────
+
+class ChatConversationDB(Base):
+    __tablename__ = "chat_conversations"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=_new_uuid
+    )
+    visitor_id: Mapped[str] = mapped_column(String(100), index=True)
+    lead_id: Mapped[str | None] = mapped_column(
+        String(12), ForeignKey("leads.id"), nullable=True
+    )
+    status: Mapped[str] = mapped_column(String(20), default="active")
+    visitor_name: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    visitor_email: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    visitor_phone: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    visitor_profil: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    visitor_budget: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    visitor_ip: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    visitor_country: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    visitor_city: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    qualification_score: Mapped[int] = mapped_column(Integer, default=0)
+    page_url: Mapped[str | None] = mapped_column(String(500), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=_utcnow, onupdate=_utcnow,
+    )
+
+    # Relations
+    lead: Mapped["LeadDB | None"] = relationship("LeadDB", foreign_keys=[lead_id])
+    messages: Mapped[list["ChatMessageDB"]] = relationship(
+        "ChatMessageDB", back_populates="conversation", cascade="all, delete-orphan"
+    )
+
+
+class ChatMessageDB(Base):
+    __tablename__ = "chat_messages"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=_new_uuid
+    )
+    conversation_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("chat_conversations.id")
+    )
+    role: Mapped[str] = mapped_column(String(20))  # 'user' ou 'assistant'
+    content: Mapped[str] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+    # Relations
+    conversation: Mapped["ChatConversationDB"] = relationship(
+        "ChatConversationDB", back_populates="messages"
+    )

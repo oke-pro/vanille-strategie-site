@@ -71,3 +71,32 @@ export function portalPatch<T = unknown>(path: string, data: unknown) {
 export function portalDelete<T = unknown>(path: string) {
   return portalFetch<T>(path, { method: "DELETE" });
 }
+
+/**
+ * Upload multipart — ne pas envoyer Content-Type (le navigateur le met avec le boundary).
+ */
+export async function portalUpload<T = unknown>(
+  path: string,
+  formData: FormData
+): Promise<T> {
+  const res = await fetch(`${API_URL}${path}`, {
+    method: "POST",
+    credentials: "include",
+    body: formData,
+  });
+
+  if (res.status === 401) {
+    if (typeof window !== "undefined") {
+      window.location.href = "/login";
+    }
+    throw new ApiError("Session expirée", 401);
+  }
+
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new ApiError(body.detail || "Une erreur est survenue", res.status);
+  }
+
+  const text = await res.text();
+  return text ? JSON.parse(text) : ({} as T);
+}

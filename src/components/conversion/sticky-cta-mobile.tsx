@@ -3,17 +3,19 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight } from "lucide-react";
+import { useConversion } from "./conversion-context";
 
 export function StickyCTAMobile() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(true);
+  const { chatOpen } = useConversion();
 
   useEffect(() => {
     // Toujours visible (le lien pointe vers /contact)
   }, []);
 
-  // Ne pas afficher sur la page /contact
-  if (pathname === "/contact") return null;
+  // Ne pas afficher sur la page /contact ou quand le chat est ouvert
+  if (pathname === "/contact" || chatOpen) return null;
 
   return (
     <div

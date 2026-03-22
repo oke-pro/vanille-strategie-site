@@ -2,11 +2,16 @@
 
 import { siteConfig } from "@/data/site";
 import { trackEvent } from "@/components/analytics/google-analytics";
+import { useConversion } from "@/components/conversion/conversion-context";
 
 export function WhatsAppButton() {
+  const { chatOpen } = useConversion();
+
   const message = encodeURIComponent(
     "Bonjour, je souhaite en savoir plus sur vos services d'accompagnement à Maurice."
   );
+
+  if (chatOpen) return null;
 
   return (
     <a

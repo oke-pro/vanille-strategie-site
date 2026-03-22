@@ -5,6 +5,8 @@ import { createContext, useContext, useState, useCallback, type ReactNode } from
 interface ConversionContextType {
   exitPopupOpen: boolean;
   setExitPopupOpen: (open: boolean) => void;
+  chatOpen: boolean;
+  setChatOpen: (open: boolean) => void;
   formSubmitted: boolean;
   markFormSubmitted: () => void;
 }
@@ -12,12 +14,15 @@ interface ConversionContextType {
 const ConversionContext = createContext<ConversionContextType>({
   exitPopupOpen: false,
   setExitPopupOpen: () => {},
+  chatOpen: false,
+  setChatOpen: () => {},
   formSubmitted: false,
   markFormSubmitted: () => {},
 });
 
 export function ConversionProvider({ children }: { children: ReactNode }) {
   const [exitPopupOpen, setExitPopupOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const markFormSubmitted = useCallback(() => {
@@ -29,7 +34,7 @@ export function ConversionProvider({ children }: { children: ReactNode }) {
 
   return (
     <ConversionContext.Provider
-      value={{ exitPopupOpen, setExitPopupOpen, formSubmitted, markFormSubmitted }}
+      value={{ exitPopupOpen, setExitPopupOpen, chatOpen, setChatOpen, formSubmitted, markFormSubmitted }}
     >
       {children}
     </ConversionContext.Provider>
