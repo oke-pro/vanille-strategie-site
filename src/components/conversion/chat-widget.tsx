@@ -7,7 +7,7 @@ import { sendChatMessage, getChatHistory } from "@/lib/api";
 import { trackEvent } from "@/components/analytics/google-analytics";
 
 interface ChatMessage {
-  role: "user" | "assistant";
+  rôle: "user" | "assistant";
   content: string;
 }
 
@@ -170,18 +170,20 @@ export function ChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Count user messages to trigger contact banner
-  const userMessageCount = messages.filter((m) => m.role === "user").length;
+  // Afficher le formulaire de contact après la 1ère réponse de l'IA
+  const assistantMessageCount = messages.filter(
+    (m) => m.rôle === "assistant" && m.content !== WELCOME_MESSAGE
+  ).length;
 
   useEffect(() => {
     if (
-      userMessageCount >= 3 &&
+      assistantMessageCount >= 1 &&
       !contactSubmitted &&
       !hasGivenContact()
     ) {
       setShowContactBanner(true);
     }
-  }, [userMessageCount, contactSubmitted]);
+  }, [assistantMessageCount, contactSubmitted]);
 
   // Load history on mount
   useEffect(() => {
@@ -194,7 +196,7 @@ export function ChatWidget() {
         if (data.messages && data.messages.length > 0) {
           setMessages(
             data.messages.map((m) => ({
-              role: m.role as "user" | "assistant",
+              rôle: m.rôle as "user" | "assistant",
               content: m.content,
             }))
           );
@@ -246,7 +248,7 @@ export function ChatWidget() {
     setChatOpen(true);
     trackEvent("chat_open", "chatbot");
     if (messages.length === 0) {
-      setMessages([{ role: "assistant", content: WELCOME_MESSAGE }]);
+      setMessages([{ rôle: "assistant", content: WELCOME_MESSAGE }]);
     }
   }, [setChatOpen, messages.length]);
 
@@ -262,7 +264,7 @@ export function ChatWidget() {
     const pageUrl =
       typeof window !== "undefined" ? window.location.pathname : undefined;
 
-    setMessages((prev) => [...prev, { role: "user", content: text }]);
+    setMessages((prev) => [...prev, { rôle: "user", content: text }]);
     setInput("");
     setLoading(true);
 
@@ -275,14 +277,14 @@ export function ChatWidget() {
 
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: response.message },
+        { rôle: "assistant", content: response.message },
       ]);
       trackEvent("chat_message", "chatbot");
     } catch {
       setMessages((prev) => [
         ...prev,
         {
-          role: "assistant",
+          rôle: "assistant",
           content:
             "Je suis désolé, une erreur est survenue. N'hésitez pas à nous contacter directement par WhatsApp au +230 59 43 74 83.",
         },
@@ -303,13 +305,16 @@ export function ChatWidget() {
   );
 
   const handleContactSubmit = useCallback(async () => {
-    if (!contactEmail.trim()) return;
+    if (!contactEmail.trim() && !contactPhone.trim()) return;
 
     const visitorId = getVisitorId();
     const pageUrl =
       typeof window !== "undefined" ? window.location.pathname : undefined;
 
-    const contactInfo = `[COORDONNÉES VISITEUR] Email: ${contactEmail.trim()}${contactPhone.trim() ? `, Téléphone: ${contactPhone.trim()}` : ""}`;
+    const parts = [];
+    if (contactEmail.trim()) parts.push(`Email: ${contactEmail.trim()}`);
+    if (contactPhone.trim()) parts.push(`Téléphone: ${contactPhone.trim()}`);
+    const contactInfo = `[COORDONNÉES VISITEUR] ${parts.join(", ")}`;
 
     try {
       await sendChatMessage({
@@ -390,16 +395,16 @@ export function ChatWidget() {
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+              className={`flex ${msg.rôle === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
                 className={`max-w-[80%] rounded-2xl px-4 py-2.5 ${
-                  msg.role === "user"
+                  msg.rôle === "user"
                     ? "rounded-br-md bg-blue-600 text-sm leading-relaxed text-white"
                     : "rounded-bl-md bg-slate-100 text-sm leading-relaxed text-slate-800"
                 }`}
               >
-                {msg.role === "assistant"
+                {msg.rôle === "assistant"
                   ? renderMarkdown(msg.content)
                   : msg.content}
               </div>
@@ -436,14 +441,14 @@ export function ChatWidget() {
       {showContactBanner && !contactSubmitted && (
         <div className="border-t border-blue-100 bg-blue-50 px-4 py-2.5">
           <p className="mb-2 text-xs text-blue-700">
-            Pour un suivi personnalisé, laissez-nous vos coordonnées
+            Pour recevoir un récapitulatif ou être recontacté (optionnel)
           </p>
           <div className="flex items-center gap-2">
             <input
               type="email"
               value={contactEmail}
               onChange={(e) => setContactEmail(e.target.value)}
-              placeholder="Email *"
+              placeholder="Email"
               className="min-w-0 flex-1 rounded-lg border border-blue-200 bg-white px-2.5 py-1.5 text-xs outline-none focus:border-blue-400"
             />
             <input
@@ -455,7 +460,7 @@ export function ChatWidget() {
             />
             <button
               onClick={handleContactSubmit}
-              disabled={!contactEmail.trim()}
+              disabled={!contactEmail.trim() && !contactPhone.trim()}
               className="whitespace-nowrap rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-40"
             >
               Envoyer
