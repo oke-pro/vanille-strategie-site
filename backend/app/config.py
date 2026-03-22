@@ -15,6 +15,11 @@ class Settings(BaseSettings):
     # CORS
     frontend_url: str = "https://vanillestrategie.fr"
 
+    # JWT — Portail V2
+    jwt_secret: str = "CHANGE-ME-in-production-use-a-real-secret"
+    jwt_access_expire_minutes: int = 15
+    jwt_refresh_expire_days: int = 7
+
     # API
     api_key: str = ""
 
