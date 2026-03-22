@@ -12,9 +12,14 @@ RUN pip install --no-cache-dir \
     python-multipart \
     resend \
     "sqlalchemy[asyncio]" \
-    asyncpg
+    asyncpg \
+    "python-jose[cryptography]" \
+    "passlib[bcrypt]" \
+    anthropic
 
 COPY app/ ./app/
+
+RUN mkdir -p /data/uploads
 
 EXPOSE 8000
 
