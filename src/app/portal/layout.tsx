@@ -10,8 +10,7 @@ const NAV_ITEMS = [
   { href: "/portal/documents", label: "Documents", icon: "file" },
   { href: "/portal/messages", label: "Messages", icon: "mail" },
   { href: "/portal/factures", label: "Factures", icon: "receipt" },
-  // TODO: créer la page /portal/profil avant de réactiver ce lien
-  // { href: "/portal/profil", label: "Mon profil", icon: "user" },
+  { href: "/portal/profil", label: "Mon profil", icon: "user" },
 ];
 
 const ICONS: Record<string, React.ReactNode> = {
