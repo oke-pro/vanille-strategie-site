@@ -110,38 +110,50 @@ export function FaqJsonLd({ faqs }: { faqs: { q: string; a: string }[] }) {
   );
 }
 
-// Article schema for blog posts
-export function ArticleJsonLd({
+// BlogPosting schema for blog posts
+export function BlogPostingJsonLd({
   title,
   description,
   slug,
   datePublished,
+  dateModified,
+  wordCount,
+  articleSection,
 }: {
   title: string;
   description: string;
   slug: string;
   datePublished: string;
+  dateModified?: string;
+  wordCount?: number;
+  articleSection?: string;
 }) {
+  const url = `${siteConfig.url}/ressources/blog/${slug}`;
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: title,
     description,
-    url: `${siteConfig.url}/ressources/blog/${slug}`,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified || datePublished,
+    ...(wordCount ? { wordCount } : {}),
+    ...(articleSection ? { articleSection } : {}),
+    inLanguage: "fr-FR",
     author: {
-      "@type": "Person",
-      name: founder.name,
-      jobTitle: founder.title,
-      url: `${siteConfig.url}/didier-laroussinie`,
+      "@type": "Organization",
+      name: "Cabinet Vanille Stratégie",
     },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/images/logo-vanille-strategie.png`,
+      },
     },
-    inLanguage: "fr-FR",
   };
 
   return (

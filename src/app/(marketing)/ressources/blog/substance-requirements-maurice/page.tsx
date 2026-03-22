@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -27,6 +28,18 @@ export const metadata: Metadata = {
       "Guide complet sur les exigences de substance économique à Maurice. CIGA, directeurs residents, PER, Finance Act 2025.",
     type: "article",
     locale: "fr_FR",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/substance-requirements-maurice",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Substance Requirements à Maurice — Ce que l'EDB et la FSC attendent vraiment | Vanille Strategie",
+    description:
+      "Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs residents, Partial Exemption Regime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
 
@@ -114,6 +127,19 @@ function Section({
 export default function SubstanceRequirementsPage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Substance Requirements à Maurice — Ce que l&apos;EDB et la FSC attendent vraiment | Vanille Strategie"
+        description="Guide complet sur les exigences de substance économique à Maurice : CIGA, directeurs residents, Partial Exemption Regime, Finance Act 2025. Par Didier Laroussinie, Expert-Comptable Fiscaliste."
+        slug="substance-requirements-maurice"
+        datePublished="2026-03-06"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Substance Requirements à Maurice — Ce que l&apos;EDB et la FSC attendent vraiment | Vanille Strategie", url: "/ressources/blog/substance-requirements-maurice" },
+        ]}
+      />
       {/* ===== HERO ===== */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

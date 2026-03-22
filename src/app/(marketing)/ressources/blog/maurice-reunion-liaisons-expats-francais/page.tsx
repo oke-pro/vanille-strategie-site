@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -20,11 +21,43 @@ export const metadata: Metadata = {
     "liaisons aériennes Maurice Réunion",
     "fiscalité Maurice expatrié",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/maurice-reunion-liaisons-expats-francais",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Maurice et La Réunion — La France à 45 minutes pour les expatriés français | Vanille Stratégie",
+    description:
+      "Vols Maurice-Réunion en 45 min, liaisons aériennes quotidiennes, accès aux services français, hôpitaux, administration. Pourquoi la proximité de La Réunion est un atout majeur pour les expats français à Maurice.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maurice et La Réunion — La France à 45 minutes pour les expatriés français | Vanille Stratégie",
+    description:
+      "Vols Maurice-Réunion en 45 min, liaisons aériennes quotidiennes, accès aux services français, hôpitaux, administration. Pourquoi la proximité de La Réunion est un atout majeur pour les expats français à Maurice.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function MauriceReunionLiaisonsPage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Maurice et La Réunion — La France à 45 minutes pour les expatriés français | Vanille Stratégie"
+        description="Vols Maurice-Réunion en 45 min, liaisons aériennes quotidiennes, accès aux services français, hôpitaux, administration. Pourquoi la proximité de La Réunion est un atout majeur pour les expats français à Maurice."
+        slug="maurice-reunion-liaisons-expats-francais"
+        datePublished="2026-03-12"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Maurice et La Réunion — La France à 45 minutes pour les expatriés français | Vanille Stratégie", url: "/ressources/blog/maurice-reunion-liaisons-expats-francais" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

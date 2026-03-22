@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -14,12 +15,38 @@ export const metadata: Metadata = {
     description:
       "Toutes les sources officielles pour comprendre la fiscalité mauricienne : Laws of Mauritius, MRA, Government Gazette, conventions fiscales, Finance Act.",
     type: "article",
+    locale: "fr_FR",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/sources-officielles-fiscalite-maurice",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sources officielles de la reglementation fiscale à Maurice — Guide de reference",
+    description:
+      "Toutes les sources officielles pour comprendre la fiscalité mauricienne : Laws of Mauritius, MRA, Government Gazette, conventions fiscales, Finance Act. Guide de reference par Didier Laroussinie, Expert-Comptable.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
 
 export default function SourcesOfficiellesFiscaliteMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Sources officielles de la reglementation fiscale à Maurice — Guide de reference"
+        description="Toutes les sources officielles pour comprendre la fiscalité mauricienne : Laws of Mauritius, MRA, Government Gazette, conventions fiscales, Finance Act. Guide de reference par Didier Laroussinie, Expert-Comptable."
+        slug="sources-officielles-fiscalite-maurice"
+        datePublished="2026-03-20"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Sources officielles de la reglementation fiscale à Maurice — Guide de reference", url: "/ressources/blog/sources-officielles-fiscalite-maurice" },
+        ]}
+      />
       {/* ============================================================ */}
       {/* Hero Section */}
       {/* ============================================================ */}

@@ -2,17 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
     "Ouvrir un compte bancaire à Maurice — AfrAsia vs MCB vs SBM : le guide complet",
   description:
     "Comparatif détaillé des banques mauriciennes pour expatriés : AfrAsia, MCB, SBM. Frais, multi-devises, apps mobiles, documents KYC, délais réels et pièges à éviter.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/ouvrir-compte-bancaire-maurice-guide",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Ouvrir un compte bancaire à Maurice — AfrAsia vs MCB vs SBM : le guide complet",
+    description:
+      "Comparatif détaillé des banques mauriciennes pour expatriés : AfrAsia, MCB, SBM. Frais, multi-devises, apps mobiles, documents KYC, délais réels et pièges à éviter.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ouvrir un compte bancaire à Maurice — AfrAsia vs MCB vs SBM : le guide complet",
+    description:
+      "Comparatif détaillé des banques mauriciennes pour expatriés : AfrAsia, MCB, SBM. Frais, multi-devises, apps mobiles, documents KYC, délais réels et pièges à éviter.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function OuvrirCompteBancaireMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Ouvrir un compte bancaire à Maurice — AfrAsia vs MCB vs SBM : le guide complet"
+        description="Comparatif détaillé des banques mauriciennes pour expatriés : AfrAsia, MCB, SBM. Frais, multi-devises, apps mobiles, documents KYC, délais réels et pièges à éviter."
+        slug="ouvrir-compte-bancaire-maurice-guide"
+        datePublished="2026-03-16"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Ouvrir un compte bancaire à Maurice — AfrAsia vs MCB vs SBM : le guide complet", url: "/ressources/blog/ouvrir-compte-bancaire-maurice-guide" },
+        ]}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

@@ -31,6 +31,7 @@ export function LeadCaptureSection() {
   const [profil, setProfil] = useState("");
   const [budget, setBudget] = useState("");
   const [timeline, setTimeline] = useState("");
+  const [rgpdAccepted, setRgpdAccepted] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -237,6 +238,24 @@ export function LeadCaptureSection() {
                   </div>
                 </div>
 
+                <div className="flex items-start gap-3 mt-6">
+                  <input
+                    type="checkbox"
+                    id="rgpd-lead"
+                    checked={rgpdAccepted}
+                    onChange={(e) => setRgpdAccepted(e.target.checked)}
+                    required
+                    className="mt-1 h-4 w-4 shrink-0 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label htmlFor="rgpd-lead" className="text-xs leading-relaxed text-slate-500">
+                    J&apos;accepte que mes données soient traitées par Vanille Stratégie pour répondre à ma demande.
+                    Voir notre{" "}
+                    <a href="/mentions-legales" className="text-blue-600 underline hover:text-blue-700">
+                      politique de confidentialité
+                    </a>.
+                  </label>
+                </div>
+
                 <div className="flex gap-4 mt-6">
                   <Button
                     type="button"
@@ -252,7 +271,7 @@ export function LeadCaptureSection() {
                     type="submit"
                     size="lg"
                     className="h-16 flex-1 rounded-full bg-blue-600 text-lg font-bold shadow-2xl shadow-blue-200 hover:bg-blue-500 hover:shadow-blue-300 transition-all hover:-translate-y-1 group"
-                    disabled={loading || !budget || !timeline}
+                    disabled={loading || !budget || !timeline || !rgpdAccepted}
                   >
                     {loading ? (
                       <Loader2 className="h-6 w-6 animate-spin" />

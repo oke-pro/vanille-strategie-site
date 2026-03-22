@@ -2,16 +2,49 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title: "Transfer Pricing à Maurice — Nouvelles obligations du Finance Act 2025",
   description:
     "Le Finance Act 2025 introduit un cadre documentaire formel de Transfer Pricing à Maurice. Obligations, méthodes OCDE, pénalités, impact GBC — guide complet par Didier Laroussinie.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/transfer-pricing-maurice-2025",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Transfer Pricing à Maurice — Nouvelles obligations du Finance Act 2025",
+    description:
+      "Le Finance Act 2025 introduit un cadre documentaire formel de Transfer Pricing à Maurice. Obligations, méthodes OCDE, pénalités, impact GBC — guide complet par Didier Laroussinie.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Transfer Pricing à Maurice — Nouvelles obligations du Finance Act 2025",
+    description:
+      "Le Finance Act 2025 introduit un cadre documentaire formel de Transfer Pricing à Maurice. Obligations, méthodes OCDE, pénalités, impact GBC — guide complet par Didier Laroussinie.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function TransferPricingPage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Transfer Pricing à Maurice — Nouvelles obligations du Finance Act 2025"
+        description="Le Finance Act 2025 introduit un cadre documentaire formel de Transfer Pricing à Maurice. Obligations, méthodes OCDE, pénalités, impact GBC — guide complet par Didier Laroussinie."
+        slug="transfer-pricing-maurice-2025"
+        datePublished="2026-03-09"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Transfer Pricing à Maurice — Nouvelles obligations du Finance Act 2025", url: "/ressources/blog/transfer-pricing-maurice-2025" },
+        ]}
+      />
       {/* ============================================================ */}
       {/* Hero Section */}
       {/* ============================================================ */}

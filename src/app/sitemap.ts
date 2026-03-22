@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { fetchCategories, fetchCompanies } from "@/lib/api-annuaire";
 import { categorySlug } from "@/lib/annuaire-helpers";
+import { blogArticles } from "@/data/blog-articles";
 
 const BASE_URL = "https://vanillestrategie.fr";
 
@@ -45,54 +46,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: "/ressources/analyse-vat-act", changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 
-  // Articles de blog (tous)
-  const blogSlugs = [
-    "budget-2025-2026-maurice-entrepreneurs",
-    "qdmtt-impot-minimum-multinational-maurice",
-    "immobilier-maurice-nouvelles-regles-2026",
-    "permis-travail-maurice-propass-expertpass",
-    "convention-fiscale-france-maurice-avantages",
-    "maurice-hub-fintech-afrique",
-    "gbc-maurice-nouvelles-obligations-2025",
-    "amt-impot-minimum-alternatif-maurice",
-    "digital-nomad-premium-visa-maurice",
-    "cecpa-inde-maurice-porte-entree-asie",
-    "croissance-maurice-banque-mondiale-2025-2026",
-    "taxe-touristique-maurice-impact-investisseurs",
-    "csr-fund-maurice-responsabilite-entreprise",
-    "mission-edb-afrique-sud-commerce-2026",
-    "retraite-maurice-nouvelles-conditions-2025",
-    "routes-financieres-dubai-maurice-transition",
-    "structures-juridiques-maurice-2026",
-    "fiscalite-maurice-2026",
-    "permis-residence-maurice-guide-2026",
-    "convention-fiscale-france-maurice",
-    "quitter-dubai-pourquoi-maurice",
-    "ecommerce-depuis-maurice",
-    "substance-requirements-maurice",
-    "comparatif-maurice-maroc-portugal-dubai",
-    "transfer-pricing-maurice-2025",
-    "devises-mur-conversion-maurice",
-    "edb-mauritius-role-programmes",
-    "paiements-en-ligne-maurice-stripe-alternatives",
-    "ecosysteme-tech-startups-maurice",
-    "industries-cles-maurice-opportunites",
-    "maurice-reunion-liaisons-expats-francais",
-    "infrastructures-maurice-telecom-sante-education",
-    "qualite-de-vie-maurice-lifestyle-golf-business",
-    "reseaux-entrepreneurs-clubs-affaires-maurice",
-    "ouvrir-compte-bancaire-maurice-guide",
-    "crypto-vasp-licence-maurice",
-    "succession-internationale-france-maurice",
-    "droit-travail-maurice-workers-rights-act",
-    "ecoles-internationales-maurice-education",
-    "sources-officielles-fiscalite-maurice",
-  ];
-
-  const blogPages = blogSlugs.map((slug) => ({
-    url: `/ressources/blog/${slug}`,
+  // Articles de blog (tous — dates individuelles)
+  const blogPages = blogArticles.map((article) => ({
+    url: `/ressources/blog/${article.slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.8,
+    lastModified: article.dateModifiedISO || article.dateISO,
   }));
 
   // Annuaire pages
@@ -130,12 +89,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // If API is unreachable, just include the static annuaire page
   }
 
-  return [...staticPages, ...analysePages, ...blogPages, ...annuairePages].map(
-    (page) => ({
-      url: `${BASE_URL}${page.url}`,
-      lastModified: now,
-      changeFrequency: page.changeFrequency,
-      priority: page.priority,
-    })
-  );
+  const allPages = [
+    ...staticPages.map((p) => ({ ...p, lastModified: now })),
+    ...analysePages.map((p) => ({ ...p, lastModified: now })),
+    ...blogPages,
+    ...annuairePages.map((p) => ({ ...p, lastModified: now })),
+  ];
+
+  return allPages.map((page) => ({
+    url: `${BASE_URL}${page.url}`,
+    lastModified: page.lastModified,
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }));
 }

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -29,6 +30,18 @@ export const metadata: Metadata = {
       "Guide complet du droit du travail mauricien. Salaire minimum, CSG, PAYE, congés, licenciement, emploi d'etrangers. Par Didier Laroussinie.",
     type: "article",
     locale: "fr_FR",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/droit-travail-maurice-workers-rights-act",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Droit du travail à Maurice — Workers' Rights Act, salaires, charges : ce que tout employeur doit savoir | Vanille Strategie",
+    description:
+      "Guide complet du droit du travail à Maurice : Workers' Rights Act 2019, salaire minimum (Rs 17 745), CSG, PAYE, PRGF, congés, licenciement, emploi d'etrangers. Par Didier Laroussinie, Expert-Comptable Fiscaliste.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
 
@@ -116,6 +129,19 @@ function Section({
 export default function DroitTravailMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Droit du travail à Maurice — Workers&apos; Rights Act, salaires, charges : ce que tout employeur doit savoir | Vanille Strategie"
+        description="Guide complet du droit du travail à Maurice : Workers&apos; Rights Act 2019, salaire minimum (Rs 17 745), CSG, PAYE, PRGF, congés, licenciement, emploi d&apos;etrangers. Par Didier Laroussinie, Expert-Comptable Fiscaliste."
+        slug="droit-travail-maurice-workers-rights-act"
+        datePublished="2026-03-18"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Droit du travail à Maurice — Workers&apos; Rights Act, salaires, charges : ce que tout employeur doit savoir | Vanille Strategie", url: "/ressources/blog/droit-travail-maurice-workers-rights-act" },
+        ]}
+      />
       {/* ===== HERO ===== */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -22,11 +23,43 @@ export const metadata: Metadata = {
     "baccalaureat français Maurice",
     "Cambridge A-Levels Maurice",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/ecoles-internationales-maurice-education",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Scolariser ses enfants &agrave; Maurice — &Eacute;coles internationales, syst&egrave;me &eacute;ducatif et co&ucirc;ts | Vanille Strat&eacute;gie",
+    description:
+      "Guide complet 2026 : &eacute;coles francophones (Lyc&eacute;e La Bourdonnais, &Eacute;cole du Nord, Paul et Virginie), &eacute;coles anglophones (Clavis, Le Bocage, Northfields), frais de scolarit&eacute;, baccalaur&eacute;at fran&ccedil;ais vs Cambridge A-Levels, universit&eacute;s &agrave; Maurice.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Scolariser ses enfants &agrave; Maurice — &Eacute;coles internationales, syst&egrave;me &eacute;ducatif et co&ucirc;ts | Vanille Strat&eacute;gie",
+    description:
+      "Guide complet 2026 : &eacute;coles francophones (Lyc&eacute;e La Bourdonnais, &Eacute;cole du Nord, Paul et Virginie), &eacute;coles anglophones (Clavis, Le Bocage, Northfields), frais de scolarit&eacute;, baccalaur&eacute;at fran&ccedil;ais vs Cambridge A-Levels, universit&eacute;s &agrave; Maurice.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function EcolesInternationalesMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Scolariser ses enfants &agrave; Maurice — &Eacute;coles internationales, syst&egrave;me &eacute;ducatif et co&ucirc;ts | Vanille Strat&eacute;gie"
+        description="Guide complet 2026 : &eacute;coles francophones (Lyc&eacute;e La Bourdonnais, &Eacute;cole du Nord, Paul et Virginie), &eacute;coles anglophones (Clavis, Le Bocage, Northfields), frais de scolarit&eacute;, baccalaur&eacute;at fran&ccedil;ais vs Cambridge A-Levels, universit&eacute;s &agrave; Maurice."
+        slug="ecoles-internationales-maurice-education"
+        datePublished="2026-03-19"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Scolariser ses enfants &agrave; Maurice — &Eacute;coles internationales, syst&egrave;me &eacute;ducatif et co&ucirc;ts | Vanille Strat&eacute;gie", url: "/ressources/blog/ecoles-internationales-maurice-education" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

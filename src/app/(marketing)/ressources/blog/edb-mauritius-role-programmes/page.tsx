@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import {
   Building2,
   CheckCircle2,
@@ -47,6 +48,18 @@ export const metadata: Metadata = {
       "Guide complet sur l'Economic Development Board : missions, Occupation Permits, programmes, Freeport, secteurs prioritaires.",
     type: "article",
     locale: "fr_FR",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/edb-mauritius-role-programmes",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice | Vanille Strategie",
+    description:
+      "Decouvrez le rôle de l'Economic Development Board (EDB) de Maurice : Occupation Permits, programmes d'accompagnement, Premium Investor Certificate, Freeport et secteurs prioritaires 2025-2026.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
 
@@ -134,6 +147,20 @@ const freeportAdvantages = [
 
 export default function EDBMauritiusPage() {
   return (
+    <>
+      <BlogPostingJsonLd
+        title="L'EDB Mauritius -- Votre partenaire institutionnel pour investir à Maurice"
+        description="Guide complet sur l'Economic Development Board : missions, Occupation Permits, programmes, Freeport, secteurs prioritaires."
+        slug="edb-mauritius-role-programmes"
+        datePublished="2026-03-10"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "L'EDB à Maurice : rôle, programmes et accompagnement des investisseurs", url: "/ressources/blog/edb-mauritius-role-programmes" },
+        ]}
+      />
     <main className="min-h-screen">
       {/* ============================================================ */}
       {/* HERO                                                         */}
@@ -972,5 +999,6 @@ export default function EDBMauritiusPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -2,17 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
     "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
   description:
     "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations réglementaires et comptables.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/paiements-en-ligne-maurice-stripe-alternatives",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
+    description:
+      "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations réglementaires et comptables.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales",
+    description:
+      "Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations réglementaires et comptables.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function PaiementsEnLigneMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales"
+        description="Guide complet des solutions de paiement en ligne pour les entreprises basees a l ile Maurice : Stripe, PayPal, Airwallex, Wise Business, Payoneer, passerelles locales MCB et SBM. Considerations réglementaires et comptables."
+        slug="paiements-en-ligne-maurice-stripe-alternatives"
+        datePublished="2026-03-11"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Paiements en ligne à Maurice — Stripe, Airwallex et alternatives pour les entreprises digitales", url: "/ressources/blog/paiements-en-ligne-maurice-stripe-alternatives" },
+        ]}
+      />
       {/* ── Hero ────────────────────────────────────────────── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -18,11 +19,43 @@ export const metadata: Metadata = {
     "quitter Dubaï",
     "expatriation fiscale",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/comparatif-maurice-maroc-portugal-dubai",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Maurice vs Maroc vs Portugal vs Dubaï — Comparatif expatriation 360° | Vanille Stratégie",
+    description:
+      "Comparatif fiscal complet 2026 : IS, dividendes, plus-values, succession, TVA, risque géopolitique, coût de la vie. Pourquoi Maurice reste la meilleure destination pour les entrepreneurs francophones.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maurice vs Maroc vs Portugal vs Dubaï — Comparatif expatriation 360° | Vanille Stratégie",
+    description:
+      "Comparatif fiscal complet 2026 : IS, dividendes, plus-values, succession, TVA, risque géopolitique, coût de la vie. Pourquoi Maurice reste la meilleure destination pour les entrepreneurs francophones.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function ComparatifPage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Maurice vs Maroc vs Portugal vs Dubaï — Comparatif expatriation 360° | Vanille Stratégie"
+        description="Comparatif fiscal complet 2026 : IS, dividendes, plus-values, succession, TVA, risque géopolitique, coût de la vie. Pourquoi Maurice reste la meilleure destination pour les entrepreneurs francophones."
+        slug="comparatif-maurice-maroc-portugal-dubai"
+        datePublished="2026-03-09"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Maurice vs Maroc vs Portugal vs Dubaï — Comparatif expatriation 360° | Vanille Stratégie", url: "/ressources/blog/comparatif-maurice-maroc-portugal-dubai" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

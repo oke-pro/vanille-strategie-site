@@ -2,17 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
     "Le piège des devises : convertir des MUR en devises étrangères à Maurice",
   description:
     "La roupie mauricienne n'est pas librement convertible. Délais, taux défavorables, plafonds : découvrez les pièges et les stratégies pour protéger vos bénéfices.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/devises-mur-conversion-maurice",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Le piège des devises : convertir des MUR en devises étrangères à Maurice",
+    description:
+      "La roupie mauricienne n'est pas librement convertible. Délais, taux défavorables, plafonds : découvrez les pièges et les stratégies pour protéger vos bénéfices.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Le piège des devises : convertir des MUR en devises étrangères à Maurice",
+    description:
+      "La roupie mauricienne n'est pas librement convertible. Délais, taux défavorables, plafonds : découvrez les pièges et les stratégies pour protéger vos bénéfices.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function DevisesConversionMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Le piège des devises : convertir des MUR en devises étrangères à Maurice"
+        description="La roupie mauricienne n&apos;est pas librement convertible. Délais, taux défavorables, plafonds : découvrez les pièges et les stratégies pour protéger vos bénéfices."
+        slug="devises-mur-conversion-maurice"
+        datePublished="2026-03-10"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Le piège des devises : convertir des MUR en devises étrangères à Maurice", url: "/ressources/blog/devises-mur-conversion-maurice" },
+        ]}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

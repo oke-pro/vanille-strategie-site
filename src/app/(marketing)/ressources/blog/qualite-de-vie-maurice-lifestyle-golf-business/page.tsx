@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -22,11 +23,43 @@ export const metadata: Metadata = {
     "immobilier Maurice",
     "communauté expatriés Maurice",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Vivre à Maurice — Qualité de vie, golfs, lifestyle et art de vivre business | Vanille Stratégie",
+    description:
+      "Découvrez pourquoi l'Île Maurice est la destination n°1 en Afrique pour la qualité de vie (Mercer 2024). Golfs de classe mondiale, gastronomie, plages, lifestyle premium et business décontracté.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vivre à Maurice — Qualité de vie, golfs, lifestyle et art de vivre business | Vanille Stratégie",
+    description:
+      "Découvrez pourquoi l'Île Maurice est la destination n°1 en Afrique pour la qualité de vie (Mercer 2024). Golfs de classe mondiale, gastronomie, plages, lifestyle premium et business décontracté.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function QualiteDeVieMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Vivre à Maurice — Qualité de vie, golfs, lifestyle et art de vivre business | Vanille Stratégie"
+        description="Découvrez pourquoi l&apos;Île Maurice est la destination n°1 en Afrique pour la qualité de vie (Mercer 2024). Golfs de classe mondiale, gastronomie, plages, lifestyle premium et business décontracté."
+        slug="qualite-de-vie-maurice-lifestyle-golf-business"
+        datePublished="2026-03-13"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Vivre à Maurice — Qualité de vie, golfs, lifestyle et art de vivre business | Vanille Stratégie", url: "/ressources/blog/qualite-de-vie-maurice-lifestyle-golf-business" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -20,11 +21,43 @@ export const metadata: Metadata = {
     "ouvrir compte bancaire Maurice",
     "fiscalit\u00e9 Maurice vs Dubai",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/routes-financieres-dubai-maurice-transition",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Quitter Duba\u00ef pour Maurice \u2014 Routes financi\u00e8res, transfert de patrimoine et guide de transition | Vanille Strat\u00e9gie",
+    description:
+      "Guide urgent mars 2026 : comment transf\u00e9rer votre patrimoine de Duba\u00ef \u00e0 Maurice pendant la guerre Iran. Routes bancaires, fiscalit\u00e9 de transition, cr\u00e9ation de soci\u00e9t\u00e9, permis de r\u00e9sidence. Par Didier Laroussinie, Expert-Comptable.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quitter Duba\u00ef pour Maurice \u2014 Routes financi\u00e8res, transfert de patrimoine et guide de transition | Vanille Strat\u00e9gie",
+    description:
+      "Guide urgent mars 2026 : comment transf\u00e9rer votre patrimoine de Duba\u00ef \u00e0 Maurice pendant la guerre Iran. Routes bancaires, fiscalit\u00e9 de transition, cr\u00e9ation de soci\u00e9t\u00e9, permis de r\u00e9sidence. Par Didier Laroussinie, Expert-Comptable.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function RoutesDubaiMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Quitter Duba\u00ef pour Maurice \u2014 Routes financi\u00e8res, transfert de patrimoine et guide de transition | Vanille Strat\u00e9gie"
+        description="Guide urgent mars 2026 : comment transf\u00e9rer votre patrimoine de Duba\u00ef \u00e0 Maurice pendant la guerre Iran. Routes bancaires, fiscalit\u00e9 de transition, cr\u00e9ation de soci\u00e9t\u00e9, permis de r\u00e9sidence. Par Didier Laroussinie, Expert-Comptable."
+        slug="routes-financieres-dubai-maurice-transition"
+        datePublished="2026-03-03"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Quitter Duba\u00ef pour Maurice \u2014 Routes financi\u00e8res, transfert de patrimoine et guide de transition | Vanille Strat\u00e9gie", url: "/ressources/blog/routes-financieres-dubai-maurice-transition" },
+        ]}
+      />
       {/* ── Hero URGENT ── */}
       <section className="bg-gradient-to-b from-red-950 to-slate-900 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

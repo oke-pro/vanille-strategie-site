@@ -2,17 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
     "Succession internationale France-Maurice — 0% de droits, mais attention aux pieges",
   description:
     "Maurice ne taxe pas les successions, mais la convention fiscale France-Maurice ne couvre pas les droits de mutation. Risques de double imposition, assurance-vie, trusts, donations — guide complet par Didier Laroussinie.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/succession-internationale-france-maurice",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Succession internationale France-Maurice — 0% de droits, mais attention aux pieges",
+    description:
+      "Maurice ne taxe pas les successions, mais la convention fiscale France-Maurice ne couvre pas les droits de mutation. Risques de double imposition, assurance-vie, trusts, donations — guide complet par Didier Laroussinie.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Succession internationale France-Maurice — 0% de droits, mais attention aux pieges",
+    description:
+      "Maurice ne taxe pas les successions, mais la convention fiscale France-Maurice ne couvre pas les droits de mutation. Risques de double imposition, assurance-vie, trusts, donations — guide complet par Didier Laroussinie.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function SuccessionInternationalePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Succession internationale France-Maurice — 0% de droits, mais attention aux pieges"
+        description="Maurice ne taxe pas les successions, mais la convention fiscale France-Maurice ne couvre pas les droits de mutation. Risques de double imposition, assurance-vie, trusts, donations — guide complet par Didier Laroussinie."
+        slug="succession-internationale-france-maurice"
+        datePublished="2026-03-17"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Succession internationale France-Maurice — 0% de droits, mais attention aux pieges", url: "/ressources/blog/succession-internationale-france-maurice" },
+        ]}
+      />
       {/* ============================================================ */}
       {/* Hero Section */}
       {/* ============================================================ */}

@@ -14,6 +14,7 @@ export function ContactForm() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   const [profil, setProfil] = useState("");
+  const [rgpdAccepted, setRgpdAccepted] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -101,7 +102,24 @@ export function ContactForm() {
         <Label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-slate-400">Détails du projet</Label>
         <Textarea name="message" id="message" placeholder="Décrivez votre situation et vos objectifs..." className="min-h-[120px] border-slate-200 bg-slate-50/50 transition-all focus:bg-white" />
       </div>
-      <Button type="submit" size="lg" className="group h-14 w-full bg-blue-600 text-lg font-bold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5 hover:bg-blue-700" disabled={loading}>
+      <div className="flex items-start gap-3">
+        <input
+          type="checkbox"
+          id="rgpd-contact"
+          checked={rgpdAccepted}
+          onChange={(e) => setRgpdAccepted(e.target.checked)}
+          required
+          className="mt-1 h-4 w-4 shrink-0 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+        />
+        <label htmlFor="rgpd-contact" className="text-xs leading-relaxed text-slate-500">
+          J&apos;accepte que mes données soient traitées par Vanille Stratégie pour répondre à ma demande.
+          Voir notre{" "}
+          <a href="/mentions-legales" className="text-blue-600 underline hover:text-blue-700">
+            politique de confidentialité
+          </a>.
+        </label>
+      </div>
+      <Button type="submit" size="lg" className="group h-14 w-full bg-blue-600 text-lg font-bold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5 hover:bg-blue-700" disabled={loading || !rgpdAccepted}>
         {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <>Envoyer ma demande <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></>}
       </Button>
       {error && <p className="rounded-xl border border-rose-100 bg-rose-50 p-4 text-center text-sm font-bold text-rose-500">{error}</p>}

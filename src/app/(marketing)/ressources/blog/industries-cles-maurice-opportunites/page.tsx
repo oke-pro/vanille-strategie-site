@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -32,12 +33,37 @@ export const metadata: Metadata = {
       "Panorama complet des piliers \u00e9conomiques et des nouveaux secteurs de croissance \u00e0 Maurice. Accords commerciaux, chiffres 2025-2026, opportunit\u00e9s d\u2019investissement.",
     type: "article",
     locale: "fr_FR",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/industries-cles-maurice-opportunites",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Les industries cl\u00e9s de Maurice \u2014 Tourisme, finance, BPO, textile et nouvelles opportunit\u00e9s | Vanille Strat\u00e9gie",
+    description:
+      "Guide complet des secteurs porteurs \u00e0 l\u2019\u00cele Maurice en 2026 : tourisme, services financiers, BPO, textile, ICT, \u00e9conomie bleue, \u00e9nergies renouvelables. Accords commerciaux COMESA, SADC, AfCFTA, FTA Chine, CECPA Inde. Donn\u00e9es EDB et chiffres cl\u00e9s.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
   },
 };
 
 export default function IndustriesClesMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Les industries cl\u00e9s de Maurice \u2014 Tourisme, finance, BPO, textile et nouvelles opportunit\u00e9s | Vanille Strat\u00e9gie"
+        description="Guide complet des secteurs porteurs \u00e0 l\u2019\u00cele Maurice en 2026 : tourisme, services financiers, BPO, textile, ICT, \u00e9conomie bleue, \u00e9nergies renouvelables. Accords commerciaux COMESA, SADC, AfCFTA, FTA Chine, CECPA Inde. Donn\u00e9es EDB et chiffres cl\u00e9s."
+        slug="industries-cles-maurice-opportunites"
+        datePublished="2026-03-12"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Les industries cl\u00e9s de Maurice \u2014 Tourisme, finance, BPO, textile et nouvelles opportunit\u00e9s | Vanille Strat\u00e9gie", url: "/ressources/blog/industries-cles-maurice-opportunites" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

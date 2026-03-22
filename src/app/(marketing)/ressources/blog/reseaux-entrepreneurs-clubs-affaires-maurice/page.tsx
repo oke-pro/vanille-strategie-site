@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -22,11 +23,43 @@ export const metadata: Metadata = {
     "Rotary Club Maurice",
     "UFE Maurice",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/reseaux-entrepreneurs-clubs-affaires-maurice",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "R\u00e9seaux d\u2019entrepreneurs et clubs d\u2019affaires \u00e0 Maurice \u2014 Guide du networking francophone | Vanille Strat\u00e9gie",
+    description:
+      "Guide complet 2026 des r\u00e9seaux d\u2019affaires, clubs d\u2019entrepreneurs et associations professionnelles \u00e0 l\u2019\u00cele Maurice. CCIFM, MCCI, BNI, French Tech, Rotary : tous les contacts pour r\u00e9ussir votre networking.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "R\u00e9seaux d\u2019entrepreneurs et clubs d\u2019affaires \u00e0 Maurice \u2014 Guide du networking francophone | Vanille Strat\u00e9gie",
+    description:
+      "Guide complet 2026 des r\u00e9seaux d\u2019affaires, clubs d\u2019entrepreneurs et associations professionnelles \u00e0 l\u2019\u00cele Maurice. CCIFM, MCCI, BNI, French Tech, Rotary : tous les contacts pour r\u00e9ussir votre networking.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function ReseauxEntrepreneursPage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="R\u00e9seaux d\u2019entrepreneurs et clubs d\u2019affaires \u00e0 Maurice \u2014 Guide du networking francophone | Vanille Strat\u00e9gie"
+        description="Guide complet 2026 des r\u00e9seaux d\u2019affaires, clubs d\u2019entrepreneurs et associations professionnelles \u00e0 l\u2019\u00cele Maurice. CCIFM, MCCI, BNI, French Tech, Rotary : tous les contacts pour r\u00e9ussir votre networking."
+        slug="reseaux-entrepreneurs-clubs-affaires-maurice"
+        datePublished="2026-03-16"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "R\u00e9seaux d\u2019entrepreneurs et clubs d\u2019affaires \u00e0 Maurice \u2014 Guide du networking francophone | Vanille Strat\u00e9gie", url: "/ressources/blog/reseaux-entrepreneurs-clubs-affaires-maurice" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

@@ -2,17 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder, officialSources } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
     "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
   description:
     "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/ecosysteme-tech-startups-maurice",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
+    description:
+      "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
+    description:
+      "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function EcosystemeTechStartupsMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups"
+        description="Maurice se positionne comme hub tech de l&apos;ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie."
+        slug="ecosysteme-tech-startups-maurice"
+        datePublished="2026-03-11"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups", url: "/ressources/blog/ecosysteme-tech-startups-maurice" },
+        ]}
+      />
       {/* ============================================================ */}
       {/* Hero Section */}
       {/* ============================================================ */}

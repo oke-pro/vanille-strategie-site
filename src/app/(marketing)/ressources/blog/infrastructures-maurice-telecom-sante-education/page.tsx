@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -20,11 +21,43 @@ export const metadata: Metadata = {
     "\u00e9nergie renouvelable Maurice",
     "qualit\u00e9 de vie Maurice 2026",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/infrastructures-maurice-telecom-sante-education",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Infrastructures Maurice 2026 — Telecom, routes, sant\u00e9, \u00e9ducation : un pays moderne | Vanille Strat\u00e9gie",
+    description:
+      "Fibre optique, Metro Express, h\u00f4pitaux priv\u00e9s, \u00e9coles internationales, banques : tour d\u2019horizon complet des infrastructures mauriciennes pour les expatri\u00e9s et investisseurs en 2026.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Infrastructures Maurice 2026 — Telecom, routes, sant\u00e9, \u00e9ducation : un pays moderne | Vanille Strat\u00e9gie",
+    description:
+      "Fibre optique, Metro Express, h\u00f4pitaux priv\u00e9s, \u00e9coles internationales, banques : tour d\u2019horizon complet des infrastructures mauriciennes pour les expatri\u00e9s et investisseurs en 2026.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function InfrastructuresMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Infrastructures Maurice 2026 — Telecom, routes, sant\u00e9, \u00e9ducation : un pays moderne | Vanille Strat\u00e9gie"
+        description="Fibre optique, Metro Express, h\u00f4pitaux priv\u00e9s, \u00e9coles internationales, banques : tour d\u2019horizon complet des infrastructures mauriciennes pour les expatri\u00e9s et investisseurs en 2026."
+        slug="infrastructures-maurice-telecom-sante-education"
+        datePublished="2026-03-13"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Infrastructures Maurice 2026 — Telecom, routes, sant\u00e9, \u00e9ducation : un pays moderne | Vanille Strat\u00e9gie", url: "/ressources/blog/infrastructures-maurice-telecom-sante-education" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

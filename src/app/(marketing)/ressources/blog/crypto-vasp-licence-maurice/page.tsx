@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { founder } from "@/data/site";
+import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
@@ -24,11 +25,43 @@ export const metadata: Metadata = {
     "AML KYC crypto Maurice",
     "comptabilit\u00e9 crypto IFRS",
   ],
+  alternates: {
+    canonical: "https://vanillestrategie.fr/ressources/blog/crypto-vasp-licence-maurice",
+  },
+  openGraph: {
+    type: "article",
+    locale: "fr_FR",
+    title: "Crypto et Virtual Assets \u00e0 Maurice \u2014 Licence VASP, cadre r\u00e9glementaire et opportunit\u00e9s | Vanille Strat\u00e9gie",
+    description:
+      "Guide complet 2026 : licence VASP \u00e0 Maurice, VAITOS Act, classes de licences FSC (M, O, R, I, S), fiscalit\u00e9 crypto 0% capital gains, partial exemption 80%, regulatory sandbox. Par Didier Laroussinie, Expert-Comptable.",
+    siteName: "Vanille Stratégie",
+    images: [{ url: "https://vanillestrategie.fr/images/hero-paradise.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crypto et Virtual Assets \u00e0 Maurice \u2014 Licence VASP, cadre r\u00e9glementaire et opportunit\u00e9s | Vanille Strat\u00e9gie",
+    description:
+      "Guide complet 2026 : licence VASP \u00e0 Maurice, VAITOS Act, classes de licences FSC (M, O, R, I, S), fiscalit\u00e9 crypto 0% capital gains, partial exemption 80%, regulatory sandbox. Par Didier Laroussinie, Expert-Comptable.",
+    images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
+  },
 };
 
 export default function CryptoVaspLicenceMauricePage() {
   return (
     <>
+      <BlogPostingJsonLd
+        title="Crypto et Virtual Assets \u00e0 Maurice \u2014 Licence VASP, cadre r\u00e9glementaire et opportunit\u00e9s | Vanille Strat\u00e9gie"
+        description="Guide complet 2026 : licence VASP \u00e0 Maurice, VAITOS Act, classes de licences FSC (M, O, R, I, S), fiscalit\u00e9 crypto 0% capital gains, partial exemption 80%, regulatory sandbox. Par Didier Laroussinie, Expert-Comptable."
+        slug="crypto-vasp-licence-maurice"
+        datePublished="2026-03-17"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/ressources/blog" },
+          { name: "Crypto et Virtual Assets \u00e0 Maurice \u2014 Licence VASP, cadre r\u00e9glementaire et opportunit\u00e9s | Vanille Strat\u00e9gie", url: "/ressources/blog/crypto-vasp-licence-maurice" },
+        ]}
+      />
       {/* ── Hero ── */}
       <section className="bg-gradient-to-b from-slate-950 to-indigo-950 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
