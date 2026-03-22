@@ -557,7 +557,7 @@ export default function QualiteDeVieMauricePage() {
               Oubliez le costume-cravate &eacute;touffant. &Agrave; Maurice,
               le dress code professionnel est{" "}
               <strong>smart casual</strong> : chemise en lin, chinos, mocassins.
-              D&eacute;contract&eacute; mais professionnel. On signe des
+              D&eacute;contract&eacute; mais professionnel. On signé des
               contrats en terrasse, un jus de mangue &agrave; la main.
             </p>
 

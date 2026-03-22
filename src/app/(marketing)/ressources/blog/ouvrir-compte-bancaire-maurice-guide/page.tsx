@@ -479,7 +479,7 @@ export default function OuvrirCompteBancaireMauricePage() {
           </h3>
           <ul>
             <li>
-              <strong>Passeport valide</strong> — copie certifiée conforme
+              <strong>Passeport validé</strong> — copie certifiée conforme
               (notaire ou ambassade). Validité résiduelle d&apos;au moins
               6 mois.
             </li>

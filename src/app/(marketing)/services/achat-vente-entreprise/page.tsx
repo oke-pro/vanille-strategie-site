@@ -128,6 +128,124 @@ export default function AchatVentePage() {
         </div>
       </section>
 
+      {/* Sub-services Grid */}
+      <section className="bg-slate-50 py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
+              Nos sous-services M&amp;A spécialisés
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Chaque phase de votre opération est pilotée par une expertise dédiée et éprouvée.
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href="/services/achat-vente-entreprise/sourcing">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <Search className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Sourcing &amp; Identification</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Identification de cibles qualitatives, analyse sectorielle et matching acquéreur-cible.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+
+            <Link href="/services/achat-vente-entreprise/due-diligence">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <ShieldCheck className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Due Diligence</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Audit financier, fiscal, juridique et analyse complète des risques de la cible.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+
+            <Link href="/services/achat-vente-entreprise/evaluation-negociation">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <TrendingUp className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Évaluation &amp; Négociation</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Valorisation multi-critères, négociation des termes et structuration du deal.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+
+            <Link href="/services/achat-vente-entreprise/closing">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <FileText className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Closing &amp; Transfert</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Rédaction des actes, formalités administratives et transfert d'actions.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+
+            <Link href="/services/achat-vente-entreprise/pacte-actionnaires">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <Scale className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Pacte d&apos;actionnaires</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Rédaction, gouvernance et mécanismes de sortie des actionnaires.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+
+            <Link href="/services/achat-vente-entreprise/post-acquisition">
+              <Card className="group h-full p-8 border-none bg-white shadow-sm transition-all hover:shadow-2xl hover:scale-105 cursor-pointer">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                    <Briefcase className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">Accompagnement post-acquisition</h3>
+                </div>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  Intégration opérationnelle, transition et suivi de performance post-deal.
+                </p>
+                <span className="inline-flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                  En savoir plus <ArrowRight className="h-4 w-4" />
+                </span>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Expertise Section */}
       <section className="bg-slate-50 py-24 relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

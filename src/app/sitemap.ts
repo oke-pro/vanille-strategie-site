@@ -29,6 +29,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: "/services/rh-paie", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/services/immobilier", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/services/achat-vente-entreprise", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/services/achat-vente-entreprise/sourcing", changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: "/services/achat-vente-entreprise/due-diligence", changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: "/services/achat-vente-entreprise/evaluation-negociation", changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: "/services/achat-vente-entreprise/closing", changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: "/services/achat-vente-entreprise/pacte-actionnaires", changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: "/services/achat-vente-entreprise/post-acquisition", changeFrequency: "monthly" as const, priority: 0.6 },
     // Ressources
     { url: "/ressources/guides", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/ressources/blog", changeFrequency: "weekly" as const, priority: 0.8 },

@@ -331,7 +331,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
           <ul>
             <li>
               <strong>Date d&apos;entree en vigueur</strong> : de nombreuses lois
-              mauriciennes prevoient une entree en vigueur &ldquo;upon
+              mauriciennes prévoient une entree en vigueur &ldquo;upon
               publication in the Gazette&rdquo; ou à une date fixée par
               proclamation. Pour vérifier si une disposition est en vigueur, la
               Gazette est l&apos;unique source fiable.
@@ -653,7 +653,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
               source plafonnees.
             </li>
             <li>
-              <strong>Pensions</strong> (article 18) : les pensions privees sont
+              <strong>Pensions</strong> (article 18) : les pensions privées sont
               imposables dans l&apos;État de résidence — un point clé pour les
               retraites installés à Maurice.
             </li>
@@ -862,7 +862,7 @@ export default function SourcesOfficiellesFiscaliteMauricePage() {
             {founder.name} assure une veille permanente sur les évolutions
             législatives mauriciennes. Chaque Finance Bill est analyse des sa
             publication, chaque Statement of Practice est décortique, chaque
-            Ruling pertinent est intégré a notre base de connaissances.
+            Ruling pertinent est intégré à notre base de connaissances.
           </p>
           <p>
             Chez BD Star Management Services, notre équipe comptable et fiscale

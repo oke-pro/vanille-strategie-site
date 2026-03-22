@@ -109,28 +109,40 @@ export default function RhPaiePage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2">
-            {features.map((f, idx) => (
-              <Card 
-                key={f.title} 
-                className="group flex flex-col p-8 transition-all duration-300 hover:shadow-xl border border-slate-100 bg-white"
-                style={{ animationDelay: `${idx * 0.1}s` }}
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                    <f.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900">{f.title}</h3>
-                </div>
-                <ul className="space-y-4 flex-1">
-                  {f.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-blue-500" />
-                      <span className="text-sm font-medium">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            ))}
+            {features.map((f, idx) => {
+              // Mapping des slugs pour chaque service
+              const slugMap: { [key: string]: string } = {
+                "Recrutement": "recrutement",
+                "Paie externalisée": "paie-externalisee",
+                "HR Management": "hr-management",
+                "Expat Admin Management": "administration-expatries"
+              };
+              const slug = slugMap[f.title];
+
+              return (
+                <Link key={f.title} href={`/services/rh-paie/${slug}`}>
+                  <Card
+                    className="group flex flex-col p-8 transition-all duration-300 hover:shadow-xl border border-slate-100 bg-white cursor-pointer h-full"
+                    style={{ animationDelay: `${idx * 0.1}s` }}
+                  >
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <f.icon className="h-6 w-6" />
+                      </div>
+                      <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{f.title}</h3>
+                    </div>
+                    <ul className="space-y-4 flex-1">
+                      {f.items.map((item, i) => (
+                        <li key={i} className="flex items-start gap-3 text-slate-600">
+                          <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-blue-500" />
+                          <span className="text-sm font-medium">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

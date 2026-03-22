@@ -161,7 +161,7 @@ export default function TransferPricingPage() {
               leurs proches
             </li>
             <li>
-              Toute relation ou la MRA peut démontrer qu&apos;une partie exerce
+              Toute relation ou la MRA peut démontrer qu&apos;une partie exercé
               une influence significative sur l&apos;autre
             </li>
           </ul>
@@ -532,7 +532,7 @@ export default function TransferPricingPage() {
                 Beaucoup de sociétés opèrent avec des contrats obsolètes, mal
                 rediges ou inexistants. Chaque transaction intragroupe doit être
                 couverte par un contrat écrit qui reflète la réalité économique.
-                Un contrat de management fees signe en 2018 et jamais mis à jour
+                Un contrat de management fees signé en 2018 et jamais mis à jour
                 est un signal d&apos;alerte pour la MRA.
               </p>
             </div>

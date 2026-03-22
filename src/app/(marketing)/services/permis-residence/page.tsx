@@ -279,7 +279,7 @@ export default function PermisResidencePage() {
                     <div className="rounded-xl bg-slate-50 p-4">
                       <h4 className="font-bold text-slate-900 text-sm mb-2">Documents personnels</h4>
                       <ul className="space-y-1.5 text-sm text-slate-600">
-                        <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-blue-500 shrink-0" /> Passeport valide 18+ mois</li>
+                        <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-blue-500 shrink-0" /> Passeport validé 18+ mois</li>
                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-blue-500 shrink-0" /> Photos d&apos;identité biométriques</li>
                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-blue-500 shrink-0" /> Casier judiciaire apostillé</li>
                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 mt-0.5 text-blue-500 shrink-0" /> Certificat médical</li>

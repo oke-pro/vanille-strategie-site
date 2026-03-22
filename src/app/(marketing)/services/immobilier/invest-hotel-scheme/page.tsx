@@ -175,7 +175,7 @@ export default function IHSPage() {
               },
               {
                 step: "2. Contrat de gestion",
-                desc: "L'hôtel signe un contrat avec vous garantissant des revenus locatifs annuels fixes (généralement 4-6%).",
+                desc: "L'hôtel signé un contrat avec vous garantissant des revenus locatifs annuels fixes (généralement 4-6%).",
               },
               {
                 step: "3. Gestion opérationnelle",

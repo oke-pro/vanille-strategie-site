@@ -68,10 +68,10 @@ interface InvoiceList {
 
 const STAGE_LABELS: Record<string, string> = {
   nouveau: "Nouveau",
-  qualifie: "Qualifie",
+  qualifie: "Qualifié",
   rdv: "RDV",
   proposition: "Proposition",
-  signe: "Signe",
+  signe: "Signé",
   client: "Client",
 };
 

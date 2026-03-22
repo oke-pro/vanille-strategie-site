@@ -126,7 +126,7 @@ export default function SuccessionInternationalePage() {
               Bonne nouvelle
             </p>
             <p className="mt-1 text-sm text-green-700">
-              Ce 0% s&apos;applique a tous les résidents fiscaux mauriciens, quelle
+              Ce 0% s&apos;applique à tous les résidents fiscaux mauriciens, quelle
               que soit leur nationalité. Un Français installé à Maurice qui
               transmet son patrimoine mauricien à ses enfants (eux aussi
               résidents à Maurice) ne paiera strictement aucun droit de
@@ -555,7 +555,7 @@ export default function SuccessionInternationalePage() {
               Danger
             </p>
             <p className="mt-1 text-sm text-red-700">
-              La France a une relation très hostile avec les trusts. Depuis la
+              La France à une relation très hostile avec les trusts. Depuis la
               loi du 29 juillet 2011 et les articles 792-0 bis et 990 J du CGI,
               les biens placés dans un trust sont considérés comme faisant
               partie du patrimoine du constituant pour les besoins des droits de
@@ -814,7 +814,7 @@ export default function SuccessionInternationalePage() {
               </p>
               <p className="mt-1 text-sm text-green-700">
                 Obtenez votre certificat de résidence fiscale MRA, maintenez une
-                présence physique superieure a 183 jours par an, et assurez-vous
+                présence physique supérieure à 183 jours par an, et assurez-vous
                 que votre centre de vie est incontestablement à Maurice. Évitez
                 de conserver des indices de domiciliation en France (logement,
                 véhicule, comptes bancaires actifs).

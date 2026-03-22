@@ -75,7 +75,7 @@ const companyTypeData: Record<
       "Diviserres 0% IS si distribuées localement",
     ],
     requirements: [
-      "Document d'identité valide de l'actionnaire (passeport ou carte d'identité)",
+      "Document d'identité validé de l'actionnaire (passeport ou carte d'identité)",
       "Certificat de résidence bancaire",
       "Preuve d'adresse professionnelle à Maurice",
       "Rédaction et signature des statuts (société civile ou commerciale)",

@@ -306,7 +306,7 @@ export default function SubstanceRequirementsPage() {
         </Callout>
 
         <p>
-          L&apos;Union europeenne a également exerce une pression significative.
+          L&apos;Union européenne a également exerce une pression significative.
           Maurice a figure sur la liste grise de l&apos;UE avant d&apos;en être
           retiree, précisément grâce au renforcement de ses exigences de
           substance. Aujourd&apos;hui, maintenir cette conformité est vital pour
@@ -327,7 +327,7 @@ export default function SubstanceRequirementsPage() {
         </h2>
         <p>
           Les CIGA sont les activités essentielles qui génèrent les revenus de
-          la société. La FSC exige que ces activités soient effectuees à Maurice
+          la société. La FSC exige que ces activités soient effectuées à Maurice
           — pas dans un autre pays, pas sous-traitees à l&apos;étranger sans
           supervision locale réelle.
         </p>
@@ -693,7 +693,7 @@ export default function SubstanceRequirementsPage() {
 
         <Callout variant="amber" title="Erreur n 4 : comptabilité offshore">
           <p>
-            Faire tenir la comptabilité par un cabinet a Paris, Dubai ou
+            Faire tenir la comptabilité par un cabinet à Paris, Dubai ou
             Singapour. Même si les ecritures sont justes, le fait que la
             comptabilité ne soit pas tenue physiquement à Maurice affaiblit
             considérablement la demonstration de substance.

@@ -94,7 +94,7 @@ export default async function AnnuairePage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400 leading-relaxed">
             Trouvez les prestataires, partenaires et services dont vous avez
             besoin pour votre activité à l&apos;île Maurice.
-            Catégories, notes Google et coordonnées vérifiées.
+            Categories, notes Google et coordonnées vérifiées.
           </p>
 
           {/* Search bar */}

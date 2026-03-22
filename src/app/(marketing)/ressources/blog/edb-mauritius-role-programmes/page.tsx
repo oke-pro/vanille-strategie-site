@@ -568,7 +568,7 @@ export default function EDBMauritiusPage() {
               <strong>aucun capital minimum d&apos;investissement</strong>.
             </p>
             <p>
-              Le candidat doit présenter un projet innovant valide par
+              Le candidat doit présenter un projet innovant validé par
               l&apos;EDB, avec un business plan demontrant le potentiel de
               création d&apos;emplois et de valeur ajoutee pour
               l&apos;économie mauricienne. L&apos;EDB évalue le caractère
@@ -711,13 +711,13 @@ export default function EDBMauritiusPage() {
 
           <div className="mt-8 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-6">
             <p className="text-sm font-bold text-cyan-300">
-              Procedure d&apos;agrement
+              Procédure d&apos;agrément
             </p>
             <p className="mt-2 text-sm text-cyan-100/80">
               L&apos;obtention du statut d&apos;opérateur Freeport passe par
               une demande auprès de l&apos;EDB, avec un business plan
               détaillant les opérations prévues, les volumes, et les
-              marches cibles. L&apos;agrement est généralement délivré en
+              marches cibles. L&apos;agrément est généralement délivré en
               4 a 6 semaines.
             </p>
           </div>
@@ -831,7 +831,7 @@ export default function EDBMauritiusPage() {
               Résultat concret
             </p>
             <p className="mt-2 text-sm text-blue-100">
-              Grace a notre preparation rigoureuse, nos dossiers ont un taux
+              Grace à notre preparation rigoureuse, nos dossiers ont un taux
               d&apos;approbation très élevé et un délai moyen de traitement
               de 15 a 20 jours ouvres -- contre parfois 2 a 3 mois pour des
               dossiers mal prepares.

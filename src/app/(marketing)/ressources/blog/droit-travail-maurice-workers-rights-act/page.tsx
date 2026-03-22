@@ -283,7 +283,7 @@ export default function DroitTravailMauricePage() {
 
         <Callout variant="blue" title="A retenir">
           <p>
-            Le WRA s&apos;applique a <strong>tous les employeurs prives</strong>{" "}
+            Le WRA s&apos;applique a <strong>tous les employeurs privés</strong>{" "}
             à Maurice, y compris les sociétés a capitaux étrangers. Le
             non-respect de ses dispositions expose à des sanctions pénales et
             civiles.
@@ -314,18 +314,18 @@ export default function DroitTravailMauricePage() {
           Contrat a durée déterminée (CDD)
         </h3>
         <p>
-          Le CDD est autorise pour des projets spécifiques, des remplacements ou
+          Le CDD est autorisé pour des projets spécifiques, des remplacements ou
           des activités saisonnieres. Sa durée ne peut exceder{" "}
           <strong>24 mois</strong>. Au-dela, ou en cas de renouvellement
           successif, le contrat est automatiquement requalifie en CDI.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Contrat a temps partiel
+          Contrat à temps partiel
         </h3>
         <p>
-          Un salarié a temps partiel travaille moins que les heures normales
-          prévues pour un employé a temps plein dans la même categorie. Ses
+          Un salarié à temps partiel travaille moins que les heures normales
+          prévues pour un employé à temps plein dans la même catégorie. Ses
           droits (congés, CSG, PRGF) sont calcules au prorata de ses heures de
           travail.
         </p>
@@ -335,7 +335,7 @@ export default function DroitTravailMauricePage() {
             Tout contrat de travail doit mentionner : la rémunération, les
             horaires, la description du poste, la durée de la période
             d&apos;essai (maximum 12 mois pour les cadres, 6 mois pour les
-            autres categories) et les conditions de preavis.
+            autres catégories) et les conditions de préavis.
           </p>
         </Callout>
       </Section>
@@ -354,7 +354,7 @@ export default function DroitTravailMauricePage() {
             Rs 17 745 / mois
           </p>
           <p className="mt-2 text-sm text-blue-700">
-            National Minimum Wage — applicable à tous les secteurs du prive
+            National Minimum Wage — applicable à tous les secteurs du privé
           </p>
         </div>
         <p>
@@ -363,16 +363,16 @@ export default function DroitTravailMauricePage() {
         </p>
         <p>
           En complement, une <strong>compensation salariale</strong> de
-          Rs 635/mois est versée a tous les salariés dont le salaire de base ne
+          Rs 635/mois est versée à tous les salariés dont le salaire de base ne
           dépassé pas Rs 50 000 par mois. Cette compensation est à la charge de
           l&apos;employeur, mais les entreprises ayant un chiffre d&apos;affaires
-          inferieur a Rs 50 millions peuvent bénéficier d&apos;une aide
+          inférieur a Rs 50 millions peuvent bénéficier d&apos;une aide
           gouvernementale partielle via la MRA.
         </p>
 
         <Callout variant="green" title="Bon à savoir">
           <p>
-            Le NMW s&apos;applique uniformement a tous les secteurs du prive,
+            Le NMW s&apos;applique uniformément à tous les secteurs du privé,
             sans distinction de branche. Il inclut le salaire de base mais
             exclut les primes, heures supplémentaires et avantages en nature.
           </p>
@@ -552,7 +552,7 @@ export default function DroitTravailMauricePage() {
         <p>
           Le PRGF est un fonds de pension obligatoire introduit par le
           Workers&apos; Rights Act. Depuis le{" "}
-          <strong>1er janvier 2022</strong>, tout employeur du secteur prive doit
+          <strong>1er janvier 2022</strong>, tout employeur du secteur privé doit
           y cotiser pour chacun de ses salariés.
         </p>
         <p>
@@ -569,7 +569,7 @@ export default function DroitTravailMauricePage() {
         </p>
         <p>
           L&apos;employeur peut deduire de sa contribution PRGF toute
-          contribution déjà versée à un régime de pension prive ou au Sugar
+          contribution déjà versée à un régime de pension privé ou au Sugar
           Industry Pension Fund (SIPF), à condition que ce montant soit au moins
           egal au taux PRGF de 4,5%.
         </p>
@@ -584,8 +584,8 @@ export default function DroitTravailMauricePage() {
         </Callout>
       </Section>
 
-      {/* ===== 7. CONGES ===== */}
-      <Section id="conges" bg="white">
+      {/* ===== 7. CONGÉS ===== */}
+      <Section id="congés" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
           7. Congés : annuels, maladie, maternité
         </h2>
@@ -594,7 +594,7 @@ export default function DroitTravailMauricePage() {
           Congés annuels
         </h3>
         <p>
-          Tout salarié a temps plein a droit a{" "}
+          Tout salarié à temps plein a droit à{" "}
           <strong>20 jours ouvrables</strong> de congés annuels payes par an
           (contre 14 jours sous l&apos;ancienne législation). Les congés non
           pris sont cumulables et peuvent être reportes ou indemnises en fin de
@@ -605,20 +605,20 @@ export default function DroitTravailMauricePage() {
           Congés maladie
         </h3>
         <p>
-          Le WRA accorde <strong>15 jours ouvrables</strong> de conge maladie
+          Le WRA accorde <strong>15 jours ouvrables</strong> de congé maladie
           par an, entièrement payes par l&apos;employeur. Les jours non utilisés
           sont cumulables d&apos;une année sur l&apos;autre, sans plafond
           explicite dans la loi.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Conge maternité
+          Congé maternité
         </h3>
         <p>
           Les salariees bénéficient de{" "}
-          <strong>14 semaines de conge maternité</strong> (contre 12 sous
+          <strong>14 semaines de congé maternité</strong> (contre 12 sous
           l&apos;ancienne loi), dont au moins 7 semaines doivent être prises
-          après l&apos;accouchement. Le conge est rémunéré a 100% du salaire.
+          après l&apos;accouchement. Le congé est rémunéré à 100% du salaire.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
@@ -626,10 +626,10 @@ export default function DroitTravailMauricePage() {
         </h3>
         <ul>
           <li>
-            <strong>Conge paternite :</strong> 5 jours ouvrables continus
+            <strong>Congé paternité :</strong> 5 jours ouvrables continus
           </li>
           <li>
-            <strong>Conge deuil :</strong> 3 jours en cas de décès d&apos;un
+            <strong>Congé deuil :</strong> 3 jours en cas de décès d&apos;un
             proche
           </li>
           <li>
@@ -725,7 +725,7 @@ export default function DroitTravailMauricePage() {
       {/* ===== 9. LICENCIEMENT ===== */}
       <Section id="licenciement" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          9. Licenciement : procédures, preavis, indemnités
+          9. Licenciement : procédures, préavis, indemnités
         </h2>
         <p>
           Le WRA encadre strictement la rupture du contrat de travail. Un
@@ -735,18 +735,18 @@ export default function DroitTravailMauricePage() {
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Délai de preavis
+          Délai de préavis
         </h3>
         <p>
-          Le preavis minimum est de <strong>30 jours</strong> pour un CDI. En
-          cas de faute grave (<em>summary dismissal</em>), aucun preavis
+          Le préavis minimum est de <strong>30 jours</strong> pour un CDI. En
+          cas de faute grave (<em>summary dismissal</em>), aucun préavis
           n&apos;est requis, mais l&apos;employeur doit prouver la gravite de la
           faute. Le salarié licencié pour motif non disciplinaire a droit à un
-          preavis paye ou à une indemnité compensatrice equivalente.
+          préavis paye ou à une indemnité compensatrice equivalente.
         </p>
 
         <h3 className="text-xl font-semibold text-slate-800">
-          Indemnites de licenciement
+          Indemnités de licenciement
         </h3>
         <p>
           En cas de licenciement pour motif économique (<em>redundancy</em>), le
@@ -763,7 +763,7 @@ export default function DroitTravailMauricePage() {
 
         <Callout variant="red" title="Risque employeur">
           <p>
-            Un licenciement mal documente ou sans procedure disciplinaire
+            Un licenciement mal documente ou sans procédure disciplinaire
             préalable est quasi systématiquement requalifie en licenciement
             abusif. L&apos;accompagnement juridique est fortement recommandé
             avant toute rupture de contrat.
@@ -778,9 +778,9 @@ export default function DroitTravailMauricePage() {
         </h2>
         <p>
           Tout ressortissant étranger souhaitant travailler à Maurice doit
-          détenir un permis de travail valide. Depuis la réforme du système des
+          détenir un permis de travail validé. Depuis la réforme du système des
           permis, le véhicule principal est l&apos;
-          <strong>Occupation Permit (OP) — categorie Professional</strong>,
+          <strong>Occupation Permit (OP) — catégorie Professional</strong>,
           délivré par l&apos;Economic Development Board (EDB).
         </p>
 
@@ -815,7 +815,7 @@ export default function DroitTravailMauricePage() {
           <p>
             Le traitement d&apos;une demande d&apos;OP Professional prend en
             général <strong>4 a 8 semaines</strong>. Il est conseille
-            d&apos;anticiper les recrutements étrangers en lancant la procedure
+            d&apos;anticiper les recrutements étrangers en lancant la procédure
             des la signature de la promesse d&apos;embauche.
           </p>
         </Callout>
@@ -899,13 +899,13 @@ export default function DroitTravailMauricePage() {
                   Élément
                 </th>
                 <th className="px-3 py-3 text-center font-semibold">
-                  Salarie A
+                  Salarié A
                 </th>
                 <th className="px-3 py-3 text-center font-semibold">
-                  Salarie B
+                  Salarié B
                 </th>
                 <th className="px-3 py-3 text-center font-semibold">
-                  Salarie C
+                  Salarié C
                 </th>
               </tr>
             </thead>
@@ -1023,7 +1023,7 @@ export default function DroitTravailMauricePage() {
           <p>
             A Maurice, le coût total employeur représente environ{" "}
             <strong>11 à 15%</strong> du salaire brut en charges patronales.
-            C&apos;est nettement inferieur à la France (~42%), au Maroc (~26%)
+            C&apos;est nettement inférieur à la France (~42%), au Maroc (~26%)
             ou au Portugal (~23%). C&apos;est l&apos;un des atouts majeurs de
             l&apos;ile pour les entreprises a forte intensite de main-d&apos;oeuvre.
           </p>

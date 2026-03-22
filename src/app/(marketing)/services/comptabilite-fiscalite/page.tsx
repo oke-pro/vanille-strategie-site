@@ -32,36 +32,42 @@ export default function ComptaFiscalitePage() {
   const services = [
     {
       title: "Comptabilité courante",
+      slug: "comptabilite-courante",
       icon: Calculator,
       color: "blue",
       items: ["Saisie comptable FR + IFRS", "Lettrage et rapprochement", "Déclarations TVA (VAT)", "États financiers annuels"]
     },
     {
-      title: "Fiscalité",
+      title: "Fiscalité internationale",
+      slug: "fiscalite-internationale",
       icon: PieChart,
       color: "indigo",
       items: ["Déclarations MRA (self-assessment)", "Analyse convention FR-MU", "Transfer Pricing (Finance Act 2025)", "Optimisation fiscale légale"]
     },
     {
       title: "Dashboard OKE",
+      slug: "dashboard-oke",
       icon: Cpu,
       color: "cyan",
       items: ["Connecteurs AfrAsia & MCB", "12 plateformes e-commerce", "Classification automatique (85%+)", "Réconciliation bancaire intelligente"]
     },
     {
       title: "Conseil fiscal",
+      slug: "conseil-fiscal",
       icon: Lightbulb,
       color: "amber",
       items: ["Exit Tax française", "Structuration holding", "Prix de transfert", "Mobilité internationale"]
     },
     {
       title: "Audit & conformité",
+      slug: "audit-conformite",
       icon: ShieldCheck,
       color: "emerald",
       items: ["Audit annuel", "Due diligence financière", "Conformité CBRD/MRA", "Piste d'audit inaltérable"]
     },
     {
       title: "Supervision",
+      slug: "supervision-comptable",
       icon: UserCheck,
       color: "slate",
       items: [`Par ${founder.name}`, "Expert-Comptable DEC", "Ex-Deloitte", "40+ ans d'expertise"]
@@ -139,7 +145,7 @@ export default function ComptaFiscalitePage() {
                   ))}
                 </ul>
                 <div className="mt-8 pt-6 border-t border-slate-50 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
+                  <Link href={`/services/comptabilite-fiscalite/${s.slug}`} className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
                     En savoir plus <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -320,7 +326,7 @@ export default function ComptaFiscalitePage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Pas de droits de succession</h4>
-                    <p className="mt-1 text-sm text-slate-600">Maurice n&apos;applique aucun droit de succession ni impôt sur la fortune (ISF/IFI). La transmission de patrimoine s&apos;effectue sans taxation, faisant de Maurice une juridiction privilégiée pour la planification successorale et patrimoniale internationale.</p>
+                    <p className="mt-1 text-sm text-slate-600">Maurice n&apos;applique aucun droit de succession ni impôt sur la fortune (ISF/IFI). La transmission de patrimoine s&apos;effectué sans taxation, faisant de Maurice une juridiction privilégiée pour la planification successorale et patrimoniale internationale.</p>
                   </div>
                 </div>
               </div>

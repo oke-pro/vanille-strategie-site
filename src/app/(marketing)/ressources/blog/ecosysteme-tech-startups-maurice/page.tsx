@@ -265,7 +265,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             </p>
             <p className="mt-1 text-sm text-green-700">
               Passez par un incubateur accredite MRIC (comme La Plage Factory
-              ou Turbine) pour obtenir votre Innovator Permit : la procedure est
+              ou Turbine) pour obtenir votre Innovator Permit : la procédure est
               plus rapide et vous beneficiez d&apos;un accompagnement des le
               départ. L&apos;EDB effectué des revues de conformité à 5 ans et 10
               ans — assurez-vous que votre projet génère de la valeur réelle.
@@ -330,7 +330,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h3>
           <p>
             Initie par le gouvernement et gère par le MRIC, le NSIS finance des
-            incubateurs prives accredites sur un modèle de{" "}
+            incubateurs privés accredites sur un modèle de{" "}
             <strong>matching grant 50/50</strong>. Les montants :
           </p>
           <ul>
@@ -545,7 +545,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Point d&apos;attention
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              La procedure de licensing VASP auprès de la FSC prend en moyenne 6
+              La procédure de licensing VASP auprès de la FSC prend en moyenne 6
               a 9 mois. Les applicants doivent être une société mauricienne,
               dirigee et gérée depuis Maurice, avec un bureau physique. Les
               critères fit-and-proper sont stricts : intégrité, compétence et

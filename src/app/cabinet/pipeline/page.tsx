@@ -11,10 +11,10 @@ interface PipelineView {
 
 const STAGES = [
   { key: "nouveau", label: "Nouveau", color: "border-slate-400 bg-slate-50" },
-  { key: "qualifie", label: "Qualifie", color: "border-blue-400 bg-blue-50" },
+  { key: "qualifie", label: "Qualifié", color: "border-blue-400 bg-blue-50" },
   { key: "rdv", label: "RDV", color: "border-amber-400 bg-amber-50" },
   { key: "proposition", label: "Proposition", color: "border-purple-400 bg-purple-50" },
-  { key: "signe", label: "Signe", color: "border-emerald-400 bg-emerald-50" },
+  { key: "signe", label: "Signé", color: "border-emerald-400 bg-emerald-50" },
   { key: "client", label: "Client", color: "border-green-400 bg-green-50" },
 ];
 

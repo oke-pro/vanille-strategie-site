@@ -240,7 +240,7 @@ export default function RESPage() {
               },
               {
                 icon: Zap,
-                title: "Accès facilité aux financements",
+                title: "Accès facilite aux financements",
                 desc: "Les banques mauriciennes reconnaissent l'IRS et RES comme des investissements sérieux.",
               },
             ].map((item, i) => (

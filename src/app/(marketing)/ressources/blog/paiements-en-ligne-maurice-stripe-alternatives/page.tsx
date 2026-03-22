@@ -267,7 +267,7 @@ export default function PaiementsEnLigneMauricePage() {
               <li>
                 <strong>Taux de change compétitifs :</strong> conversion au taux
                 mid-market avec une marge réduite (0,5 a 1&nbsp;%), bien
-                inferieure a PayPal
+                inférieure a PayPal
               </li>
               <li>
                 <strong>Cartes corporate virtuelles :</strong> pour gérer les
@@ -383,7 +383,7 @@ export default function PaiementsEnLigneMauricePage() {
                 Adyen est une plateforme de paiement de niveau enterprise,
                 utilisee par Uber, Spotify et eBay. Elle supporte 250+ méthodes
                 de paiement dans le monde et offre des frais très compétitifs
-                pour les volumes supérieurs a 100&nbsp;000&nbsp;$/mois.
+                pour les volumes supérieurs à 100&nbsp;000&nbsp;$/mois.
               </p>
               <p>
                 Si votre entreprise basée à Maurice traite des volumes
@@ -571,7 +571,7 @@ export default function PaiementsEnLigneMauricePage() {
             <p className="mt-2 text-sm text-amber-700">
               Pour les solutions locales comme MIPS ou Peach Payments, vous
               devrez avoir une{" "}
-              <strong>Business Registration Card (BRC) mauricienne valide</strong>{" "}
+              <strong>Business Registration Card (BRC) mauricienne validé</strong>{" "}
               pour ouvrir un compte marchand. C&apos;est une condition préalable
               à toute intégration de passerelle de paiement locale.
             </p>
@@ -775,7 +775,7 @@ export default function PaiementsEnLigneMauricePage() {
             <p>
               Le resultat : une comptabilité temps réel, des ecritures
               multi-devises générées automatiquement avec une précision
-              superieure a 85&nbsp;%, et un temps de reconciliation divise par
+              supérieure a 85&nbsp;%, et un temps de reconciliation divise par
               dix. Plus besoin d&apos;exporter des CSV et de faire des
               copier-coller entre les plateformes.
             </p>
@@ -832,7 +832,7 @@ export default function PaiementsEnLigneMauricePage() {
                 <p className="font-semibold">Editeur SaaS :</p>
                 <p className="mt-1 text-green-700">
                   Paddle ou 2Checkout en Merchant of Record. Ils gerent la TVA
-                  europeenne pour vous et reversent le net. Combinez avec Wise
+                  européenne pour vous et reversent le net. Combinez avec Wise
                   pour la reception des fonds.
                 </p>
               </div>
@@ -1110,7 +1110,7 @@ export default function PaiementsEnLigneMauricePage() {
 
           <div className="mt-6 rounded-lg border border-green-200 bg-green-50 p-5">
             <p className="text-sm font-semibold text-green-800">
-              OKE par BD Star — Connecte automatiquement a tous vos PSP
+              OKE par BD Star — Connecte automatiquement à tous vos PSP
             </p>
             <p className="mt-2 text-sm text-green-700">
               L&apos;app OKE va proposer des connecteurs pour{" "}

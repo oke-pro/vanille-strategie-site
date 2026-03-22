@@ -68,7 +68,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé",
         "Certificat médical",
@@ -162,7 +162,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé",
         "Certificat médical",
@@ -256,7 +256,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé",
         "Certificat médical",
@@ -289,7 +289,7 @@ const permitData: Record<PermitSlug, {
       {
         step: 4,
         title: "Approbation rapide",
-        description: "Délai estimé : 10-15 jours ouvrés. L'EDB valide votre contrat et votre qualifications, puis délivre l'approbation.",
+        description: "Délai estimé : 10-15 jours ouvrés. L'EDB validé votre contrat et votre qualifications, puis délivre l'approbation.",
       },
       {
         step: 5,
@@ -348,7 +348,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé",
         "Certificat médical",
@@ -412,7 +412,7 @@ const permitData: Record<PermitSlug, {
         a: "Oui, c'est l'une des avantages. Vous pouvez changer d'employeur dans le même secteur prioritaire plus facilement qu'avec un OP classique. Une simple notification à l'EDB suffit généralement.",
       },
       {
-        q: "Combien de temps est valide l'Expert Pass ?",
+        q: "Combien de temps est validé l'Expert Pass ?",
         a: "La validité correspond à votre contrat de travail (généralement 1-3 ans). Au renouvellement, vous pouvez soit continuer avec le même employeur, soit changer pour un autre employeur dans un secteur prioritaire.",
       },
       {
@@ -441,7 +441,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé",
         "Certificat médical",
@@ -539,7 +539,7 @@ const permitData: Record<PermitSlug, {
     ],
     documents: {
       personal: [
-        "Passeport valide 18+ mois",
+        "Passeport validé 18+ mois",
         "Photos d'identité biométriques",
         "Casier judiciaire apostillé (recommandé)",
         "Certificat médical",
@@ -591,7 +591,7 @@ const permitData: Record<PermitSlug, {
     faq: [
       {
         q: "Puis-je créer une société locale avec un Premium Visa ?",
-        a: "Non, le Premium Visa n'autorise pas la création ou l'exercice d'une activité commerciale locale. Vous ne pouvez que télé-travailler pour employeur/clients à l'étranger. Si vous souhaitez créer une société, optez pour un OP Investor ou Self-Employed.",
+        a: "Non, le Premium Visa n'autorisé pas la création ou l'exercice d'une activité commerciale locale. Vous ne pouvez que télé-travailler pour employeur/clients à l'étranger. Si vous souhaitez créer une société, optez pour un OP Investor ou Self-Employed.",
       },
       {
         q: "Puis-je être employé par une entreprise mauricienne ?",
@@ -603,7 +603,7 @@ const permitData: Record<PermitSlug, {
       },
       {
         q: "Puis-je renouveler mon Premium Visa chaque année ?",
-        a: "Oui, le renouvellement est gratuit et très simple : relevés bancaires 3 mois + assurance santé valide. Traitement en 48h à chaque fois. Vous pouvez théoriquement rester indéfiniment en renouvelant annuellement.",
+        a: "Oui, le renouvellement est gratuit et très simple : relevés bancaires 3 mois + assurance santé validé. Traitement en 48h à chaque fois. Vous pouvez théoriquement rester indéfiniment en renouvelant annuellement.",
       },
       {
         q: "Mon famille peut-elle m'accompagner ?",
