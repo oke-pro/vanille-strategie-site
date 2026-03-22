@@ -5,7 +5,13 @@ const nextConfig: NextConfig = {
   output: "standalone",
   images: {
     // Domaines autorisés pour next/image si besoin
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "places.googleapis.com",
+        pathname: "/v1/**",
+      },
+    ],
   },
   // Redirect /fr vers / (extensions de traduction)
   async redirects() {
