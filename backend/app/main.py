@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.database import init_db
-from app.routers import admin, auth, chatbot, clients_portal, companies, documents, dossiers, health, invoices, leads, messages, pipeline, tasks
+from app.routers import admin, auth, chatbot, clients_portal, companies, documents, dossiers, health, invoices, leads, messages, pipeline, social_proof, tasks
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 
@@ -56,6 +56,7 @@ app.include_router(invoices.router, prefix="/api/v1")
 app.include_router(pipeline.router, prefix="/api/v1")
 app.include_router(tasks.router, prefix="/api/v1")
 app.include_router(chatbot.router, prefix="/api/v1")
+app.include_router(social_proof.router, prefix="/api/v1")
 
 
 @app.get("/")

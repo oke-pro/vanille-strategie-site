@@ -66,6 +66,25 @@ async def send_chat_message(
     return ChatResponse(message=response_text, conversation_id=conversation_id)
 
 
+@router.get("/debug")
+async def debug_chatbot():
+    """Temporary debug endpoint."""
+    import anthropic
+    from app.config import settings
+    key = settings.anthropic_api_key
+    has_key = bool(key) and len(key) > 10
+    try:
+        client = anthropic.AsyncAnthropic(api_key=key)
+        resp = await client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=50,
+            messages=[{"role": "user", "content": "test"}],
+        )
+        return {"has_key": has_key, "key_prefix": key[:15] + "..." if key else "EMPTY", "status": "ok", "response": resp.content[0].text[:100]}
+    except Exception as e:
+        return {"has_key": has_key, "key_prefix": key[:15] + "..." if key else "EMPTY", "status": "error", "error": str(e), "type": type(e).__name__}
+
+
 @router.get("/history", response_model=ChatHistoryResponse)
 async def get_history(
     visitor_id: str,
