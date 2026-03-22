@@ -51,13 +51,23 @@ export function TestimonialsSection() {
               </blockquote>
 
               <div className="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 text-sm font-bold text-white">
-                  {t.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")
-                    .slice(0, 2)}
-                </div>
+                {t.photo ? (
+                  <Image
+                    src={t.photo}
+                    alt={t.name}
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 text-sm font-bold text-white">
+                    {t.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")
+                      .slice(0, 2)}
+                  </div>
+                )}
                 <div>
                   <p className="text-sm font-semibold text-white">{t.name}</p>
                   <p className="text-xs text-slate-400">
