@@ -3,12 +3,12 @@ from datetime import datetime, timezone
 from uuid import uuid4
 
 from sqlalchemy import select, func
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import async_session
 from app.models.db_models import LeadDB
 from app.models.leads import Lead
 from app.services.email import send_confirmation_email, send_lead_notification
+from app.services.scoring import compute_lead_score
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +38,16 @@ async def create_lead(
 
     logger.info(f"Lead saved to DB: {lead_id} ({lead_type})")
 
+    # Compute and persist lead score
+    score, score_label = compute_lead_score(lead_type, data)
+    async with async_session() as session:
+        db_lead = await session.get(LeadDB, lead_id)
+        if db_lead:
+            db_lead.score = score
+            db_lead.score_label = score_label
+            await session.commit()
+    logger.info(f"Lead {lead_id} scored: {score} ({score_label})")
+
     # Build response model
     lead = Lead(
         id=lead_id,
@@ -46,10 +56,12 @@ async def create_lead(
         created_at=now,
         source_page=source_page,
         ip=ip,
+        score=score,
+        score_label=score_label,
     )
 
     # Notification email à Didier (async, non-bloquant)
-    notified = await send_lead_notification(lead_type, data)
+    notified = await send_lead_notification(lead_type, data, score=score, score_label=score_label)
     lead.notified = notified
 
     # Update notified status in DB
@@ -60,11 +72,13 @@ async def create_lead(
                 db_lead.notified = True
                 await session.commit()
 
-    # Email de confirmation au prospect
+    # Email de confirmation au prospect (segmenté par profil)
     email = data.get("email")
     prenom = data.get("prenom", "")
+    profil = data.get("profil", "")
+    budget = data.get("budget")
     if email and prenom:
-        await send_confirmation_email(email, prenom)
+        await send_confirmation_email(email, prenom, profil=profil, budget=budget)
 
     return lead
 
@@ -84,6 +98,32 @@ async def get_all_leads() -> list[dict]:
                 "source_page": l.source_page,
                 "created_at": l.created_at.isoformat(),
                 "notified": l.notified,
+                "score": l.score,
+                "score_label": l.score_label,
+            }
+            for l in leads
+        ]
+
+
+async def get_hot_leads() -> list[dict]:
+    """Retourne les leads hot et vip (score >= 50)."""
+    async with async_session() as session:
+        result = await session.execute(
+            select(LeadDB)
+            .where(LeadDB.score >= 50)
+            .order_by(LeadDB.score.desc(), LeadDB.created_at.desc())
+        )
+        leads = result.scalars().all()
+        return [
+            {
+                "id": l.id,
+                "type": l.type,
+                "data": l.data,
+                "source_page": l.source_page,
+                "created_at": l.created_at.isoformat(),
+                "notified": l.notified,
+                "score": l.score,
+                "score_label": l.score_label,
             }
             for l in leads
         ]

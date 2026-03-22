@@ -3,6 +3,7 @@ import logging
 import resend
 
 from app.config import settings
+from app.services.email_templates import get_confirmation_html
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +16,12 @@ def _init_resend():
     return False
 
 
-async def send_lead_notification(lead_type: str, data: dict) -> bool:
+async def send_lead_notification(
+    lead_type: str,
+    data: dict,
+    score: int = 0,
+    score_label: str | None = None,
+) -> bool:
     """Notifie Didier d'un nouveau lead par email via Resend."""
     if not _init_resend():
         return False
@@ -27,6 +33,22 @@ async def send_lead_notification(lead_type: str, data: dict) -> bool:
         if v
     )
 
+    # Score badge colors
+    badge_colors = {
+        "vip": "#dc2626",
+        "hot": "#ea580c",
+        "warm": "#2563eb",
+        "cold": "#6b7280",
+    }
+    badge_color = badge_colors.get(score_label or "cold", "#6b7280")
+    badge_text = (score_label or "cold").upper()
+    score_badge = (
+        f'<div style="margin-bottom:16px;">'
+        f'<span style="background:{badge_color};color:white;padding:6px 16px;'
+        f'border-radius:20px;font-weight:700;font-size:14px;">'
+        f'{badge_text} — Score {score}</span></div>'
+    )
+
     html = f"""
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
         <div style="background:#1e293b;padding:20px;border-radius:12px 12px 0 0;">
@@ -34,6 +56,7 @@ async def send_lead_notification(lead_type: str, data: dict) -> bool:
             <p style="color:#94a3b8;margin:4px 0 0;">vanillestrategie.fr</p>
         </div>
         <div style="background:white;padding:20px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 12px 12px;">
+            {score_badge}
             <table style="width:100%;border-collapse:collapse;">{rows}</table>
             <p style="margin-top:20px;color:#94a3b8;font-size:12px;">
                 Répondez dans les 24h pour maximiser la conversion.
@@ -46,7 +69,7 @@ async def send_lead_notification(lead_type: str, data: dict) -> bool:
         resend.Emails.send({
             "from": settings.email_from,
             "to": [settings.leads_notify_email],
-            "subject": f"🔔 Nouveau lead VS — {lead_type}",
+            "subject": f"🔔 Nouveau lead VS — {lead_type} [{badge_text}]",
             "html": html,
         })
         logger.info(f"Lead notification sent to {settings.leads_notify_email}")
@@ -56,45 +79,20 @@ async def send_lead_notification(lead_type: str, data: dict) -> bool:
         return False
 
 
-async def send_confirmation_email(to_email: str, prenom: str) -> bool:
-    """Email de confirmation au prospect via Resend."""
+async def send_confirmation_email(
+    to_email: str, prenom: str, profil: str = "", budget: str | None = None
+) -> bool:
+    """Email de confirmation au prospect via Resend, segmenté par profil."""
     if not _init_resend():
         return False
 
-    html = f"""
-    <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:linear-gradient(135deg,#1e40af,#0ea5e9);padding:30px;border-radius:12px 12px 0 0;text-align:center;">
-            <h1 style="color:white;margin:0;font-size:24px;">Vanille Stratégie</h1>
-            <p style="color:#bfdbfe;margin:8px 0 0;">Votre nouvelle vie à Maurice commence ici</p>
-        </div>
-        <div style="background:white;padding:30px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 12px 12px;">
-            <h2 style="color:#1e293b;">Bonjour {prenom},</h2>
-            <p style="color:#475569;line-height:1.6;">
-                Merci pour votre intérêt pour Maurice ! Nous avons bien reçu votre demande.
-            </p>
-            <p style="color:#475569;line-height:1.6;">
-                <strong>Didier Laroussinie</strong>, Expert-Comptable &amp; Fiscaliste International,
-                reviendra vers vous personnellement sous 24h.
-            </p>
-            <p style="color:#475569;line-height:1.6;">
-                En attendant, consultez nos
-                <a href="https://vanillestrategie.fr/ressources/guides" style="color:#2563eb;">guides experts</a>
-                ou notre
-                <a href="https://vanillestrategie.fr/ressources/faq" style="color:#2563eb;">FAQ</a>.
-            </p>
-            <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
-            <p style="color:#94a3b8;font-size:12px;">
-                Vanille Stratégie · Grand Baie, Maurice · +230 466 6166
-            </p>
-        </div>
-    </div>
-    """
+    subject, html = get_confirmation_html(prenom, profil, budget)
 
     try:
         resend.Emails.send({
             "from": settings.email_from,
             "to": [to_email],
-            "subject": "Vanille Stratégie — Nous avons bien reçu votre demande",
+            "subject": subject,
             "html": html,
         })
         return True

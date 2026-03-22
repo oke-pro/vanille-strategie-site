@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Header
 
 from app.config import settings
-from app.services.leads import get_all_leads, get_leads_count
+from app.services.leads import get_all_leads, get_hot_leads, get_leads_count
 
 router = APIRouter(prefix="/admin", tags=["Admin"])
 
@@ -18,7 +18,17 @@ async def list_leads():
     leads = await get_all_leads()
     return {
         "count": len(leads),
-        "leads": [l.model_dump() for l in leads],
+        "leads": leads,
+    }
+
+
+@router.get("/leads/hot", dependencies=[Depends(verify_api_key)])
+async def list_hot_leads():
+    """Liste les leads hot et vip (score >= 50)."""
+    leads = await get_hot_leads()
+    return {
+        "count": len(leads),
+        "leads": leads,
     }
 
 

@@ -23,6 +23,7 @@ class ContactRequest(BaseModel):
     profil: ProfilType
     objet: str = Field(min_length=5, max_length=200)
     message: str | None = Field(default=None, max_length=5000)
+    website: str | None = Field(default=None, max_length=200)  # honeypot — must stay empty
 
 
 class QuickLeadRequest(BaseModel):
@@ -31,6 +32,7 @@ class QuickLeadRequest(BaseModel):
     email: EmailStr
     telephone: str | None = Field(default=None, max_length=20)
     profil: ProfilType
+    website: str | None = Field(default=None, max_length=200)  # honeypot — must stay empty
 
 
 class NewsletterRequest(BaseModel):
@@ -61,6 +63,8 @@ class LeadResponse(BaseModel):
     success: bool
     message: str
     lead_id: str | None = None
+    score: int | None = None
+    score_label: str | None = None
 
 
 class Lead(BaseModel):
@@ -72,3 +76,5 @@ class Lead(BaseModel):
     source_page: str | None = None
     ip: str | None = None
     notified: bool = False
+    score: int = 0
+    score_label: str | None = None
