@@ -94,7 +94,7 @@ export default function SupervisionComptable() {
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex gap-3">
                 <Award className="h-5 w-5 text-slate-600 shrink-0 mt-0.5" />
                 <div className="text-sm text-slate-900">
-                  <p className="font-bold mb-1">Didier Laroussynie — Expert-Comptable DEC</p>
+                  <p className="font-bold mb-1">Didier Laroussinie — Expert-Comptable DEC</p>
                   <p>Inscrit au MIPA sous le numéro de licence DEC. 40+ ans d'expertise en comptabilité, fiscalité et audit. Ancien manager senior chez Deloitte.</p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function SupervisionComptable() {
               {
                 step: "4",
                 title: "Déclarations fiscales révisées",
-                desc: "Avant envoi à la MRA, chaque déclaration (TVA, IS, PAYE) est signée par Didier Laroussskie. Cela engage sa responsabilité et garantit votre sécurité.",
+                desc: "Avant envoi à la MRA, chaque déclaration (TVA, IS, PAYE) est signée par Didier Laroussinie. Cela engage sa responsabilité et garantit votre sécurité.",
               },
               {
                 step: "5",
@@ -208,7 +208,7 @@ export default function SupervisionComptable() {
               {
                 step: "6",
                 title: "Rapport annuel et recommandations",
-                desc: "Didier produit un rapport d'audit interne (Audit Summary). Observations et recommandations d'amélioration. Plan d'action pour année suivante.",
+                desc: "Didier Laroussinie produit un rapport d'audit interne (Audit Summary). Observations et recommandations d'amélioration. Plan d'action pour année suivante.",
               },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
@@ -257,7 +257,7 @@ export default function SupervisionComptable() {
               {
                 icon: Users,
                 title: "Mentorship et supervision directe",
-                desc: "Didier Laroussnie consacre du temps à former vos équipes. Revue de leurs travaux, correction d'erreurs, partage de bonnes pratiques.",
+                desc: "Didier Laroussinie consacre du temps à former vos équipes. Revue de leurs travaux, correction d'erreurs, partage de bonnes pratiques.",
               },
               {
                 icon: Zap,
@@ -312,7 +312,7 @@ export default function SupervisionComptable() {
               },
               {
                 benefit: "Conseils stratégiques intégrés",
-                desc: "Didier Laroussnie ajoute de la valeur au-delà de l'audit. Recommandations d'optimisation, alertes réglementaires, insights business.",
+                desc: "Didier Laroussinie ajoute de la valeur au-delà de l'audit. Recommandations d'optimisation, alertes réglementaires, insights business.",
               },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl bg-slate-50 p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
@@ -452,7 +452,7 @@ export default function SupervisionComptable() {
                   },
                   {
                     title: "Engagé personnellement",
-                    desc: "Didier ne délègue pas votre dossier. Il supervise lui-même. Sa réputation dépend de votre succès.",
+                    desc: "Didier Laroussinie ne délègue pas votre dossier. Il supervise lui-même. Sa réputation dépend de votre succès.",
                   },
                   {
                     title: "Approche humaine",
