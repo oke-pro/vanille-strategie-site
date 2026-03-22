@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://vanille-strategie.oke.pro/sitemap.xml",
+    sitemap: "https://vanillestrategie.fr/sitemap.xml",
   };
 }

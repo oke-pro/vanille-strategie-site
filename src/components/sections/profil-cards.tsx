@@ -45,7 +45,7 @@ export function ProfilCards() {
             >
               {/* Background Image with Zoom effect */}
               <Image
-                src={imageMap[p.slug] || "/images/hero-maurice.jpg"}
+                src={imageMap[p.slug] || "/images/hero-paradise.jpg"}
                 alt={p.title}
                 fill
                 className="object-cover"

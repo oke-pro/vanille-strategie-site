@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!article || article.standalone) return { title: "Article non trouvé" };
 
   const articleUrl = `${siteConfig.url}/ressources/blog/${slug}`;
-  const ogImage = `${siteConfig.url}/images/og-blog.png`;
+  const ogImage = `${siteConfig.url}/images/hero-paradise.jpg`;
 
   return {
     title: article.title,

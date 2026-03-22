@@ -2,6 +2,7 @@
 
 import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
 
@@ -112,9 +113,9 @@ function LoginForm() {
       </div>
 
       <div className="mt-4 pt-4 border-t border-slate-100 text-center">
-        <a href="/" className="text-sm text-slate-500 hover:text-slate-700 transition">
+        <Link href="/" className="text-sm text-slate-500 hover:text-slate-700 transition">
           Retour au site
-        </a>
+        </Link>
       </div>
     </div>
   );

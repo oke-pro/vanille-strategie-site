@@ -9,19 +9,7 @@ export function StickyCTAMobile() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    // Observer le formulaire lead-capture
-    const target = document.getElementById("contact-rapide");
-    if (!target) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setVisible(!entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(target);
-    return () => observer.disconnect();
+    // Toujours visible (le lien pointe vers /contact)
   }, []);
 
   // Ne pas afficher sur la page /contact
@@ -36,7 +24,7 @@ export function StickyCTAMobile() {
       {/* Décalage pour ne pas masquer le bouton WhatsApp (bottom-6 right-6 = ~80px) */}
       <div className="mr-16">
         <a
-          href="#contact-rapide"
+          href="/contact"
           className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-blue-600 font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-700 active:scale-[0.98]"
         >
           Étude gratuite
