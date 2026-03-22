@@ -109,7 +109,7 @@ export default function HomePage() {
                 Sécuriser son expatriation fiscale à Maurice
               </h2>
               <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-                Didier Laroussinie décrypte les enjeux clés : Exit Tax, convention de non-double imposition, substance requirements et erreurs à éviter.
+                Un décryptage complet des enjeux clés : Exit Tax, convention de non-double imposition, substance requirements et erreurs à éviter.
               </p>
 
               {/* Player */}

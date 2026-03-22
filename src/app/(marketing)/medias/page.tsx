@@ -98,7 +98,7 @@ export default function MediasPage() {
                 Sécuriser son expatriation fiscale à Maurice
               </h2>
               <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-                Didier Laroussinie décrypte les enjeux clés pour les entrepreneurs francophones qui envisagent Maurice.
+                Un décryptage complet des enjeux fiscaux pour les entrepreneurs francophones qui envisagent Maurice.
               </p>
 
               {/* Sujets abordés */}
