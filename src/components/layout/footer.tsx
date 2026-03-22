@@ -145,6 +145,7 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} {siteConfig.name} — Excellence Mauricienne.</p>
           <div className="flex gap-8">
             <Link href="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</Link>
+            <Link href="/politique-de-confidentialite" className="hover:text-white transition-colors">Confidentialité</Link>
             <Link href="/conditions" className="hover:text-white transition-colors">CGV</Link>
             <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
