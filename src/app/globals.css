@@ -187,3 +187,15 @@ h1, h2 {
     transform: translateX(0);
   }
 }
+
+@keyframes bounceOnce {
+  0%, 100% { transform: translateY(0); }
+  20% { transform: translateY(-8px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-4px); }
+  80% { transform: translateY(0); }
+}
+
+.animate-bounce-once {
+  animation: bounceOnce 1s ease-in-out 1s 1;
+}

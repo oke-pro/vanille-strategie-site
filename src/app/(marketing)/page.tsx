@@ -11,7 +11,7 @@ import { AuthorityBanner } from "@/components/sections/authority-banner";
 import { BlogPreview } from "@/components/sections/blog-preview";
 import { VideoInfographic } from "@/components/sections/video-infographic";
 import Link from "next/link";
-import { Mic, Headphones, Clock, ArrowRight } from "lucide-react";
+import { Mic, Headphones, Clock, ArrowRight, Scale, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -157,6 +157,61 @@ export default function HomePage() {
 
       {/* 7. Blog — Authority content preview */}
       <BlogPreview />
+
+      {/* Analyses juridiques commentées */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-blue-600">
+              Ressources exclusives
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Textes de loi commentés par Didier Laroussinie
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+              Des analyses article par article des deux piliers fiscaux de Maurice, avec nos recommandations pratiques pour les entrepreneurs.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-2">
+            <Link href="/ressources/analyse-income-tax-act" className="group">
+              <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                  <Scale className="h-7 w-7" />
+                </div>
+                <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-blue-600">
+                  Income Tax Act 1995
+                </h3>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Analyse commentée : résidence fiscale (section 73), taux 15%, dividendes, Partial Exemption Regime, CSG, Fair Share Contribution. Chaque article décrypté avec ses implications pour les investisseurs étrangers.
+                </p>
+                <p className="mt-4 flex items-center gap-2 text-sm font-semibold text-blue-600">
+                  Lire l&apos;analyse complète
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/ressources/analyse-vat-act" className="group">
+              <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                  <FileText className="h-7 w-7" />
+                </div>
+                <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-amber-600">
+                  VAT Act 1998
+                </h3>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Analyse commentée : taux 15%, seuil d&apos;assujettissement abaissé à 3M MUR, exemption des services exportés, obligations déclaratives, remboursements. Les pièges à éviter pour chaque entrepreneur.
+                </p>
+                <p className="mt-4 flex items-center gap-2 text-sm font-semibold text-amber-600">
+                  Lire l&apos;analyse complète
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* 8. Authority banner — Didier + badges */}
       <AuthorityBanner />
