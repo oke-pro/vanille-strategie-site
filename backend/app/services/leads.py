@@ -7,7 +7,7 @@ from sqlalchemy import select, func
 from app.database import async_session
 from app.models.db_models import LeadDB
 from app.models.leads import Lead
-from app.services.email import send_confirmation_email, send_lead_notification
+from app.services.email import send_confirmation_email, send_guide_fiscal, send_lead_notification
 from app.services.scoring import compute_lead_score
 
 logger = logging.getLogger(__name__)
@@ -79,6 +79,10 @@ async def create_lead(
     budget = data.get("budget")
     if email and prenom:
         await send_confirmation_email(email, prenom, profil=profil, budget=budget)
+
+    # Guide fiscal pour les leads exit intent
+    if email and source_page == "exit_intent_guide":
+        await send_guide_fiscal(email)
 
     return lead
 

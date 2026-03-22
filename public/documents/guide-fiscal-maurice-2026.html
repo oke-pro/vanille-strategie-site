@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide Fiscal Maurice 2026 — Cabinet Vanille Stratégie</title>
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-600: #475569;
+    --slate-500: #64748b;
+    --slate-400: #94a3b8;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --slate-50: #f8fafc;
+    --blue-700: #1d4ed8;
+    --blue-600: #2563eb;
+    --blue-500: #3b82f6;
+    --blue-100: #dbeafe;
+    --blue-50: #eff6ff;
+    --amber-600: #d97706;
+    --amber-100: #fef3c7;
+    --green-700: #15803d;
+    --green-100: #dcfce7;
+    --red-600: #dc2626;
+    --red-100: #fee2e2;
+    --white: #ffffff;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm 18mm 25mm 18mm;
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.65;
+    color: var(--slate-800);
+    background: var(--white);
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { font-size: 10.5pt; }
+    .page-break { page-break-before: always; }
+    .no-break { page-break-inside: avoid; }
+    .cover-page { page-break-after: always; }
+    .toc-page { page-break-after: always; }
+    footer.page-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 8pt;
+      color: var(--slate-500);
+      border-top: 1px solid var(--slate-200);
+      padding-top: 4pt;
+    }
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--slate-900);
+    line-height: 1.3;
+  }
+
+  h1 { font-size: 28pt; margin-bottom: 12pt; }
+  h2 { font-size: 18pt; margin-bottom: 10pt; margin-top: 20pt; border-bottom: 2px solid var(--blue-600); padding-bottom: 6pt; }
+  h3 { font-size: 13pt; margin-bottom: 8pt; margin-top: 16pt; color: var(--blue-700); }
+  h4 { font-size: 11pt; margin-bottom: 6pt; margin-top: 12pt; color: var(--slate-700); }
+
+  p { margin-bottom: 8pt; text-align: justify; }
+  ul, ol { margin-bottom: 8pt; padding-left: 20pt; }
+  li { margin-bottom: 4pt; }
+
+  /* ===== COVER ===== */
+  .cover-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(160deg, var(--slate-900) 0%, var(--blue-700) 100%);
+    color: var(--white);
+    padding: 40pt;
+    margin: -20mm -18mm 0 -18mm;
+  }
+
+  @media print {
+    .cover-page {
+      margin: 0;
+      padding: 60pt 40pt;
+      min-height: auto;
+      height: 100%;
+    }
+  }
+
+  .cover-page .logo-placeholder {
+    width: 80pt;
+    height: 80pt;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30pt;
+    font-size: 32pt;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: var(--amber-600);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .cover-page h1 {
+    color: var(--white);
+    font-size: 36pt;
+    margin-bottom: 8pt;
+    letter-spacing: 1pt;
+  }
+
+  .cover-page .subtitle {
+    font-size: 14pt;
+    color: var(--slate-200);
+    max-width: 400pt;
+    line-height: 1.5;
+    margin-bottom: 40pt;
+    font-style: italic;
+  }
+
+  .cover-page .author-block {
+    border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 20pt;
+    font-size: 11pt;
+    color: var(--slate-200);
+    line-height: 1.7;
+  }
+
+  .cover-page .author-block strong {
+    color: var(--white);
+    font-size: 12pt;
+  }
+
+  .cover-page .edition {
+    margin-top: 30pt;
+    font-size: 10pt;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+  }
+
+  /* ===== TOC ===== */
+  .toc-page { padding-top: 30pt; }
+  .toc-page h2 { text-align: center; border-bottom: none; margin-bottom: 20pt; }
+  .toc-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6pt 0;
+    border-bottom: 1px dotted var(--slate-300);
+    font-size: 11pt;
+  }
+  .toc-entry .toc-chapter { font-weight: 600; color: var(--slate-800); }
+  .toc-entry .toc-page-num { color: var(--blue-600); font-weight: 600; min-width: 24pt; text-align: right; }
+
+  /* ===== CALLOUT BOXES ===== */
+  .callout {
+    border-left: 4px solid var(--blue-600);
+    background: var(--blue-50);
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    border-radius: 0 4pt 4pt 0;
+    font-size: 10.5pt;
+  }
+  .callout.warning {
+    border-left-color: var(--amber-600);
+    background: var(--amber-100);
+  }
+  .callout.success {
+    border-left-color: var(--green-700);
+    background: var(--green-100);
+  }
+  .callout.danger {
+    border-left-color: var(--red-600);
+    background: var(--red-100);
+  }
+  .callout strong { display: block; margin-bottom: 4pt; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+  }
+  th {
+    background: var(--slate-800);
+    color: var(--white);
+    padding: 8pt 10pt;
+    text-align: left;
+    font-weight: 600;
+    font-size: 9.5pt;
+  }
+  td {
+    padding: 7pt 10pt;
+    border-bottom: 1px solid var(--slate-200);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: var(--slate-50); }
+  tr:hover td { background: var(--blue-50); }
+
+  /* ===== CHAPTER HEADER ===== */
+  .chapter-header {
+    background: var(--slate-900);
+    color: var(--white);
+    padding: 18pt 20pt;
+    margin: -20mm -18mm 20pt -18mm;
+    text-align: left;
+  }
+
+  @media print {
+    .chapter-header { margin: 0 0 20pt 0; }
+  }
+
+  .chapter-header .chapter-num {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    color: var(--blue-500);
+    display: block;
+    margin-bottom: 4pt;
+  }
+  .chapter-header h2 {
+    color: var(--white);
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+  }
+
+  /* ===== CHECKLIST ===== */
+  .checklist { list-style: none; padding-left: 0; }
+  .checklist li {
+    padding: 6pt 0 6pt 24pt;
+    position: relative;
+    border-bottom: 1px solid var(--slate-100);
+  }
+  .checklist li::before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+    color: var(--blue-600);
+    font-size: 13pt;
+  }
+
+  /* ===== BACK PAGE ===== */
+  .back-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 40pt;
+  }
+  .back-page .cta-box {
+    background: linear-gradient(160deg, var(--slate-900), var(--blue-700));
+    color: var(--white);
+    padding: 30pt 40pt;
+    border-radius: 8pt;
+    max-width: 380pt;
+  }
+  .back-page .cta-box h2 {
+    color: var(--white);
+    border: none;
+    font-size: 20pt;
+    margin-bottom: 14pt;
+  }
+  .back-page .cta-box p { color: var(--slate-200); text-align: center; }
+  .back-page .cta-box .cta-link {
+    display: inline-block;
+    margin-top: 16pt;
+    background: var(--amber-600);
+    color: var(--white);
+    padding: 10pt 24pt;
+    border-radius: 4pt;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12pt;
+  }
+  .back-page .contact-info {
+    margin-top: 24pt;
+    font-size: 10pt;
+    color: var(--slate-600);
+    line-height: 1.8;
+  }
+
+  .page-footer-inline {
+    text-align: center;
+    font-size: 8pt;
+    color: var(--slate-500);
+    border-top: 1px solid var(--slate-200);
+    padding-top: 8pt;
+    margin-top: 30pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- COVER PAGE -->
+<!-- ============================================================ -->
+<div class="cover-page">
+  <div class="logo-placeholder">VS</div>
+  <h1>Guide Fiscal<br>Maurice 2026</h1>
+  <p class="subtitle">Tout ce qu'un entrepreneur francophone doit savoir avant de s'implanter</p>
+  <div class="author-block">
+    <strong>Cabinet Vanille Stratégie</strong><br>
+    Didier Laroussinie<br>
+    Expert-Comptable &amp; Fiscaliste International<br>
+    Membre inscrit — MIPA (Mauritius Institute of Professional Accountants)
+  </div>
+  <p class="edition">Édition Mars 2026</p>
+</div>
+
+<!-- ============================================================ -->
+<!-- TABLE OF CONTENTS -->
+<!-- ============================================================ -->
+<div class="toc-page page-break">
+  <h2>Table des matières</h2>
+
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 1 — Pourquoi Maurice en 2026 ?</span><span class="toc-page-num">3</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 2 — Les 3 structures juridiques</span><span class="toc-page-num">5</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 3 — Finance Act 2025 : ce qui a changé</span><span class="toc-page-num">7</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 4 — Permis de résidence</span><span class="toc-page-num">9</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 5 — Convention fiscale France-Maurice</span><span class="toc-page-num">11</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 6 — TVA à Maurice</span><span class="toc-page-num">13</span></div>
+  <div class="toc-entry"><span class="toc-chapter">Chapitre 7 — Checklist d'implantation</span><span class="toc-page-num">15</span></div>
+
+  <div style="margin-top: 30pt; padding: 14pt; background: var(--slate-50); border-radius: 4pt; font-size: 10pt; color: var(--slate-600); text-align: center;">
+    <strong style="color: var(--slate-800);">Avertissement</strong><br>
+    Ce guide est fourni à titre informatif et ne constitue pas un conseil fiscal personnalisé.
+    La législation mauricienne évolue régulièrement. Nous recommandons de consulter
+    le Cabinet Vanille Stratégie pour une analyse adaptée à votre situation.
+    Données à jour au 1<sup>er</sup> mars 2026.
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 1 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 1</span>
+    <h2>Pourquoi Maurice en 2026 ?</h2>
+  </div>
+
+  <h3>Un cadre fiscal parmi les plus compétitifs au monde</h3>
+  <p>L'île Maurice s'est imposée depuis deux décennies comme l'une des juridictions les plus attractives pour les entrepreneurs francophones souhaitant structurer leur activité à l'international. En 2026, les fondamentaux restent exceptionnellement favorables :</p>
+
+  <ul>
+    <li><strong>Impôt sur les sociétés (IS) : 15 % flat</strong> — taux unique, sans tranches, sans surtaxes (hors Fair Share Contribution, voir chapitre 3). Pour les Global Business Companies bénéficiant du régime de Partial Exemption, le taux effectif descend à <strong>3 %</strong>.</li>
+    <li><strong>0 % sur les dividendes</strong> — aucune retenue à la source sur les dividendes distribués, que ce soit vers des résidents ou des non-résidents.</li>
+    <li><strong>0 % sur les plus-values</strong> — il n'existe aucun impôt sur les gains en capital à Maurice, qu'il s'agisse de cessions d'actions, d'immobilier ou d'actifs incorporels.</li>
+    <li><strong>0 % sur les successions et donations</strong> — pas de droits de succession ni d'impôt sur les donations, un avantage majeur pour la planification patrimoniale.</li>
+  </ul>
+
+  <h3>Un réseau conventionnel étendu</h3>
+  <p>Maurice a signé <strong>46 traités de non-double imposition</strong> (dont 37 actuellement en vigueur), couvrant l'essentiel de l'Afrique, l'Europe, l'Asie et le Moyen-Orient. La convention avec la France, signée en 1980 et amendée par avenant en 2011, reste l'un des piliers de la stratégie d'implantation des entrepreneurs français. Ce réseau permet de réduire ou d'éliminer les retenues à la source sur les flux transfrontaliers (dividendes, intérêts, redevances) et d'éviter la double imposition des revenus.</p>
+
+  <p>Maurice figure par ailleurs sur la liste blanche de l'Union européenne depuis février 2022, après avoir été retirée de la liste grise du GAFI en octobre 2021. Cette conformité aux standards internationaux (BEPS, échange automatique d'informations CRS/FATCA) renforce la crédibilité de la juridiction auprès des partenaires bancaires et commerciaux.</p>
+
+  <h3>Stabilité et qualité de vie</h3>
+  <p>Maurice bénéficie d'une stabilité politique remarquable : démocratie parlementaire ininterrompue depuis l'indépendance en 1968, alternance pacifique, État de droit fondé sur le système juridique mixte (common law britannique et code civil français). Le pays se classe régulièrement 1<sup>er</sup> en Afrique dans les indices de gouvernance (Mo Ibrahim Foundation) et de liberté économique (Heritage Foundation).</p>
+
+  <p>Le fuseau horaire GMT+4 est idéal pour travailler simultanément avec l'Europe (matin) et l'Asie (après-midi). Le français et l'anglais sont les deux langues administratives. La qualité de vie — climat tropical, coût de la vie maîtrisé, infrastructures modernes, système de santé en progression — attire chaque année davantage de professionnels et de familles.</p>
+
+  <h3>Comparatif rapide : Maurice vs alternatives populaires</h3>
+
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Critère</th>
+        <th>Maurice</th>
+        <th>France</th>
+        <th>Dubaï (UAE)</th>
+        <th>Portugal</th>
+        <th>Maroc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>IS standard</td>
+        <td><strong>15 %</strong></td>
+        <td>25 %</td>
+        <td>9 %</td>
+        <td>21 %</td>
+        <td>20-31 %</td>
+      </tr>
+      <tr>
+        <td>Dividendes (retenue)</td>
+        <td><strong>0 %</strong></td>
+        <td>30 % (PFU)</td>
+        <td>0 %</td>
+        <td>28 %</td>
+        <td>15 %</td>
+      </tr>
+      <tr>
+        <td>Plus-values</td>
+        <td><strong>0 %</strong></td>
+        <td>30 %</td>
+        <td>0 %</td>
+        <td>28 %</td>
+        <td>20 %</td>
+      </tr>
+      <tr>
+        <td>Succession</td>
+        <td><strong>0 %</strong></td>
+        <td>5-45 %</td>
+        <td>0 %</td>
+        <td>0-10 %</td>
+        <td>0 % (ligne directe)</td>
+      </tr>
+      <tr>
+        <td>Traités fiscaux</td>
+        <td>46 signés</td>
+        <td>120+</td>
+        <td>~100</td>
+        <td>80+</td>
+        <td>60+</td>
+      </tr>
+      <tr>
+        <td>Langue française</td>
+        <td>Oui (officielle)</td>
+        <td>Oui</td>
+        <td>Non</td>
+        <td>Non</td>
+        <td>Oui (usuelle)</td>
+      </tr>
+      <tr>
+        <td>Convention avec France</td>
+        <td>Oui</td>
+        <td>—</td>
+        <td>Non</td>
+        <td>Oui</td>
+        <td>Oui</td>
+      </tr>
+      <tr>
+        <td>Création société</td>
+        <td>3-5 jours</td>
+        <td>7-15 jours</td>
+        <td>2-3 jours</td>
+        <td>5-10 jours</td>
+        <td>5-10 jours</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout success">
+    <strong>Point clé</strong>
+    Maurice combine un taux d'IS compétitif, l'absence totale de taxation sur les dividendes, plus-values et successions, un réseau de conventions fiscales étendu et une francophonie native. C'est cette combinaison unique qui fait la différence par rapport à Dubaï (pas de convention avec la France, pas de français) ou au Portugal (fiscalité lourde sur les dividendes).
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 2 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 2</span>
+    <h2>Les 3 structures juridiques</h2>
+  </div>
+
+  <p>Le droit mauricien offre trois véhicules principaux pour structurer une activité commerciale ou de holding. Le choix dépend de votre marché cible, de vos besoins en matière de conventions fiscales et de votre stratégie patrimoniale globale.</p>
+
+  <h3>1. Domestic Company (DC)</h3>
+  <p>La Domestic Company est la structure de droit commun, régulée par le Companies Act 2001 et enregistrée auprès du <em>Registrar of Companies</em> (Corporate and Business Registration Department — CBRD). C'est le véhicule naturel pour toute activité dont le marché principal est Maurice ou qui ne nécessite pas d'accès aux conventions fiscales internationales via la Financial Services Commission (FSC).</p>
+
+  <ul>
+    <li><strong>Imposition :</strong> IS à 15 % sur les bénéfices mondiaux. Possibilité de déduire un crédit d'impôt étranger (Foreign Tax Credit) pour les revenus de source étrangère déjà imposés.</li>
+    <li><strong>Création :</strong> 3 à 5 jours ouvrés, procédure dématérialisée via le portail CBRD. Pas de capital minimum imposé.</li>
+    <li><strong>Obligations :</strong> états financiers annuels audités (si CA &gt; 50M MUR ou actifs &gt; 100M MUR), déclarations fiscales annuelles (MRA), tenue d'un registre des bénéficiaires effectifs.</li>
+    <li><strong>Cas d'usage :</strong> commerce local, prestation de services à Maurice, holding simple, start-up locale.</li>
+  </ul>
+
+  <h3>2. Global Business Company (GBC)</h3>
+  <p>La GBC (anciennement GBC1 avant la réforme de 2019) est la structure phare de la finance internationale mauricienne. Elle est régulée par la <em>Financial Services Commission</em> (FSC) sous le Financial Services Act 2007 et bénéficie d'un régime fiscal spécifique codifié à la <strong>Section 71B</strong> de l'Income Tax Act.</p>
+
+  <ul>
+    <li><strong>Partial Exemption System :</strong> 80 % d'exemption sur certaines catégories de revenus (dividendes de source étrangère, intérêts, royalties, revenus de fonds collectifs, profits de sociétés étrangères). Le taux effectif passe ainsi à <strong>3 %</strong> (15 % × 20 %).</li>
+    <li><strong>Accès aux traités fiscaux :</strong> la GBC est un résident fiscal mauricien au sens des conventions. Elle peut donc bénéficier des taux réduits de retenue à la source prévus par les 37 traités en vigueur.</li>
+    <li><strong>Substance requirements :</strong> la GBC doit démontrer une substance économique réelle à Maurice. Depuis le Finance Act 2025, ces exigences ont été renforcées (voir chapitre 3) : au minimum 2 administrateurs résidents ou un management company agréé, prise de décisions stratégiques à Maurice, dépenses opérationnelles proportionnées.</li>
+    <li><strong>Licence FSC :</strong> obtention en 2 à 4 semaines, avec frais de licence annuels d'environ 20 000 MUR (≈ 400 EUR).</li>
+    <li><strong>Cas d'usage :</strong> holding internationale, trading international, gestion de propriété intellectuelle, fonds d'investissement, services financiers.</li>
+  </ul>
+
+  <h3>3. Authorised Company (AC)</h3>
+  <p>L'Authorised Company (anciennement GBC2) est une entité offshore au sens strict. Elle ne peut pas exercer d'activité à Maurice ni avec des résidents mauriciens, et <strong>n'a pas accès aux conventions fiscales</strong>.</p>
+
+  <ul>
+    <li><strong>Imposition :</strong> 0 % d'IS. Aucune déclaration fiscale requise auprès du MRA.</li>
+    <li><strong>Limites :</strong> pas de Tax Residency Certificate (TRC), pas d'accès aux traités, pas de possibilité de facturer à Maurice, pas de compte bancaire à Maurice (sauf autorisation spéciale FSC).</li>
+    <li><strong>Cas d'usage :</strong> SPV (Special Purpose Vehicle) pour détention d'actifs, véhicule de protection patrimoniale, société de pur holding dans un schéma sans besoin de traité.</li>
+  </ul>
+
+  <div class="callout warning">
+    <strong>Attention : l'AC n'est plus un choix par défaut</strong>
+    Avec le durcissement des standards BEPS et la pression accrue sur les structures sans substance, l'Authorised Company est devenue un outil de niche. Les banques internationales exigent désormais quasi systématiquement un TRC et une preuve de substance. Privilégiez la GBC ou la DC sauf cas patrimonial spécifique.
+  </div>
+
+  <h3>Tableau comparatif</h3>
+
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Caractéristique</th>
+        <th>Domestic Company</th>
+        <th>Global Business (GBC)</th>
+        <th>Authorised Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Régulateur</td><td>CBRD</td><td>FSC</td><td>FSC</td></tr>
+      <tr><td>IS effectif</td><td>15 %</td><td>3 % (Partial Exemption)</td><td>0 %</td></tr>
+      <tr><td>Accès traités fiscaux</td><td>Oui (résident)</td><td>Oui (TRC)</td><td>Non</td></tr>
+      <tr><td>Activité locale</td><td>Oui</td><td>Oui (avec substance)</td><td>Non</td></tr>
+      <tr><td>Délai de création</td><td>3-5 jours</td><td>2-4 semaines</td><td>1-2 semaines</td></tr>
+      <tr><td>Capital minimum</td><td>Aucun</td><td>Aucun (recommandé 1 USD)</td><td>Aucun</td></tr>
+      <tr><td>Audit obligatoire</td><td>Selon seuils</td><td>Oui (systématique)</td><td>Non</td></tr>
+      <tr><td>Bénéficiaires effectifs</td><td>Registre CBRD</td><td>Registre FSC</td><td>Registre FSC</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Conseil Vanille Stratégie</strong>
+    Pour un entrepreneur français souhaitant s'installer à Maurice et développer une activité de services à l'international, la combinaison la plus courante est : une <strong>GBC</strong> pour l'activité internationale (IS effectif 3 %) + une <strong>DC</strong> pour les activités locales éventuelles. Didier Laroussinie recommande systématiquement une étude de structure personnalisée avant tout choix définitif.
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 3 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 3</span>
+    <h2>Finance Act 2025 — Ce qui a changé</h2>
+  </div>
+
+  <p>Le Finance (Miscellaneous Provisions) Act 2025, promulgué en août 2025, a introduit plusieurs réformes majeures dans le paysage fiscal mauricien. Ces changements s'inscrivent dans la volonté du gouvernement d'aligner Maurice sur les standards internationaux du Pilier 2 de l'OCDE (Inclusive Framework on BEPS) tout en préservant la compétitivité de la juridiction. Voici les cinq évolutions clés que tout entrepreneur doit connaître.</p>
+
+  <h3>1. Fair Share Contribution (FSC Tax)</h3>
+  <p>La mesure la plus commentée du Finance Act 2025 est l'introduction de la <strong>Fair Share Contribution</strong>, une surtaxe de <strong>15 %</strong> applicable aux entreprises dont le chiffre d'affaires annuel dépasse <strong>12 millions MUR</strong> (environ 240 000 EUR). Cette contribution se calcule sur la différence entre l'impôt effectivement payé et un plancher de 15 % du bénéfice comptable ajusté.</p>
+
+  <p>En pratique, cette mesure vise principalement les entreprises bénéficiant de crédits d'impôt, d'incentives sectoriels ou de la Partial Exemption qui ramènent leur taux effectif bien en dessous de 15 %. Pour une GBC dont le taux effectif est de 3 %, la Fair Share Contribution peut potentiellement rehausser l'imposition effective, mais des crédits et déductions spécifiques limitent souvent l'impact réel.</p>
+
+  <div class="callout warning">
+    <strong>Impact concret pour les GBC</strong>
+    Le MRA a précisé par <em>Practice Note</em> que les revenus bénéficiant de la Partial Exemption sous Section 71B restent éligibles aux crédits d'impôt étrangers dans le calcul de la Fair Share Contribution. L'impact net dépend fortement de la structure des revenus. Une simulation personnalisée est indispensable.
+  </div>
+
+  <h3>2. Qualified Domestic Minimum Top-up Tax (QDMTT)</h3>
+  <p>Conformément aux règles GloBE (Global Anti-Base Erosion) du Pilier 2 de l'OCDE, Maurice a introduit un <strong>impôt minimum complémentaire domestique qualifié (QDMTT)</strong> de 15 % applicable aux entités constituantes de groupes multinationaux dont le chiffre d'affaires consolidé mondial dépasse <strong>750 millions EUR</strong>.</p>
+
+  <p>Le QDMTT permet à Maurice de collecter elle-même l'impôt complémentaire (top-up tax) plutôt que de laisser les juridictions parentes le faire via l'IIR (Income Inclusion Rule). Pour les PME et ETI qui constituent l'essentiel de notre clientèle, cette mesure n'a <strong>aucun impact direct</strong> : elle ne concerne que les très grands groupes internationaux. Toutefois, si vous êtes filiale d'un tel groupe, il convient de vérifier l'impact avec votre direction fiscale groupe.</p>
+
+  <h3>3. Alternative Minimum Tax (AMT)</h3>
+  <p>Le Finance Act 2025 a instauré un <strong>Alternative Minimum Tax de 10 %</strong> sur le chiffre d'affaires pour les entreprises opérant dans cinq secteurs spécifiques :</p>
+
+  <ol>
+    <li>Banques et institutions financières non bancaires</li>
+    <li>Télécommunications</li>
+    <li>Tabac et alcool (fabrication et distribution)</li>
+    <li>Jeux et paris (gaming)</li>
+    <li>Immobilier commercial (hors résidentiel)</li>
+  </ol>
+
+  <p>L'AMT s'applique lorsque l'impôt sur les sociétés calculé normalement est inférieur à 10 % du chiffre d'affaires brut. Cette mesure vise à garantir une contribution fiscale minimale des secteurs à forte profitabilité. Elle ne concerne pas les entreprises de services, de consulting, de négoce international ou de technologie.</p>
+
+  <h3>4. Substance Requirements renforcés</h3>
+  <p>Les exigences de substance économique pour les GBC ont été sensiblement renforcées. La FSC exige désormais :</p>
+
+  <ul>
+    <li><strong>Administrateurs résidents :</strong> au minimum deux directeurs résidents fiscaux mauriciens ou recours à un <em>Management Company</em> agréé par la FSC.</li>
+    <li><strong>Décisions stratégiques :</strong> les réunions du Board et les décisions stratégiques (investissements, contrats majeurs, budgets) doivent être documentées et prises à Maurice.</li>
+    <li><strong>Employés qualifiés :</strong> pour les activités réglementées (fonds, assurance, banque), un minimum d'employés qualifiés sur place est requis.</li>
+    <li><strong>Dépenses opérationnelles :</strong> les dépenses encourues à Maurice doivent être proportionnées à l'activité déclarée. Le MRA et la FSC peuvent refuser la Partial Exemption si les dépenses locales sont jugées insuffisantes.</li>
+    <li><strong>Locaux physiques :</strong> adresse professionnelle réelle (pas uniquement une boîte postale), avec accès démontrable aux locaux.</li>
+  </ul>
+
+  <div class="callout danger">
+    <strong>Risque majeur : perte de la Partial Exemption</strong>
+    En cas de non-respect des substance requirements, la FSC peut refuser le renouvellement de la licence GBC et le MRA peut requalifier les revenus comme ne bénéficiant pas de la Partial Exemption. Le taux effectif passerait alors de 3 % à 15 %. Ce risque est réel : le MRA a intensifié ses contrôles depuis 2024.
+  </div>
+
+  <h3>5. Transfer Pricing formalisé</h3>
+  <p>Maurice a formalisé ses règles de prix de transfert conformément aux Lignes directrices de l'OCDE. Depuis l'année fiscale 2025-2026, les entreprises réalisant des transactions avec des parties liées dépassant <strong>50 millions MUR</strong> par an doivent préparer et conserver une <strong>documentation de prix de transfert</strong> (Master File et Local File). Les cinq méthodes reconnues par l'OCDE sont acceptées : CUP, Resale Minus, Cost Plus, TNMM et Profit Split.</p>
+
+  <p>Pour les plus petites structures, même en l'absence d'obligation documentaire formelle, il est vivement recommandé de s'assurer que les transactions intra-groupe sont effectuées à des conditions de pleine concurrence (<em>arm's length</em>), car le MRA peut requalifier toute transaction jugée non conforme.</p>
+
+  <div class="callout">
+    <strong>Ce que fait le Cabinet Vanille Stratégie</strong>
+    Didier Laroussinie et son équipe accompagnent chaque client dans l'analyse d'impact du Finance Act 2025 sur leur structure existante ou projetée. Nous réalisons des simulations chiffrées intégrant la Fair Share Contribution, les substance requirements et les obligations de transfer pricing. Contactez-nous pour une revue gratuite de votre situation.
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 4 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 4</span>
+    <h2>Permis de résidence</h2>
+  </div>
+
+  <p>S'implanter fiscalement à Maurice nécessite, dans la plupart des cas, d'y établir sa résidence fiscale. Le <em>Non-Citizens (Employment Restriction) Act</em> et l'<em>Immigration Act</em>, complétés par les circulaires de l'Economic Development Board (EDB), définissent plusieurs catégories de permis. Le Finance Act 2025 et les directives EDB de fin 2025 ont apporté des modifications significatives.</p>
+
+  <h3>1. Occupation Permit — Investor (OP Investor)</h3>
+  <p>Le permis le plus courant pour les entrepreneurs qui créent ou acquièrent une société à Maurice.</p>
+
+  <h4>Option 1 : Investissement initial de 50 000 USD</h4>
+  <ul>
+    <li>Transfert de 50 000 USD minimum sur le compte bancaire de la société mauricienne.</li>
+    <li>Plan d'affaires viable démontrant la création de valeur pour l'économie locale.</li>
+    <li>Le permis est délivré pour 3 ans, renouvelable sans limite.</li>
+    <li>Donne droit au statut de résident fiscal (si séjour &gt; 183 jours par an ou centre des intérêts vitaux à Maurice).</li>
+    <li>Le conjoint et les enfants de moins de 24 ans obtiennent un <em>Dependent Permit</em>.</li>
+  </ul>
+
+  <h4>Option 2 : Sans investissement initial (Turnover based)</h4>
+  <ul>
+    <li>Pas d'investissement initial requis, mais la société doit atteindre un chiffre d'affaires annuel de <strong>2 millions MUR</strong> (≈ 40 000 EUR) dans les 2 premières années.</li>
+    <li>Permis initialement délivré pour 2 ans, renouvelable pour 3 ans si le seuil est atteint.</li>
+    <li>Option plus flexible mais plus contraignante à terme.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Conseil pratique</strong>
+    L'Option 1 reste la voie royale. Les 50 000 USD ne sont pas une taxe : ils constituent le capital de travail de votre société. Didier Laroussinie recommande de structurer ce transfert en amont avec la banque pour éviter les délais liés aux procédures de compliance bancaire (KYC/AML), qui peuvent prendre 2 à 6 semaines.
+  </div>
+
+  <h3>2. Occupation Permit — Self-Employed</h3>
+  <p>Destiné aux professionnels indépendants (consultants, freelances, professions libérales) qui exercent à titre individuel à Maurice. Les conditions sont similaires à l'OP Investor Option 2, avec un revenu annuel minimum de <strong>1,2 million MUR</strong> (≈ 24 000 EUR). Ce permis convient aux consultants internationaux qui facturent depuis Maurice sans nécessairement créer une société.</p>
+
+  <h3>3. ProPass (nouveau 2025)</h3>
+  <p>Introduit par l'EDB en 2025, le <strong>Professional Pass (ProPass)</strong> est conçu pour les professionnels qualifiés dans des secteurs prioritaires : fintech, intelligence artificielle, cybersécurité, économie bleue, biotechnologie, industrie pharmaceutique. Le ProPass offre :</p>
+
+  <ul>
+    <li>Délivrance accélérée (5 jours ouvrés via le guichet unique EDB).</li>
+    <li>Durée initiale de 3 ans, renouvelable.</li>
+    <li>Pas d'investissement initial requis.</li>
+    <li>Revenu minimum mensuel de 60 000 MUR (≈ 1 200 EUR).</li>
+    <li>Accès au statut de résident fiscal.</li>
+  </ul>
+
+  <h3>4. Expert Pass (nouveau 2025)</h3>
+  <p>Variante premium du ProPass, l'<strong>Expert Pass</strong> cible les cadres dirigeants et experts de haut niveau recrutés par des entreprises mauriciennes ou des GBC. Conditions : contrat d'emploi avec un salaire mensuel minimum de <strong>150 000 MUR</strong> (≈ 3 000 EUR), qualification ou expérience significative dans le secteur. Délivrance en 5 jours. Ce permis facilite le recrutement international de talents pour les entreprises implantées à Maurice.</p>
+
+  <h3>5. Retired Non-Citizen Permit (durci en 2025)</h3>
+  <p>Le permis de résident pour retraités a été durci par le Finance Act 2025 :</p>
+
+  <ul>
+    <li>Transfert initial requis porté à <strong>2 500 USD par mois</strong> (soit 30 000 USD/an) sur un compte bancaire mauricien, contre 1 500 USD auparavant.</li>
+    <li>Âge minimum : 50 ans.</li>
+    <li>Le permis est délivré pour 10 ans, renouvelable.</li>
+    <li>Le retraité ne peut pas exercer d'activité professionnelle rémunérée à Maurice.</li>
+  </ul>
+
+  <div class="callout warning">
+    <strong>Durcissement notable</strong>
+    Le doublement quasi effectif du transfert mensuel requis (de 1 500 à 2 500 USD) rend ce permis moins accessible. Pour les retraités souhaitant conserver une activité de conseil, l'OP Self-Employed ou le Premium Visa peuvent être plus adaptés.
+  </div>
+
+  <h3>6. Premium Visa</h3>
+  <p>Le <strong>Premium Visa</strong> permet à tout non-citoyen disposant de revenus suffisants de résider à Maurice sans restriction d'activité professionnelle, à condition de ne pas exercer d'emploi salarié pour une entité mauricienne. Il est particulièrement adapté aux « digital nomads » et aux entrepreneurs dont l'activité est 100 % en ligne.</p>
+
+  <ul>
+    <li>Durée : 1 an, renouvelable annuellement.</li>
+    <li>Pas de revenu minimum officiel, mais l'EDB évalue la capacité financière du candidat.</li>
+    <li>N'accorde pas automatiquement le statut de résident fiscal (il faut satisfaire le test des 183 jours ou le test du centre des intérêts vitaux).</li>
+  </ul>
+
+  <h3>Tableau récapitulatif</h3>
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Permis</th>
+        <th>Investissement / Revenu</th>
+        <th>Durée</th>
+        <th>Délai d'obtention</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>OP Investor (Opt. 1)</td><td>50 000 USD (capital)</td><td>3 ans</td><td>2-4 semaines</td></tr>
+      <tr><td>OP Investor (Opt. 2)</td><td>CA 2M MUR/an</td><td>2 ans</td><td>2-4 semaines</td></tr>
+      <tr><td>OP Self-Employed</td><td>Revenu 1,2M MUR/an</td><td>3 ans</td><td>2-4 semaines</td></tr>
+      <tr><td>ProPass</td><td>60 000 MUR/mois</td><td>3 ans</td><td>5 jours</td></tr>
+      <tr><td>Expert Pass</td><td>150 000 MUR/mois</td><td>3 ans</td><td>5 jours</td></tr>
+      <tr><td>Retired Permit</td><td>2 500 USD/mois</td><td>10 ans</td><td>3-6 semaines</td></tr>
+      <tr><td>Premium Visa</td><td>Capacité financière</td><td>1 an</td><td>2-3 semaines</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 5 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 5</span>
+    <h2>Convention fiscale France-Maurice</h2>
+  </div>
+
+  <p>La convention de non-double imposition entre la République française et la République de Maurice, signée le 11 décembre 1980 et entrée en vigueur le 1<sup>er</sup> avril 1982, puis modifiée par l'avenant du 23 juin 2011 (entré en vigueur le 1<sup>er</sup> janvier 2013), constitue le socle juridique de toute planification fiscale franco-mauricienne. Pour l'entrepreneur français qui s'installe à Maurice, la compréhension de cette convention est absolument essentielle.</p>
+
+  <h3>Principes fondamentaux</h3>
+
+  <p>La convention suit le modèle OCDE et établit des règles d'attribution du droit d'imposer pour chaque catégorie de revenus. Le principe directeur est d'éviter qu'un même revenu soit imposé deux fois : une fois dans l'État de la source (où le revenu est généré) et une fois dans l'État de résidence (où le contribuable est domicilié fiscalement).</p>
+
+  <p>La <strong>résidence fiscale</strong> est déterminée en premier lieu par le droit interne de chaque État, puis, en cas de double résidence, par les critères de départage de l'article 4 (« tie-breaker rules ») : foyer d'habitation permanent, centre des intérêts vitaux, séjour habituel, nationalité. Un contribuable ne peut être résident fiscal que d'un seul État au sens de la convention.</p>
+
+  <h3>Traitement des revenus clés</h3>
+
+  <h4>Dividendes (Article 11)</h4>
+  <p>Les dividendes versés par une société mauricienne à un résident français peuvent être imposés dans les deux États, mais la retenue à la source dans l'État de la source (Maurice) est plafonnée à :</p>
+  <ul>
+    <li><strong>5 %</strong> si le bénéficiaire effectif détient directement au moins 10 % du capital de la société distributrice.</li>
+    <li><strong>15 %</strong> dans tous les autres cas.</li>
+  </ul>
+  <p>En pratique, Maurice n'applique <strong>aucune retenue à la source</strong> sur les dividendes (taux domestique = 0 %). L'avantage de la convention réside donc principalement dans la protection contre une éventuelle modification future du droit interne mauricien et dans la possibilité pour la France d'accorder un crédit d'impôt.</p>
+
+  <h4>Intérêts (Article 12)</h4>
+  <p>Les intérêts sont imposables dans l'État de résidence du bénéficiaire, mais l'État de la source peut prélever une retenue plafonnée à <strong>15 %</strong>. Des exemptions s'appliquent pour les intérêts versés aux États eux-mêmes, à leurs banques centrales et à certains organismes publics.</p>
+
+  <h4>Redevances (Royalties) (Article 13)</h4>
+  <p>Les redevances sont imposables dans l'État de résidence du bénéficiaire effectif. Toutefois, l'État de la source peut prélever une retenue limitée à <strong>15 %</strong>. Sont considérés comme redevances les paiements pour l'usage de droits d'auteur, brevets, marques, dessins, modèles, procédés secrets et pour des informations ayant trait à une expérience industrielle, commerciale ou scientifique.</p>
+
+  <h4>Plus-values (Article 14)</h4>
+  <p>Les plus-values sur cessions de biens immobiliers sont imposables dans l'État de situation de l'immeuble. Les plus-values sur cessions de participations dans des sociétés à prépondérance immobilière suivent la même règle. Les plus-values sur cessions de biens mobiliers (actions, parts sociales) sont en principe imposables uniquement dans l'État de résidence du cédant — un point crucial pour l'entrepreneur qui a transféré sa résidence à Maurice.</p>
+
+  <h3>L'Exit Tax française : le piège à anticiper</h3>
+
+  <p>L'article 167 bis du Code général des impôts français prévoit un <strong>impôt de sortie (exit tax)</strong> applicable aux contribuables qui transfèrent leur domicile fiscal hors de France et qui détiennent des participations directes ou indirectes représentant au moins <strong>50 % des bénéfices sociaux</strong> d'une société, ou dont la valeur des participations dépasse <strong>800 000 EUR</strong>.</p>
+
+  <p>L'exit tax porte sur les <strong>plus-values latentes</strong> (non encore réalisées) au jour du transfert. Le taux applicable est celui du prélèvement forfaitaire unique (PFU) de <strong>30 %</strong> (12,8 % IR + 17,2 % prélèvements sociaux).</p>
+
+  <p>Toutefois, un <strong>sursis de paiement automatique</strong> s'applique pour les transferts vers un État membre de l'UE/EEE. Pour les transferts vers Maurice (État tiers), le sursis de paiement est accordé sur demande, sous réserve de constitution de garanties (cautionnement bancaire, nantissement de titres, etc.).</p>
+
+  <p>L'exit tax est <strong>dégrevée d'office</strong> (annulée) si les titres sont toujours dans le patrimoine du contribuable <strong>5 ans</strong> après le transfert (ou 2 ans pour les patrimoines inférieurs à 2,57 millions EUR). En cas de cession effective des titres après le transfert, l'impôt devient définitivement exigible, mais un crédit d'impôt est accordé pour l'impôt effectivement payé à Maurice (0 % sur les plus-values), ce qui signifie concrètement que l'exit tax reste due en totalité si la cession intervient dans le délai.</p>
+
+  <div class="callout danger">
+    <strong>Exit Tax : anticipez 5 ans avant</strong>
+    L'exit tax est le principal obstacle fiscal au départ vers Maurice. Il est impératif de la planifier : valorisation des titres au jour du transfert, constitution des garanties, respect du délai de conservation de 5 ans. Didier Laroussinie travaille en étroite coordination avec les avocats fiscalistes français de ses clients pour sécuriser le processus.
+  </div>
+
+  <h3>Planification du départ : les étapes clés</h3>
+  <ol>
+    <li><strong>T-12 mois :</strong> audit patrimonial complet, évaluation des plus-values latentes, simulation de l'exit tax.</li>
+    <li><strong>T-6 mois :</strong> structuration de la société mauricienne, ouverture de compte bancaire, obtention du permis de résidence.</li>
+    <li><strong>T-3 mois :</strong> transfert du centre des intérêts vitaux (résiliation du bail/vente du logement en France, inscription scolaire à Maurice, etc.).</li>
+    <li><strong>Jour J :</strong> transfert effectif du domicile fiscal, déclaration aux impôts français (formulaire 2074-ETD pour l'exit tax).</li>
+    <li><strong>T+1 mois :</strong> inscription auprès du MRA, obtention du TRC (Tax Residency Certificate) pour l'année en cours.</li>
+  </ol>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 6 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 6</span>
+    <h2>TVA à Maurice</h2>
+  </div>
+
+  <p>La taxe sur la valeur ajoutée (Value Added Tax — VAT) est le principal impôt indirect à Maurice. Régie par le <strong>Value Added Tax Act 1998</strong> et administrée par le Mauritius Revenue Authority (MRA), la TVA mauricienne présente des caractéristiques que tout entrepreneur doit maîtriser, notamment en ce qui concerne l'exonération des services exportés.</p>
+
+  <h3>Taux et champ d'application</h3>
+
+  <p>Le taux standard de TVA à Maurice est de <strong>15 %</strong>. Il s'applique à la fourniture de biens et services effectuée à Maurice par un assujetti dans le cadre de son activité économique. Il n'existe pas de taux réduit ni de taux intermédiaire, à l'exception de quelques produits de première nécessité exonérés (produits alimentaires de base, médicaments, services éducatifs).</p>
+
+  <h3>Seuil d'enregistrement</h3>
+
+  <p>L'enregistrement à la TVA est <strong>obligatoire</strong> pour toute entreprise dont le chiffre d'affaires taxable dépasse ou est susceptible de dépasser <strong>6 millions MUR</strong> (environ 120 000 EUR) au cours d'une période de 12 mois consécutifs. En dessous de ce seuil, l'enregistrement est <strong>volontaire</strong> mais peut présenter un intérêt si l'entreprise a des achats importants soumis à la TVA (récupération de la TVA en amont).</p>
+
+  <div class="callout">
+    <strong>Enregistrement volontaire : à évaluer</strong>
+    Pour une GBC qui exporte 100 % de ses services, l'enregistrement volontaire à la TVA permet de récupérer la TVA sur les dépenses locales (loyer, fournitures, services professionnels) tout en facturant ses clients étrangers à taux 0 %. Le bénéfice net peut être significatif.
+  </div>
+
+  <h3>Services exportés : le taux 0 %</h3>
+
+  <p>L'un des avantages majeurs pour les entrepreneurs internationaux est l'<strong>exonération de TVA sur les services exportés</strong>. Sont considérés comme exportés les services dont le bénéficiaire effectif est situé en dehors de Maurice et dont la prestation est consommée en dehors de Maurice.</p>
+
+  <p>Concrètement, si votre GBC facture des prestations de conseil, de développement logiciel, de design ou de marketing à des clients situés en France, en Europe ou ailleurs, ces prestations sont soumises au <strong>taux 0 %</strong> (zero-rated). Cela signifie que :</p>
+
+  <ul>
+    <li>Vous ne facturez pas de TVA à vos clients étrangers.</li>
+    <li>Vous conservez le droit de déduire la TVA sur vos achats locaux.</li>
+    <li>Le MRA vous rembourse le crédit de TVA excédentaire (généralement dans un délai de 2 à 3 mois).</li>
+  </ul>
+
+  <h3>Fournitures exonérées vs zero-rated</h3>
+
+  <p>Il est crucial de distinguer les deux régimes :</p>
+
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Critère</th>
+        <th>Zero-rated (taux 0 %)</th>
+        <th>Exempt (exonéré)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>TVA facturée au client</td><td>0 %</td><td>Pas de TVA</td></tr>
+      <tr><td>Récupération TVA en amont</td><td><strong>Oui</strong></td><td><strong>Non</strong></td></tr>
+      <tr><td>Exemples</td><td>Services exportés, biens exportés</td><td>Services financiers, éducation, santé</td></tr>
+    </tbody>
+  </table>
+
+  <p>Les services financiers (opérations bancaires, assurance, gestion de fonds) sont généralement <strong>exonérés</strong>, ce qui signifie que la TVA sur les achats liés à ces activités n'est pas récupérable. C'est un point d'attention important pour les GBC opérant dans le secteur financier.</p>
+
+  <h3>Déclarations et paiement</h3>
+
+  <p>Les déclarations de TVA sont effectuées auprès du MRA selon un rythme qui dépend du chiffre d'affaires :</p>
+
+  <ul>
+    <li><strong>Mensuel</strong> : pour les entreprises dont le CA annuel dépasse 10 millions MUR.</li>
+    <li><strong>Trimestriel</strong> : pour les entreprises en dessous de ce seuil.</li>
+  </ul>
+
+  <p>La déclaration et le paiement se font en ligne via le portail <strong>e-Services du MRA</strong> (efiling.mra.mu). La date limite est le dernier jour du mois suivant la fin de la période de déclaration. Les pénalités de retard sont sévères : <strong>2 % par mois</strong> de retard sur la TVA due, avec un plafond de 100 % du montant dû.</p>
+
+  <h3>TVA sur les importations</h3>
+
+  <p>Les biens importés à Maurice sont soumis à la TVA au taux de 15 % au moment du dédouanement. La TVA à l'importation est payée à la Mauritius Revenue Authority (douanes) et est récupérable par les assujettis enregistrés à la TVA, comme TVA en amont, sur leur déclaration périodique.</p>
+
+  <h3>Fiscal Incentives et TVA</h3>
+
+  <p>Certains régimes incitatifs prévoient des exonérations de TVA spécifiques :</p>
+
+  <ul>
+    <li><strong>Freeport :</strong> les entreprises opérant dans la zone franche (Freeport) bénéficient d'une exonération de TVA sur les importations et les transactions intra-Freeport.</li>
+    <li><strong>Smart Cities :</strong> les entreprises certifiées Smart City par l'EDB bénéficient d'exonérations de TVA sur les matériaux de construction et équipements.</li>
+    <li><strong>ICT / BPO :</strong> les entreprises du secteur des technologies bénéficient d'exonérations de TVA sur certains équipements informatiques importés.</li>
+  </ul>
+
+  <div class="callout success">
+    <strong>En résumé pour l'entrepreneur international</strong>
+    Si votre activité est exclusivement tournée vers l'export de services (conseil, IT, marketing digital), la TVA mauricienne est neutre voire avantageuse : vous facturez à taux 0 % et récupérez la TVA sur vos dépenses locales. Le Cabinet Vanille Stratégie gère les déclarations TVA de ses clients et optimise les demandes de remboursement auprès du MRA.
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CHAPITRE 7 -->
+<!-- ============================================================ -->
+<div class="page-break">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapitre 7</span>
+    <h2>Checklist d'implantation</h2>
+  </div>
+
+  <p>S'implanter à Maurice est un processus structuré qui, bien planifié, se déroule en <strong>3 à 6 mois</strong> du premier contact à l'opérationnalité complète. Voici les dix étapes clés, dans l'ordre chronologique, avec les documents requis et les délais typiques.</p>
+
+  <h3>Les 10 étapes de A à Z</h3>
+
+  <ol class="checklist">
+    <li>
+      <strong>Étape 1 — Étude de faisabilité et structuration (Semaines 1-2)</strong><br>
+      Analyse de votre activité, de votre marché cible et de votre situation patrimoniale. Choix de la structure juridique (DC, GBC ou AC). Simulation fiscale comparative France vs Maurice. Évaluation de l'exit tax si applicable. Le Cabinet Vanille Stratégie réalise cette étude gratuitement et sans engagement.
+    </li>
+    <li>
+      <strong>Étape 2 — Constitution du dossier de permis de résidence (Semaines 2-3)</strong><br>
+      Préparation du dossier EDB : plan d'affaires, CV, copies passeport, extrait de casier judiciaire, justificatifs financiers, photos d'identité. Choix du type de permis (OP Investor, Self-Employed, ProPass). Le dossier est soumis en ligne via le portail EDB.
+    </li>
+    <li>
+      <strong>Étape 3 — Ouverture du compte bancaire professionnel (Semaines 2-4)</strong><br>
+      Sélection de la banque (SBM, MCB, AfrAsia, ABC Banking). Constitution du dossier KYC/AML : passeport, justificatif de domicile, preuve de l'origine des fonds, références bancaires. Cette étape est souvent la plus longue (2 à 6 semaines selon la banque). Le Cabinet Vanille Stratégie a des relations privilégiées avec les principales banques mauriciennes.
+    </li>
+    <li>
+      <strong>Étape 4 — Incorporation de la société (Semaines 3-5)</strong><br>
+      Pour une DC : enregistrement au CBRD (3-5 jours). Pour une GBC : demande de licence FSC, nomination des administrateurs résidents, rédaction des statuts (Constitution), enregistrement (2-4 semaines). Obtention du BRN (Business Registration Number) et du TAN (Tax Account Number).
+    </li>
+    <li>
+      <strong>Étape 5 — Transfert de l'investissement initial (Semaine 4-5)</strong><br>
+      Virement de 50 000 USD (OP Investor Option 1) depuis votre compte personnel vers le compte de la société mauricienne. Conservation de la preuve de transfert (swift confirmation) pour le dossier EDB.
+    </li>
+    <li>
+      <strong>Étape 6 — Obtention du permis de résidence (Semaines 4-8)</strong><br>
+      L'EDB traite le dossier en 2 à 4 semaines (5 jours pour ProPass/Expert Pass). Délivrance du permis de résidence et du permis de travail. Retrait du visa en personne à l'EDB avec prise de données biométriques.
+    </li>
+    <li>
+      <strong>Étape 7 — Installation opérationnelle (Semaines 6-10)</strong><br>
+      Location de bureaux (ou espace de coworking pour les premières semaines). Souscription télécom et internet (Mauritius Telecom, Emtel, MTML). Obtention de la carte de résident (NIC pour les résidents permanents ou carte OP). Ouverture du compte bancaire personnel.
+    </li>
+    <li>
+      <strong>Étape 8 — Enregistrement fiscal et TVA (Semaines 6-10)</strong><br>
+      Inscription auprès du MRA : obtention du TAN (si non fait à l'incorporation), enregistrement à la TVA (si CA &gt; 6M MUR ou enregistrement volontaire). Demande du Tax Residency Certificate (TRC) auprès du MRA pour bénéficier des conventions fiscales.
+    </li>
+    <li>
+      <strong>Étape 9 — Mise en conformité comptable (Semaines 8-12)</strong><br>
+      Mise en place du système comptable conforme aux IFRS (International Financial Reporting Standards), norme obligatoire à Maurice. Configuration de la tenue comptable avec le Cabinet Vanille Stratégie. Nomination de l'auditeur externe (obligatoire pour les GBC et les DC au-delà des seuils). Définition du calendrier des obligations déclaratives.
+    </li>
+    <li>
+      <strong>Étape 10 — Formalités françaises de départ (En parallèle)</strong><br>
+      Déclaration de transfert de domicile fiscal au centre des impôts français. Dépôt de la déclaration de revenus de l'année de départ (revenus jusqu'à la date de transfert). Dépôt de la déclaration d'exit tax (formulaire 2074-ETD) le cas échéant. Notification à la Sécurité sociale / URSSAF de la cessation d'activité en France. Mise à jour du statut auprès des organismes français (CAF, assurance maladie, retraite).
+    </li>
+  </ol>
+
+  <h3>Documents requis — Récapitulatif</h3>
+
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Document</th>
+        <th>Organisme</th>
+        <th>Détails</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Passeport (copie certifiée)</td><td>EDB, FSC, Banque</td><td>Validité &gt; 6 mois</td></tr>
+      <tr><td>Justificatif de domicile</td><td>EDB, Banque</td><td>Moins de 3 mois</td></tr>
+      <tr><td>Extrait de casier judiciaire</td><td>EDB</td><td>Apostillé ou légalisé</td></tr>
+      <tr><td>Plan d'affaires</td><td>EDB</td><td>Pour OP Investor</td></tr>
+      <tr><td>Preuve de fonds</td><td>EDB, Banque</td><td>Relevés bancaires 6 mois</td></tr>
+      <tr><td>CV / Résumé professionnel</td><td>EDB</td><td>Pour tous les permis</td></tr>
+      <tr><td>Photos d'identité</td><td>EDB</td><td>Format passeport, fond blanc</td></tr>
+      <tr><td>Références bancaires</td><td>Banque</td><td>Lettre de votre banque actuelle</td></tr>
+      <tr><td>Certificat de mariage</td><td>EDB</td><td>Si conjoint accompagnant</td></tr>
+      <tr><td>Actes de naissance enfants</td><td>EDB</td><td>Si enfants accompagnants</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Timeline typique</h3>
+
+  <table class="no-break">
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Durée</th>
+        <th>Semaines</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Étude de faisabilité</td><td>1-2 semaines</td><td>S1-S2</td></tr>
+      <tr><td>Constitution dossiers</td><td>2-3 semaines</td><td>S2-S4</td></tr>
+      <tr><td>Incorporation société</td><td>1-4 semaines</td><td>S3-S6</td></tr>
+      <tr><td>Ouverture compte bancaire</td><td>2-6 semaines</td><td>S2-S8</td></tr>
+      <tr><td>Obtention permis</td><td>1-4 semaines</td><td>S4-S8</td></tr>
+      <tr><td>Installation opérationnelle</td><td>2-4 semaines</td><td>S6-S10</td></tr>
+      <tr><td>Conformité fiscale &amp; comptable</td><td>2-4 semaines</td><td>S8-S12</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout success">
+    <strong>Accompagnement clé en main</strong>
+    Le Cabinet Vanille Stratégie, sous la direction de Didier Laroussinie, accompagne chaque étape de votre implantation : de l'étude de faisabilité initiale à la mise en conformité comptable et fiscale. Nous coordonnons les intervenants (banque, FSC, EDB, notaire, avocat) pour que vous puissiez vous concentrer sur votre activité. Nos clients sont opérationnels en moyenne en 8 à 10 semaines.
+  </div>
+
+  <div class="page-footer-inline">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- BACK PAGE -->
+<!-- ============================================================ -->
+<div class="page-break back-page">
+  <div class="cta-box">
+    <h2>Prêt à vous implanter<br>à Maurice ?</h2>
+    <p>Bénéficiez d'une <strong>étude de faisabilité gratuite</strong> et personnalisée avec Didier Laroussinie, expert-comptable et fiscaliste international.</p>
+    <p style="font-size: 10pt; margin-top: 10pt; color: var(--slate-300);">Nous analysons votre situation, simulons l'impact fiscal et vous proposons la structure optimale — sans engagement.</p>
+    <a href="https://vanille-strategie.oke.pro" class="cta-link">Demander mon étude gratuite</a>
+  </div>
+
+  <div class="contact-info">
+    <p><strong style="font-size: 12pt; color: var(--slate-800);">Cabinet Vanille Stratégie</strong></p>
+    <p>Didier Laroussinie — Expert-Comptable &amp; Fiscaliste International</p>
+    <p>
+      <strong>Web :</strong> vanille-strategie.oke.pro<br>
+      <strong>Tél :</strong> +230 59 43 74 83<br>
+      <strong>Email :</strong> contact@vanille-strategie.com
+    </p>
+    <p style="margin-top: 16pt; font-size: 9pt; color: var(--slate-400);">
+      Cabinet enregistré auprès du MIPA (Mauritius Institute of Professional Accountants)<br>
+      Partenaire agréé FSC (Financial Services Commission) &amp; EDB (Economic Development Board)
+    </p>
+    <p style="margin-top: 12pt; font-size: 8pt; color: var(--slate-400);">
+      Ce document est la propriété intellectuelle du Cabinet Vanille Stratégie. Toute reproduction, même partielle,
+      est soumise à autorisation écrite. Les informations contenues dans ce guide sont fournies à titre indicatif
+      et ne sauraient se substituer à un conseil fiscal personnalisé.
+    </p>
+  </div>
+
+  <div class="page-footer-inline" style="margin-top: 40pt;">© 2026 Vanille Stratégie — vanille-strategie.oke.pro</div>
+</div>
+
+</body>
+</html>

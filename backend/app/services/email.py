@@ -79,6 +79,64 @@ async def send_lead_notification(
         return False
 
 
+async def send_guide_fiscal(to_email: str) -> bool:
+    """Envoie le Guide Fiscal Maurice 2026 par email."""
+    if not _init_resend():
+        return False
+
+    guide_url = f"{settings.frontend_url}/documents/guide-fiscal-maurice-2026.html"
+
+    html = (
+        '<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">'
+        '  <div style="background:linear-gradient(135deg,#1e40af,#0ea5e9);padding:30px;border-radius:12px 12px 0 0;text-align:center;">'
+        '    <h1 style="color:white;margin:0;font-size:24px;">Vanille Strat\u00e9gie</h1>'
+        '    <p style="color:#bfdbfe;margin:8px 0 0;">Guide Fiscal Maurice 2026</p>'
+        '  </div>'
+        '  <div style="background:white;padding:30px;border:1px solid #e2e8f0;border-top:none;">'
+        '    <h2 style="color:#1e293b;margin-top:0;">Votre guide est pr\u00eat !</h2>'
+        '    <p style="color:#475569;line-height:1.6;">'
+        '      Merci pour votre int\u00e9r\u00eat pour Maurice. Voici votre '
+        '      <strong>Guide Fiscal Maurice 2026</strong>, r\u00e9dig\u00e9 par '
+        '      Didier Laroussinie, Expert-Comptable &amp; Fiscaliste International.'
+        '    </p>'
+        '    <p style="color:#475569;line-height:1.6;">'
+        '      Ce guide couvre les structures juridiques, la fiscalit\u00e9 2026, '
+        '      les permis de r\u00e9sidence, la convention France-Maurice et une checklist '
+        '      compl\u00e8te d\u2019implantation.'
+        '    </p>'
+        '    <div style="text-align:center;margin:30px 0;">'
+        f'      <a href="{guide_url}" style="display:inline-block;background:#2563eb;'
+        '        color:white;padding:14px 32px;border-radius:8px;text-decoration:none;'
+        '        font-weight:700;font-size:16px;">T\u00e9l\u00e9charger le guide</a>'
+        '    </div>'
+        '    <p style="color:#475569;line-height:1.6;">'
+        '      Une question sur votre projet ? '
+        f'      <a href="{settings.frontend_url}/contact" style="color:#2563eb;">Contactez-nous</a> '
+        '      pour une \u00e9tude de faisabilit\u00e9 gratuite.'
+        '    </p>'
+        '  </div>'
+        '  <div style="background:#f8fafc;padding:20px 30px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 12px 12px;">'
+        '    <p style="color:#94a3b8;font-size:12px;margin:0;">'
+        '      Vanille Strat\u00e9gie \u00b7 Grand Baie, Maurice \u00b7 +230 59 43 74 83'
+        '    </p>'
+        '  </div>'
+        '</div>'
+    )
+
+    try:
+        resend.Emails.send({
+            "from": settings.email_from,
+            "to": [to_email],
+            "subject": "Vanille Strat\u00e9gie \u2014 Votre Guide Fiscal Maurice 2026",
+            "html": html,
+        })
+        logger.info(f"Guide fiscal sent to {to_email}")
+        return True
+    except Exception as e:
+        logger.error(f"Guide fiscal email error: {e}")
+        return False
+
+
 async def send_confirmation_email(
     to_email: str, prenom: str, profil: str = "", budget: str | None = None
 ) -> bool:
