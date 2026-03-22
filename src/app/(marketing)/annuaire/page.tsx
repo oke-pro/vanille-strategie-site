@@ -28,15 +28,15 @@ import { categorySlug, categoryLabel } from "@/lib/annuaire-helpers";
 import { AnnuaireSearch } from "./search";
 
 export const metadata: Metadata = {
-  title: "Annuaire des entreprises \u00e0 Maurice | Vanille Strat\u00e9gie",
+  title: "Annuaire des entreprises à Maurice | Vanille Stratégie",
   description:
-    "D\u00e9couvrez les meilleures entreprises \u00e0 Maurice class\u00e9es par cat\u00e9gorie : finance, tech, immobilier, juridique, sant\u00e9 et plus. Notes Google, coordonn\u00e9es et avis.",
+    "Découvrez les meilleures entreprises à Maurice classées par catégorie : finance, tech, immobilier, juridique, santé et plus. Notes Google, coordonnées et avis.",
   openGraph: {
-    title: "Annuaire des entreprises \u00e0 Maurice",
+    title: "Annuaire des entreprises à Maurice",
     description:
-      "Le r\u00e9pertoire complet des entreprises \u00e0 Maurice, avec notes et avis v\u00e9rifi\u00e9s.",
+      "Le répertoire complet des entreprises à Maurice, avec notes et avis vérifiés.",
     url: "https://vanillestrategie.fr/annuaire",
-    siteName: "Vanille Strat\u00e9gie",
+    siteName: "Vanille Stratégie",
     locale: "fr_FR",
     type: "website",
   },
@@ -88,13 +88,13 @@ export default async function AnnuairePage() {
           <h1 className="mt-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-[1.1]">
             Annuaire des entreprises{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent">
-              \u00e0 Maurice
+              à Maurice
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400 leading-relaxed">
             Trouvez les prestataires, partenaires et services dont vous avez
-            besoin pour votre activit\u00e9 \u00e0 l&apos;\u00eele Maurice.
-            Cat\u00e9gories, notes Google et coordonn\u00e9es v\u00e9rifi\u00e9es.
+            besoin pour votre activité à l&apos;île Maurice.
+            Catégories, notes Google et coordonnées vérifiées.
           </p>
 
           {/* Search bar */}
@@ -109,12 +109,12 @@ export default async function AnnuairePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
-              Explorer par cat\u00e9gorie
+              Explorer par catégorie
             </h2>
             <p className="mt-4 text-lg text-slate-600">
               {categories.length > 0
-                ? `${categories.reduce((s, c) => s + c.count, 0)} entreprises r\u00e9f\u00e9renc\u00e9es dans ${categories.length} cat\u00e9gories`
-                : "Chargement des cat\u00e9gories\u2026"}
+                ? `${categories.reduce((s, c) => s + c.count, 0)} entreprises référencées dans ${categories.length} catégories`
+                : "Chargement des catégories…"}
             </p>
           </div>
 
@@ -155,12 +155,12 @@ export default async function AnnuairePage() {
             <Search className="h-10 w-10" />
           </div>
           <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight">
-            Vous aussi, cr\u00e9ez votre{" "}
-            <span className="text-purple-400">entreprise \u00e0 Maurice</span>
+            Vous aussi, créez votre{" "}
+            <span className="text-purple-400">entreprise à Maurice</span>
           </h2>
           <p className="mt-6 text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Vanille Strat\u00e9gie vous accompagne de A \u00e0 Z : cr\u00e9ation de
-            soci\u00e9t\u00e9, permis de r\u00e9sidence, comptabilit\u00e9 et fiscalit\u00e9.
+            Vanille Stratégie vous accompagne de A à Z : création de
+            société, permis de résidence, comptabilité et fiscalité.
           </p>
           <div className="mt-12">
             <Link

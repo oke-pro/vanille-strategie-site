@@ -40,16 +40,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description =
     company.editorial_summary ||
     company.description ||
-    `${company.name} \u2014 ${categoryLabel(company.category)} \u00e0 ${company.city || "Maurice"}. Coordonn\u00e9es, avis et informations.`;
+    `${company.name} — ${categoryLabel(company.category)} à ${company.city || "Maurice"}. Coordonnées, avis et informations.`;
 
   return {
-    title: `${company.name} \u2014 ${categoryLabel(company.category)} \u00e0 Maurice | Vanille Strat\u00e9gie`,
+    title: `${company.name} — ${categoryLabel(company.category)} à Maurice | Vanille Stratégie`,
     description: description.slice(0, 160),
     openGraph: {
       title: company.name,
       description: description.slice(0, 160),
       url: `https://vanillestrategie.fr/annuaire/${categorySlug(company.category)}/${company.slug}`,
-      siteName: "Vanille Strat\u00e9gie",
+      siteName: "Vanille Stratégie",
       locale: "fr_FR",
       type: "website",
       ...(company.photo_urls?.[0] && {
@@ -144,7 +144,7 @@ export default async function CompanyPage({ params }: Props) {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav
-            aria-label="Fil d\u2019Ariane"
+            aria-label="Fil d’Ariane"
             className="flex flex-wrap items-center gap-1.5 text-sm text-slate-400 mb-8"
           >
             <Link href="/" className="hover:text-white transition-colors">
@@ -171,7 +171,7 @@ export default async function CompanyPage({ params }: Props) {
             <div>
               <span className="inline-block rounded-full border border-purple-400/30 bg-purple-500/10 px-3 py-1 text-xs font-medium uppercase tracking-widest text-purple-300 backdrop-blur-sm mb-4">
                 {label}
-                {company.subcategory && ` \u2014 ${company.subcategory}`}
+                {company.subcategory && ` — ${company.subcategory}`}
               </span>
               <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight">
                 {company.name}
@@ -247,7 +247,7 @@ export default async function CompanyPage({ params }: Props) {
               {(company.description || company.editorial_summary) && (
                 <div>
                   <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                    \u00c0 propos
+                    À propos
                   </h2>
                   {company.editorial_summary && (
                     <p className="text-lg text-slate-700 leading-relaxed font-medium mb-4">
@@ -343,7 +343,7 @@ export default async function CompanyPage({ params }: Props) {
               {hasSocials && (
                 <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                   <h3 className="text-lg font-bold text-slate-900 mb-5">
-                    R\u00e9seaux sociaux
+                    Réseaux sociaux
                   </h3>
                   <div className="flex gap-3">
                     {company.linkedin && (
@@ -391,12 +391,12 @@ export default async function CompanyPage({ params }: Props) {
                     <Building2 className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">
-                    Vous aussi, cr\u00e9ez votre entreprise \u00e0 Maurice
+                    Vous aussi, créez votre entreprise à Maurice
                   </h3>
                   <p className="text-purple-200 text-sm leading-relaxed mb-6">
-                    Vanille Strat\u00e9gie vous accompagne dans toutes les
-                    d\u00e9marches : cr\u00e9ation de soci\u00e9t\u00e9, permis de
-                    r\u00e9sidence, comptabilit\u00e9.
+                    Vanille Stratégie vous accompagne dans toutes les
+                    démarches : création de société, permis de
+                    résidence, comptabilité.
                   </p>
                   <Link
                     href="/contact"

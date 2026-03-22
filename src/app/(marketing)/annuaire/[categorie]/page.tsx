@@ -30,13 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const label = cat ? categoryLabel(cat.category) : categorie;
 
   return {
-    title: `${label} \u00e0 Maurice \u2014 Annuaire | Vanille Strat\u00e9gie`,
-    description: `Liste des entreprises en ${label} \u00e0 l\u2019\u00eele Maurice. Notes, avis Google et coordonn\u00e9es v\u00e9rifi\u00e9es.`,
+    title: `${label} à Maurice — Annuaire | Vanille Stratégie`,
+    description: `Liste des entreprises en ${label} à l’île Maurice. Notes, avis Google et coordonnées vérifiées.`,
     openGraph: {
-      title: `${label} \u00e0 Maurice \u2014 Annuaire entreprises`,
-      description: `D\u00e9couvrez les meilleures entreprises en ${label} \u00e0 Maurice.`,
+      title: `${label} à Maurice — Annuaire entreprises`,
+      description: `Découvrez les meilleures entreprises en ${label} à Maurice.`,
       url: `https://vanillestrategie.fr/annuaire/${categorie}`,
-      siteName: "Vanille Strat\u00e9gie",
+      siteName: "Vanille Stratégie",
       locale: "fr_FR",
       type: "website",
     },
@@ -215,7 +215,7 @@ export default async function CategoriePage({ params, searchParams }: Props) {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav
-            aria-label="Fil d\u2019Ariane"
+            aria-label="Fil d’Ariane"
             className="flex items-center gap-1.5 text-sm text-slate-400 mb-8"
           >
             <Link href="/" className="hover:text-white transition-colors">
@@ -235,11 +235,11 @@ export default async function CategoriePage({ params, searchParams }: Props) {
           <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             {label}{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent">
-              \u00e0 Maurice
+              à Maurice
             </span>
           </h1>
           <p className="mt-4 text-lg text-slate-400">
-            {data.total} entreprise{data.total > 1 ? "s" : ""} r\u00e9f\u00e9renc\u00e9e
+            {data.total} entreprise{data.total > 1 ? "s" : ""} référencée
             {data.total > 1 ? "s" : ""}
           </p>
         </div>
@@ -252,16 +252,16 @@ export default async function CategoriePage({ params, searchParams }: Props) {
             <div className="text-center py-20">
               <Building2 className="mx-auto h-16 w-16 text-slate-300 mb-6" />
               <p className="text-xl font-bold text-slate-700">
-                Aucune entreprise trouv\u00e9e
+                Aucune entreprise trouvée
               </p>
               <p className="mt-2 text-slate-500">
-                Cette cat\u00e9gorie ne contient pas encore d&apos;entreprises.
+                Cette catégorie ne contient pas encore d&apos;entreprises.
               </p>
               <Link
                 href="/annuaire"
                 className="mt-8 inline-flex items-center gap-2 rounded-xl bg-purple-600 hover:bg-purple-700 px-8 py-3 text-sm font-bold text-white transition-colors"
               >
-                Retour \u00e0 l&apos;annuaire
+                Retour à l&apos;annuaire
               </Link>
             </div>
           ) : (

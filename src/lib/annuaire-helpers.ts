@@ -8,10 +8,10 @@ export const CATEGORY_LABELS: Record<string, string> = {
   tech: "Technologies & IT",
   immobilier: "Immobilier",
   juridique: "Juridique & Conseil",
-  comptabilite: "Comptabilit\u00e9 & Audit",
-  sante: "Sant\u00e9 & Bien-\u00eatre",
+  comptabilite: "Comptabilité & Audit",
+  sante: "Santé & Bien-être",
   education: "Education & Formation",
-  restauration: "Restauration & H\u00f4tellerie",
+  restauration: "Restauration & Hôtellerie",
   transport: "Transport & Logistique",
   commerce: "Commerce & Distribution",
   construction: "Construction & BTP",
@@ -21,7 +21,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
   energie: "Energie & Environnement",
   textile: "Textile & Mode",
   agriculture: "Agriculture & Agroalimentaire",
-  telecom: "T\u00e9l\u00e9communications",
+  telecom: "Télécommunications",
   industrie: "Industrie & Manufacture",
   services: "Services aux entreprises",
 };
@@ -47,5 +47,5 @@ export function categorySlug(category: string): string {
 /** Render a rating as filled/empty star characters */
 export function renderStars(rating: number): string {
   const full = Math.round(rating);
-  return "\u2605".repeat(full) + "\u2606".repeat(5 - full);
+  return "★".repeat(full) + "☆".repeat(5 - full);
 }
