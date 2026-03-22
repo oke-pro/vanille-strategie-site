@@ -29,15 +29,9 @@ MAURITIUS_RADIUS = 40000.0
 TYPE_TO_CATEGORY: dict[str, tuple[str, str]] = {
     # Finance & Banque
     "bank": ("Finance & Banque", "Banques"),
-    "accounting": ("Finance & Banque", "Comptabilité"),
     "insurance_agency": ("Finance & Banque", "Assurances"),
-    "financial_planner": ("Finance & Banque", "Gestion de patrimoine"),
     # Immobilier
     "real_estate_agency": ("Immobilier", "Agences immobilières"),
-    # Services professionnels
-    "lawyer": ("Services professionnels", "Cabinets d'avocats"),
-    "consultant": ("Services professionnels", "Consultants"),
-    "notary": ("Services professionnels", "Notaires"),
     # Tech & Digital
     "electronics_store": ("Tech & Digital", "Électronique"),
     # Tourisme & Hôtellerie
@@ -64,8 +58,7 @@ TEXT_SEARCHES = [
     ("IT company Mauritius", "Tech & Digital", "ESN"),
     ("software company Mauritius", "Tech & Digital", "Logiciels"),
     ("fintech Mauritius", "Tech & Digital", "Fintech"),
-    ("consulting firm Mauritius", "Services professionnels", "Consultants"),
-    ("audit firm Mauritius", "Finance & Banque", "Audit"),
+    ("fund administration Mauritius", "Finance & Banque", "Administration de fonds"),
     ("fund management Mauritius", "Finance & Banque", "Fonds"),
     ("property developer Mauritius", "Immobilier", "Promoteurs"),
     ("import export Mauritius", "Commerce & Import/Export", "Import/Export"),
