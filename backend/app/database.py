@@ -17,5 +17,11 @@ async def get_db():
 
 
 async def init_db():
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    import logging
+    logger = logging.getLogger(__name__)
+    try:
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+        logger.info("Database tables created/verified successfully")
+    except Exception as e:
+        logger.warning("Could not connect to database on startup: %s. Will retry on first request.", e)
