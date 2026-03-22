@@ -6,7 +6,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir \
     fastapi \
     "uvicorn[standard]" \
-    pydantic \
+    "pydantic[email]" \
     pydantic-settings \
     httpx \
     python-multipart \
