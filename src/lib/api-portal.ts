@@ -3,7 +3,7 @@
  * Gestion des erreurs 401 → redirection vers /login.
  */
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 class ApiError extends Error {
   status: number;
