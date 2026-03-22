@@ -242,8 +242,10 @@ async def chat(
 
     # 4. Call Claude Haiku
     try:
-        client = anthropic.Anthropic(api_key=settings.anthropic_api_key)
-        response = client.messages.create(
+        if not settings.anthropic_api_key:
+            raise ValueError("ANTHROPIC_API_KEY not configured")
+        client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
+        response = await client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=1024,
             system=SYSTEM_PROMPT,
@@ -251,7 +253,7 @@ async def chat(
         )
         raw_response = response.content[0].text
     except Exception as e:
-        logger.error("Anthropic API error: %s", e)
+        logger.error("Anthropic API error: %s (type: %s)", e, type(e).__name__)
         raw_response = (
             "Je suis désolé, je rencontre un problème technique temporaire. "
             "N'hésitez pas à nous contacter directement par WhatsApp au +230 59 43 74 83 "
