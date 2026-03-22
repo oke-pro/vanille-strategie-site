@@ -152,7 +152,7 @@ export default function LeadDetailModal({ lead, onClose, onUpdated }: LeadDetail
           {/* Assign section */}
           {showAssign && (
             <div className="bg-slate-50 rounded-lg p-3 space-y-2">
-              <p className="text-sm font-medium text-slate-700">Assigner a un membre du staff</p>
+              <p className="text-sm font-medium text-slate-700">Assigner à un membre du staff</p>
               {staffList.length === 0 ? (
                 <p className="text-xs text-slate-500">Aucun staff disponible</p>
               ) : (
@@ -177,7 +177,7 @@ export default function LeadDetailModal({ lead, onClose, onUpdated }: LeadDetail
               <p className="text-sm font-medium text-emerald-800">Convertir en client</p>
               <input
                 type="text"
-                placeholder="Nom de la societe"
+                placeholder="Nom de la société"
                 value={convertData.company_name}
                 onChange={(e) => setConvertData({ ...convertData, company_name: e.target.value })}
                 className="w-full rounded border border-emerald-200 px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
@@ -187,7 +187,7 @@ export default function LeadDetailModal({ lead, onClose, onUpdated }: LeadDetail
                 onChange={(e) => setConvertData({ ...convertData, company_type: e.target.value })}
                 className="w-full rounded border border-emerald-200 px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
               >
-                <option value="">Type de societe</option>
+                <option value="">Type de société</option>
                 <option value="DC">Domestic Company (DC)</option>
                 <option value="GBC">Global Business Company (GBC)</option>
                 <option value="AC">Authorised Company (AC)</option>

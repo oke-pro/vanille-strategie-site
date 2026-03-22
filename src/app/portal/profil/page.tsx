@@ -24,13 +24,13 @@ export default function PortalProfil() {
   }
 
   const fields = [
-    { label: "Prenom", value: user.first_name },
+    { label: "Prénom", value: user.first_name },
     { label: "Nom", value: user.last_name },
     { label: "Email", value: user.email },
-    { label: "Telephone", value: user.phone || "Non renseigne" },
+    { label: "Téléphone", value: user.phone || "Non renseigné" },
     { label: "Role", value: user.role === "client" ? "Client" : "Collaborateur" },
     {
-      label: "Derniere connexion",
+      label: "Dernière connexion",
       value: user.last_login
         ? new Date(user.last_login).toLocaleDateString("fr-FR", {
             day: "numeric",

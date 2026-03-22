@@ -257,7 +257,7 @@ export default function RhPaiePage() {
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
               <h3 className="text-lg font-bold text-slate-900 mb-3">CSG — Contribution Sociale Généralisée</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Depuis septembre 2020, la CSG remplace l&apos;ancien système NPF (National Pensions Fund) et NSF (National Savings Fund). L&apos;employeur contribue à hauteur de 3 % du salaire brut pour les salariés gagnant jusqu&apos;à 50 000 MUR par mois, et 6 % au-delà. Le salarié contribue respectivement à 1,5 % et 3 %. Cette contribution est déclarée et payée mensuellement à la MRA. La CSG finance la retraite, la couverture santé de base et les prestations sociales.
+                Depuis septembre 2020, la CSG remplacé l&apos;ancien système NPF (National Pensions Fund) et NSF (National Savings Fund). L&apos;employeur contribue à hauteur de 3 % du salaire brut pour les salariés gagnant jusqu&apos;à 50 000 MUR par mois, et 6 % au-delà. Le salarié contribue respectivement à 1,5 % et 3 %. Cette contribution est déclarée et payée mensuellement à la MRA. La CSG finance la retraite, la couverture santé de base et les prestations sociales.
               </p>
             </div>
 

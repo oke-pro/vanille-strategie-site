@@ -205,7 +205,7 @@ export default function ImmobilierPage() {
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Le Property Development Scheme (PDS)</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Le PDS est le principal dispositif permettant aux étrangers d&apos;acquérir un bien immobilier à Maurice. Il remplace depuis 2015 les anciens schémas IRS (Integrated Resort Scheme) et RES (Real Estate Scheme). Un projet PDS doit comprendre au minimum 6 unités résidentielles et être développé sur un terrain d&apos;au moins 0,4220 hectare (1 arpent). Le promoteur doit obtenir l&apos;approbation de l&apos;Economic Development Board (EDB) et respecter des critères stricts de qualité architecturale, d&apos;aménagement paysager et de services aux résidents (sécurité, conciergerie, entretien). L&apos;investissement minimum est de 375 000 USD (seuil relevé en 2024), et l&apos;acheteur ainsi que ses personnes à charge obtiennent automatiquement un permis de résidence à Maurice, valable tant qu&apos;il reste propriétaire du bien.
+                  Le PDS est le principal dispositif permettant aux étrangers d&apos;acquérir un bien immobilier à Maurice. Il remplacé depuis 2015 les anciens schémas IRS (Integrated Resort Scheme) et RES (Real Estate Scheme). Un projet PDS doit comprendre au minimum 6 unités résidentielles et être développé sur un terrain d&apos;au moins 0,4220 hectare (1 arpent). Le promoteur doit obtenir l&apos;approbation de l&apos;Economic Development Board (EDB) et respecter des critères stricts de qualité architecturale, d&apos;aménagement paysager et de services aux résidents (sécurité, conciergerie, entretien). L&apos;investissement minimum est de 375 000 USD (seuil relevé en 2024), et l&apos;acheteur ainsi que ses personnes à charge obtiennent automatiquement un permis de résidence à Maurice, valable tant qu&apos;il reste propriétaire du bien.
                 </p>
               </div>
 
@@ -256,7 +256,7 @@ export default function ImmobilierPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">Zones prisées pour investir à Maurice</h2>
             <p className="mt-4 text-lg text-slate-600">
-              Chaque région de Maurice a ses atouts. Voici les zones les plus recherchées par les investisseurs internationaux.
+              Chaque région de Maurice à ses atouts. Voici les zones les plus recherchées par les investisseurs internationaux.
             </p>
           </div>
 
@@ -277,7 +277,7 @@ export default function ImmobilierPage() {
                 <h3 className="text-lg font-bold text-slate-900">Tamarin &amp; Rivière Noire</h3>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed">
-                La côte ouest attire une communauté d&apos;expatriés séduite par le climat sec, les couchers de soleil spectaculaires et la proximité du Morne Brabant (patrimoine UNESCO). Tamarin offre un cadre de vie authentique avec surf, dauphins et montagne. Les projets PDS y sont nombreux, avec des prix démarrant à 380 000 USD pour un appartement et 600 000 USD pour une villa. Le développement du Black River Business Park renforce l&apos;attrait de la zone.
+                La côte ouest attire une communauté d&apos;expatriés séduite par le climat sec, les couchers de soleil spectaculaires et la proximité du Morne Brabant (patrimoine UNESCO). Tamarin offre un cadre de vie authentique avec surf, dauphins et montagne. Les projets PDS y sont nombreux, avec des prix démarrant à 380 000 USD pour un appartement et 600 000 USD pour une villa. Le développement du Black River Business Park renforcé l&apos;attrait de la zone.
               </p>
             </div>
 

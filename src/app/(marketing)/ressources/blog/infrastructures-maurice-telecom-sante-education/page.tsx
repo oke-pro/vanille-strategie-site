@@ -397,7 +397,7 @@ export default function InfrastructuresMauricePage() {
             <p>
               Le <strong>port de Port-Louis</strong> est le principal port
               commercial de l&apos;oc&eacute;an Indien occidental. Il
-              traite environ 400&nbsp;000 conteneurs EVP par an et
+              traité environ 400&nbsp;000 conteneurs EVP par an et
               sert de hub de transbordement entre l&apos;Asie,
               l&apos;Afrique et l&apos;Europe.
             </p>

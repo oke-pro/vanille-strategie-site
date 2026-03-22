@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "retraite Maurice",
     "convention fiscale France Maurice",
     "transfer pricing Maurice",
-    "créer société ile Maurice",
+    "créer société île Maurice",
     "quitter Dubai Maurice",
     "BD Star Management Services",
   ],

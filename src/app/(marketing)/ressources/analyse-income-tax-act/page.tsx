@@ -5,26 +5,26 @@ import { founder } from "@/data/site";
 
 export const metadata: Metadata = {
   title:
-    "Income Tax Act 1995 — Analyse commentee des dispositions cles pour les investisseurs | Vanille Strategie",
+    "Income Tax Act 1995 — Analyse commentée des dispositions clés pour les investisseurs | Vanille Stratégie",
   description:
-    "Analyse commentee par Didier Laroussinie des articles cles de l'Income Tax Act 1995 de Maurice : residence fiscale (section 73), taux 15 %, dividendes, Partial Exemption Regime, CSG.",
+    "Analyse commentée par Didier Laroussinie des articles clés de l'Income Tax Act 1995 de Maurice : résidence fiscale (section 73), taux 15 %, dividendes, Partial Exemption Regime, CSG.",
   keywords: [
     "Income Tax Act 1995 Maurice",
-    "section 73 resident fiscal Maurice",
+    "section 73 résident fiscal Maurice",
     "taux imposition 15% Maurice",
     "dividendes Maurice exemption",
     "Partial Exemption Regime Maurice",
     "CSG Maurice",
-    "fiscalite expatrie Maurice",
+    "fiscalité expatrié Maurice",
     "plus-values Maurice",
     "analyse Income Tax Act",
-    "Vanille Strategie",
+    "Vanille Stratégie",
   ],
   openGraph: {
     title:
-      "Income Tax Act 1995 — Analyse commentee des dispositions cles pour les investisseurs",
+      "Income Tax Act 1995 — Analyse commentée des dispositions clés pour les investisseurs",
     description:
-      "Lecture commentee de l'Income Tax Act 1995 par un Expert-Comptable Fiscaliste installe a Maurice depuis 2015.",
+      "Lecture commentée de l'Income Tax Act 1995 par un Expert-Comptable Fiscaliste installé à Maurice depuis 2015.",
     type: "article",
     locale: "fr_FR",
   },
@@ -156,14 +156,14 @@ export default function AnalyseIncomeTaxActPage() {
           </div>
 
           <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Income Tax Act 1995 — Analyse commentee des dispositions cles pour
+            Income Tax Act 1995 — Analyse commentée des dispositions clés pour
             les investisseurs
           </h1>
           <p className="mt-4 text-lg text-slate-300">
-            L&apos;Income Tax Act 1995, consolide jusqu&apos;au Finance Act
-            2025, est le texte fondateur de la fiscalite mauricienne.
+            L&apos;Income Tax Act 1995, consolidé jusqu&apos;au Finance Act
+            2025, est le texte fondateur de la fiscalité mauricienne.
             Nous en extrayons ici les articles qui impactent directement
-            les expatries, entrepreneurs et investisseurs, avec un
+            les expatriés, entrepreneurs et investisseurs, avec un
             commentaire pratique section par section.
           </p>
 
@@ -193,7 +193,7 @@ export default function AnalyseIncomeTaxActPage() {
             </li>
             <li>
               <a href="#section-73" className="hover:underline">
-                Section 73 — Definition de resident fiscal
+                Section 73 — Définition de résident fiscal
               </a>
             </li>
             <li>
@@ -203,7 +203,7 @@ export default function AnalyseIncomeTaxActPage() {
             </li>
             <li>
               <a href="#section-10" className="hover:underline">
-                Section 10 — Revenus exoneres et dividendes
+                Section 10 — Revenus exonérés et dividendes
               </a>
             </li>
             <li>
@@ -218,7 +218,7 @@ export default function AnalyseIncomeTaxActPage() {
             </li>
             <li>
               <a href="#csg" className="hover:underline">
-                CSG — Contribution Sociale Generalisee
+                CSG — Contribution Sociale Généralisée
               </a>
             </li>
           </ol>
@@ -232,7 +232,7 @@ export default function AnalyseIncomeTaxActPage() {
         </h2>
         <p>
           La section 5 de l&apos;Income Tax Act 1995 pose le principe
-          fondamental de l&apos;assujettissement a l&apos;impot sur le revenu a
+          fondamental de l&apos;assujettissement à l&apos;impôt sur le revenu a
           Maurice.
         </p>
 
@@ -246,14 +246,14 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Cette section est la pierre angulaire du systeme fiscal mauricien. Le
-            mot cle ici est <strong>&laquo;&nbsp;chargeable income&nbsp;&raquo;</strong>
-            — c&apos;est-a-dire le revenu imposable <em>apres</em> deductions et
-            exemptions. Pour un expatrie, cela signifie que seuls les revenus de
-            source mauricienne (ou remis a Maurice) sont concernes, sauf cas
-            particulier du GBC. Le taux unique de 15 % est fixe dans le Second
+            Cette section est la pierre angulaire du système fiscal mauricien. Le
+            mot clé ici est <strong>&laquo;&nbsp;chargeable income&nbsp;&raquo;</strong>
+            — c&apos;est-à-dire le revenu imposable <em>après</em> déductions et
+            exemptions. Pour un expatrié, cela signifie que seuls les revenus de
+            source mauricienne (ou remis à Maurice) sont concernés, sauf cas
+            particulier du GBC. Le taux unique de 15 % est fixé dans le Second
             Schedule, ce qui rend la planification fiscale remarquablement
-            previsible par rapport a la progressivite francaise.
+            prévisible par rapport à la progressivité française.
           </p>
         </Callout>
       </Section>
@@ -261,12 +261,12 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== SECTION 73 — RESIDENT ===== */}
       <Section id="section-73" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          2. Section 73 — Definition de resident fiscal
+          2. Section 73 — Définition de résident fiscal
         </h2>
         <p>
-          La section 73 definit ce qu&apos;est un &laquo;&nbsp;resident&nbsp;&raquo;
-          au sens de l&apos;ITA. C&apos;est le critere determinant pour savoir
-          si un individu est assujetti a Maurice.
+          La section 73 définit ce qu&apos;est un &laquo;&nbsp;resident&nbsp;&raquo;
+          au sens de l&apos;ITA. C&apos;est le critère déterminant pour savoir
+          si un individu est assujetti à Maurice.
         </p>
 
         <OfficialText reference="Income Tax Act 1995 — Section 73 (extraits)">
@@ -283,20 +283,20 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="amber" title="Commentaire de Didier Laroussinie">
           <p>
-            Attention : cette definition est <strong>differente</strong> de la
-            notion de residence en droit francais (article 4 B du CGI). A
-            Maurice, la regle des 183 jours est limpide et sans interpretation
-            administrative fluctuante. Pour un expatrie francais, il faut
-            combiner cette definition avec l&apos;article 4 de la Convention
-            fiscale France-Maurice du 11 decembre 1980 (amendee en 2011) qui
-            prevoit des criteres de departage (tie-breaker rules) en cas de
-            double residence. Mon conseil : tenez un calendrier precis de vos
-            jours de presence. C&apos;est votre meilleure protection en cas de
-            controle fiscal francais.
+            Attention : cette définition est <strong>différente</strong> de la
+            notion de résidence en droit français (article 4 B du CGI). A
+            Maurice, la règle des 183 jours est limpide et sans interpretation
+            administrative fluctuante. Pour un expatrié français, il faut
+            combiner cette définition avec l&apos;article 4 de la Convention
+            fiscale France-Maurice du 11 décembre 1980 (amendée en 2011) qui
+            prévoit des critères de départage (tie-breaker rules) en cas de
+            double résidence. Mon conseil : tenez un calendrier précis de vos
+            jours de présence. C&apos;est votre meilleure protection en cas de
+            contrôle fiscal français.
           </p>
         </Callout>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 73 (societes)">
+        <OfficialText reference="Income Tax Act 1995 — Section 73 (sociétés)">
           <p>
             &laquo;&nbsp;A company is resident in Mauritius if it is incorporated
             in Mauritius or has its central management and control in
@@ -306,10 +306,10 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Le critere du &laquo;&nbsp;central management and control&nbsp;&raquo;
+            Le critère du &laquo;&nbsp;central management and control&nbsp;&raquo;
             est essentiel pour les GBC (Global Business Companies). Si votre GBC
-            est geree de fait depuis Paris, elle risque d&apos;etre requalifiee
-            comme societe francaise par l&apos;administration fiscale francaise.
+            est gérée de fait depuis Paris, elle risque d&apos;être requalifiée
+            comme société française par l&apos;administration fiscale française.
             C&apos;est exactement pour cela que les{" "}
             <Link
               href="/ressources/blog/substance-requirements-maurice"
@@ -317,8 +317,8 @@ export default function AnalyseIncomeTaxActPage() {
             >
               substance requirements
             </Link>{" "}
-            sont non negociables : conseil d&apos;administration a Maurice,
-            directeurs residents, locaux effectifs.
+            sont non négociables : conseil d&apos;administration à Maurice,
+            directeurs résidents, locaux effectifs.
           </p>
         </Callout>
       </Section>
@@ -326,11 +326,11 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== TAUX 15 % ===== */}
       <Section id="taux" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          3. Second Schedule — Taux d&apos;imposition a 15 %
+          3. Second Schedule — Taux d&apos;imposition à 15 %
         </h2>
         <p>
           Le Second Schedule de l&apos;ITA fixe les taux d&apos;imposition. Pour
-          les particuliers comme pour les societes, le taux standard est de 15 %.
+          les particuliers comme pour les sociétés, le taux standard est de 15 %.
         </p>
 
         <OfficialText reference="Income Tax Act 1995 — Second Schedule, Part I">
@@ -346,28 +346,28 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="green" title="Commentaire de Didier Laroussinie">
           <p>
-            Un taux unique de 15 % pour tous — personnes physiques et societes.
-            Comparez avec la France : jusqu&apos;a 45 % d&apos;IR plus 17,2 % de
-            prelevements sociaux sur les revenus du patrimoine. C&apos;est un
-            differentiel de <strong>47 points</strong> au maximum. A noter :
-            Maurice prevoit egalement des tranches d&apos;exoneration pour les
-            revenus les plus faibles (seuil de chargeable income non taxe). Pour
-            un entrepreneur realisant 100 000 EUR de benefices, l&apos;economie
-            par rapport a la France est considerable et parfaitement legale.
+            Un taux unique de 15 % pour tous — personnes physiques et sociétés.
+            Comparez avec la France : jusqu&apos;à 45 % d&apos;IR plus 17,2 % de
+            prélèvements sociaux sur les revenus du patrimoine. C&apos;est un
+            différentiel de <strong>47 points</strong> au maximum. À noter :
+            Maurice prévoit également des tranches d&apos;exonération pour les
+            revenus les plus faibles (seuil de chargeable income non taxé). Pour
+            un entrepreneur réalisant 100 000 EUR de bénéfices, l&apos;économie
+            par rapport à la France est considérable et parfaitement légale.
           </p>
         </Callout>
 
-        <Callout variant="amber" title="Precision importante">
+        <Callout variant="amber" title="Précision importante">
           <p>
             Depuis le Finance Act 2023, une surtaxe additionnelle (Solidarity
-            Levy) est applicable aux revenus des individus depassant MUR 3
-            millions par an. Le taux effectif peut ainsi depasser 15 % pour les
-            hauts revenus. Nous integrons systematiquement cette donnee dans nos{" "}
+            Levy) est applicable aux revenus des individus dépassant MUR 3
+            millions par an. Le taux effectif peut ainsi dépasser 15 % pour les
+            hauts revenus. Nous intégrons systématiquement cette donnée dans nos{" "}
             <Link
               href="/ressources/simulateur-fiscal"
               className="text-amber-700 underline hover:text-amber-900"
             >
-              simulations fiscales personnalisees
+              simulations fiscales personnalisées
             </Link>
             .
           </p>
@@ -377,11 +377,11 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== SECTION 10 — DIVIDENDES ===== */}
       <Section id="section-10" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          4. Section 10 — Revenus exoneres et dividendes
+          4. Section 10 — Revenus exonérés et dividendes
         </h2>
         <p>
           La section 10 de l&apos;ITA liste les revenus qui sont totalement
-          exemptes d&apos;impot sur le revenu. Les dividendes y occupent une
+          exemptés d&apos;impôt sur le revenu. Les dividendes y occupent une
           place centrale.
         </p>
 
@@ -395,31 +395,31 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="green" title="Commentaire de Didier Laroussinie">
           <p>
-            C&apos;est l&apos;un des piliers de l&apos;attractivite mauricienne.
-            Les dividendes verses par une societe mauricienne a un resident
-            mauricien sont <strong>totalement exoneres d&apos;impot</strong>. Pas
-            de flat tax a 30 % comme en France, pas de prelevement forfaitaire.
-            Zero. Pour un dirigeant qui se verse des dividendes depuis sa
+            C&apos;est l&apos;un des piliers de l&apos;attractivité mauricienne.
+            Les dividendes versés par une société mauricienne à un résident
+            mauricien sont <strong>totalement exonérés d&apos;impôt</strong>. Pas
+            de flat tax à 30 % comme en France, pas de prélèvement forfaitaire.
+            Zéro. Pour un dirigeant qui se verse des dividendes depuis sa
             Domestic Company ou son GBC, c&apos;est un avantage structurel
             majeur.
           </p>
         </Callout>
 
-        <OfficialText reference="Income Tax Act 1995 — Section 10 (dividendes de source etrangere)">
+        <OfficialText reference="Income Tax Act 1995 — Section 10 (dividendes de source étrangère)">
           <p>
-            Les dividendes de source etrangere recus par une societe residente
-            sont en revanche soumis a l&apos;impot au taux de 15 %, avec
-            possibilite de beneficier du Partial Exemption Regime (exoneration de
-            80 %) ou du credit d&apos;impot etranger.
+            Les dividendes de source étrangère reçus par une société résidente
+            sont en revanche soumis à l&apos;impôt au taux de 15 %, avec
+            possibilité de bénéficier du Partial Exemption Regime (exonération de
+            80 %) ou du crédit d&apos;impôt étranger.
           </p>
         </OfficialText>
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Pour les dividendes de source etrangere, deux options s&apos;offrent
+            Pour les dividendes de source étrangère, deux options s&apos;offrent
             au contribuable : (1) l&apos;exemption partielle de 80 % (le taux
-            effectif tombe a 3 %) ou (2) le credit d&apos;impot etranger. Le
-            choix entre les deux depend de la retenue a la source pratiquee dans
+            effectif tombe à 3 %) ou (2) le crédit d&apos;impôt étranger. Le
+            choix entre les deux dépend de la retenue à la source pratiquée dans
             le pays d&apos;origine. C&apos;est un calcul que nous faisons au cas
             par cas lors de nos missions de{" "}
             <Link
@@ -439,18 +439,18 @@ export default function AnalyseIncomeTaxActPage() {
           5. Absence de taxation des plus-values
         </h2>
         <p>
-          L&apos;Income Tax Act 1995 ne prevoit <strong>aucun impot sur les
+          L&apos;Income Tax Act 1995 ne prévoit <strong>aucun impôt sur les
           plus-values</strong> (capital gains). Il n&apos;existe pas de section
-          dediee a la taxation des gains en capital.
+          dédiée à la taxation des gains en capital.
         </p>
 
-        <OfficialText reference="Income Tax Act 1995 — Constat legislatif">
+        <OfficialText reference="Income Tax Act 1995 — Constat législatif">
           <p>
-            L&apos;ITA ne contient aucune disposition specifique creant un impot
-            sur les plus-values mobilieres ou immobilieres. Les profits tires de
+            L&apos;ITA ne contient aucune disposition spécifique créant un impôt
+            sur les plus-values mobilières ou immobilières. Les profits tirés de
             la cession de titres, de biens immobiliers ou d&apos;actifs
-            incorporels ne sont pas soumis a l&apos;impot sur le revenu des lors
-            qu&apos;ils ne constituent pas des revenus d&apos;activite
+            incorporels ne sont pas soumis à l&apos;impôt sur le revenu dès lors
+            qu&apos;ils ne constituent pas des revenus d&apos;activité
             (trading income).
           </p>
         </OfficialText>
@@ -458,24 +458,24 @@ export default function AnalyseIncomeTaxActPage() {
         <Callout variant="green" title="Commentaire de Didier Laroussinie">
           <p>
             C&apos;est souvent le premier point qui surprend mes clients
-            francais. En France, la plus-value de cession de titres est taxee a
-            30 % (PFU) ou au bareme progressif + 17,2 % de prelevements
-            sociaux. A Maurice : zero. La plus-value immobiliere ? Zero
-            egalement (sous reserve que l&apos;activite ne soit pas requalifiee
-            en activite de marchand de biens).
+            français. En France, la plus-value de cession de titres est taxée a
+            30 % (PFU) ou au barème progressif + 17,2 % de prélèvements
+            sociaux. À Maurice : zéro. La plus-value immobilière ? Zéro
+            également (sous réserve que l&apos;activité ne soit pas requalifiée
+            en activité de marchand de biens).
           </p>
           <p className="mt-2">
-            Attention neanmoins a l&apos;
-            <strong>exit tax francaise</strong> (article 167 bis du CGI) : si
-            vous detenez un portefeuille de participations superieur a 800 000
-            EUR au moment de votre depart de France, les plus-values latentes
-            sont mises en sursis d&apos;imposition. Ce sujet est traite en
-            detail dans notre article sur la{" "}
+            Attention néanmoins à l&apos;
+            <strong>exit tax française</strong> (article 167 bis du CGI) : si
+            vous détenez un portefeuille de participations supérieur à 800 000
+            EUR au moment de votre départ de France, les plus-values latentes
+            sont mises en sursis d&apos;imposition. Ce sujet est traité en
+            détail dans notre article sur la{" "}
             <Link
               href="/ressources/blog/succession-internationale-france-maurice"
               className="text-green-700 underline hover:text-green-900"
             >
-              fiscalite internationale France-Maurice
+              fiscalité internationale France-Maurice
             </Link>
             .
           </p>
@@ -488,9 +488,9 @@ export default function AnalyseIncomeTaxActPage() {
           6. Sub-Part C, Second Schedule — Partial Exemption Regime (80 %)
         </h2>
         <p>
-          Le Partial Exemption Regime (PER) est le mecanisme qui permet aux
-          societes titulaires d&apos;une Global Business Licence de reduire leur
-          taux effectif d&apos;imposition a 3 %.
+          Le Partial Exemption Regime (PER) est le mécanisme qui permet aux
+          sociétés titulaires d&apos;une Global Business Licence de réduire leur
+          taux effectif d&apos;imposition à 3 %.
         </p>
 
         <OfficialText reference="Income Tax Act 1995 — Second Schedule, Sub-Part C, Part II">
@@ -512,30 +512,30 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Le PER est le regime qui a remplace l&apos;ancien systeme du
+            Le PER est le régime qui a remplacé l&apos;ancien système du
             &laquo;&nbsp;deemed foreign tax credit&nbsp;&raquo; en 2019. Le
-            principe est simple : 80 % d&apos;exoneration sur le revenu
-            eligible, d&apos;ou un taux effectif de 15 % x 20 % = 3 %.
+            principe est simple : 80 % d&apos;exonération sur le revenu
+            éligible, d&apos;ou un taux effectif de 15 % x 20 % = 3 %.
             Mais — et c&apos;est un &laquo;&nbsp;mais&nbsp;&raquo; de taille —
-            le benefice du PER est <strong>conditionne</strong> a la
+            le bénéfice du PER est <strong>conditionné</strong> a la
             satisfaction des{" "}
             <Link
               href="/ressources/blog/substance-requirements-maurice"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              exigences de substance economique
+              exigences de substance économique
             </Link>{" "}
-            definies par la Financial Services Commission.
+            définies par la Financial Services Commission.
           </p>
         </Callout>
 
         <Callout variant="amber" title="Conditions de substance (rappel)">
           <p>
-            Pour beneficier du PER, la societe doit demontrer qu&apos;elle
+            Pour bénéficier du PER, la société doit démontrer qu&apos;elle
             exerce ses Core Income Generating Activities (CIGA) depuis Maurice :
-            employes qualifies sur place, decisions strategiques prises a
-            Maurice, depenses operationnelles locales adequates. Ces criteres
-            sont verifies annuellement par la FSC. Nous accompagnons nos clients
+            employés qualifiés sur place, decisions stratégiques prises a
+            Maurice, dépenses operationnelles locales adéquates. Ces critères
+            sont vérifiés annuellement par la FSC. Nous accompagnons nos clients
             GBC dans la mise en conformite permanente avec ces exigences.
           </p>
         </Callout>
@@ -544,11 +544,11 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== CSG ===== */}
       <Section id="csg" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          7. CSG — Contribution Sociale Generalisee
+          7. CSG — Contribution Sociale Généralisée
         </h2>
         <p>
-          Depuis septembre 2020, la CSG (Contribution Sociale Generalisee) a
-          remplace le National Pensions Fund (NPF). Elle est regie par les
+          Depuis septembre 2020, la CSG (Contribution Sociale Généralisée) a
+          remplacé le National Pensions Fund (NPF). Elle est régie par les
           regulations prises en vertu de l&apos;Income Tax Act.
         </p>
 
@@ -559,38 +559,38 @@ export default function AnalyseIncomeTaxActPage() {
             specified in the Schedule.&nbsp;&raquo;
           </p>
           <p className="mt-2">
-            Les taux varient selon la tranche de remuneration de base mensuelle :
-            1,5 % pour l&apos;employe (3 % pour les revenus superieurs a MUR
-            50 000) et 3 % a 6 % pour l&apos;employeur.
+            Les taux varient selon la tranche de rémunération de base mensuelle :
+            1,5 % pour l&apos;employe (3 % pour les revenus supérieurs a MUR
+            50 000) et 3 % à 6 % pour l&apos;employeur.
           </p>
         </OfficialText>
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Ne confondez pas la CSG mauricienne avec la CSG francaise. Ici, il
-            s&apos;agit d&apos;une cotisation de securite sociale a taux
-            modere (1,5 % a 3 % cote salarie) qui finance le systeme de pension.
-            En France, les prelevements sociaux cumules representent environ
-            22 % cote salarie. Pour les{" "}
-            <strong>travailleurs independants</strong> (self-employed), la
-            contribution CSG est fixee a un montant forfaitaire de MUR 150
-            par mois, quel que soit le niveau de revenus — un regime
-            particulierement avantageux.
+            Ne confondez pas la CSG mauricienne avec la CSG française. Ici, il
+            s&apos;agit d&apos;une cotisation de sécurité sociale à taux
+            modéré (1,5 % à 3 % côté salarié) qui finance le système de pension.
+            En France, les prélèvements sociaux cumulés représentent environ
+            22 % côté salarié. Pour les{" "}
+            <strong>travailleurs indépendants</strong> (self-employed), la
+            contribution CSG est fixée à un montant forfaitaire de MUR 150
+            par mois, quel que soit le niveau de revenus — un régime
+            particulièrement avantageux.
           </p>
         </Callout>
 
         <Callout variant="amber" title="Point de vigilance">
           <p>
-            Les dirigeants de societes GBC qui se versent un salaire a Maurice
-            sont concernes par la CSG. Il est indispensable de la prendre en
-            compte dans le calcul du cout total de l&apos;emploi. Notre equipe{" "}
+            Les dirigeants de sociétés GBC qui se versent un salaire à Maurice
+            sont concernés par la CSG. Il est indispensable de la prendre en
+            compte dans le calcul du coût total de l&apos;emploi. Notre équipe{" "}
             <Link
               href="/services"
               className="text-amber-700 underline hover:text-amber-900"
             >
-              comptabilite et paie
+              comptabilité et paie
             </Link>{" "}
-            gere ces declarations mensuelles pour l&apos;ensemble de nos clients.
+            gère ces déclarations mensuelles pour l&apos;ensemble de nos clients.
           </p>
         </Callout>
       </Section>
@@ -598,14 +598,14 @@ export default function AnalyseIncomeTaxActPage() {
       {/* ===== SYNTHESE ===== */}
       <Section id="synthese" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          En resume : les chiffres cles
+          En résumé : les chiffres clés
         </h2>
         <div className="overflow-x-auto">
           <table className="mt-4 w-full text-sm">
             <thead>
               <tr className="border-b border-slate-300 text-left">
                 <th className="pb-2 pr-4 font-semibold text-slate-700">
-                  Element fiscal
+                  Élément fiscal
                 </th>
                 <th className="pb-2 pr-4 font-semibold text-slate-700">
                   Maurice (ITA 1995)
@@ -617,12 +617,12 @@ export default function AnalyseIncomeTaxActPage() {
             </thead>
             <tbody className="divide-y divide-slate-200">
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Impot sur le revenu</td>
+                <td className="py-2 pr-4 text-slate-600">Impôt sur le revenu</td>
                 <td className="py-2 pr-4 font-medium text-slate-900">15 %</td>
-                <td className="py-2 text-slate-600">0 % a 45 %</td>
+                <td className="py-2 text-slate-600">0 % à 45 %</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Impot sur les societes</td>
+                <td className="py-2 pr-4 text-slate-600">Impôt sur les sociétés</td>
                 <td className="py-2 pr-4 font-medium text-slate-900">15 % (3 % via PER)</td>
                 <td className="py-2 text-slate-600">25 %</td>
               </tr>
@@ -637,7 +637,7 @@ export default function AnalyseIncomeTaxActPage() {
                 <td className="py-2 text-slate-600">30 % (PFU)</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Prelevements sociaux</td>
+                <td className="py-2 pr-4 text-slate-600">Prélèvements sociaux</td>
                 <td className="py-2 pr-4 font-medium text-slate-900">CSG 1,5 %–3 %</td>
                 <td className="py-2 text-slate-600">17,2 %</td>
               </tr>
@@ -647,10 +647,10 @@ export default function AnalyseIncomeTaxActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Ces chiffres parlent d&apos;eux-memes. Mais la fiscalite ne se
-            resume pas a un tableau comparatif. Chaque situation est unique :
+            Ces chiffres parlent d&apos;eux-mêmes. Mais la fiscalité ne se
+            résume pas à un tableau comparatif. Chaque situation est unique :
             convention fiscale applicable, structuration juridique, type de
-            revenus, presence de revenus fonciers francais... C&apos;est
+            revenus, présence de revenus fonciers français... C&apos;est
             pourquoi un accompagnement sur mesure reste indispensable.
           </p>
         </Callout>
@@ -660,7 +660,7 @@ export default function AnalyseIncomeTaxActPage() {
       <section className="border-t border-slate-200 bg-white py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-xl font-bold text-slate-900">
-            Articles complementaires
+            Articles complémentaires
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
@@ -668,7 +668,7 @@ export default function AnalyseIncomeTaxActPage() {
                 href="/ressources/blog/substance-requirements-maurice"
                 className="text-blue-600 hover:underline"
               >
-                Substance Requirements a Maurice — Ce que l&apos;EDB et la FSC
+                Substance Requirements à Maurice — Ce que l&apos;EDB et la FSC
                 attendent vraiment
               </Link>
             </li>
@@ -685,7 +685,7 @@ export default function AnalyseIncomeTaxActPage() {
                 href="/ressources/blog/sources-officielles-fiscalite-maurice"
                 className="text-blue-600 hover:underline"
               >
-                Sources officielles de la fiscalite mauricienne
+                Sources officielles de la fiscalité mauricienne
               </Link>
             </li>
             <li>
@@ -701,7 +701,7 @@ export default function AnalyseIncomeTaxActPage() {
                 href="/ressources/analyse-vat-act"
                 className="text-blue-600 hover:underline"
               >
-                VAT Act 1998 — Ce que tout entrepreneur a Maurice doit savoir
+                VAT Act 1998 — Ce que tout entrepreneur à Maurice doit savoir
               </Link>
             </li>
           </ul>
@@ -719,9 +719,9 @@ export default function AnalyseIncomeTaxActPage() {
               rel="noopener noreferrer"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              Income Tax Act 1995, consolide jusqu&apos;au Finance Act 2025
+              Income Tax Act 1995, consolidé jusqu&apos;au Finance Act 2025
             </a>{" "}
-            — Mauritius Revenue Authority (MRA). Derniere consultation : mars
+            — Mauritius Revenue Authority (MRA). Dernière consultation : mars
             2026.
           </p>
         </div>
@@ -731,11 +731,11 @@ export default function AnalyseIncomeTaxActPage() {
       <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-2xl font-bold text-white">
-            Besoin d&apos;une analyse personnalisee de votre situation fiscale ?
+            Besoin d&apos;une analyse personnalisée de votre situation fiscale ?
           </h2>
           <p className="mt-3 text-slate-300">
-            Didier Laroussinie et son equipe etudient votre cas en toute
-            confidentialite.
+            Didier Laroussinie et son équipe étudient votre cas en toute
+            confidentialité.
           </p>
           <div className="mt-6">
             <Link href="/contact">

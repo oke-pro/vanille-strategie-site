@@ -183,7 +183,7 @@ export default function AchatVentePage() {
             <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
               <h3 className="text-xl font-bold text-slate-900 mb-4">3. Valorisation multi-critères</h3>
               <p className="text-slate-600 leading-relaxed">
-                Nous utilisons plusieurs méthodes de valorisation pour déterminer la juste valeur de l&apos;entreprise cible : la méthode DCF (Discounted Cash Flows) basée sur les flux de trésorerie futurs actualisés, la méthode des comparables (multiples d&apos;EBITDA, de chiffre d&apos;affaires) par rapport aux transactions récentes dans le même secteur, et la méthode patrimoniale (actif net réévalué). La confrontation de ces approches permet de définir une fourchette de prix réaliste et de préparer les arguments de négociation. Pour les entreprises mauriciennes, nous intégrons les spécificités locales : taux de change MUR/EUR, prime de risque pays, ajustement pour la taille du marché.
+                Nous utilisons plusieurs méthodes de valorisation pour déterminer la juste valeur de l&apos;entreprise cible : la méthode DCF (Discounted Cash Flows) basée sur les flux de trésorerie futurs actualisés, la méthode des comparables (multiples d&apos;EBITDA, de chiffre d&apos;affaires) par rapport àux transactions récentes dans le même secteur, et la méthode patrimoniale (actif net réévalué). La confrontation de ces approches permet de définir une fourchette de prix réaliste et de préparer les arguments de négociation. Pour les entreprises mauriciennes, nous intégrons les spécificités locales : taux de change MUR/EUR, prime de risque pays, ajustement pour la taille du marché.
               </p>
             </div>
 

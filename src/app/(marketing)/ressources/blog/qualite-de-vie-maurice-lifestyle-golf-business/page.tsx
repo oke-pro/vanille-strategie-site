@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   keywords: [
     "qualité de vie Maurice",
     "vivre à Maurice",
-    "golf Ile Maurice",
+    "golf Île Maurice",
     "expatriation Maurice lifestyle",
     "Heritage Golf Club Maurice",
     "Anahita Golf Maurice",
     "restaurants gastronomiques Maurice",
     "plages Maurice",
     "expatriation famille Maurice",
-    "retraite Ile Maurice",
+    "retraite Île Maurice",
     "immobilier Maurice",
     "communauté expatriés Maurice",
   ],
@@ -117,9 +117,9 @@ export default function QualiteDeVieMauricePage() {
           {/* ── Introduction ── */}
           <div className="prose prose-slate prose-lg mx-auto max-w-3xl">
             <p>
-              Il y à des destinations o&ugrave; l&apos;on s&apos;expatrie pour
+              Il y à des destinations o&ugrave; l&apos;on s&apos;expatrié pour
               payer moins d&apos;imp&ocirc;ts. Et il y à Maurice &mdash; o&ugrave;
-              l&apos;on s&apos;installe pour{" "}
+              l&apos;on s&apos;installé pour{" "}
               <strong>vivre mieux, tout simplement</strong>.
             </p>
             <p>
@@ -379,7 +379,7 @@ export default function QualiteDeVieMauricePage() {
                 Dessin&eacute; par la l&eacute;gende <strong>Ernie Els</strong>,
                 Anahita offre 18&nbsp;trous dont 7&nbsp;en bord de lagon.
                 Le c&eacute;l&egrave;bre trou 15 avec son green flottant
-                n&eacute;cessite un carry de 165&nbsp;m&egrave;tres au-dessus
+                n&eacute;cessite un carry de 165&nbsp;m&egrave;très au-dessus
                 de l&apos;eau &mdash; un moment d&apos;anthologie.
               </p>
               <p className="mt-2 text-xs text-slate-500">

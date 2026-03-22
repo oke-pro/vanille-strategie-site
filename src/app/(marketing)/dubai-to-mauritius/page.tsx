@@ -91,7 +91,7 @@ export default function DubaiToMauritiusPage() {
               { q: "\"Le Maroc est moins cher\"", a: "Oui, mais vous payez 17,5% d'IS + retenue sur dividendes. À Maurice, 15% flat et 0% sur tout le reste. Sur 500K€ de bénéfices, vous économisez des dizaines de milliers d'euros par an." },
               { q: "\"Le Maroc est plus proche\"", a: "Maurice est à GMT+4, le même fuseau que Dubaï. Vos habitudes ne changent pas. Et le vol direct Air France existe." },
               { q: "\"Le Maroc est dans la région MENA\"", a: "Exactement. Vous fuyez l'instabilité du Moyen-Orient pour aller... en Afrique du Nord ? Maurice est à 8 000 km du premier conflit." },
-              { q: "\"Le Maroc a un plus grand marché\"", a: "Maurice est un hub vers l'Afrique (COMESA, 500M+ de consommateurs) ET l'Asie. Le Maroc regarde l'Europe, Maurice regarde le monde." },
+              { q: "\"Le Maroc à un plus grand marché\"", a: "Maurice est un hub vers l'Afrique (COMESA, 500M+ de consommateurs) ET l'Asie. Le Maroc regarde l'Europe, Maurice regarde le monde." },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border bg-white p-6">
                 <p className="font-bold text-slate-900">{item.q}</p>

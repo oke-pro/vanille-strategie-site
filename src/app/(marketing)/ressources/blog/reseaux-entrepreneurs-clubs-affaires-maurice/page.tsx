@@ -121,7 +121,7 @@ export default function ReseauxEntrepreneursPage() {
               publicit&eacute; ou le d&eacute;marchage &agrave; froid.
             </p>
             <p>
-              Pour un entrepreneur qui s&apos;installe, la question
+              Pour un entrepreneur qui s&apos;installé, la question
               n&apos;est pas &laquo;&nbsp;faut-il networker ?&nbsp;&raquo;
               mais &laquo;&nbsp;par o&ugrave; commencer ?&nbsp;&raquo;.
               Int&eacute;grer les bons r&eacute;seaux d&egrave;s les

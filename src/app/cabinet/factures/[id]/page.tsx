@@ -83,7 +83,7 @@ export default function CabinetFactureDetailPage({
       });
       setInvoice(updated);
     } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : "Erreur de mise a jour";
+      const message = err instanceof Error ? err.message : "Erreur de mise à jour";
       setError(message);
     } finally {
       setUpdating(false);

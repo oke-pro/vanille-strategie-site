@@ -7,7 +7,7 @@ import { sendChatMessage, getChatHistory } from "@/lib/api";
 import { trackEvent } from "@/components/analytics/google-analytics";
 
 interface ChatMessage {
-  rôle: "user" | "assistant";
+  role: "user" | "assistant";
   content: string;
 }
 
@@ -172,7 +172,7 @@ export function ChatWidget() {
 
   // Afficher le formulaire de contact après la 1ère réponse de l'IA
   const assistantMessageCount = messages.filter(
-    (m) => m.rôle === "assistant" && m.content !== WELCOME_MESSAGE
+    (m) => m.role === "assistant" && m.content !== WELCOME_MESSAGE
   ).length;
 
   useEffect(() => {
@@ -196,7 +196,7 @@ export function ChatWidget() {
         if (data.messages && data.messages.length > 0) {
           setMessages(
             data.messages.map((m) => ({
-              rôle: m.rôle as "user" | "assistant",
+              role: m.role as "user" | "assistant",
               content: m.content,
             }))
           );
@@ -248,7 +248,7 @@ export function ChatWidget() {
     setChatOpen(true);
     trackEvent("chat_open", "chatbot");
     if (messages.length === 0) {
-      setMessages([{ rôle: "assistant", content: WELCOME_MESSAGE }]);
+      setMessages([{ role: "assistant", content: WELCOME_MESSAGE }]);
     }
   }, [setChatOpen, messages.length]);
 
@@ -264,7 +264,7 @@ export function ChatWidget() {
     const pageUrl =
       typeof window !== "undefined" ? window.location.pathname : undefined;
 
-    setMessages((prev) => [...prev, { rôle: "user", content: text }]);
+    setMessages((prev) => [...prev, { role: "user", content: text }]);
     setInput("");
     setLoading(true);
 
@@ -277,14 +277,14 @@ export function ChatWidget() {
 
       setMessages((prev) => [
         ...prev,
-        { rôle: "assistant", content: response.message },
+        { role: "assistant", content: response.message },
       ]);
       trackEvent("chat_message", "chatbot");
     } catch {
       setMessages((prev) => [
         ...prev,
         {
-          rôle: "assistant",
+          role: "assistant",
           content:
             "Je suis désolé, une erreur est survenue. N'hésitez pas à nous contacter directement par WhatsApp au +230 59 43 74 83.",
         },
@@ -395,16 +395,16 @@ export function ChatWidget() {
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`flex ${msg.rôle === "user" ? "justify-end" : "justify-start"}`}
+              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
                 className={`max-w-[80%] rounded-2xl px-4 py-2.5 ${
-                  msg.rôle === "user"
+                  msg.role === "user"
                     ? "rounded-br-md bg-blue-600 text-sm leading-relaxed text-white"
                     : "rounded-bl-md bg-slate-100 text-sm leading-relaxed text-slate-800"
                 }`}
               >
-                {msg.rôle === "assistant"
+                {msg.role === "assistant"
                   ? renderMarkdown(msg.content)
                   : msg.content}
               </div>

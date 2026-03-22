@@ -5,26 +5,26 @@ import { founder } from "@/data/site";
 
 export const metadata: Metadata = {
   title:
-    "VAT Act 1998 — Ce que tout entrepreneur a Maurice doit savoir | Vanille Strategie",
+    "VAT Act 1998 — Ce que tout entrepreneur à Maurice doit savoir | Vanille Stratégie",
   description:
-    "Analyse commentee par Didier Laroussinie du VAT Act 1998 de Maurice : taux 15 %, seuil d'assujettissement abaisse a 3M MUR, exemption services exportes, obligations declaratives.",
+    "Analyse commentée par Didier Laroussinie du VAT Act 1998 de Maurice : taux 15 %, seuil d'assujettissement abaissé a 3M MUR, exemption services exportés, obligations déclaratives.",
   keywords: [
     "VAT Act 1998 Maurice",
     "TVA Maurice 15%",
     "seuil assujettissement TVA Maurice",
     "3 millions MUR VAT",
-    "services exportes Maurice exemption",
+    "services exportés Maurice exemption",
     "zero-rated supplies Maurice",
-    "obligations declaratives TVA Maurice",
+    "obligations déclaratives TVA Maurice",
     "digital nomad TVA Maurice",
     "e-commerce Maurice TVA",
-    "Vanille Strategie",
+    "Vanille Stratégie",
   ],
   openGraph: {
     title:
-      "VAT Act 1998 — Ce que tout entrepreneur a Maurice doit savoir",
+      "VAT Act 1998 — Ce que tout entrepreneur à Maurice doit savoir",
     description:
-      "Lecture commentee du VAT Act 1998 par un Expert-Comptable Fiscaliste installe a Maurice depuis 2015. Taux, seuils, exemptions, obligations.",
+      "Lecture commentée du VAT Act 1998 par un Expert-Comptable Fiscaliste installé à Maurice depuis 2015. Taux, seuils, exemptions, obligations.",
     type: "article",
     locale: "fr_FR",
   },
@@ -156,13 +156,13 @@ export default function AnalyseVatActPage() {
           </div>
 
           <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            VAT Act 1998 — Ce que tout entrepreneur a Maurice doit savoir
+            VAT Act 1998 — Ce que tout entrepreneur à Maurice doit savoir
           </h1>
           <p className="mt-4 text-lg text-slate-300">
-            La TVA mauricienne (Value Added Tax) est regie par le VAT Act 1998.
+            La TVA mauricienne (Value Added Tax) est régie par le VAT Act 1998.
             Avec l&apos;abaissement du seuil d&apos;assujettissement a 3
             millions MUR depuis octobre 2025, de nombreuses PME et freelances
-            sont desormais concernes. Voici les dispositions essentielles,
+            sont désormais concernés. Voici les dispositions essentielles,
             commentees article par article.
           </p>
 
@@ -197,22 +197,22 @@ export default function AnalyseVatActPage() {
             </li>
             <li>
               <a href="#zero-rated" className="hover:underline">
-                Fifth Schedule — Fournitures a taux zero (services exportes)
+                Fifth Schedule — Fournitures à taux zéro (services exportés)
               </a>
             </li>
             <li>
               <a href="#exempt" className="hover:underline">
-                First Schedule — Fournitures exonerees
+                First Schedule — Fournitures exonérées
               </a>
             </li>
             <li>
               <a href="#obligations" className="hover:underline">
-                Sections 20-22 — Obligations declaratives
+                Sections 20-22 — Obligations déclaratives
               </a>
             </li>
             <li>
               <a href="#digital" className="hover:underline">
-                Budget 2025-2026 — TVA sur les services numeriques
+                Budget 2025-2026 — TVA sur les services numériques
               </a>
             </li>
           </ol>
@@ -222,11 +222,11 @@ export default function AnalyseVatActPage() {
       {/* ===== TAUX 15 % ===== */}
       <Section id="taux" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          1. Section 8 — Taux de TVA a 15 %
+          1. Section 8 — Taux de TVA à 15 %
         </h2>
         <p>
           La section 8 du VAT Act 1998 fixe le taux standard de la TVA
-          applicable a Maurice.
+          applicable à Maurice.
         </p>
 
         <OfficialText reference="VAT Act 1998 — Section 8(1)">
@@ -239,12 +239,12 @@ export default function AnalyseVatActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            Le taux de 15 % est identique a celui de l&apos;impot sur le revenu
-            — une simplicite appreciable du systeme mauricien. Comparez avec la
-            France ou le taux normal de TVA est de 20 %, avec des taux reduits a
-            10 %, 5,5 % et 2,1 %. A Maurice, c&apos;est 15 % ou zero (taux
-            zero et exonerations). Pas de taux intermediaire. Cela simplifie
-            considerablement la gestion comptable de nos clients entrepreneurs.
+            Le taux de 15 % est identique à celui de l&apos;impôt sur le revenu
+            — une simplicite appréciable du système mauricien. Comparez avec la
+            France ou le taux normal de TVA est de 20 %, avec des taux réduits a
+            10 %, 5,5 % et 2,1 %. À Maurice, c&apos;est 15 % ou zéro (taux
+            zéro et exonérations). Pas de taux intermédiaire. Cela simplifie
+            considérablement la gestion comptable de nos clients entrepreneurs.
           </p>
         </Callout>
       </Section>
@@ -255,11 +255,11 @@ export default function AnalyseVatActPage() {
           2. Section 15 — Seuil d&apos;assujettissement
         </h2>
         <p>
-          La section 15 definit les conditions dans lesquelles une personne est
-          tenue de s&apos;enregistrer a la TVA.
+          La section 15 définit les conditions dans lesquelles une personne est
+          tenue de s&apos;enregistrer à la TVA.
         </p>
 
-        <OfficialText reference="VAT Act 1998 — Section 15 (tel qu'amende par le Finance Act 2025)">
+        <OfficialText reference="VAT Act 1998 — Section 15 (tel qu'amendé par le Finance Act 2025)">
           <p>
             &laquo;&nbsp;A person who carries on a taxable activity shall apply
             for registration as a taxable person where the total value of his
@@ -268,8 +268,8 @@ export default function AnalyseVatActPage() {
             months.&nbsp;&raquo;
           </p>
           <p className="mt-2">
-            Le seuil (registration threshold) est fixe a MUR 3 000 000 depuis
-            le 1er octobre 2025 (contre MUR 6 000 000 anterieurement).
+            Le seuil (registration threshold) est fixe à MUR 3 000 000 depuis
+            le 1er octobre 2025 (contre MUR 6 000 000 antérieurement).
           </p>
         </OfficialText>
 
@@ -278,27 +278,27 @@ export default function AnalyseVatActPage() {
             C&apos;est <strong>le changement majeur du Budget 2025-2026</strong>.
             L&apos;abaissement du seuil de 6 a 3 millions MUR (environ 60 000
             EUR) signifie que des milliers de petites entreprises et de
-            freelances a Maurice sont desormais dans l&apos;obligation de
-            s&apos;enregistrer a la TVA. Si vous etes un{" "}
+            freelances à Maurice sont désormais dans l&apos;obligation de
+            s&apos;enregistrer à la TVA. Si vous êtes un{" "}
             <Link
               href="/digital-nomad"
               className="text-red-700 underline hover:text-red-900"
             >
               digital nomad
             </Link>{" "}
-            ou un consultant independant facturant plus de 250 000 MUR par mois
-            (environ 5 000 EUR), vous etes potentiellement concerne.
+            ou un consultant indépendant facturant plus de 250 000 MUR par mois
+            (environ 5 000 EUR), vous êtes potentiellement concerné.
           </p>
         </Callout>
 
-        <Callout variant="amber" title="Calendrier a retenir">
+        <Callout variant="amber" title="Calendrier à retenir">
           <p>
             Le nouveau seuil est effectif depuis le 1er octobre 2025. Si votre
-            chiffre d&apos;affaires de fournitures taxables a depasse 3 millions
+            chiffre d&apos;affaires de fournitures taxables a dépassé 3 millions
             MUR au cours des 12 derniers mois glissants, vous avez{" "}
-            <strong>28 jours</strong> pour deposer votre demande
-            d&apos;enregistrement aupres de la MRA. Le defaut
-            d&apos;enregistrement expose a des penalites significatives.
+            <strong>28 jours</strong> pour déposer votre demande
+            d&apos;enregistrement auprès de la MRA. Le défaut
+            d&apos;enregistrement expose à des pénalités significatives.
           </p>
         </Callout>
       </Section>
@@ -306,12 +306,12 @@ export default function AnalyseVatActPage() {
       {/* ===== ZERO-RATED — SERVICES EXPORTES ===== */}
       <Section id="zero-rated" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          3. Fifth Schedule — Fournitures a taux zero (services exportes)
+          3. Fifth Schedule — Fournitures à taux zéro (services exportés)
         </h2>
         <p>
           Le Fifth Schedule du VAT Act liste les fournitures soumises au taux
-          zero. C&apos;est la disposition la plus importante pour les
-          prestataires de services a l&apos;international.
+          zéro. C&apos;est la disposition la plus importante pour les
+          prestataires de services à l&apos;international.
         </p>
 
         <OfficialText reference="VAT Act 1998 — Fifth Schedule (extraits)">
@@ -326,31 +326,31 @@ export default function AnalyseVatActPage() {
 
         <Callout variant="green" title="Commentaire de Didier Laroussinie">
           <p>
-            C&apos;est la disposition <strong>strategique</strong> pour tous mes
+            C&apos;est la disposition <strong>stratégique</strong> pour tous mes
             clients e-commerçants, consultants et prestataires de services
-            numeriques bases a Maurice mais servant une clientele internationale.
-            Si vous fournissez des services de developpement web, de conseil, de
-            marketing digital ou tout autre service a des clients situes hors de
-            Maurice et que ces services sont utilises hors de Maurice, votre
-            prestation est soumise au taux zero — pas 15 %, zero.
+            numériques basés à Maurice mais servant une clientèle internationale.
+            Si vous fournissez des services de développement web, de conseil, de
+            marketing digital ou tout autre service à des clients situés hors de
+            Maurice et que ces services sont utilisés hors de Maurice, votre
+            prestation est soumise au taux zéro — pas 15 %, zéro.
           </p>
           <p className="mt-2">
-            Concretement, cela signifie que vous ne facturez pas de TVA a vos
-            clients etrangers, mais vous conservez le droit de recuperer la TVA
+            Concrètement, cela signifie que vous ne facturez pas de TVA a vos
+            clients étrangers, mais vous conservez le droit de récupérer la TVA
             sur vos achats locaux (input tax). C&apos;est un avantage de
-            tresorerie considerable.
+            trésorerie considérable.
           </p>
         </Callout>
 
-        <Callout variant="amber" title="Condition cle : utilisation hors de Maurice">
+        <Callout variant="amber" title="Condition clé : utilisation hors de Maurice">
           <p>
-            Attention a la condition &laquo;&nbsp;for use outside
-            Mauritius&nbsp;&raquo;. Si un client etranger commande un service
-            qui sera <em>consomme</em> a Maurice (par exemple l&apos;organisation
-            d&apos;un evenement a Maurice), le taux zero ne s&apos;applique pas.
-            La MRA examine la destination reelle du service, pas seulement
-            l&apos;adresse du client. Nous verifions systematiquement ce point
-            lors de la mise en place des procedures TVA de nos clients.
+            Attention à la condition &laquo;&nbsp;for use outside
+            Mauritius&nbsp;&raquo;. Si un client étranger commande un service
+            qui sera <em>consommé</em> à Maurice (par exemple l&apos;organisation
+            d&apos;un événement à Maurice), le taux zéro ne s&apos;applique pas.
+            La MRA examine la destination réelle du service, pas seulement
+            l&apos;adresse du client. Nous vérifions systématiquement ce point
+            lors de la mise en place des procédures TVA de nos clients.
           </p>
         </Callout>
       </Section>
@@ -358,18 +358,18 @@ export default function AnalyseVatActPage() {
       {/* ===== FOURNITURES EXONEREES ===== */}
       <Section id="exempt" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          4. First Schedule — Fournitures exonerees
+          4. First Schedule — Fournitures exonérées
         </h2>
         <p>
-          Le First Schedule liste les biens et services totalement exoneres de
-          TVA. A la difference du taux zero, l&apos;exoneration ne donne pas
-          droit a la recuperation de la TVA en amont.
+          Le First Schedule liste les biens et services totalement exonérés de
+          TVA. À la différence du taux zéro, l&apos;exonération ne donne pas
+          droit à la récupération de la TVA en amont.
         </p>
 
         <OfficialText reference="VAT Act 1998 — First Schedule (extraits)">
           <p>
-            Sont exonerees de TVA notamment : les services financiers (sauf
-            certains services specifiques), les services d&apos;education, les
+            Sont exonérées de TVA notamment : les services financiers (sauf
+            certains services spécifiques), les services d&apos;education, les
             services de sante, la location de biens immobiliers a usage
             d&apos;habitation, le transport public de passagers, certains
             produits alimentaires de base.
@@ -380,14 +380,14 @@ export default function AnalyseVatActPage() {
           <p>
             La distinction entre &laquo;&nbsp;exempt&nbsp;&raquo; et
             &laquo;&nbsp;zero-rated&nbsp;&raquo; est cruciale et source
-            frequente de confusion. Dans les deux cas, vous ne facturez pas de
-            TVA. Mais si votre activite est <em>exoneree</em>, vous ne pouvez
-            pas recuperer la TVA sur vos achats. Si elle est a{" "}
+            fréquente de confusion. Dans les deux cas, vous ne facturez pas de
+            TVA. Mais si votre activité est <em>exonérée</em>, vous ne pouvez
+            pas récupérer la TVA sur vos achats. Si elle est a{" "}
             <em>taux zero</em>, vous recuperez la TVA en amont. Pour un
             prestataire de services financiers, cela signifie que la TVA payee
-            sur les fournitures (loyer, equipement, etc.) constitue un cout
-            definitif. Ce point doit etre integre dans le business plan des le
-            depart.
+            sur les fournitures (loyer, équipement, etc.) constitue un coût
+            définitif. Ce point doit être intégré dans le business plan des le
+            départ.
           </p>
         </Callout>
       </Section>
@@ -395,11 +395,11 @@ export default function AnalyseVatActPage() {
       {/* ===== OBLIGATIONS DECLARATIVES ===== */}
       <Section id="obligations" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          5. Sections 20-22 — Obligations declaratives
+          5. Sections 20-22 — Obligations déclaratives
         </h2>
         <p>
-          Les sections 20 a 22 du VAT Act definissent les obligations de tenue
-          de registres, de facturation et de declaration periodique.
+          Les sections 20 a 22 du VAT Act définissent les obligations de tenue
+          de registres, de facturation et de déclaration périodique.
         </p>
 
         <OfficialText reference="VAT Act 1998 — Section 20 (Records)">
@@ -422,30 +422,30 @@ export default function AnalyseVatActPage() {
 
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
-            La declaration TVA (formulaire VAT 3) est trimestrielle pour la
-            plupart des entreprises. Elle doit etre deposee dans les 30 jours
-            suivant la fin du trimestre, accompagnee du paiement de la TVA nette
-            due. La MRA est de plus en plus stricte sur les delais : les
-            penalites de retard s&apos;elevent a 2 % du montant du par mois de
-            retard, plus des interets.
+            La déclaration TVA (formulaire VAT 3) est trimestrielle pour la
+            plupart des entreprises. Elle doit être déposée dans les 30 jours
+            suivant la fin du trimestre, accompagnée du paiement de la TVA nette
+            due. La MRA est de plus en plus stricte sur les délais : les
+            pénalités de retard s&apos;élèvent à 2 % du montant du par mois de
+            retard, plus des intérêts.
           </p>
         </Callout>
 
         <Callout variant="amber" title="Conseil pratique">
           <p>
             Tenez un journal de TVA rigoureux des le premier jour. La MRA peut
-            proceder a des controles inopines et remonter jusqu&apos;a 5 ans en
-            arriere. Chaque facture emise et recue doit comporter le numero VAT,
+            procéder à des contrôles inopinés et remonter jusqu&apos;à 5 ans en
+            arriere. Chaque facture émise et reçue doit comporter le numéro VAT,
             la description du service, le montant hors taxe et le montant de TVA
-            separes. Notre cabinet gere l&apos;integralite des{" "}
+            séparés. Notre cabinet gère l&apos;intégralité des{" "}
             <Link
               href="/services"
               className="text-amber-700 underline hover:text-amber-900"
             >
-              obligations declaratives TVA
+              obligations déclaratives TVA
             </Link>{" "}
-            pour nos clients, de la tenue des registres au depot de la
-            declaration.
+            pour nos clients, de la tenue des registres au dépôt de la
+            déclaration.
           </p>
         </Callout>
       </Section>
@@ -453,20 +453,20 @@ export default function AnalyseVatActPage() {
       {/* ===== TVA SERVICES NUMERIQUES ===== */}
       <Section id="digital" bg="slate">
         <h2 className="text-2xl font-bold text-slate-900">
-          6. Budget 2025-2026 — TVA sur les services numeriques
+          6. Budget 2025-2026 — TVA sur les services numériques
         </h2>
         <p>
           Le Finance Act 2025 a introduit une nouvelle obligation de TVA pour
-          les fournisseurs etrangers de services numeriques a destination de
+          les fournisseurs étrangers de services numériques a destination de
           consommateurs mauriciens.
         </p>
 
-        <OfficialText reference="Finance Act 2025 — Amendement au VAT Act, Section 8A (services numeriques)">
+        <OfficialText reference="Finance Act 2025 — Amendement au VAT Act, Section 8A (services numériques)">
           <p>
-            A compter du 1er janvier 2026, les fournisseurs etrangers de
-            services numeriques ou electroniques (streaming, SaaS, applications,
-            publicite en ligne, etc.) a des consommateurs a Maurice sont tenus de
-            s&apos;enregistrer a la TVA et de collecter la TVA a 15 % sur ces
+            A compter du 1er janvier 2026, les fournisseurs étrangers de
+            services numériques ou électroniques (streaming, SaaS, applications,
+            publicité en ligne, etc.) à des consommateurs à Maurice sont tenus de
+            s&apos;enregistrer à la TVA et de collecter la TVA à 15 % sur ces
             prestations.
           </p>
         </OfficialText>
@@ -474,26 +474,26 @@ export default function AnalyseVatActPage() {
         <Callout variant="blue" title="Commentaire de Didier Laroussinie">
           <p>
             Cette mesure aligne Maurice sur la tendance mondiale (cf. regles de
-            l&apos;OCDE sur la TVA numerique). Pour les entrepreneurs
-            <strong> bases a Maurice</strong> qui vendent des services
-            numeriques, deux scenarios :
+            l&apos;OCDE sur la TVA numérique). Pour les entrepreneurs
+            <strong> basés à Maurice</strong> qui vendent des services
+            numériques, deux scénarios :
           </p>
           <ul className="mt-2 list-disc pl-5 space-y-1">
             <li>
               <strong>Clients hors de Maurice</strong> : vos services restent a
-              taux zero (Fifth Schedule) — rien ne change.
+              taux zéro (Fifth Schedule) — rien ne change.
             </li>
             <li>
-              <strong>Clients a Maurice</strong> : TVA a 15 % applicable comme
+              <strong>Clients à Maurice</strong> : TVA à 15 % applicable comme
               pour tout service local.
             </li>
           </ul>
           <p className="mt-2">
-            En revanche, si vous etes un fournisseur etranger (Netflix, Google,
-            etc.) vendant a des particuliers mauriciens, c&apos;est vous qui
-            devez desormais vous enregistrer et collecter la TVA. Cette mesure ne
-            concerne pas directement nos clients entrepreneurs, mais elle est
-            a surveiller.
+            En revanche, si vous êtes un fournisseur étranger (Netflix, Google,
+            etc.) vendant à des particuliers mauriciens, c&apos;est vous qui
+            devez désormais vous enregistrer et collecter la TVA. Cette mesure ne
+            concerné pas directement nos clients entrepreneurs, mais elle est
+            à surveiller.
           </p>
         </Callout>
       </Section>
@@ -501,17 +501,17 @@ export default function AnalyseVatActPage() {
       {/* ===== SYNTHESE ===== */}
       <Section id="synthese" bg="white">
         <h2 className="text-2xl font-bold text-slate-900">
-          En resume : les chiffres cles de la TVA a Maurice
+          En résumé : les chiffres clés de la TVA à Maurice
         </h2>
         <div className="overflow-x-auto">
           <table className="mt-4 w-full text-sm">
             <thead>
               <tr className="border-b border-slate-300 text-left">
                 <th className="pb-2 pr-4 font-semibold text-slate-700">
-                  Element
+                  Élément
                 </th>
                 <th className="pb-2 font-semibold text-slate-700">
-                  Valeur / Regle
+                  Valeur / Règle
                 </th>
               </tr>
             </thead>
@@ -527,27 +527,27 @@ export default function AnalyseVatActPage() {
                 </td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Services exportes</td>
+                <td className="py-2 pr-4 text-slate-600">Services exportés</td>
                 <td className="py-2 font-medium text-slate-900">
-                  Taux zero (Fifth Schedule)
+                  Taux zéro (Fifth Schedule)
                 </td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Periodicite des declarations</td>
+                <td className="py-2 pr-4 text-slate-600">Périodicité des déclarations</td>
                 <td className="py-2 font-medium text-slate-900">
                   Trimestrielle (formulaire VAT 3)
                 </td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Delai de depot</td>
+                <td className="py-2 pr-4 text-slate-600">Délai de dépôt</td>
                 <td className="py-2 font-medium text-slate-900">
-                  30 jours apres la fin du trimestre
+                  30 jours après la fin du trimestre
                 </td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 text-slate-600">Penalite de retard</td>
+                <td className="py-2 pr-4 text-slate-600">Pénalité de retard</td>
                 <td className="py-2 font-medium text-slate-900">
-                  2 % par mois + interets
+                  2 % par mois + intérêts
                 </td>
               </tr>
             </tbody>
@@ -556,12 +556,12 @@ export default function AnalyseVatActPage() {
 
         <Callout variant="green" title="Commentaire de Didier Laroussinie">
           <p>
-            Pour un entrepreneur francais qui s&apos;installe a Maurice et sert
-            une clientele internationale, la TVA n&apos;est souvent pas un
-            probleme — ses services sont a taux zero. Mais il faut neanmoins
+            Pour un entrepreneur français qui s&apos;installé à Maurice et sert
+            une clientèle internationale, la TVA n&apos;est souvent pas un
+            problème — ses services sont à taux zéro. Mais il faut néanmoins
             s&apos;enregistrer des que le seuil est atteint, ne serait-ce que
-            pour beneficier de la recuperation de la TVA sur les achats locaux.
-            C&apos;est une demarche que nous integrons systematiquement dans le
+            pour bénéficier de la récupération de la TVA sur les achats locaux.
+            C&apos;est une démarche que nous intégrons systématiquement dans le
             parcours d&apos;
             <Link
               href="/entrepreneur"
@@ -578,7 +578,7 @@ export default function AnalyseVatActPage() {
       <section className="border-t border-slate-200 bg-slate-50 py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-xl font-bold text-slate-900">
-            Articles complementaires
+            Articles complémentaires
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
@@ -586,7 +586,7 @@ export default function AnalyseVatActPage() {
                 href="/ressources/analyse-income-tax-act"
                 className="text-blue-600 hover:underline"
               >
-                Income Tax Act 1995 — Analyse commentee des dispositions cles
+                Income Tax Act 1995 — Analyse commentée des dispositions clés
               </Link>
             </li>
             <li>
@@ -594,7 +594,7 @@ export default function AnalyseVatActPage() {
                 href="/ressources/blog/sources-officielles-fiscalite-maurice"
                 className="text-blue-600 hover:underline"
               >
-                Sources officielles de la fiscalite mauricienne
+                Sources officielles de la fiscalité mauricienne
               </Link>
             </li>
             <li>
@@ -602,7 +602,7 @@ export default function AnalyseVatActPage() {
                 href="/ressources/blog/crypto-vasp-licence-maurice"
                 className="text-blue-600 hover:underline"
               >
-                Crypto et licence VASP a Maurice
+                Crypto et licence VASP à Maurice
               </Link>
             </li>
             <li>
@@ -610,7 +610,7 @@ export default function AnalyseVatActPage() {
                 href="/ressources/blog/ecosysteme-tech-startups-maurice"
                 className="text-blue-600 hover:underline"
               >
-                Ecosysteme tech et startups a Maurice
+                Écosystème tech et startups à Maurice
               </Link>
             </li>
             <li>
@@ -618,7 +618,7 @@ export default function AnalyseVatActPage() {
                 href="/ressources/blog/paiements-en-ligne-maurice-stripe-alternatives"
                 className="text-blue-600 hover:underline"
               >
-                Paiements en ligne a Maurice : Stripe et alternatives
+                Paiements en ligne à Maurice : Stripe et alternatives
               </Link>
             </li>
           </ul>
@@ -647,7 +647,7 @@ export default function AnalyseVatActPage() {
             >
               MRA — VAT FAQs (septembre 2025)
             </a>
-            . Derniere consultation : mars 2026.
+            . Dernière consultation : mars 2026.
           </p>
         </div>
       </section>
@@ -656,11 +656,11 @@ export default function AnalyseVatActPage() {
       <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-2xl font-bold text-white">
-            Besoin d&apos;aide pour vos obligations TVA a Maurice ?
+            Besoin d&apos;aide pour vos obligations TVA à Maurice ?
           </h2>
           <p className="mt-3 text-slate-300">
-            Enregistrement, declarations, recuperation de TVA — notre equipe
-            gere tout.
+            Enregistrement, déclarations, récupération de TVA — notre équipe
+            gère tout.
           </p>
           <div className="mt-6">
             <Link href="/contact">

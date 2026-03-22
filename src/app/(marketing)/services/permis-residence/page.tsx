@@ -85,7 +85,7 @@ export default function PermisResidencePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">Choisissez votre voie de résidence</h2>
             <p className="mt-4 text-lg text-slate-600">
-              Chaque profil a sa solution. Nos experts analysent votre situation pour garantir le succès de votre demande.
+              Chaque profil à sa solution. Nos experts analysent votre situation pour garantir le succès de votre demande.
             </p>
           </div>
 
@@ -467,7 +467,7 @@ export default function PermisResidencePage() {
               <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Introduction de l&apos;Expert Pass</h3>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  Le nouveau Expert Pass remplace et élargit l&apos;ancien ProPass (Professional Occupation Permit). Il cible les professionnels hautement qualifiés dans des secteurs stratégiques pour Maurice : fintech, intelligence artificielle, biotechnologie, économie bleue, services financiers et technologies numériques.
+                  Le nouveau Expert Pass remplacé et élargit l&apos;ancien ProPass (Professional Occupation Permit). Il cible les professionnels hautement qualifiés dans des secteurs stratégiques pour Maurice : fintech, intelligence artificielle, biotechnologie, économie bleue, services financiers et technologies numériques.
                 </p>
                 <p className="text-slate-600 leading-relaxed">
                   L&apos;Expert Pass offre un salaire minimum de MUR 60 000 par mois et une procédure accélérée de traitement. Il permet également une plus grande flexibilité pour changer d&apos;employeur sans refaire la totalité de la procédure, favorisant ainsi la mobilité professionnelle au sein de l&apos;écosystème mauricien.
@@ -528,7 +528,7 @@ export default function PermisResidencePage() {
               },
               {
                 q: "Mon conjoint et mes enfants peuvent-ils m\u2019accompagner ?",
-                a: "Oui. Tous les types de permis (sauf le Premium Visa qui a ses propres modalités) permettent d\u2019inclure votre conjoint et vos enfants de moins de 24 ans comme dépendants. Ils obtiennent un permis de résidence lié au vôtre. Le conjoint peut également travailler à Maurice sous certaines conditions. Nous préparons les dossiers de tous les membres de la famille et les déposons simultanément ou séquentiellement selon la stratégie optimale."
+                a: "Oui. Tous les types de permis (sauf le Premium Visa qui à ses propres modalités) permettent d\u2019inclure votre conjoint et vos enfants de moins de 24 ans comme dépendants. Ils obtiennent un permis de résidence lié au vôtre. Le conjoint peut également travailler à Maurice sous certaines conditions. Nous préparons les dossiers de tous les membres de la famille et les déposons simultanément ou séquentiellement selon la stratégie optimale."
               },
               {
                 q: "Quelles sont les implications fiscales de l\u2019expatriation à Maurice ?",
@@ -544,7 +544,7 @@ export default function PermisResidencePage() {
               },
               {
                 q: "L\u2019assurance santé est-elle obligatoire ?",
-                a: "Oui, une assurance santé internationale couvrant Maurice est obligatoire pour l\u2019obtention de tout permis de résidence. Elle doit couvrir l\u2019hospitalisation, les soins courants et le rapatriement. Nous travaillons avec plusieurs courtiers spécialisés qui proposent des contrats adaptés aux expatriés à Maurice, avec des tarifs compétitifs par rapport aux assurances européennes. Le coût moyen se situe entre EUR 150 et 400 par mois selon l\u2019âge et le niveau de couverture."
+                a: "Oui, une assurance santé internationale couvrant Maurice est obligatoire pour l\u2019obtention de tout permis de résidence. Elle doit couvrir l\u2019hospitalisation, les soins courants et le rapatriement. Nous travaillons avec plusieurs courtiers spécialisés qui proposent des contrats adaptés aux expatriés à Maurice, avec des tarifs compétitifs par rapport àux assurances européennes. Le coût moyen se situe entre EUR 150 et 400 par mois selon l\u2019âge et le niveau de couverture."
               }
             ].map((item, i) => (
               <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">

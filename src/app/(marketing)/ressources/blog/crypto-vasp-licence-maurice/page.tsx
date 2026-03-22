@@ -1222,7 +1222,7 @@ export default function CryptoVaspLicenceMauricePage() {
                   variant="outline"
                   className="border-indigo-400 text-indigo-200 hover:bg-indigo-800"
                 >
-                  <Link href="/services/creation-société">
+                  <Link href="/services/creation-societe">
                     Cr&eacute;er ma soci&eacute;t&eacute; &rarr;
                   </Link>
                 </Button>

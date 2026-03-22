@@ -50,7 +50,7 @@ export default function PortalMessagesPage() {
         <div className="bg-white rounded-xl border border-slate-200 p-8 text-center">
           <p className="text-slate-500">Aucune conversation pour le moment.</p>
           <p className="text-sm text-slate-400 mt-2">
-            Vos echanges avec le cabinet Vanille Strategie apparaitront ici.
+            Vos échanges avec le cabinet Vanille Stratégie apparaîtront ici.
           </p>
         </div>
       ) : (
@@ -64,7 +64,7 @@ export default function PortalMessagesPage() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-medium text-slate-900">
-                    Cabinet Vanille Strategie
+                    Cabinet Vanille Stratégie
                   </p>
                   {conv.unread_count > 0 && (
                     <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 text-white text-xs font-bold">

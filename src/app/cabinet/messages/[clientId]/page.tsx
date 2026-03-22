@@ -127,7 +127,7 @@ export default function CabinetMessageThreadPage({
       <div className="flex-1 overflow-y-auto bg-white rounded-xl border border-slate-200 shadow-sm p-4 space-y-3">
         {messages.length === 0 ? (
           <div className="text-center text-slate-500 text-sm py-8">
-            Aucun message. Envoyez le premier message a ce client.
+            Aucun message. Envoyez le premier message à ce client.
           </div>
         ) : (
           messages.map((msg) => {

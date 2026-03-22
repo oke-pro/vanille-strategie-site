@@ -6,7 +6,7 @@ import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title:
-    "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
+    "Écosystème tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
   description:
     "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     locale: "fr_FR",
-    title: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
+    title: "Écosystème tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
     description:
       "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
     siteName: "Vanille Stratégie",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
+    title: "Écosystème tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups",
     description:
       "Maurice se positionne comme hub tech de l'ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie.",
     images: ["https://vanillestrategie.fr/images/hero-paradise.jpg"],
@@ -34,7 +34,7 @@ export default function EcosystemeTechStartupsMauricePage() {
   return (
     <>
       <BlogPostingJsonLd
-        title="Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups"
+        title="Écosystème tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups"
         description="Maurice se positionne comme hub tech de l&apos;ocean Indien. Incubateurs (Turbine, La Plage Factory), Innovator Permit, avantages fiscaux, fintech, VASP — guide complet par Didier Laroussinie."
         slug="ecosysteme-tech-startups-maurice"
         datePublished="2026-03-11"
@@ -43,7 +43,7 @@ export default function EcosystemeTechStartupsMauricePage() {
         items={[
           { name: "Accueil", url: "/" },
           { name: "Blog", url: "/ressources/blog" },
-          { name: "Ecosysteme tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups", url: "/ressources/blog/ecosysteme-tech-startups-maurice" },
+          { name: "Écosystème tech et digital à Maurice — Incubateurs, programmes et opportunites pour les startups", url: "/ressources/blog/ecosysteme-tech-startups-maurice" },
         ]}
       />
       {/* ============================================================ */}
@@ -65,13 +65,13 @@ export default function EcosystemeTechStartupsMauricePage() {
             <span className="text-xs text-slate-500">· 22 min</span>
           </div>
           <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight">
-            L&apos;ecosysteme tech et digital à Maurice — Incubateurs,
+            L&apos;écosystème tech et digital à Maurice — Incubateurs,
             programmes et opportunites pour les startups
           </h1>
           <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-            L&apos;Ile Maurice ne se resume plus aux plages et aux hotels de
-            luxe. L&apos;ile s&apos;impose desormais comme le hub technologique
-            de l&apos;ocean Indien, avec un ecosysteme startup en pleine
+            L&apos;Île Maurice ne se résumé plus aux plages et aux hotels de
+            luxe. L&apos;ile s&apos;impose désormais comme le hub technologique
+            de l&apos;ocean Indien, avec un écosystème startup en pleine
             effervescence, des incubateurs de classe mondiale, des avantages
             fiscaux uniques et une vision gouvernementale ambitieuse. Bienvenue
             dans le terrain de jeu des innovateurs.
@@ -98,9 +98,9 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h2>
           <p>
             En une decennie, Maurice a opere une transformation remarquable. Le
-            secteur tech contribue desormais a pres de{" "}
+            secteur tech contribue désormais a pres de{" "}
             <strong>9,3 % du PIB</strong>, contre 5,6 % en 2020. L&apos;ile se
-            classe au 61e rang mondial dans l&apos;ecosysteme startup selon
+            classe au 61e rang mondial dans l&apos;écosystème startup selon
             StartupBlink — une position qui en fait l&apos;etoile montante de
             l&apos;Afrique de l&apos;Est.
           </p>
@@ -114,10 +114,10 @@ export default function EcosystemeTechStartupsMauricePage() {
             <strong>&ldquo;Intelligent Island&rdquo;</strong>.
           </p>
           <p>
-            En parallele, le plan Digital Mauritius 2030 prevoit des grants
-            allant jusqu&apos;a <strong>Rs 5 millions</strong> pour des projets
+            En parallele, le plan Digital Mauritius 2030 prévoit des grants
+            allant jusqu&apos;à <strong>Rs 5 millions</strong> pour des projets
             de R&D, tandis qu&apos;un programme dedie aux startups innovantes a
-            ete crée sous l&apos;égide du MITCI. L&apos;objectif est clair :
+            été crée sous l&apos;égide du MITCI. L&apos;objectif est clair :
             faire de Maurice un pole d&apos;innovation capable de rivaliser avec
             Singapour pour l&apos;Afrique et l&apos;ocean Indien.
           </p>
@@ -126,8 +126,8 @@ export default function EcosystemeTechStartupsMauricePage() {
               Le chiffre cle
             </p>
             <p className="mt-1 text-sm text-blue-700">
-              Le budget 2025-2026 prevoit egalement Rs 70 millions pour un Data
-              Centre gouvernemental Tier IV dedie à la reprise apres sinistre,
+              Le budget 2025-2026 prévoit également Rs 70 millions pour un Data
+              Centre gouvernemental Tier IV dedie à la reprise après sinistre,
               ainsi que l&apos;alignement des lois sur la protection des donnees
               et la cybersécurité avec les normes internationales. Maurice joue
               dans la cour des grands.
@@ -143,7 +143,7 @@ export default function EcosystemeTechStartupsMauricePage() {
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
             2. Incubateurs et accelerateurs : le coeur battant de
-            l&apos;ecosysteme
+            l&apos;écosystème
           </h2>
           <p>
             L&apos;un des atouts majeurs de Maurice est la densite de son
@@ -152,7 +152,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            Turbine — L&apos;accelerateur de reference
+            Turbine — L&apos;accelerateur de référence
           </h3>
           <p>
             Base à Maurice,{" "}
@@ -170,7 +170,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Turbine peuvent acceder à des grants de{" "}
             <strong>20 000 a 60 000 USD</strong> une fois qu&apos;elles
             securisent un investissement d&apos;un business angel enregistre
-            aupres de l&apos;ABAN (African Business Angel Network).
+            auprès de l&apos;ABAN (African Business Angel Network).
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -212,7 +212,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            Autres acteurs cles
+            Autres acteurs clés
           </h3>
           <ul>
             <li>
@@ -225,13 +225,13 @@ export default function EcosystemeTechStartupsMauricePage() {
             </li>
             <li>
               <strong>Verde Ventures</strong> : pre-incubation, incubation et
-              acceleration — specialise dans la greentech
+              acceleration — spécialisé dans la greentech
             </li>
           </ul>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            L&apos;Innovator Permit de l&apos;EDB — La cle d&apos;entree pour
-            les fondateurs etrangers
+            L&apos;Innovator Permit de l&apos;EDB — La clé d&apos;entree pour
+            les fondateurs étrangers
           </h3>
           <p>
             L&apos;Economic Development Board (EDB) a crée un permis
@@ -246,11 +246,11 @@ export default function EcosystemeTechStartupsMauricePage() {
             </li>
             <li>
               La R&D doit representer au moins <strong>20 %</strong> des
-              depenses operationnelles durant la phase de recherche
+              dépenses operationnelles durant la phase de recherche
             </li>
             <li>
               <strong>Deux voies d&apos;acces</strong> : soumettre un projet
-              innovant directement a l&apos;EDB, ou s&apos;inscrire aupres
+              innovant directement à l&apos;EDB, ou s&apos;inscrire auprès
               d&apos;un incubateur accredite par le MRIC
             </li>
             <li>
@@ -267,8 +267,8 @@ export default function EcosystemeTechStartupsMauricePage() {
               Passez par un incubateur accredite MRIC (comme La Plage Factory
               ou Turbine) pour obtenir votre Innovator Permit : la procedure est
               plus rapide et vous beneficiez d&apos;un accompagnement des le
-              depart. L&apos;EDB effectue des revues de conformité a 5 ans et 10
-              ans — assurez-vous que votre projet genere de la valeur reelle.
+              départ. L&apos;EDB effectue des revues de conformité à 5 ans et 10
+              ans — assurez-vous que votre projet génère de la valeur réelle.
             </p>
           </div>
         </div>
@@ -302,7 +302,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               SME Mauritius
             </a>{" "}
             propose une gamme de grants couvrant jusqu&apos;a{" "}
-            <strong>80 % des couts eligibles</strong> (le beneficiaire
+            <strong>80 % des couts eligibles</strong> (le bénéficiaire
             contribuant un minimum de 20 %). Les schemes couvrent notamment :
           </p>
           <ul>
@@ -321,7 +321,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             <strong>Condition :</strong> un minimum de 51 % de l&apos;
             actionnariat doit être detenu par un national mauricien. Pour les
-            fondateurs etrangers, un montage avec un partenaire local est donc
+            fondateurs étrangers, un montage avec un partenaire local est donc
             envisageable.
           </p>
 
@@ -329,17 +329,17 @@ export default function EcosystemeTechStartupsMauricePage() {
             National SME Incubator Scheme (NSIS)
           </h3>
           <p>
-            Initie par le gouvernement et gere par le MRIC, le NSIS finance des
+            Initie par le gouvernement et gère par le MRIC, le NSIS finance des
             incubateurs prives accredites sur un modele de{" "}
             <strong>matching grant 50/50</strong>. Les montants :
           </p>
           <ul>
             <li>
-              <strong>Pre-incubation</strong> : jusqu&apos;a Rs 50 000 sur 9
+              <strong>Pre-incubation</strong> : jusqu&apos;à Rs 50 000 sur 9
               mois
             </li>
             <li>
-              <strong>Incubation</strong> : jusqu&apos;a Rs 400 000 sur 18 mois
+              <strong>Incubation</strong> : jusqu&apos;à Rs 400 000 sur 18 mois
             </li>
             <li>
               <strong>Acceleration</strong> : montants variables selon le projet
@@ -381,7 +381,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               <strong>
                 Collaborative Research and Innovation Grant Scheme (CRIGS)
               </strong>{" "}
-              : jusqu&apos;a <strong>MUR 5 millions</strong> en matching grant
+              : jusqu&apos;à <strong>MUR 5 millions</strong> en matching grant
               pour un projet de 24 mois, en partenariat entre une entreprise et
               une institution academique locale
             </li>
@@ -392,9 +392,9 @@ export default function EcosystemeTechStartupsMauricePage() {
               Astuce
             </p>
             <p className="mt-1 text-sm text-blue-700">
-              Le CRIGS est particulierement interessant pour les startups tech :
+              Le CRIGS est particulièrement intéressant pour les startups tech :
               en partenariat avec l&apos;Universite de Maurice ou le Mauritius
-              Institute of Education, vous accedez à un financement de Rs 5
+              Institute of Education, vous accédez à un financement de Rs 5
               millions ET à des talents de recherche. Les appels a propositions
               sont lances regulierement — surveillez le site du MRIC.
             </p>
@@ -412,8 +412,8 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h2>
           <p>
             Depuis son inauguration en 2001, Ebene Cybercity s&apos;est
-            transformee en un veritable quartier d&apos;affaires de classe
-            mondiale. Les chiffres parlent d&apos;eux-memes :
+            transformee en un véritable quartier d&apos;affaires de classe
+            mondiale. Les chiffres parlent d&apos;eux-mêmes :
           </p>
           <ul>
             <li>
@@ -435,7 +435,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             <strong>The Core</strong> est le coeur nevralgique de la Cybercity.
             C&apos;est d&apos;ailleurs la que BD Star Management Services, la
-            branche comptable du groupe Vanille Strategie, a installe ses
+            branche comptable du groupe Vanille Stratégie, a installé ses
             bureaux au 12e etage (suites 1210/1211). A proximite, le{" "}
             <strong>Business Gateway</strong> et le{" "}
             <strong>Heritage City</strong> completent l&apos;offre immobiliere
@@ -449,7 +449,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             La Cybercity dispose d&apos;une connectivite fibre optique haut
             debit, de <strong>data centers</strong> (dont le Cybercity Data
             Centre) et d&apos;un accès aux cables sous-marins internationaux
-            (SAFE, LION, MARS). Le budget 2025-2026 renforce cette
+            (SAFE, LION, MARS). Le budget 2025-2026 renforcé cette
             infrastructure avec un investissement de Rs 70 millions dans un Data
             Centre gouvernemental Tier IV.
           </p>
@@ -459,11 +459,11 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h3>
           <p>
             De nombreuses entreprises tech ont fait d&apos;Ebene leur base
-            operationnelle : <strong>Bocasay</strong> (developpement web et
+            opérationnelle : <strong>Bocasay</strong> (développement web et
             logiciel sur mesure), <strong>Artover</strong> (agence digitale
             depuis 2009), <strong>Future Buzz</strong> (marketing digital), ainsi
             que des sociétés de BPO, des firmes fintech et des cabinets de
-            conseil en IT. L&apos;ecosysteme Ebene est un melange d&apos;
+            conseil en IT. L&apos;écosystème Ebene est un melange d&apos;
             entreprises locales et internationales qui crée une dynamique
             unique.
           </p>
@@ -505,9 +505,9 @@ export default function EcosystemeTechStartupsMauricePage() {
             fintech. La <strong>Financial Services Commission (FSC)</strong>{" "}
             delivre des licences adaptees a differents modeles : paiements,
             crowdfunding, forex, gestion d&apos;actifs. Le pays beneficie
-            egalement d&apos;une <strong>sandbox réglementaire</strong> qui
+            également d&apos;une <strong>sandbox réglementaire</strong> qui
             permet aux startups fintech de tester leurs produits dans un
-            environnement controle avant d&apos;obtenir une licence complete.
+            environnement contrôle avant d&apos;obtenir une licence complete.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -531,13 +531,13 @@ export default function EcosystemeTechStartupsMauricePage() {
             <li>Les plateformes d&apos;echange (marketplace/exchange)</li>
           </ul>
           <p>
-            Depuis mars 2025, des obligations AML/CFT renforcees sont en
+            Depuis mars 2025, des obligations AML/CFT renforcées sont en
             vigueur, incluant le monitoring des transactions en temps reel, le
             reporting des transferts transfrontaliers au-dela de certains
             seuils, et des audits annuels de cybersécurité. Les stablecoins
-            emis depuis Maurice doivent maintenir une reserve fiat 1:1 dans des
-            comptes bancaires separes, avec des audits trimestriels
-            independants.
+            emis depuis Maurice doivent maintenir une réserve fiat 1:1 dans des
+            comptes bancaires séparés, avec des audits trimestriels
+            indépendants.
           </p>
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose">
@@ -545,11 +545,11 @@ export default function EcosystemeTechStartupsMauricePage() {
               Point d&apos;attention
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              La procedure de licensing VASP aupres de la FSC prend en moyenne 6
+              La procedure de licensing VASP auprès de la FSC prend en moyenne 6
               a 9 mois. Les applicants doivent être une société mauricienne,
-              dirigee et geree depuis Maurice, avec un bureau physique. Les
+              dirigee et gérée depuis Maurice, avec un bureau physique. Les
               critères fit-and-proper sont stricts : integrite, competence et
-              solvabilite des controleurs, beneficiaires effectifs et officers
+              solvabilite des controleurs, bénéficiaires effectifs et officers
               sont examines par la FSC.
             </p>
           </div>
@@ -562,7 +562,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Universite des Mascareignes) et des partenariats avec des
             institutions internationales (Middlesex University, Curtin
             University), Maurice offre un terrain fertile pour les startups
-            EdTech. Le budget 2025-2026 prevoit des plateformes d&apos;
+            EdTech. Le budget 2025-2026 prévoit des plateformes d&apos;
             apprentissage adaptatives — un marche que les startups locales
             peuvent capter.
           </p>
@@ -571,10 +571,10 @@ export default function EcosystemeTechStartupsMauricePage() {
             HealthTech
           </h3>
           <p>
-            Le systeme de sante mauricien se digitalise. Le gouvernement
-            prevoit le deploiement de systemes ameliores dans le secteur de la
+            Le système de sante mauricien se digitalisé. Le gouvernement
+            prévoit le deploiement de systemes ameliores dans le secteur de la
             sante, de la telesante à la gestion des dossiers patients. Pour les
-            startups specialisees en health management, en telemedicine ou en
+            startups spécialisées en health management, en telemedicine ou en
             dispositifs medicaux connectes, le marche est ouvert.
           </p>
 
@@ -585,7 +585,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Maurice s&apos;est fixe des objectifs ambitieux en matière
             d&apos;energies renouvelables. Les startups travaillant sur le
             solaire, la gestion des dechets, le recyclage, la mobilite
-            electrique ou l&apos;economie circulaire trouveront un marche
+            électrique ou l&apos;économie circulaire trouveront un marche
             receptif et des grants dedies via SME Mauritius (schemes
             &ldquo;green initiatives&rdquo;).
           </p>
@@ -597,7 +597,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Avec l&apos;alignement des lois sur la cybersécurité avec les normes
             internationales et l&apos;obligation pour tous les VASP de passer
             des audits annuels de cybersécurité, la demande en solutions de
-            sécurité explose. Les startups specialisees en cybersécurité
+            sécurité explose. Les startups spécialisées en cybersécurité
             bénéficient d&apos;un marche captif local et d&apos;un potentiel
             d&apos;export vers toute la region Afrique-ocean Indien.
           </p>
@@ -613,8 +613,8 @@ export default function EcosystemeTechStartupsMauricePage() {
             6. Avantages fiscaux pour les tech companies
           </h2>
           <p>
-            C&apos;est ici que Maurice se distingue vraiment. Le regime fiscal
-            mauricien est un veritable aimant pour les entreprises tech.
+            C&apos;est ici que Maurice se distingue vraiment. Le régime fiscal
+            mauricien est un véritable aimant pour les entreprises tech.
           </p>
 
           <div className="space-y-4 not-prose mt-6">
@@ -625,7 +625,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               <p className="mt-1 text-sm text-slate-600">
                 Le taux d&apos;IS à Maurice est un flat rate de 15 % — l&apos;un
                 des plus bas au monde. Pour les Global Business Companies (GBC),
-                le taux effectif peut descendre a environ 3 % grace au systeme
+                le taux effectif peut descendre à environ 3 % grâce au système
                 de Foreign Tax Credit et au Partial Exemption Regime (80 %
                 d&apos;exemption sur certains revenus qualifying).
               </p>
@@ -633,13 +633,13 @@ export default function EcosystemeTechStartupsMauricePage() {
 
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <p className="text-sm font-semibold text-slate-800">
-                0 % TVA sur les services exportes
+                0 % TVA sur les services exportés
               </p>
               <p className="mt-1 text-sm text-slate-600">
                 Les services fournis à des clients hors de Maurice sont{" "}
                 <strong>zero-rated</strong> en matière de TVA. Pour une startup
-                SaaS, une agence de developpement ou un cabinet de conseil tech
-                qui exporte ses services, cela signifie zero TVA facturee aux
+                SaaS, une agence de développement ou un cabinet de conseil tech
+                qui exporte ses services, cela signifie zéro TVA facturee aux
                 clients internationaux. Un avantage competitif majeur.
               </p>
             </div>
@@ -649,10 +649,10 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Credit d&apos;impôt R&D
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                Les depenses en capital liées à la R&D bénéficient d&apos;
-                allowances fiscales. Le Finance Act 2025 a elargi les depenses
+                Les dépenses en capital liées à la R&D bénéficient d&apos;
+                allowances fiscales. Le Finance Act 2025 a elargi les dépenses
                 en capital eligibles pour les entreprises ayant un chiffre
-                d&apos;affaires ne depassant pas Rs 100 millions — ce qui couvre
+                d&apos;affaires ne dépassant pas Rs 100 millions — ce qui couvre
                 la grande majorite des startups.
               </p>
             </div>
@@ -665,7 +665,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Maurice n&apos;impose ni les dividendes, ni les plus-values en
                 capital. Pour les fondateurs de startups qui anticipent une
                 revente ou une levee de fonds, c&apos;est un avantage
-                considerable par rapport à la France (30 % flat tax) ou a la
+                considérable par rapport à la France (30 % flat tax) ou a la
                 plupart des pays europeens.
               </p>
             </div>
@@ -673,12 +673,12 @@ export default function EcosystemeTechStartupsMauricePage() {
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose mt-6">
             <p className="text-sm font-semibold text-amber-800">
-              Attention — Smart City tax exemptions reduites
+              Attention — Smart City tax exemptions réduites
             </p>
             <p className="mt-1 text-sm text-amber-700">
-              Le Finance Act 2025 a significativement reduit les incentives
+              Le Finance Act 2025 a significativement réduit les incentives
               Smart City. Les exemptions d&apos;impôt sur 8 ans et les
-              exemptions de droits d&apos;enregistrement ont ete grandfatherees
+              exemptions de droits d&apos;enregistrement ont été grandfatherees
               uniquement pour les projets ayant recu une letter of comfort avant
               le 5 juin 2025. Desormais, les incentives fiscaux Smart City sont
               restreints aux projets lies aux routes et transports publics. Si
@@ -698,7 +698,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             7. Success stories mauriciennes
           </h2>
           <p>
-            La preuve que l&apos;ecosysteme fonctionne, ce sont les entreprises
+            La preuve que l&apos;écosystème fonctionne, ce sont les entreprises
             qui y grandissent. Voici quelques success stories qui montrent le
             potentiel de Maurice comme base tech.
           </p>
@@ -710,7 +710,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               </p>
               <p className="mt-1 text-sm text-emerald-700">
                 Plateforme de livraison de repas à la demande, Grubmates affiche
-                une croissance de 16 % mois apres mois. 60 % de leurs ventes
+                une croissance de 16 % mois après mois. 60 % de leurs ventes
                 passent par des paiements digitaux — preuve de la maturite du
                 marche fintech local.
               </p>
@@ -735,7 +735,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               <p className="mt-1 text-sm text-emerald-700">
                 Hub de freelancing africain, KreekAfrica met en relation les
                 travailleurs digitaux avec des entreprises sur tout le continent
-                et au-dela. Un modele marketplace qui exploite parfaitement le
+                et au-dela. Un modele marketplace qui exploité parfaitement le
                 positionnement geostrategique de Maurice.
               </p>
             </div>
@@ -748,7 +748,7 @@ export default function EcosystemeTechStartupsMauricePage() {
                 Plateforme de networking a distance, CoffeeChat permet aux
                 professionnels de se connecter globalement. Un produit ne a
                 Maurice mais a vocation mondiale — exactement le type de
-                startup que l&apos;ecosysteme local est concu pour propulser.
+                startup que l&apos;écosystème local est concu pour propulser.
               </p>
             </div>
 
@@ -772,41 +772,41 @@ export default function EcosystemeTechStartupsMauricePage() {
             <p className="mt-1 text-sm text-blue-700">
               &ldquo;Ce qui me frappe chez ces startups, c&apos;est leur
               capacite a penser global des le premier jour. Maurice est un petit
-              marche (1,3 million d&apos;habitants), mais c&apos;est precisement
+              marché (1,3 million d&apos;habitants), mais c&apos;est precisement
               cette contrainte qui force les fondateurs a viser l&apos;Afrique,
               l&apos;Europe ou l&apos;Asie des le lancement. Et fiscalement,
-              avec 0 % de TVA sur les services exportes et 15 % d&apos;IS flat,
-              ils partent avec un avantage structure par rapport a leurs
-              concurrents bases en France ou au UK.&rdquo;
+              avec 0 % de TVA sur les services exportés et 15 % d&apos;IS flat,
+              ils partent avec un avantage structure par rapport à leurs
+              concurrents basés en France ou au UK.&rdquo;
             </p>
           </div>
         </div>
       </section>
 
       {/* ============================================================ */}
-      {/* Section 8 — L'avantage Vanille Strategie */}
+      {/* Section 8 — L'avantage Vanille Stratégie */}
       {/* ============================================================ */}
       <section className="bg-slate-50 py-16">
         <div className="prose prose-slate prose-lg mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900">
-            8. L&apos;avantage Vanille Strategie pour les startups tech
+            8. L&apos;avantage Vanille Stratégie pour les startups tech
           </h2>
           <p>
             Lancer une startup à Maurice, c&apos;est excitant. Mais sans un
             accompagnement solide des les premiers jours, les erreurs
-            administratives, fiscales et comptables peuvent couter tres cher.
-            C&apos;est la que le groupe Vanille Strategie entre en jeu.
+            administratives, fiscales et comptables peuvent couter très cher.
+            C&apos;est la que le groupe Vanille Stratégie entre en jeu.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
-            Innovator Permit : on gere tout
+            Innovator Permit : on gère tout
           </h3>
           <p>
-            Notre equipe accompagne les fondateurs dans l&apos;obtention de
-            l&apos;Innovator Permit aupres de l&apos;EDB : preparation du
+            Notre équipe accompagne les fondateurs dans l&apos;obtention de
+            l&apos;Innovator Permit auprès de l&apos;EDB : preparation du
             dossier, redaction du business plan, soumission du projet innovant,
             mise en relation avec les incubateurs accredites MRIC. On connait
-            les process, les interlocuteurs et les delais.
+            les process, les interlocuteurs et les délais.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-800 mt-8">
@@ -815,7 +815,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           <p>
             Notre application OKE est directement connectee aux plateformes
             bancaires et aux outils de gestion. Envoi de factures, scan de
-            justificatifs, suivi de tresorerie en temps reel — tout est
+            justificatifs, suivi de trésorerie en temps reel — tout est
             centralise. Vous gerez votre startup, nous gerons vos chiffres.
           </p>
 
@@ -826,7 +826,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             Basee au 12e etage de The Core a Ebene Cybercity, BD Star
             Management Services est la branche comptable du groupe. On ne vous
             attend pas à la fin de l&apos;annee fiscale : la comptabilité
-            demarre le jour de la creation de votre société. Declarations
+            demarre le jour de la creation de votre société. Déclarations
             fiscales, TVA, paie, conformité MRA — tout est pris en charge, en
             temps reel, des le premier jour.
           </p>
@@ -836,7 +836,7 @@ export default function EcosystemeTechStartupsMauricePage() {
               Notre engagement startups
             </p>
             <p className="mt-1 text-sm text-green-700">
-              Les startups ont des besoins specifiques : cash-flow tendu,
+              Les startups ont des besoins spécifiques : cash-flow tendu,
               croissance rapide, pivots frequents. Nous proposons des packages
               comptables adaptes aux startups en phase early-stage, avec une
               montee en puissance progressive a mesure que l&apos;activité
@@ -858,7 +858,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </h2>
           <p>
             Une startup, ca demarre souvent dans un coworking. Maurice offre
-            desormais un large choix d&apos;espaces de travail partages, du
+            désormais un large choix d&apos;espaces de travail partages, du
             plus premium au plus accessible.
           </p>
 
@@ -866,11 +866,11 @@ export default function EcosystemeTechStartupsMauricePage() {
             Vanille Business Centers
           </h3>
           <p>
-            Le groupe Vanille Strategie dispose de ses propres espaces de
+            Le groupe Vanille Stratégie dispose de ses propres espaces de
             travail a <strong>Grand Baie</strong> (Sottise Road) et a{" "}
             <strong>Ebene</strong> (The Core, Cybercity). Au-dela du simple
-            bureau, vous accedez à tout l&apos;ecosysteme Vanille Strategie :
-            comptabilité, fiscalité, creation de société, permis de residence —
+            bureau, vous accédez à tout l&apos;écosystème Vanille Stratégie :
+            comptabilité, fiscalité, creation de société, permis de résidence —
             tout sous le même toit.
           </p>
 
@@ -895,7 +895,7 @@ export default function EcosystemeTechStartupsMauricePage() {
           </p>
           <p>
             Le site de <strong>Grand Baie (The Precinct)</strong> est
-            strategiquement situe a l&apos;entree de Grand Baie, le long de
+            strategiquement situe à l&apos;entree de Grand Baie, le long de
             l&apos;autoroute M2, dans un batiment de 10 057 m2 — ideal pour les
             startups qui veulent combiner qualité de vie (plages a 5 minutes)
             et environnement professionnel.
@@ -910,12 +910,12 @@ export default function EcosystemeTechStartupsMauricePage() {
               incubation, ideal pour les startups en programme
             </li>
             <li>
-              <strong>Turbine</strong> : espace de coworking integre a
+              <strong>Turbine</strong> : espace de coworking intégré a
               l&apos;incubateur
             </li>
             <li>
               <strong>StartMe Up</strong> : espace communautaire avec du seed
-              funding jusqu&apos;a Rs 1 million pour les projets prometteurs
+              funding jusqu&apos;à Rs 1 million pour les projets prometteurs
             </li>
           </ul>
 
@@ -945,7 +945,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             10. Les defis a connaitre avant de se lancer
           </h2>
           <p>
-            Aucun ecosysteme n&apos;est parfait. Voici les realites a prendre en
+            Aucun écosystème n&apos;est parfait. Voici les realites a prendre en
             compte pour ne pas debarquer avec des attentes irrealistes.
           </p>
           <ul>
@@ -957,7 +957,7 @@ export default function EcosystemeTechStartupsMauricePage() {
             </li>
             <li>
               <strong>Talent shortage :</strong> seuls 22 % des etudiants sont
-              en filiere STEM, creant un deficit annuel d&apos;environ 5 000
+              en filiere STEM, créant un deficit annuel d&apos;environ 5 000
               professionnels IT. Les startups qui recrutent doivent etre
               competitives en termes de salaires et de conditions de travail.
             </li>
@@ -975,11 +975,11 @@ export default function EcosystemeTechStartupsMauricePage() {
 
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 not-prose">
             <p className="text-sm font-semibold text-amber-800">
-              Le programme a surveiller
+              Le programme à surveiller
             </p>
             <p className="mt-1 text-sm text-amber-700">
               Le Digital Youth Engagement Programme, en partenariat avec
-              Microsoft, vise a equiper 25 000 jeunes Mauriciens de competences
+              Microsoft, vise à equiper 25 000 jeunes Mauriciens de competences
               digitales et d&apos;un etat d&apos;esprit entrepreneurial. C&apos;
               est le type d&apos;initiative qui va progressivement combler le
               deficit de talents tech sur l&apos;ile.
@@ -1144,11 +1144,11 @@ export default function EcosystemeTechStartupsMauricePage() {
             ))}
           </ul>
           <p className="mt-4 text-xs text-slate-400">
-            Cet article est fourni a titre informatif et ne constitue pas un
+            Cet article est fourni à titre informatif et ne constitue pas un
             conseil fiscal ou juridique personnalise. Les dispositifs de
             financement, les conditions d&apos;éligibilité et les avantages
             fiscaux peuvent evoluer. Contactez nos experts pour une analyse
-            personnalisee de votre projet.
+            personnalisée de votre projet.
           </p>
         </div>
       </section>

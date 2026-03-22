@@ -116,7 +116,7 @@ export default function ComparatifPage() {
               <strong>Duba&iuml;</strong>.
             </p>
             <p>
-              Chacune a ses atouts. Le Maroc s&eacute;duit par sa proximit&eacute;
+              Chacune à ses atouts. Le Maroc s&eacute;duit par sa proximit&eacute;
               (2-3h de Paris) et son co&ucirc;t de la vie. Le Portugal a longtemps
               attir&eacute; avec le r&eacute;gime RNH (R&eacute;sident Non
               Habituel), d&eacute;sormais remplac&eacute; par un dispositif plus

@@ -38,7 +38,7 @@ function LoginForm() {
 
       // Décoder le token pour connaître le rôle
       const payload = JSON.parse(atob(data.access_token.split(".")[1]));
-      const role = payload.role;
+      const role =payload.role;
 
       if (redirect) {
         router.push(redirect);

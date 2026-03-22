@@ -320,7 +320,7 @@ export default function CreationSocietePage() {
                     L&apos;ouverture de compte bancaire à Maurice est une étape cruciale que nous pilotons intégralement. Nous travaillons avec les principales banques de la place : AfrAsia Bank, MCB (Mauritius Commercial Bank), SBM (State Bank of Mauritius), et HSBC Mauritius.
                   </p>
                   <p className="text-slate-600 leading-relaxed mb-4">
-                    Chaque banque a ses propres exigences KYC et ses délais. En moyenne, comptez 2 à 4 semaines pour l&apos;ouverture effective du compte. Nous négocions les conditions (frais, accès multi-devises USD/EUR/GBP/MUR, Internet banking, cartes de crédit internationales) et vous accompagnons physiquement au rendez-vous d&apos;ouverture si vous êtes présent à Maurice.
+                    Chaque banque à ses propres exigences KYC et ses délais. En moyenne, comptez 2 à 4 semaines pour l&apos;ouverture effective du compte. Nous négocions les conditions (frais, accès multi-devises USD/EUR/GBP/MUR, Internet banking, cartes de crédit internationales) et vous accompagnons physiquement au rendez-vous d&apos;ouverture si vous êtes présent à Maurice.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
                     {["AfrAsia Bank", "MCB", "SBM", "HSBC"].map((bank) => (

@@ -118,7 +118,7 @@ export default function OuvrirCompteBancaireMauricePage() {
             </li>
           </ul>
           <p>
-            Le compte bancaire conditionne donc l&apos;ensemble du processus.
+            Le compte bancaire conditionné donc l&apos;ensemble du processus.
             C&apos;est le socle sur lequel tout le reste repose.
           </p>
 
@@ -339,7 +339,7 @@ export default function OuvrirCompteBancaireMauricePage() {
                   Banque en ligne — SBM Tag
                 </p>
                 <p className="mt-1 text-sm text-slate-700">
-                  Lancée en janvier 2025, SBM Tag remplace l&apos;ancienne app.
+                  Lancée en janvier 2025, SBM Tag remplacé l&apos;ancienne app.
                   Virements SWIFT, paiements QR (MauCas), gestion des cartes,
                   convertisseur de devises intégré. Login biométrique.
                 </p>

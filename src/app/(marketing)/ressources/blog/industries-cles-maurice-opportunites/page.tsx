@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "tourisme Maurice",
     "BPO Maurice",
     "services financiers Maurice",
-    "textile Maurice",
+    "textîle Maurice",
     "investir Maurice",
     "COMESA",
     "SADC",

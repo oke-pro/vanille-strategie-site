@@ -142,7 +142,7 @@ export default function PipelinePage() {
         })}
       </div>
 
-      {/* Modal detail */}
+      {/* Modal détail */}
       {selectedLead && (
         <LeadDetailModal
           lead={selectedLead}

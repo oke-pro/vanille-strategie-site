@@ -90,7 +90,7 @@ export function ContactForm() {
           <option value="retraite">Retraité — S&apos;installer à Maurice</option>
           <option value="entreprise">Entreprise — Implanter une filiale</option>
           <option value="investisseur">Investisseur immobilier</option>
-          <option value="comptabilite">Comptabilité / Fiscalité</option>
+          <option value="comptabilité">Comptabilité / Fiscalité</option>
           <option value="autre">Autre demande</option>
         </select>
       </div>
