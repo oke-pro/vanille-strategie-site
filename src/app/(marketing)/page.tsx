@@ -10,6 +10,9 @@ import { OkeTeaser } from "@/components/sections/oke-teaser";
 import { LeadCaptureSection } from "@/components/sections/lead-capture";
 import { AuthorityBanner } from "@/components/sections/authority-banner";
 import { BlogPreview } from "@/components/sections/blog-preview";
+import Link from "next/link";
+import { Mic, Headphones, Clock, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title:
@@ -91,6 +94,66 @@ export default function HomePage() {
 
       {/* 6. OKE — Le différenciant tech */}
       <OkeTeaser />
+
+      {/* Podcast — Mise en avant */}
+      <section className="bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-5 items-center">
+            {/* Left — Texte + Player */}
+            <div className="lg:col-span-3">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-amber-400 mb-6">
+                <Mic className="h-3.5 w-3.5" />
+                Podcast
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Sécuriser son expatriation fiscale à Maurice
+              </h2>
+              <p className="mt-4 text-lg text-slate-300 leading-relaxed">
+                Didier Laroussinie décrypte les enjeux clés : Exit Tax, convention de non-double imposition, substance requirements et erreurs à éviter.
+              </p>
+
+              {/* Player */}
+              <div className="mt-8 rounded-2xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-sm">
+                <audio controls className="w-full" preload="metadata">
+                  <source src="/media/podcast-expatriation-fiscale-maurice.m4a" type="audio/mp4" />
+                </audio>
+                <div className="mt-4 flex items-center gap-6 text-xs text-slate-400">
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="h-3.5 w-3.5" />
+                    ~30 min
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Headphones className="h-3.5 w-3.5" />
+                    Écoute gratuite
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <Link href="/medias">
+                  <Button variant="outline" className="rounded-full border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white">
+                    Tous nos médias
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right — Visual */}
+            <div className="lg:col-span-2 flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-4 rounded-full bg-amber-500/10 blur-2xl" />
+                <div className="relative flex h-56 w-56 items-center justify-center rounded-full border-2 border-amber-500/30 bg-slate-800">
+                  <Mic className="h-20 w-20 text-amber-400" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 rounded-full bg-amber-500 px-3 py-1 text-xs font-bold text-slate-900 shadow-lg">
+                  NOUVEAU
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 7. Blog — Authority content preview */}
       <BlogPreview />

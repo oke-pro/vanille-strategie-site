@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Download, Play, Mic, FileText } from "lucide-react";
+import { Download, Play, Mic, FileText, Headphones, Clock, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Médias & Ressources — Vanille Stratégie",
@@ -71,32 +71,64 @@ export default function MediasPage() {
         </div>
       </section>
 
-      {/* Section 2 — Podcast */}
-      <section className="bg-slate-50 py-24">
+      {/* Section 2 — Podcast (mise en avant premium) */}
+      <section className="bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex items-center gap-3">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-              <Mic className="h-5 w-5" />
+          <div className="grid gap-10 lg:grid-cols-5 items-center">
+            {/* Visual */}
+            <div className="lg:col-span-2 flex justify-center order-2 lg:order-1">
+              <div className="relative">
+                <div className="absolute -inset-6 rounded-full bg-amber-500/10 blur-3xl" />
+                <div className="relative flex h-48 w-48 sm:h-56 sm:w-56 items-center justify-center rounded-full border-2 border-amber-500/30 bg-slate-800">
+                  <Mic className="h-20 w-20 text-amber-400" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 rounded-full bg-amber-500 px-3 py-1 text-xs font-bold text-slate-900 shadow-lg">
+                  NOUVEAU
+                </div>
+              </div>
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">
-              Sécuriser son expatriation fiscale à Maurice
-            </h2>
-          </div>
 
-          <Card className="p-8 border-none bg-white shadow-lg">
-            <audio controls className="w-full">
-              <source
-                src="/media/podcast-expatriation-fiscale-maurice.m4a"
-                type="audio/mp4"
-              />
-            </audio>
-            <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-              Didier Laroussinie décrypte les enjeux fiscaux de l&apos;expatriation à Maurice :
-              Exit Tax, convention de non-double imposition, substance requirements et erreurs à
-              éviter.
-            </p>
-            <p className="mt-2 text-sm font-medium text-slate-400">Durée : ~30 min</p>
-          </Card>
+            {/* Content + Player */}
+            <div className="lg:col-span-3 order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-amber-400 mb-6">
+                <Headphones className="h-3.5 w-3.5" />
+                Podcast Vanille Stratégie
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Sécuriser son expatriation fiscale à Maurice
+              </h2>
+              <p className="mt-4 text-lg text-slate-300 leading-relaxed">
+                Didier Laroussinie décrypte les enjeux clés pour les entrepreneurs francophones qui envisagent Maurice.
+              </p>
+
+              {/* Sujets abordés */}
+              <div className="mt-6 grid grid-cols-2 gap-3">
+                {["Exit Tax française", "Convention FR-MU", "Substance requirements", "Erreurs à éviter"].map((topic) => (
+                  <div key={topic} className="flex items-center gap-2 text-sm text-slate-300">
+                    <CheckCircle2 className="h-4 w-4 text-amber-400 flex-shrink-0" />
+                    {topic}
+                  </div>
+                ))}
+              </div>
+
+              {/* Player */}
+              <div className="mt-8 rounded-2xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-sm">
+                <audio controls className="w-full" preload="metadata">
+                  <source src="/media/podcast-expatriation-fiscale-maurice.m4a" type="audio/mp4" />
+                </audio>
+                <div className="mt-4 flex items-center gap-6 text-xs text-slate-400">
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="h-3.5 w-3.5" />
+                    ~30 minutes
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Headphones className="h-3.5 w-3.5" />
+                    Écoute gratuite
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
