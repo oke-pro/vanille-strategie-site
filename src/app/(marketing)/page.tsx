@@ -173,7 +173,7 @@ export default function HomePage() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
             {/* Article 1 */}
-            <Link href="/blog/guerre-iran-exode-dubai-fin-mirage-fiscal" className="group">
+            <Link href="/ressources/blog/guerre-iran-exode-dubai-fin-mirage-fiscal" className="group">
               <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-red-500/30 hover:shadow-lg hover:shadow-red-500/5">
                 <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-red-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-red-400">
                   Actualité
@@ -192,7 +192,7 @@ export default function HomePage() {
             </Link>
 
             {/* Article 2 */}
-            <Link href="/blog/maurice-alternative-autoroutes-expatriation" className="group">
+            <Link href="/ressources/blog/maurice-alternative-autoroutes-expatriation" className="group">
               <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-amber-500/30 hover:shadow-lg hover:shadow-amber-500/5">
                 <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
                   Guide
@@ -211,7 +211,7 @@ export default function HomePage() {
             </Link>
 
             {/* Article 3 */}
-            <Link href="/blog/dubai-maurice-guide-transition-entrepreneurs" className="group">
+            <Link href="/ressources/blog/dubai-maurice-guide-transition-entrepreneurs" className="group">
               <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5">
                 <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
                   Guide pratique
