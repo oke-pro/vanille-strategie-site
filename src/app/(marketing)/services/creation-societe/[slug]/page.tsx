@@ -273,9 +273,10 @@ const companyTypeData: Record<
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const data = companyTypeData[params.slug];
+  const { slug } = await params;
+  const data = companyTypeData[slug];
   if (!data) return notFound();
 
   return {
@@ -292,12 +293,13 @@ export async function generateMetadata({
 // Page Component
 // ============================================================
 
-export default function CompanyTypePage({
+export default async function CompanyTypePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const data = companyTypeData[params.slug];
+  const { slug } = await params;
+  const data = companyTypeData[slug];
   if (!data) return notFound();
 
   const gradients: Record<string, string> = {
@@ -306,7 +308,7 @@ export default function CompanyTypePage({
     "authorised-company": "from-purple-600 to-violet-600",
   };
 
-  const gradient = gradients[params.slug] || "from-blue-600 to-indigo-600";
+  const gradient = gradients[slug] || "from-blue-600 to-indigo-600";
 
   return (
     <main className="min-h-screen">

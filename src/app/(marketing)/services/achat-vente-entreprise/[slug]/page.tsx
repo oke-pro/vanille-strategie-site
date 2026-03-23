@@ -277,8 +277,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const service = subServices[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = subServices[slug];
   if (!service) {
     return {
       title: "Service non trouvé",
@@ -291,12 +292,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function SubServicePage({
+export default async function SubServicePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const service = subServices[params.slug];
+  const { slug } = await params;
+  const service = subServices[slug];
 
   if (!service) {
     return (
