@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Download, Play, Mic, FileText, Headphones, Clock, CheckCircle2, Tv, Newspaper } from "lucide-react";
+import { Download, Play, Mic, FileText, Headphones, Clock, CheckCircle2, Newspaper } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Médias & Ressources — Vanille Stratégie",
@@ -192,38 +192,7 @@ export default function MediasPage() {
         </div>
       </section>
 
-      {/* Section 5 — Reportage TV Investigations */}
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex items-center gap-3">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-              <Tv className="h-5 w-5" />
-            </div>
-            <h2 className="text-3xl font-bold text-slate-900">
-              Société et expatriation à l&apos;île Maurice
-            </h2>
-          </div>
-
-          <p className="text-lg text-slate-600 leading-relaxed mb-8">
-            Retrouvez Vanille Stratégie à 17 minutes 30 secondes de ce reportage
-            de l&apos;émission <strong>Investigations</strong> diffusé sur France O :
-          </p>
-
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8 text-center">
-            <Link
-              href="https://rutube.ru/video/d0c3d59ef9505766d44d7a2cd8215ecd/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 text-blue-600 hover:text-blue-700 font-bold text-lg transition-colors"
-            >
-              <Play className="h-6 w-6" />
-              Voir le reportage Investigations
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 — Article de presse Memento */}
+      {/* Section 5 — Article de presse Memento */}
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-center gap-3">
