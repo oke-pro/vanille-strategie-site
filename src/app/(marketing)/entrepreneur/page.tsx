@@ -231,7 +231,7 @@ export default function EntrepreneurPage() {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl leading-tight">
                 L&apos;accompagnement <br />
-                <span className="text-blue-600 underline decoration-blue-100 underline-offset-8">zéro sous-traitance</span>
+                <span className="text-blue-600 underline decoration-blue-100 underline-offset-8">tout-en-un</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed">
                 Contrairement aux agents classiques, nous sommes votre Expert-Comptable ET votre conseil en implantation. Un seul interlocuteur pour tout votre business.

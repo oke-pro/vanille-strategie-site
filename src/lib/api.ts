@@ -33,6 +33,12 @@ export const submitSimulateurVisa = (data: Record<string, unknown>) =>
 export const submitSimulateurFiscal = (data: Record<string, unknown>) =>
   submitLead("simulateur-fiscal", data);
 
+export const submitSimulateurRendement = (data: Record<string, unknown>) =>
+  submitLead("simulateur-rendement", data);
+
+export const submitCalculateurExternalisation = (data: Record<string, unknown>) =>
+  submitLead("calculateur-externalisation", data);
+
 // ──────────────── Chatbot ────────────────
 
 export async function sendChatMessage(data: {

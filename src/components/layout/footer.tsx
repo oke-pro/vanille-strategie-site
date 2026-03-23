@@ -19,7 +19,7 @@ export function Footer() {
           </div>
           <div className="hidden sm:block h-1 w-1 rounded-full bg-slate-700" />
           <span>{founder.experience}+ ans d&apos;expertise</span>
-          <span>Zéro sous-traitance</span>
+          <span>Groupe intégré</span>
         </div>
       </div>
 

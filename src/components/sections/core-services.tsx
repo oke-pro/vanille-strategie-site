@@ -56,7 +56,7 @@ export function CoreServices() {
             Nos expertises
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Un accompagnement complet, zéro sous-traitance
+            Un accompagnement complet, un groupe intégré
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             De l&apos;immatriculation de votre société à la gestion

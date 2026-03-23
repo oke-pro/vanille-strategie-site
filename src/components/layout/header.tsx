@@ -9,25 +9,29 @@ import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { ChevronDown, Menu, Phone, ArrowRight } from "lucide-react";
 
+// Department items with brand colors for "Nos Pôles" dropdown
+const departmentItems = [
+  { label: "Vanille Consulting", href: "/consulting", dotColor: "bg-blue-600" },
+  { label: "Vanille Invest", href: "/invest", dotColor: "bg-amber-600" },
+  { label: "Vanille Mobility", href: "/mobility", dotColor: "bg-teal-600" },
+  { label: "Vanille Managed Services", href: "/managed-services", dotColor: "bg-purple-600" },
+] as const;
+
+
+
 const navigation = [
   {
-    label: "Votre profil",
+    label: "Nos Pôles",
+    isPolesDropdown: true,
+    children: departmentItems,
+  },
+  {
+    label: "Votre Profil",
     children: [
       { label: "Entrepreneur", href: "/entrepreneur" },
       { label: "Digital Nomad", href: "/digital-nomad" },
       { label: "Retraité", href: "/retraite" },
       { label: "Entreprise / Filiale", href: "/entreprise" },
-    ],
-  },
-  {
-    label: "Services",
-    children: [
-      { label: "Création de société", href: "/services/creation-societe" },
-      { label: "Permis de résidence", href: "/services/permis-residence" },
-      { label: "Comptabilité & Fiscalité", href: "/services/comptabilite-fiscalite" },
-      { label: "RH & Paie", href: "/services/rh-paie" },
-      { label: "Immobilier", href: "/services/immobilier" },
-      { label: "Achat / Vente d'entreprise", href: "/services/achat-vente-entreprise" },
     ],
   },
   {
@@ -41,6 +45,8 @@ const navigation = [
       { label: "Blog", href: "/ressources/blog" },
       { label: "Simulateur Visa", href: "/ressources/simulateur-visa" },
       { label: "Simulateur Fiscal", href: "/ressources/simulateur-fiscal" },
+      { label: "Simulateur Rendement", href: "/ressources/simulateur-rendement" },
+      { label: "Calculateur Externalisation", href: "/ressources/calculateur-externalisation" },
       { label: "FAQ", href: "/ressources/faq" },
     ],
   },
@@ -118,18 +124,36 @@ export function Header() {
                   </button>
                   {/* Glass Dropdown */}
                   <div className="invisible absolute left-0 top-full z-50 mt-2 min-w-[240px] translate-y-2 rounded-2xl border border-slate-200/50 bg-white/90 p-3 opacity-0 shadow-2xl backdrop-blur-2xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                    <div className="grid gap-1">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="group/item flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-bold text-slate-600 transition-all hover:bg-blue-600 hover:text-white"
-                        >
-                          {child.label}
-                          <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0" />
-                        </Link>
-                      ))}
-                    </div>
+                    {"isPolesDropdown" in item && item.isPolesDropdown ? (
+                      <div className="grid gap-1">
+                        {departmentItems.map((dept) => (
+                          <Link
+                            key={dept.href}
+                            href={dept.href}
+                            className="group/item flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-bold text-slate-600 transition-all hover:bg-blue-600 hover:text-white"
+                          >
+                            <span className="flex items-center gap-2.5">
+                              <span className={cn("h-2 w-2 rounded-full", dept.dotColor)} />
+                              {dept.label}
+                            </span>
+                            <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0" />
+                          </Link>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="grid gap-1">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className="group/item flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-bold text-slate-600 transition-all hover:bg-blue-600 hover:text-white"
+                          >
+                            {child.label}
+                            <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0" />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </>
               )}
@@ -180,18 +204,34 @@ export function Header() {
                         <p className="px-4 pt-6 pb-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
                           {item.label}
                         </p>
-                        <div className="grid gap-1">
-                          {item.children.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              className="block rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50 transition-colors"
-                              onClick={() => setMobileOpen(false)}
-                            >
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
+                        {"isPolesDropdown" in item && item.isPolesDropdown ? (
+                          <div className="grid gap-1">
+                            {departmentItems.map((dept) => (
+                              <Link
+                                key={dept.href}
+                                href={dept.href}
+                                className="flex items-center gap-2.5 rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50 transition-colors"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                <span className={cn("h-2 w-2 rounded-full shrink-0", dept.dotColor)} />
+                                {dept.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="grid gap-1">
+                            {item.children.map((child) => (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className="block rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50 transition-colors"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </>
                     )}
                   </div>

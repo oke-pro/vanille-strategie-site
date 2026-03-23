@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { mauritiusAdvantages } from "@/data/site";
 
 export function MauriceStats() {
@@ -17,14 +18,15 @@ export function MauriceStats() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-blue-300">
-            Source : EDB Mauritius · Finance Act 2025
+            Classements internationaux vérifiés · 2025
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Pourquoi Maurice ?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-blue-100/80">
-            &laquo;&nbsp;Star and Key of the Indian Ocean&nbsp;&raquo; — N°1
-            qualité de vie en Afrique (Mercer), démocratie pleine depuis 1968.
+            &laquo;&nbsp;Star and Key of the Indian Ocean&nbsp;&raquo; — N°1 en Afrique
+            pour la liberté économique, la gouvernance et la qualité de vie.
+            Démocratie pleine depuis 1968.
           </p>
         </div>
 
@@ -46,6 +48,16 @@ export function MauriceStats() {
               <p className="mt-1 text-xs text-blue-300/60">{a.detail}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/maurice"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-200 transition-colors hover:text-white"
+          >
+            Découvrir tous les classements internationaux
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+          </Link>
         </div>
       </div>
     </section>

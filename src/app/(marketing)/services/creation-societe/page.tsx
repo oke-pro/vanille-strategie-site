@@ -686,8 +686,8 @@ export default function CreationSocietePage() {
                     <Users className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900">Zéro sous-traitance</h3>
-                    <p className="mt-1 text-sm text-slate-600">Contrairement à de nombreux prestataires qui sous-traitent à des tiers, nous gérons l&apos;intégralité du processus en interne, de la consultation initiale à la comptabilité récurrente, via notre cabinet BD Star Management Services.</p>
+                    <h3 className="font-bold text-slate-900">Un groupe intégré</h3>
+                    <p className="mt-1 text-sm text-slate-600">Nous gérons l&apos;intégralité du processus au sein du groupe, de la consultation initiale à la comptabilité récurrente, via notre cabinet BD Star Management Services.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

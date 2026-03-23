@@ -45,7 +45,7 @@ export function HeroSection() {
 
             {/* Refined Sub-headline */}
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-slate-300/90 sm:text-xl lg:text-2xl font-light">
-              De votre expatriation à la gestion de vos actifs — bénéficiez de l&apos;expertise d&apos;un cabinet <span className="text-white font-medium">multi-disciplinaire</span> unique. Zéro sous-traitance, 100% de sérénité.
+              De votre expatriation à la gestion de vos actifs — bénéficiez de l&apos;expertise d&apos;un cabinet <span className="text-white font-medium">multi-disciplinaire</span> unique. Un groupe intégré, 100% de sérénité.
             </p>
 
             {/* Premium CTAs */}
@@ -92,7 +92,7 @@ export function HeroSection() {
                   <span className="h-1 w-1 rounded-full bg-slate-600" />
                   <span className="flex items-center gap-1">{founder.experience}+ ans d&apos;expertise</span>
                   <span className="h-1 w-1 rounded-full bg-slate-600" />
-                  <span className="flex items-center gap-1 text-slate-300 font-medium">Zéro sous-traitance</span>
+                  <span className="flex items-center gap-1 text-slate-300 font-medium">Groupe intégré</span>
                 </div>
               </div>
             </div>

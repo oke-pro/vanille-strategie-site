@@ -11,7 +11,7 @@ import { AuthorityBanner } from "@/components/sections/authority-banner";
 import { BlogPreview } from "@/components/sections/blog-preview";
 import { VideoInfographic } from "@/components/sections/video-infographic";
 import Link from "next/link";
-import { Mic, Headphones, Clock, ArrowRight, Scale, FileText } from "lucide-react";
+import { Mic, Headphones, Clock, ArrowRight, Scale, FileText, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vanille Stratégie — Votre nouvelle vie à Maurice commence ici",
     description:
-      "Création de société, permis de résidence, comptabilité, RH — un seul interlocuteur, zéro sous-traitance. Expert-Comptable Fiscaliste International.",
+      "Création de société, permis de résidence, comptabilité, RH — un seul interlocuteur, un groupe intégré. Expert-Comptable Fiscaliste International.",
     url: "https://vanillestrategie.fr",
     siteName: "Vanille Stratégie",
     locale: "fr_FR",
@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
             <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
               <p className="text-4xl font-extrabold text-amber-400">
-                0 sous-traitance
+                1 groupe intégré
               </p>
               <p className="mt-3 text-sm text-slate-300">
                 Un interlocuteur unique pour une maîtrise totale du risque et du
@@ -151,6 +151,83 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Actualité : Crise Dubaï — Breaking news content */}
+      <section className="bg-slate-950 py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-4">
+              <AlertTriangle className="h-3.5 w-3.5" />
+              Actualité — Mars 2026
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Crise Dubaï : comprendre et agir
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-400">
+              L&apos;exode de Dubaï redessine la carte de l&apos;expatriation fiscale. Nos analyses pour prendre les bonnes décisions.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+            {/* Article 1 */}
+            <Link href="/blog/guerre-iran-exode-dubai-fin-mirage-fiscal" className="group">
+              <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-red-500/30 hover:shadow-lg hover:shadow-red-500/5">
+                <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-red-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-red-400">
+                  Actualité
+                </div>
+                <h3 className="mt-4 text-lg font-bold leading-tight text-white group-hover:text-red-300">
+                  Guerre Iran : l&apos;exode de Dubaï et la fin du mirage fiscal
+                </h3>
+                <p className="mt-3 line-clamp-2 text-sm text-slate-400">
+                  115 000 Britanniques partis en 3 semaines, immobilier en chute de 25&nbsp;%, Bloomberg évoque un exode façon Hong Kong.
+                </p>
+                <p className="mt-auto flex items-center gap-2 pt-5 text-sm font-semibold text-red-400">
+                  Lire l&apos;analyse
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
+
+            {/* Article 2 */}
+            <Link href="/blog/maurice-alternative-autoroutes-expatriation" className="group">
+              <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-amber-500/30 hover:shadow-lg hover:shadow-amber-500/5">
+                <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
+                  Guide
+                </div>
+                <h3 className="mt-4 text-lg font-bold leading-tight text-white group-hover:text-amber-300">
+                  Maurice : l&apos;alternative hors des autoroutes de l&apos;expatriation
+                </h3>
+                <p className="mt-3 line-clamp-2 text-sm text-slate-400">
+                  Bali, Lisbonne, Dubaï, Bangkok — les destinations évidentes sont saturées. Maurice reste hors radar.
+                </p>
+                <p className="mt-auto flex items-center gap-2 pt-5 text-sm font-semibold text-amber-400">
+                  Lire l&apos;analyse
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
+
+            {/* Article 3 */}
+            <Link href="/blog/dubai-maurice-guide-transition-entrepreneurs" className="group">
+              <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-6 transition-all hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5">
+                <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-emerald-400">
+                  Guide pratique
+                </div>
+                <h3 className="mt-4 text-lg font-bold leading-tight text-white group-hover:text-emerald-300">
+                  De Dubaï à Maurice : guide de transition complet
+                </h3>
+                <p className="mt-3 line-clamp-2 text-sm text-slate-400">
+                  Transférer votre structure, vos actifs et votre résidence fiscale. Timeline, comparatif et accompagnement.
+                </p>
+                <p className="mt-auto flex items-center gap-2 pt-5 text-sm font-semibold text-emerald-400">
+                  Lire le guide
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

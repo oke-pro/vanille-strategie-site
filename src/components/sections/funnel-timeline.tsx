@@ -24,7 +24,7 @@ export function FunnelTimeline() {
           </h2>
           <p className="mt-8 text-lg text-slate-600 font-light lg:text-xl leading-relaxed">
             De votre premier appel &agrave; votre bilan annuel &mdash; chaque
-            &eacute;tape est pilot&eacute;e par notre &eacute;quipe d&apos;experts. Pas de sous-traitance, un seul interlocuteur.
+            &eacute;tape est pilot&eacute;e par notre &eacute;quipe d&apos;experts, un seul interlocuteur.
           </p>
         </div>
 

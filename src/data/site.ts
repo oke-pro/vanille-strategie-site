@@ -224,49 +224,49 @@ export const testimonials: Testimonial[] = [
 ];
 
 // ============================================================
-// Mauritius advantages — from EDB + existing content
+// Mauritius advantages — verified international rankings 2025
 // ============================================================
 
 export const mauritiusAdvantages = [
   {
-    stat: "15%",
-    label: "Impôt sur les sociétés",
-    detail: "Taux unique flat — pas de tranches",
+    stat: "15 %",
+    label: "Impôt max — flat",
+    detail: "IS, IR : taux unique sans tranches",
   },
   {
-    stat: "0%",
-    label: "Impôt sur les dividendes",
-    detail: "Aucune retenue à la source",
+    stat: "0 %",
+    label: "Plus-values · Dividendes · Succession",
+    detail: "Aucune retenue, aucune taxe patrimoniale",
   },
   {
-    stat: "0%",
-    label: "Impôt sur les plus-values",
-    detail: "Cession de titres et parts sociales",
+    stat: "#1",
+    label: "Afrique — Liberté économique",
+    detail: "Heritage Foundation 2025 (15e mondial)",
   },
   {
-    stat: "0%",
-    label: "Droits de succession",
-    detail: "Ni ISF, ni taxe foncière, ni taxe d'habitation",
+    stat: "#1",
+    label: "Afrique — Gouvernance",
+    detail: "Mo Ibrahim Index — depuis 2007",
   },
   {
-    stat: "1er",
-    label: "Qualité de vie en Afrique",
-    detail: "Classement Mercer — devant l'Afrique du Sud",
+    stat: "23e",
+    label: "Pays le plus sûr au monde",
+    detail: "Global Peace Index 2025",
   },
   {
-    stat: "37",
-    label: "Traités de non-double imposition",
-    detail: "Dont convention France-Maurice (1980)",
+    stat: "47",
+    label: "Conventions fiscales signées",
+    detail: "Dont France, UK, Inde, Chine, EAU",
   },
   {
-    stat: "3 jours",
-    label: "Pour créer votre société",
-    detail: "100% propriété étrangère autorisée",
+    stat: "25 °C",
+    label: "Moyenne annuelle",
+    detail: "Climat tropical tempéré toute l'année",
   },
   {
     stat: "GMT+4",
     label: "Fuseau horaire idéal",
-    detail: "2-3h de décalage avec Paris",
+    detail: "2 h de décalage avec Paris",
   },
 ] as const;
 

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Vanille Stratégie",
     title: "Vanille Stratégie — Votre nouvelle vie à Maurice commence ici",
     description:
-      "Création de société, permis de résidence, comptabilité, RH — un seul interlocuteur, zéro sous-traitance. Expert-Comptable Fiscaliste International, 40+ ans d'expérience.",
+      "Création de société, permis de résidence, comptabilité, RH — un seul interlocuteur, un groupe intégré. Expert-Comptable Fiscaliste International, 40+ ans d'expérience.",
     images: [
       {
         url: "/images/hero-paradise.jpg",

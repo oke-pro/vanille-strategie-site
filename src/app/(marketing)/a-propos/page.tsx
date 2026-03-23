@@ -55,7 +55,7 @@ export default function AProposPage() {
               <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Casalis</span>
             </h1>
             <p className="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl">
-              Deux entités complémentaires, un seul groupe intégré pour piloter votre installation et votre succès à Maurice sans aucune sous-traitance.
+              Deux entités complémentaires, un seul groupe intégré pour piloter votre installation et votre succès à Maurice de A à Z.
             </p>
           </div>
         </div>
