@@ -38,6 +38,7 @@ const standaloneSlugs = new Set([
   "substance-requirements-maurice",
   "succession-internationale-france-maurice",
   "transfer-pricing-maurice-2025",
+  "golden-visa-maurice-2026-guide-complet",
 ]);
 
 export const blogArticles: BlogArticle[] = [
@@ -50,6 +51,7 @@ export const blogArticles: BlogArticle[] = [
     date: "Avril 2026",
     dateISO: "2026-04-13",
     readTime: "14 min",
+    standalone: true,
     content: [
       "Le 10 avril 2026, le Conseil des ministres mauricien a adopté une mesure historique : l'introduction d'un Golden Visa Scheme destiné à attirer les investisseurs et les personnes fortunées (HNWI — High Net Worth Individuals) sur l'île Maurice. Depuis notre cabinet à Port-Louis, nous suivons cette annonce de très près, car elle modifie en profondeur l'offre résidentielle de Maurice pour les entrepreneurs francophones. Cette décision s'inscrit dans un plan d'urgence global, adopté en réponse aux répercussions économiques de la guerre au Moyen-Orient sur l'économie mauricienne. Le Premier ministre, le Dr Navin Ramgoolam, avait présidé une réunion de crise le 8 avril, dans un contexte marqué par un cessez-le-feu conditionnel de deux semaines entre l'Iran et les États-Unis — jugé fragile par les autorités. Le détroit d'Hormuz a été temporairement rouvert au trafic maritime, mais l'incertitude demeure.",
 
