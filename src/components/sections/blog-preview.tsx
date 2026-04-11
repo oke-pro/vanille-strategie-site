@@ -4,6 +4,13 @@ import { founder } from "@/data/site";
 
 const articles = [
   {
+    slug: "golden-visa-maurice-2026-guide-complet",
+    title: "Golden Visa Maurice 2026 : guide complet du nouveau programme",
+    excerpt: "Le Conseil des ministres lance un Golden Visa Scheme pour attirer les HNWI. Conditions, fiscalité, procédures EDB : l'analyse complète.",
+    category: "Urgent",
+    date: "Avril 2026",
+  },
+  {
     slug: "routes-financieres-dubai-maurice-transition",
     title: "Quitter Dubaï pour Maurice — Routes financières et guide de transition",
     excerpt: "Transfert de patrimoine, checklist 30 jours, comparatif fiscal. Le guide urgent pour les entrepreneurs en exode.",
@@ -22,13 +29,6 @@ const articles = [
     title: "Vivre à Maurice — Golfs, lifestyle et art de vivre business",
     excerpt: "5 golfs de classe mondiale, gastronomie fusion, sundowner culture. Le rêve mauricien au quotidien.",
     category: "Lifestyle",
-    date: "Mars 2026",
-  },
-  {
-    slug: "paiements-en-ligne-maurice-stripe-alternatives",
-    title: "Paiements en ligne — Stripe, MIPS et alternatives à Maurice",
-    excerpt: "Stripe n'est pas disponible à Maurice. Voici les solutions qui fonctionnent vraiment.",
-    category: "Digital",
     date: "Mars 2026",
   },
   {
